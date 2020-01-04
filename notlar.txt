@@ -1,1 +1,5 @@
 temel 87 <!--href="{% url 'register:login' %}?next={{request.path}}"-->
+
+temel 81 <!--href="{% url 'register:hesap'%}"-->
+
+temel 82 <!--href="{% url 'register:logout' %}?next={{request.path}}"-->
