@@ -1,0 +1,44 @@
+{% extends 'ruyatabirleri/temel.html' %}
+
+{% block content %}
+<div class="col-sm-8 m-0 p-0">
+    <div class="row m-0 p-0">
+        <div class="col-sm-12 m-0 p-0">
+            <div class="logindiv0cerceve">
+                <div class="row m-0 p-0">
+                    <div class="col-sm-12 m-0 p-0">
+                        <div class="logindiv1baslik">
+                            <p class="m-0 p-0">Bilgileri Eksiksiz Doldurunuz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0 p-0">
+                    <div class="col-sm-12 m-0 p-0">
+                        <div class="logindiv2form">
+                            <form method="post">
+                                {% csrf_token %}
+                                {% for field in form %}
+                                <div style="margin:10px 0 0 0; padding:0;">
+                                    {{ field }}
+                                    {% if field.help_text %}
+                                        <small style="color: grey">{{ field.help_text }}</small>
+                                    {% endif %}
+                                    {% for error in field.errors %}
+                                        <p style="color: red">{{ error }}</p>
+                                    {% endfor %}
+                                </div>
+                                {% endfor %}
+                                <button class="logindiv2formbutton" type="submit">Giriş Yap</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<!--
+
+-->

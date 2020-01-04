@@ -78,13 +78,13 @@
                    id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-user fa-lg"></i> {{user.username}}</a>
                 <div class="dropdown-menu dropdown-menu-left dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                    <a class="dropdown-item" >Hesabım</a>
-                    <a class="dropdown-item" >Çıkış Yap</a>
+                    <a class="dropdown-item" href="{% url 'register:hesap'%}" >Hesabım</a>
+                    <a class="dropdown-item" href="{% url 'register:logout' %}?next={{request.path}}">Çıkış Yap</a>
                 </div>
             </li>
             {% else %}
             <li class="nav-item p-0 m-0 " style="width: 280px;">
-                <a class="nav-link py-4 px-5 m-0 text-white">
+                <a class="nav-link py-4 px-5 m-0 text-white" href="{% url 'register:login' %}?next={{request.path}}">
                      <h5 class="m-0 p-0"><i class="fa fa-user"></i> Giriş Yap</h5></a>
             </li>
             {% endif %}
