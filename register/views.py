@@ -40,12 +40,15 @@ def LoginView(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                messages.info(request, f"You are now logged in as {username}")
-                return redirect('/')
+                return render (request, 'register/basarili_kayit.html', {'username': username})
             else:
-                messages.error(request, "Invalid username or password.")
+                mesaj="Geçersiz Kullanıcı Adı veya Şifre girdiniz. Tekrar Deneyiniz. "
+                form = UserLoginForm()
+                return render (request, 'register/basarili_kayit.html', {'mesaj': mesaj, 'form': form})
         else:
-            messages.error(request, "Invalid username or password.")
+            mesaj = "Geçersiz Kullanıcı Adı veya Şifre girdiniz. Tekrar Deneyiniz. "
+            form = UserLoginForm ()
+            return render (request, 'register/basarili_kayit.html', {'mesaj': mesaj, 'form': form})
     form = UserLoginForm()
     return render(request = request,
                     template_name = "registration/login.html",
