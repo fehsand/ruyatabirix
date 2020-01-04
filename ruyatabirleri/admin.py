@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Ruyatabirleri, ArananKelimeler
 
-# Register your models here.
+
+admin.site.register(Ruyatabirleri)
+admin.site.register(ArananKelimeler)

@@ -1,0 +1,28 @@
+{% extends 'ruyatabirleri/temel.html' %}
+
+{% block content %}
+<div class="col-sm-8 m-0 p-0">
+    <div class="row m-0 p-0">
+        <div class="col-sm-12 m-0 p-0">
+            <div class="button1_div">
+                <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form1_div">
+                        {{form}}
+                        <button class="button1" type="submit" name="save">ARA</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row m-0 p-0">
+        <div class="col-sm-12 m-0 p-0">
+            <div class="p-1 bg-light mx-auto">
+                <div class="m-0 p-3" style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
+                    <h4 class="p-0 m-0 text-center ">{{mesaj}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

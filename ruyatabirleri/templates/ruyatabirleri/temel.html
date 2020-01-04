@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anasayfa">
+    <meta name="keywords" content="rüya, rüyada, tabir, tabiri, tabirleri, ruyatabirix, görmek">
+    <meta name="author" content="fehsand">
+    <title>ruyatabirix.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+    body { background-color: #ccffff;}
+
+    .logo1 {width: 100%; background-color: #1affff; background-image: linear-gradient(#1affff, white);
+     padding-top: 50px; padding-bottom: 50px; text-align: center; font-family: Comic Sans MS; fon-family: Ink Free;
+     font-size: 10vw; color:white; border: none; text-decoration: none; display: block; cursor: pointer; cursor: not-allowed;}
+
+    .reklam2 { margin:0; padding:0; width:100%; height: 100px; text-align: center; font-size: 25px; background-color: #ccffff;}
+
+    .ruyatabirianaliste li a:hover {text-decoration: underline;}
+
+    .ana_metin {padding: 10px; background:  #ccffff; font-size: 20px; text-align: justify; font-family: verdana; line-height: 2;}
+
+    .sifirla {margin:0; padding:0;}
+
+    .button1_div {margin: 50px 5px 0 0; text-align: center;}
+    .form1_div {margin:0; padding: 5px;}
+    .button1 {margin-top:10px; padding: 15px 10px; width: 60px; font-size: 20px;}
+
+    .logindiv0cerceve {background-color: #00e6e6; margin: 10px; padding: 10px; text-align: center;}
+    .logindiv1baslik {background-color: #ccffff; color:#669999; margin: 5px; padding: 10px 0; font-size: 30px; font-family: verdana;}
+    .logindiv2form {background-color: #ccffff; margin: 5px; padding: 10px;}
+    .logindiv2formbutton {font-family: verdana; width: 300px; font-size: 20px; margin: 10px 0 0 0; background-color: green; color: white; padding: 20px;}
+    .logindiv2formp {margin: 10px 0 0 0; padding:0; font-family: verdana; color: black; font-size: 15px;}
+    .logindiv2formp a {color:black; text-decoration: none;}
+    .logindiv2formp a:hover {text-decoration: underline}
+    .logindiv3uyari {margin:10px 0 0 0; padding:0;}
+    .logindiv3uyarip {background-color: white; margin: 10px 0 0 0; padding:0; font-family: verdana; color: black; font-size: 20px;}
+
+
+    a.nav-link:hover {background-color: #00b3b3;}
+
+    </style>
+</head>
+<body class="m-0 p-0">
+<div class="container-fluid sifirla">
+    <div class="row m-0 p-0">
+        <div class="col m-0 p-0">
+            <button class="logo1">RÜYATABİRİ<i><b>X</b></i></button>
+        </div>
+    </div>
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top p-0 m-0" >
+        <ul class="navbar-nav p-0 m-0 vw-100" style="background-color:#00e6e6;" >
+            <li class="nav-item p-0 m-0 border-right border-bottom" >
+                <a class="nav-link py-4 px-5 m-0 text-white" href="{% url 'ruyatabirleri:ruyatabirleri'%}">
+                    <h5 class="m-0 p-0">RÜYATABİRİX (<i class="fa fa-home" aria-hidden="true"></i>)</h5>
+                </a>
+            </li>
+            <li class="nav-item p-0 m-0 border-right border-bottom">
+                <a class="nav-link py-4 px-5 m-0 text-white" href="{% url 'ruyatabirleri:ruya_nedir'%}">
+                    <h5 class="m-0 p-0">Rüya Nedir?</h5></a>
+            </li>
+            <li class="nav-item p-0 m-0 border-right border-bottom">
+                <a class="nav-link py-4 px-5 m-0 text-white" href="{% url 'ruyatabirleri:ruya_ile_amel'%}">
+                    <h5 class="m-0 p-0">Rüya ile Amel Edilir mi?</h5></a>
+            </li>
+            <li class="nav-item p-0 m-0 border-right border-bottom">
+                <a class="nav-link py-4 px-5 m-0 text-white" href="{% url 'ruyatabirleri:ruya_hadis'%}">
+                    <h5 class="m-0 p-0">Rüya ile ilgili Hadisler</h5></a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item dropdown p-0 m-0">
+                <a class="nav-link dropdown-toggle py-4 px-5 m-0 text-white" style="width: 280px; overflow:hidden;"
+                   id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user fa-lg"></i> {{user.username}}</a>
+                <div class="dropdown-menu dropdown-menu-left dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                    <a class="dropdown-item" <!--href="{% url 'register:hesap'%}"-->>Hesabım</a>
+                    <a class="dropdown-item" <!--href="{% url 'register:logout' %}?next={{request.path}}"-->>Çıkış Yap</a>
+                </div>
+            </li>
+            {% else %}
+            <li class="nav-item p-0 m-0 " style="width: 280px;">
+                <a class="nav-link py-4 px-5 m-0 text-white">
+                     <h5 class="m-0 p-0"><i class="fa fa-user"></i> Giriş Yap</h5></a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+    <div class="row m-0 p-0">
+        <div class="col-sm-2" style="padding: 10px; margin:10px 0 0 0;">_</div>
+        {% block content %}
+        {% endblock %}
+        <div class="col-sm-2" style="padding: 10px; margin:10px 0 0 0;">_</div>
+    </div>
+
+    <div class="row m-0 p-0">
+        <div class="col m-0 p-0">
+            <div class="reklam2"style="padding: 10px; margin:10px 0;"><p>_</p></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small text-white pt-4" style="background-color: #00b3b3;">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Rüyatabirix.com</h6>
+                    <p>Rüya yorumlarınız için bize yazabilirsiniz...</p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Site Haritası</h6>
+
+                </div>
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Faydalı Bağlantılar</h6>
+                    <p><a class="text-white" href="{% url 'ruyatabirleri:gizlilik'%}">Gizlilik Politikası</a></p>
+                </div>
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">İletişim / Sosyal Medya</h6>
+                    <p><i class="fa fa-home fa-lg mr-3"></i><a class="text-white" href="{% url 'ruyatabirleri:ruyatabirleri'%}">www.ruyatabirix.com</a></p>
+                    <p><i class="fa fa-envelope fa-lg mr-3"></i><a class="text-white">ruyatabirix@outlook.com</a></p>
+                    <p><i class="fa fa-instagram fa-lg mr-3"></i><a class="text-white" href="https://www.instagram.com/ruyatabirix/?hl=tr">instgram</a></p>
+                    <p><i class="fa fa-youtube fa-lg mr-3"></i><a class="text-white">Youtube</a></p>
+                    <p><i class="fa fa-facebook-f fa-lg mr-3"></i><a class="text-white" href="https://www.facebook.com/ruya.tabirix.5"> Facebook</a></p>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">© 2020 Copyright:
+                        <a class="text-white" href="{% url 'ruyatabirleri:ruyatabirleri'%}">
+                            <strong> Ruyatabirix.com</strong>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</div>
+</body>
+</html>
