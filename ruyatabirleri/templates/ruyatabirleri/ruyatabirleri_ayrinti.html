@@ -41,7 +41,7 @@
                 <div class="bg-white p-3">
                     {% get_comment_list for ruyatabirleri.ruyatabirleri object_pk as comment_list %}
                     {% for comment in comment_list %}
-                    <div class="m-0 p-0 border border-info">
+                    <div class="m-0 mt-3 p-0 border border-info">
                         <div>
                             <p class="m-0 p-0 bg-secondary text-white">{{ comment.user_name }}_{{ comment.submit_date.year}}/{{comment.submit_date.month}}/{{comment.submit_date.day }}</p>
                         </div>
