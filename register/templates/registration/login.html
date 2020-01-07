@@ -3,46 +3,44 @@
 {% block content %}
 <div class="row m-0 p-0">
     <div class="col-sm-12 m-0 p-0">
-        <div class="logindiv0cerceve">
-            <div class="row m-0 p-0">
-                <div class="col-sm-12 m-0 p-0">
-                    <div class="logindiv1baslik">
-                        <p class="m-0 p-0">Kullanıcı Adı ve Şifrenizi Giriniz</p>
-                    </div>
+        <h4 class="m-0 p-0 py-5 text-center">Kullanıcı Adı ve Şifrenizi Giriniz</h4>
+    </div>
+</div>
+<div class="row m-0 p-0">
+    <div class="col-sm-12 m-0 p-0">
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group row ">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control form-control-lg" name="username" placeholder="Kullanıcı Adı">
                 </div>
+                <div class="col-sm-4"></div>
             </div>
-            <div class="row m-0 p-0">
-                <div class="col-sm-12 m-0 p-0">
-                    <div class="logindiv2form">
-                        <form method="post">
-                            {% csrf_token %}
-                            <div style="margin:10px 0 0 0; padding:0;">
-                                <input type="text" name="username" placeholder="Kullanıcı Adınız" maxlength="50"
-                                       style="width: 300px; font-size: 20px; margin:0; padding:20px;">
-                            </div>
-                            <div style="margin:10px 0 0 0; padding:0;">
-                                <input type="password" name="password" placeholder="Şifreniz" maxlength="50"
-                                       style="width: 300px; font-size: 20px; margin:0; padding: 20px;">
-                            </div>
-                            <button class="logindiv2formbutton" type="submit">Giriş Yap</button>
-                            <p class="logindiv2formp">
-                                <a href="{% url 'register:register' %}">ÜYE OL</a>
-                                veya <a href="{% url 'register:password_reset' %}">ŞİFRE AL</a>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <input type="password" class="form-control form-control-lg" name="password" placeholder="Şifreniz">
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="form-row m-0 p-0">
+                        <div class="col4m-0 p-0">
+                            <button type="submit" class="btn btn-success">Giriş Yap</button>
+                        </div>
+                        <div class="col-8 m-0 p-0">
+                            <p class="m-0 px-2 pb-0 pt-3">
+                                <a class="m-0 p-0" href="{% url 'register:register' %}">ÜYE OL</a> veya <a class="m-0 p-0" href="{% url 'register:password_reset' %}">ŞİFRE AL</a>
                             </p>
-                        </form>
+                        </div>
                     </div>
                 </div>
+                <div class="col-sm-4"></div>
             </div>
-            <div class="row m-0 p-0">
-                <div class="col-sm-12 m-0 p-0">
-                    <div class="logindiv3uyari">
-                        {% if form.errors %}
-                        <p class="logindiv3uyarip" >Kullanıcı Adınız veya Şifreniz Hatalı. Lütfen Tekrar Deneyiniz.</p>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
 </div>
 {% endblock %}
