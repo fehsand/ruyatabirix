@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"">
     <meta name="description" content="Anasayfa">
     <meta name="keywords" content="rüya, rüyada, tabir, tabiri, tabirleri, ruyatabirix, görmek">
     <meta name="author" content="fehsand">
@@ -17,13 +17,7 @@
     .logo1 {background-color: #1affff; background-image: linear-gradient(#1affff, white); font-family: Comic Sans MS;
      font-size: 10vw; border: none; text-decoration: none; display: block; cursor: pointer; cursor: not-allowed;}
 
-    .ruyatabirianaliste li a:hover {text-decoration: underline;}
-
-    .ana_metin {padding: 10px; background:  #ccffff; font-size: 20px; text-align: justify; font-family: verdana; line-height: 2;}
-
-    .button1_div {margin: 50px 5px 0 0; text-align: center;}
-    .form1_div {margin:0; padding: 5px;}
-    .button1 {margin-top:10px; padding: 15px 10px; width: 60px; font-size: 20px;}
+    .ana_metin {background:  #ccffff; font-size: 20px; text-align: justify; font-family: verdana; line-height: 2;}
 
     .logindiv0cerceve {background-color: #00e6e6; margin: 10px; padding: 10px; text-align: center;}
     .logindiv1baslik {background-color: #ccffff; color:#669999; margin: 5px; padding: 10px 0; font-size: 30px; font-family: verdana;}
@@ -34,7 +28,6 @@
     .logindiv2formp a:hover {text-decoration: underline}
     .logindiv3uyari {margin:10px 0 0 0; padding:0;}
     .logindiv3uyarip {background-color: white; margin: 10px 0 0 0; padding:0; font-family: verdana; color: black; font-size: 20px;}
-
 
     a.nav-link:hover {background-color: #00b3b3;}
 
@@ -86,10 +79,12 @@
         </ul>
     </nav>
     <div class="row m-0 p-0">
-        <div class="col-md-2">_</div>
+        <div class="col-sm-2">_</div>
+        <div class="col-sm-8 m-0 p-0">
         {% block content %}
         {% endblock %}
-        <div class="col-md-2">_</div>
+        </div>
+        <div class="col-sm-2">_</div>
     </div>
 
     <div class="row m-0 p-0">

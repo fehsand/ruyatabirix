@@ -1,30 +1,26 @@
 {% extends 'ruyatabirleri/temel.html' %}
 
 {% block content %}
-<div class="col-sm-8 m-0 p-0">
-    <div class="row m-0 p-0">
-        <div class="col-sm-12 m-0 p-0">
-            <div class="button1_div">
-                <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
-                    {% csrf_token %}
-                    <div class="form1_div">
-                        {{form}}
-                        <button class="button1" type="submit" name="save">ARA</button>
-                    </div>
-                </form>
+<div class="row m-0 p-0">
+    <div class="col-sm-12 m-0 px-0 py-5 text-center">
+        <form class="m-0 p-0 " action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
+            {% csrf_token %}
+            <div class="m-0 p-0">
+                {{form}}
+                <button class="btn-lg btn-light m-0 p-3 border-0" type="submit" name="save">ARA</button>
             </div>
-        </div>
+        </form>
     </div>
-    <div class="row m-0 p-0">
-        <div class="col-sm-12 m-0 p-0">
-            <div class="p-1 bg-light w-50 mx-auto">
-                <div class="m-0 p-3" style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
-                    {% for item in tabir1 %}
-                    <div class="m-0 p-0 ">
-                        <h3 class="p-0 m-0 text-center "><a href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' kelime=item.kelime %}">Rüyada {{item}} görmek</a></h3>
-                    </div>
-                    {% endfor %}
+</div>
+<div class="row m-0 p-0">
+    <div class="col-sm-12 m-0 p-0">
+        <div class="p-1 bg-light w-50 mx-auto">
+            <div class="m-0 p-3" style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
+                {% for item in tabir1 %}
+                <div class="m-0 p-0 ">
+                    <h3 class="p-0 m-0 text-center "><a href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' kelime=item.kelime %}">Rüyada {{item}} görmek</a></h3>
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>

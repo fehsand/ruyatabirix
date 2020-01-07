@@ -2,97 +2,92 @@
 {% load comments %}
 
 {% block content %}
-<div class="col-sm-8 m-0 p-0">
-    <div class="row m-0 p-0">
-        <div class="col-sm-12 m-0 p-0">
-            <div class="button1_div">
-                <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
-                    {% csrf_token %}
-                    <div class="form1_div">
-                        {{form}}
-                        <button class="button1" type="submit" name="save">ARA</button>
-                    </div>
-                </form>
+<div class="row m-0 p-0">
+    <div class="col-sm-12 m-0 px-0 py-5 text-center">
+        <form class="m-0 p-0 " action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
+            {% csrf_token %}
+            <div class="m-0 p-0">
+                {{form}}
+                <button class="btn-lg btn-light m-0 p-3 border-0" type="submit" name="save">ARA</button>
             </div>
-        </div>
+        </form>
     </div>
-
-    <div class="row m-0 p-0">
-        <div class="col-sm-12 m-0 p-0">
-            <div class="p-1 bg-light">
-                <div class="m-0 p-3" style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
-                    <div class="m-0 p-0 border-bottom border-dark"><h3>Rüyada {{tabir1.kelime}} görmek</h3></div>
-                    <div class="m-o p-0"><h5>{{tabir1.tabiri}}</h5></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row m-0 p-0 mt-3">
-        <div class="col-sm-12 m-0 p-0">
-            {% get_comment_count for ruyatabirleri.ruyatabirleri object_pk as comment_count %}
-            <nav class="navbar navbar-dark bg-secondary text-white">
-                <h6>{{ comment_count }} adet yorum bulunmaktadır.</h6>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-white p-3">
-                    {% get_comment_list for ruyatabirleri.ruyatabirleri object_pk as comment_list %}
-                    {% for comment in comment_list %}
-                    <div class="m-0 mt-3 p-0 border border-info">
-                        <div>
-                            <p class="m-0 p-0 bg-secondary text-white">{{ comment.user_name }}_{{ comment.submit_date.year}}/{{comment.submit_date.month}}/{{comment.submit_date.day }}</p>
-                        </div>
-                        <div>
-                            <p style="margin:0; padding:10px; font-size: 14px;">{{ comment.comment }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {% if user.is_authenticated %}
-    <div class="row m-0 p-0">
-        <div class="col-sm-12 m-0 p-0">
-            {% get_comment_form for tabir1 as form %}
-            <div class="m-2 p-0 border border-secondary">
-                <form action="{% comment_form_target %}" method="post">
-                    {% csrf_token %}
-                    {% for field in form %}
-                    {% if field.name != 'comment' and field.name != 'email' and field.name != 'url' and field.name != 'name' and field.name != 'honeypot' %}
-                    <p class="m-0 p-0">{{field}}</p>
-                    {% endif %}
-                    {% endfor %}
-                    <textarea name="comment" placeholder="Yorum ekle.." style="height:200px; width: 100%; font-size: 16px; margin:0; padding:0;"></textarea>
-                    <input type="hidden" name="email" value="{{user.email}}" />
-                    <input type="hidden" name="url" value=" " />
-                    <input type="hidden" name="name" value="{{user}}" />
-                    <input type="hidden" name="honeypot" value=" " />
-                    <div class="m-0 p-0 text-right">
-                        <input class="m-0 p-0 w-25 bg-success text-white" type="submit" name="submit" value="Gönder">
-                    </div>
-                    <div class="m-0 p-0">
-                        <input type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' kelime=tabir1.kelime %}" />
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    {% else %}
-    <div class="row m-0 p-0 mt-3">
-        <div class="col-sm-12 m-0 p-0">
-            <div class="p-1 bg-light mx-auto">
-                <div class="m-0 p-3" style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
-                    <h6 class="p-0 m-0 ">Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir.
-                        <a class="m-0 p-0" href="{% url 'register:login' %}?next={{request.path}}">GİRİŞ YAP</a></h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endif %}
 </div>
+<div class="row m-0 p-0">
+    <div class="col-sm-12 m-0 p-0">
+        <div class="p-1 bg-light">
+            <div class="m-0 p-3" style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
+                <div class="m-0 p-0 border-bottom border-dark"><h3>Rüyada {{tabir1.kelime}} görmek</h3></div>
+                <div class="m-o p-0"><h5>{{tabir1.tabiri}}</h5></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row m-0 p-0 mt-3">
+    <div class="col-sm-12 m-0 p-0">
+        {% get_comment_count for ruyatabirleri.ruyatabirleri object_pk as comment_count %}
+        <nav class="navbar navbar-dark bg-secondary text-white">
+            <h6>{{ comment_count }} adet yorum bulunmaktadır.</h6>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-white p-3">
+                {% get_comment_list for ruyatabirleri.ruyatabirleri object_pk as comment_list %}
+                {% for comment in comment_list %}
+                <div class="m-0 mt-3 p-0 border border-info">
+                    <div>
+                        <p class="m-0 p-0 bg-secondary text-white">{{ comment.user_name }}_{{ comment.submit_date.year}}/{{comment.submit_date.month}}/{{comment.submit_date.day }}</p>
+                    </div>
+                    <div>
+                        <p style="margin:0; padding:10px; font-size: 14px;">{{ comment.comment }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if user.is_authenticated %}
+<div class="row m-0 p-0">
+    <div class="col-sm-12 m-0 p-0">
+        {% get_comment_form for tabir1 as form %}
+        <div class="m-2 p-0 border border-secondary">
+            <form action="{% comment_form_target %}" method="post">
+                {% csrf_token %}
+                {% for field in form %}
+                {% if field.name != 'comment' and field.name != 'email' and field.name != 'url' and field.name != 'name' and field.name != 'honeypot' %}
+                <p class="m-0 p-0">{{field}}</p>
+                {% endif %}
+                {% endfor %}
+                <textarea name="comment" placeholder="Yorum ekle.." style="height:200px; width: 100%; font-size: 16px; margin:0; padding:0;"></textarea>
+                <input type="hidden" name="email" value="{{user.email}}" />
+                <input type="hidden" name="url" value=" " />
+                <input type="hidden" name="name" value="{{user}}" />
+                <input type="hidden" name="honeypot" value=" " />
+                <div class="m-0 p-0 text-right">
+                    <input class="m-0 p-0 w-25 bg-success text-white" type="submit" name="submit" value="Gönder">
+                </div>
+                <div class="m-0 p-0">
+                    <input type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' kelime=tabir1.kelime %}" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="row m-0 p-0 mt-3">
+    <div class="col-sm-12 m-0 p-0">
+        <div class="p-1 bg-light mx-auto">
+            <div class="m-0 p-3" style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
+                <h6 class="p-0 m-0 ">Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir.
+                    <a class="m-0 p-0" href="{% url 'register:login' %}?next={{request.path}}">GİRİŞ YAP</a></h6>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 {% endblock %}
