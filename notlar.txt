@@ -1,0 +1,8 @@
+$ git status
+$ git add --all .
+
+$ git status
+
+$ git commit -m "Site için HTML dosyasını değiştirdim."
+
+$ git push

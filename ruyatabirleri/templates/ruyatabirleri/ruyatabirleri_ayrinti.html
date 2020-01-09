@@ -24,7 +24,7 @@
         <div class="p-1 bg-light">
             <div class="m-0 p-3" style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
                 <div class="m-0 p-0 border-bottom border-dark"><h3>Rüyada {{tabir1.kelime}} görmek</h3></div>
-                <div class="m-o p-0"><h5>{{tabir1.tabiri}}</h5></div>
+                <div class="m-0 mt-3 p-0"><p class="text-justify">{{tabir1.tabiri}}</p></div>
             </div>
         </div>
     </div>
@@ -61,8 +61,8 @@
 <div class="row m-0 p-0">
     <div class="col-sm-12 m-0 p-0">
         {% get_comment_form for tabir1 as form %}
-        <div class="m-2 p-0 border border-secondary">
-            <form action="{% comment_form_target %}" method="post">
+        <div class="m-0 p-0 border border-secondary">
+            <form class="m-0 p-0" action="{% comment_form_target %}" method="post">
                 {% csrf_token %}
                 {% for field in form %}
                 {% if field.name != 'comment' and field.name != 'email' and field.name != 'url' and field.name != 'name' and field.name != 'honeypot' %}
@@ -75,10 +75,10 @@
                 <input type="hidden" name="name" value="{{user}}" />
                 <input type="hidden" name="honeypot" value=" " />
                 <div class="m-0 p-0 text-right">
-                    <input class="m-0 p-0 w-25 bg-success text-white" type="submit" name="submit" value="Gönder">
+                    <button class="m-0 p-3 w-25 bg-success text-white" type="submit" name="submit" >Gönder</button>
                 </div>
                 <div class="m-0 p-0">
-                    <input type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' kelime=tabir1.kelime %}" />
+                    <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' kelime=tabir1.kelime %}" />
                 </div>
             </form>
         </div>

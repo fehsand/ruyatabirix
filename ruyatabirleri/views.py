@@ -17,7 +17,7 @@ def ruyatabirleri (response):
             #------------Karakter Kontrolü yapıldı. Uygun olmayan varsa hata verildi.-------------
             sesli_harfler= 'aeıiuüoö'
             sessiz_harfler= 'bcçdfgğhjklmnprsştvyzwqx'
-            harfler='bcçdfgğhjklmnprsştvyzwqxaeıiuüoö'
+            harfler='bcçdfgğhjklmnprsştvyzwqxaeıiuüoö '
             for harf in n:
                 if not harf in harfler:
                     mesaj = 'Lütfen Yazdığınız Harfleri Kontrol Ediniz ve Tekrar Deneyiniz.'
@@ -51,9 +51,13 @@ def ruyatabirleri (response):
 
         #------En çok aranan kelimenin bulunması
 
-        kelimeler=Ruyatabirleri.objects.all()
-
-        for i1 in kelimeler:
+        kutu=[]#aranan kelimeler kaydediliyor her kelime bir kez kaydediliyor
+        kelimeler_aranan_anasayfa=ArananKelimeler.objects.all() #Aranan kelimelerin hepsini alıyoruz
+        for i in kelimeler_aranan_anasayfa:
+            if not i.kelime in kutu:
+                kutu +=[i.kelime]
+        #aranan kelimelerin onaylı olanlarının keç kere arandığını hesaplayıp ana tabloyu güncelliyoruz
+        for i1 in kutu:
             arama_sayisi=ArananKelimeler.objects.filter(kelime=i1, uygunluk_onayi=True).count()
             Ruyatabirleri.objects.filter(kelime=i1).update(aranma_sayisi=arama_sayisi)
 

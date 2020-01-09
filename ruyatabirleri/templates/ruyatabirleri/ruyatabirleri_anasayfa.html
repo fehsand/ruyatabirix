@@ -24,9 +24,9 @@
         <div class="border border-white rounded-pill m-1 p-0 text-center">
             <h4 class="p-3">En çok Aranan Rüyalar</h4>
         </div>
-        <div class="border border-white rounded-pill m-1 p-0 ">
+        <div class="border border-white m-1 p-0 ">
             <div class="m-0 px-5 ">
-                <ol class="m-0 px-5">
+                <ol class="m-0 px-3">
                     {% for item in son_liste %}
                     <h5 class="m-0 p-0"><li class="m-0 py-2">{{item}}</li></h5>
                     {% endfor %}
@@ -40,9 +40,9 @@
         <div class="border border-white rounded-pill m-1 p-0 text-center">
             <h4 class="p-3">En Son Eklenen Rüyalar</h4>
         </div>
-        <div class="border border-white rounded-pill m-1 p-0 ">
+        <div class="border border-white m-1 p-0 ">
             <div class="m-0 px-5 ">
-                <ol class="m-0 px-5">
+                <ol class="m-0 px-3">
                     {% for item in son_eklenen_kelimeler %}
                     <h5 class="m-0 p-0"><li class="m-0 py-2"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' item %}">{{item}}</a></li></h5>
                     {% endfor %}
