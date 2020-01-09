@@ -70,11 +70,8 @@ WSGI_APPLICATION = 'ruyatabirix.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ruyatabirixxx$ruyatabirixxx',
-        'USER': 'ruyatabirixxx',
-        'PASSWORD': 'Rfvtgb123+',
-        'HOST': 'ruyatabirixxx.mysql.pythonanywhere-services.com',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
