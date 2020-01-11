@@ -29,6 +29,8 @@ def ruyatabirleri (response):
 
             tabir1 = Ruyatabirleri.objects.filter (kelime=n)
 
+            arama_sonuc_sayisi=len(tabir1)
+
             #----Aranan Kelime db de varsa En çok Aranan Kelimelere girmesi için onay veriyoruz----
             if tabir1:
                 ArananKelimeler.objects.create (kelime=n, uygunluk_onayi=True)  # aranan kelime kontrollerden sonra Uygun olarak db kaydedildi.
@@ -43,7 +45,7 @@ def ruyatabirleri (response):
             #-----------------------------------------------------------------------------
             else:
                 form = AramaForm ()
-                return render (response, 'ruyatabirleri/ruyatabirleri_sonuc.html', {'tabir1':tabir1, 'form':form})
+                return render (response, 'ruyatabirleri/ruyatabirleri_sonuc.html', {'arama_sonuc_sayisi':arama_sonuc_sayisi, 'tabir1':tabir1, 'form':form})
 
         return HttpResponseRedirect ("/ruyatabirleri/")
     else:
@@ -89,4 +91,8 @@ def ruyatabirleri_ayrinti (response, kelime):
     form = AramaForm ()
     return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html', {'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
 
-""""""
+def harf_sayfalari (response, harf):
+    tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
+    arama_sonuc_sayisi=len(tabir1)
+    form = AramaForm ()
+    return render(response,'ruyatabirleri/ruyatabirleri_sonuc.html', {'arama_sonuc_sayisi': arama_sonuc_sayisi, 'tabir1': tabir1, 'form': form})

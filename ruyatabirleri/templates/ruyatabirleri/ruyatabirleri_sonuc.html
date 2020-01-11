@@ -20,15 +20,19 @@
 </div>
 <div class="row m-0 p-0">
     <div class="col-sm-12 m-0 p-0">
-        <div class="p-1 bg-light w-50 mx-auto">
-            <div class="m-0 p-3" style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
-                {% for item in tabir1 %}
-                <div class="m-0 p-0 ">
-                    <h3 class="p-0 m-0 text-center "><a href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' kelime=item.kelime %}">Rüyada {{item}} görmek</a></h3>
-                </div>
-                {% endfor %}
-            </div>
+        {% if arama_sonuc_sayisi == 1 %} <!--satfa düzeni için 1 arama olunca ortalıyoruz çok arama olunca iki sutun halinde-->
+        {% for item in tabir1 %}
+        <div class="m-0 mt-1 p-3 w-50 mx-auto " style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
+            <h5 class="p-0 m-0 text-center  "><a href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' kelime=item.kelime %}">Rüyada {{item}} görmek</a></h5>
         </div>
+        {% endfor %}
+        {% else %}
+        {% for item in tabir1 %}
+        <div class="m-0 mt-1 p-3 float-left w-50 " style="background-color: #ccffff; background-image: linear-gradient(to right, white,#ccffff, white);">
+            <h5 class="p-0 m-0 text-center  "><a href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' kelime=item.kelime %}">Rüyada {{item}} görmek</a></h5>
+        </div>
+        {% endfor %}
+        {% endif %}
     </div>
 </div>
 {% endblock %}
