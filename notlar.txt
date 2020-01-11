@@ -30,3 +30,13 @@ DATABASES = {
         'HOST': 'ruyatabirixxx.mysql.pythonanywhere-services.com',
     }
 }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ruyatabirix$ruyatabirix',
+        'USER': 'ruyatabirix',
+        'PASSWORD': 'Rfvtgb123+',
+        'HOST': 'ruyatabirix.mysql.pythonanywhere-services.com',
+    }
+}
