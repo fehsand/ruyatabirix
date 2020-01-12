@@ -12,9 +12,9 @@ $ git push
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ruyatabirlerix',
+        'NAME': 'ruyatabirix',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'Tgbyhn123+',
         'HOST': '',
         'PORT': '',
     }
