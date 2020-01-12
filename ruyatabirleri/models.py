@@ -5,6 +5,8 @@ class Ruyatabirleri (models.Model):
     tabiri = models.TextField ()
     ekleme_tarihi = models.DateTimeField(auto_now_add=True)
     aranma_sayisi = models.IntegerField(null=True)
+    ingilizce_kelime = models.CharField(max_length=200, null=True)
+    ingilizce_tabir = models.TextField(null=True)
 
     def __str__(self):
         return self.kelime
