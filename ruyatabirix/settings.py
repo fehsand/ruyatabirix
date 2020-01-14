@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django_comments',
     'ruyatabirleri',
     'register',
+    'django.contrib.sitemaps',
 ]
 
 SITE_ID = 1

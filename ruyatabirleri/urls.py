@@ -12,6 +12,4 @@ urlpatterns = [
     path('ruyatabirleri_ruya_hadis/', views.ruya_hadis, name='ruya_hadis'),
     path('ruyatabirleri_gizlilik/', views.gizlilik, name='gizlilik'),
     path('<str:harf>/', views.harf_sayfalari, name='harf_sayfalari'),
-
-
 ]
