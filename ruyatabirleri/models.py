@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
+from django.urls import reverse
 
 
 class Ruyatabirleri (models.Model):
@@ -19,7 +20,7 @@ class Ruyatabirleri (models.Model):
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return f'/{self.slug}'
+        return reverse ('ruyatabirleri:ruyatabirleri_ayrinti', args=[str(self.slug)])
 
 class ArananKelimeler (models.Model):
     kelime = models.CharField(max_length=200)

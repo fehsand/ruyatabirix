@@ -27,7 +27,7 @@ def ruyatabirleri (response):
                     pass
             #--------------------Karakter Kontrolü bitti----------------
 
-            tabir1 = Ruyatabirleri.objects.filter (kelime=n)
+            tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=n)
 
             arama_sonuc_sayisi=len(tabir1)
 
