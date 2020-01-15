@@ -16,7 +16,7 @@ class Ruyatabirleri (models.Model):
         return str(self.slug)
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.kelime)
+        self.slug = slugify(self.kelime.replace('ı','i'))
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
