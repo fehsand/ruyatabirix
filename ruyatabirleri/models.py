@@ -1,7 +1,8 @@
 from django.db import models
 from django.utils.text import slugify
 
-class Ruyatabirleri1 (models.Model):
+
+class Ruyatabirleri (models.Model):
     kelime = models.CharField(max_length=200)
     slug = models.SlugField (blank=True, null=True)
     tabiri = models.TextField ()
@@ -11,7 +12,7 @@ class Ruyatabirleri1 (models.Model):
     ingilizce_tabir = models.TextField(null=True)
 
     def __str__(self):
-        return self.kelime
+        return str(self.slug)
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.kelime)
@@ -19,18 +20,6 @@ class Ruyatabirleri1 (models.Model):
 
     def get_absolute_url(self):
         return f'/{self.slug}'
-
-
-class Ruyatabirleri (models.Model):
-    kelime = models.CharField(max_length=200)
-    tabiri = models.TextField ()
-    ekleme_tarihi = models.DateTimeField(auto_now_add=True)
-    aranma_sayisi = models.IntegerField(null=True)
-    ingilizce_kelime = models.CharField(max_length=200, null=True)
-    ingilizce_tabir = models.TextField(null=True)
-
-    def __str__(self):
-        return self.kelime
 
 class ArananKelimeler (models.Model):
     kelime = models.CharField(max_length=200)

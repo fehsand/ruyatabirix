@@ -1,5 +1,6 @@
 from django.contrib.sitemaps import Sitemap
 from django.shortcuts import reverse
+from .models import Ruyatabirleri
 
 class StaticViewSitemap(Sitemap):
     def items(self):
@@ -11,3 +12,9 @@ class StaticViewSitemap(Sitemap):
                 ]
     def location(self, item):
         return reverse(item)
+
+
+class RuyatabirleriSitemap(Sitemap):
+    def items(self):
+        return Ruyatabirleri.objects.all()
+

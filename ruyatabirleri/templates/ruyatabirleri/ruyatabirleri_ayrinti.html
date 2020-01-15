@@ -78,7 +78,7 @@
                     <button class="m-0 p-3 w-25 bg-success text-white" type="submit" name="submit" >Gönder</button>
                 </div>
                 <div class="m-0 p-0">
-                    <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' kelime=tabir1.kelime %}" />
+                    <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug %}" />
                 </div>
             </form>
         </div>

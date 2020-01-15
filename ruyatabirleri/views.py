@@ -85,11 +85,12 @@ def ruya_nedir (request):
 def ruya_hadis (request):
     return render(request,'ruyatabirleri/ruyatabirleri_ruya_hadis.html', {})
 
-def ruyatabirleri_ayrinti (response, kelime):
-    tabir1 = get_object_or_404 (Ruyatabirleri, kelime=kelime)
+def ruyatabirleri_ayrinti (response, slug):
+    tabir1 = get_object_or_404 (Ruyatabirleri, slug=slug)
     object_pk=tabir1.id
     form = AramaForm ()
     return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html', {'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
+
 
 def harf_sayfalari (response, harf):
     tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
