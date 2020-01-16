@@ -149,7 +149,7 @@
             <div class="m-0 px-5 ">
                 <ol class="m-0 px-3">
                     {% for item in son_liste %}
-                    <h5 class="m-0 p-0"><li class="m-0 py-2">{{item.kelime}}</li></h5>
+                    <h5 class="m-0 p-0"><li class="m-0 py-2">{{item.kelime|title}}</li></h5>
                     {% endfor %}
                 </ol>
             </div>
@@ -165,7 +165,7 @@
             <div class="m-0 px-5 ">
                 <ol class="m-0 px-3">
                     {% for item in son_eklenen_kelimeler %}
-                    <h5 class="m-0 p-0"><li class="m-0 py-2"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' item %}">{{item.kelime}}</a></li></h5>
+                    <h5 class="m-0 p-0"><li class="m-0 py-2"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' item %}">{{item.kelime|title}}</a></li></h5>
                     {% endfor %}
                 </ol>
             </div>
