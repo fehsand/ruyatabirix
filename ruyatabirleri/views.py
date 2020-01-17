@@ -85,7 +85,7 @@ def ruya_nedir (request):
 def ruya_hadis (request):
     return render(request,'ruyatabirleri/ruyatabirleri_ruya_hadis.html', {})
 
-def ruyatabirleri_ayrinti (response, slug):
+def ruyatabirleri_ayrinti (response, slug=None):
     tabir1 = get_object_or_404 (Ruyatabirleri, slug=slug)
     object_pk=tabir1.id
     form = AramaForm ()
