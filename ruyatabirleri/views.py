@@ -87,13 +87,21 @@ def ruya_hadis (request):
 
 def ruyatabirleri_ayrinti (response, slug=None):
     tabir1 = get_object_or_404 (Ruyatabirleri, slug=slug)
+    karakter_satiri=int(len (tabir1.tabiri)/100)
+    sayac=0
+    for i in tabir1.tabiri:
+        if i == "\n":
+            sayac +=1
+    if len(tabir1.tabiri) > 100:
+        satir=(sayac+karakter_satiri)
+    else:
+        satir=(sayac+2)
     object_pk=tabir1.id
     form = AramaForm ()
-    return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html', {'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
-
+    return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html', {'satir':satir,'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
 
 def harf_sayfalari (response, harf):
     tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
-    arama_sonuc_sayisi=len(tabir1)
+    arama_sonuc_sayisi=len(tabir1)/99
     form = AramaForm ()
     return render(response,'ruyatabirleri/ruyatabirleri_sonuc.html', {'arama_sonuc_sayisi': arama_sonuc_sayisi, 'tabir1': tabir1, 'form': form})
