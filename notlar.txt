@@ -37,3 +37,54 @@ DATABASES = {
         'HOST': 'ruyatabirix.mysql.pythonanywhere-services.com',
     }
 }
+
+$ git status
+$ git add --all .
+
+$ git status
+
+$ git commit -m "Site için HTML dosyasını değiştirdim."
+
+$ git push
+
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ruyatabirix',
+        'USER': 'root',
+        'PASSWORD': 'Tgbyhn123+',
+        'HOST': '',
+        'PORT': '',
+    }
+}
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ruyatabirixxx$ruyatabirixxx',
+        'USER': 'ruyatabirixxx',
+        'PASSWORD': 'Rfvtgb123+',
+        'HOST': 'ruyatabirixxx.mysql.pythonanywhere-services.com',
+    }
+}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ruyatabirix$ruyatabirix',
+        'USER': 'ruyatabirix',
+        'PASSWORD': 'Rfvtgb123+',
+        'HOST': 'ruyatabirix.mysql.pythonanywhere-services.com',
+    }
+}
+
+mysql> select * from ruyatabirleri_ruyatabirleri;
++----+--------+--------+--------+----------------------------+---------------+------------------+-----------------+----------------------------+
+| id | kelime | slug   | tabiri | ekleme_tarihi              | aranma_sayisi | ingilizce_kelime | ingilizce_tabir | updated                    |
++----+--------+--------+--------+----------------------------+---------------+------------------+-----------------+----------------------------+
+|  2 | deneme | deneme | x      | 2020-01-18 21:08:41.486340 |            13 | x                | x               | 2020-01-18 21:08:41.486406 |
++----+--------+--------+--------+----------------------------+---------------+------------------+-----------------+----------------------------+
+1 row in set (0.00 sec)
