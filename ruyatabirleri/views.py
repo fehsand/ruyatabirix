@@ -102,6 +102,6 @@ def ruyatabirleri_ayrinti (response, slug=None):
 
 def harf_sayfalari (response, harf):
     tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
-    arama_sonuc_sayisi=len(tabir1)/99
+    arama_sonuc_sayisi=len(tabir1)
     form = AramaForm ()
     return render(response,'ruyatabirleri/ruyatabirleri_sonuc.html', {'arama_sonuc_sayisi': arama_sonuc_sayisi, 'tabir1': tabir1, 'form': form})

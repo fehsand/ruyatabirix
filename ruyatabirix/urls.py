@@ -18,7 +18,7 @@ sitemaps = {
 
 urlpatterns = [
     path ('sitemap.xml/', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
-    path ('admin/', admin.site.urls),
+    path ('w2e3r4t5_admin/', admin.site.urls),
     path ('', include ('ruyatabirleri.urls')),
     path ('register/', include('register.urls')),
     path ('comments/', include('django_comments.urls')),
