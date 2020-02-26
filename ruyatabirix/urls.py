@@ -1,7 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
 from ruyatabirleri.models import Ruyatabirleri
-import ruyatabirleri.views
 
 from django.contrib.sitemaps.views import sitemap
 from django.contrib.sitemaps import GenericSitemap

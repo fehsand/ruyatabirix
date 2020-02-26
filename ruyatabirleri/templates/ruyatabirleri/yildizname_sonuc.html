@@ -1,0 +1,1203 @@
+{% extends 'ruyatabirleri/temel_anasayfa.html' %}
+
+{% block content %}
+{% if cinsiyet == 'erkek' and mod == 0 %} <!--BALIK-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Onikinci Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa tabiatı balgami olur ve durgun karakterli olur.
+            Esmer benizli, orta boylu ve güzel renkli olur.  İki isim sahibidir.<br>
+            <br>
+            İki küreği arasında bir siyah ben nişanı olur. Akıl ve diyanet ehli olur. Merhamet sahibi olur.
+            Evvelinden âhirine kadar iyi olur. Güzel bir hayat yaşar. Ehli indinde mahbub olur.
+            İnsanlar tarafından sevilen biri olur.
+            İnsanlar katında mansur ve muzaffer olur, yardım gören ve galip gelen olur.
+            Yaşlandıkça halleri iyileşir şan ve şerefleri artar. Nimet ve refah içinde vefat ederler.<br>
+            <br>
+            Ayağında veya elinde bir yanık eseri olur.
+            Ayağında bir nişanı olur. Lâkin büyük bir illet olur.
+            Perşembe günü kendisine kutlu ve hayırlı olur.
+            Bir dillekte bulunacakları zaman Perşembe günü başvururlarsa muvaffak olurlar.<br>
+            <br>
+            Hâkim yanına vardığında sol tarafına durmalıdır. Dilek ve isteği yerine gelir.<br>
+            <br>
+            Yatarken sağ tarafına yatmalıdır.
+            Kan almaktan sakınmalıdır.
+            Yüzünde bir nişanı olur.
+            Elinde bir siyah ben nişanı olur.
+            Gözünde dışarı bir yeri olur.<br>
+            <br>
+            Kardeşleri yanında sevimli olur. İlk evladı kız olur. Çok fayda görür.<br>
+            <br>
+            Hastalıkları çok olur. Bir gün iyi ise bir gün hasta olur.
+            Hastalıkları safra galebesinden, sancıdan ve baş ağrısından olur.<br>
+            <br>
+            Seyahati kutlu ve hayırlı olur.
+            Silah kuşanması kutlu ve hayırlı olur.<br>
+            <br>
+            Devlet tarafından bir münazaa, düşmanlık görmüş olur.<br>
+            <br>
+            Başından üç nikâh geçmiş olur.<br>
+            <br>
+            Düşmanları kendine haset ederler.
+            Düşmanları ve kıskananları çok olur.
+            Tuzakları çok olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            iki yerde ölüm korkusu vardır.
+            Yirmi yaşında ve otuz yaşında.
+            Bunları geçerse yetmiş yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 1 %} <!--KOÇ-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Birinci Burç</h1>
+        <p class="lead my-3">Her kim bu burçta olursa beyaz tenli siyah saçlı olur.<br>
+            <br>
+            Erkek yıldızlı olur.
+            Tüm işleri zahmetli olur.
+            Eğer şark tarafına azimet ederse, doğu tarafına yolculuk yaparsa çok fayda görür.
+            Hayırlı olur.
+            Muharrem ve kanunu evvel hayırlı olur.
+            Salı günü ve cuma gecesi ve cumartesi muvafık gelir.
+            Başka yıldızlı kimselerden sakınmalıdır.
+            İsa isimli olanlardan hazer etmelidir.
+            Ya yüzünde, ya belinde ya da göğsünde demir yarası vurulmuş olur.
+            Gıybet edicileri çok olur.
+            Alâmeti sihir kâr etmez.<br>
+            <br>
+            Babasının evinden kendisine fayda gelmez.
+            Kendine ayrı bir hane yapmalıdır.
+            Babası annesinden evvel vefat etmiş olduğundan eline gelen miras kendisine fayda etmez.
+            Kardeşlerinden fayda görmez.
+            Çocuklarından fayda görür.<br>
+            <br>
+            Her kadıni sever.
+            Başından üç nikâh geçer.<br>
+            <br>
+            Bazen zengin olur bazen de fakir.
+            Ömrünün evvelinde mal sahibi, ortasında darlık görür, sonunda yine mal sahibi olur.
+            Kırk yaşından sonra işi açılır.<br>
+            <br>
+            Sağlık ve huzuru uzun olur.
+            Evladının evladını görür.<br>
+            <br>
+            Hastalığı sıcaktan olur ve kan almaktan olur.
+            Salı günü nüsha yazıp üzerinde taşırsa bütün hastalıklarından kurtulur.<br>
+            <br>
+            Dostlarından her işi müşkil olur. Dilek ve isteki Hak Teâla'dan, ama geç olur.<br>
+            <br>
+            Düşmanları kendi ahbab ve akrabasından olur.
+            Onlara zafer müşkil olur.<br>
+            <br>
+            Kızıl taşlı yüzük taşırsa kutlu ve hayırlı olur.
+            Yeni ay görürse kızıl nesneye bakmalıdır, mübarek olur.<br>
+            <br>
+            Beylerin yanına vardığında sağ tarafına durursa dilek ve isteki yerine gelir.
+            Her işe Cumartesi günü başlarsa muradı hasıl olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Dört yerde ölüm korkusu vardır:
+            Bir yaşında, altı yaşında, dokuz yaşında ve otuz yaşında.
+            Bunları geçerse doksan yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 2 %} <!--BOĞA-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">İkinci Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa mizacı ılımlı olur. Eğlenceyi oyunu ve çalgıyı severler.
+            Zinadan ve haramdan sakınırlar.<br>
+            <br>
+            Hayatının bazı dönemlerinde zengin bazı dönemlerinde fakir olurlar.
+            Bazen zahmetle bazen de kolaylıkla mal sahibi olurlar.<br>
+            <br>
+            Kardeşleri tarafından çok sevilirler. Ana ve babalarına karşı saygılı ve mutlu olurlar.
+            Onlar da aynı sevgi ve muhabbeti ana ve babalarından görürler. Erkek ve kız çocukları olur.
+            Çocuklarını çok severler.<br>
+            <br>
+            Hastalığı karın ve baş ağrısından olur.
+            Hastalıkları için Tâhâ suresinin son iki ayetini okumaya devam ettikleri sürece fayda görürler.<br>
+            <br>
+            Başından üç nikâh geçer. Ölümü kadından olur. Kendini sakındırmalıdır.<br>
+            <br>
+            Nereye giderlerse gitsinler, oralarda mevki sahibi kimselerden mutlaka izzet ve ikram görürler.
+            Akıbetleri hayırdır.
+            Ahir ömürlerinde bir mevki sahibinden çok fayda görürler.
+            Makam sahibi kimselerin yanına varınca sol yanına durmalıdır, haceti görülür.<br>
+            <br>
+            Düşmanı çok ve kuvvetlidir. Bazen zafer bulur. Sakınmalıdırlar. Cumartesi günü işlerden kaçınmalıdırlar.<br>
+            <br>
+            Yeni ay görse gençlerin yüzüne bakıp on kere Salavatı şerif ve bir Fatiha ve on İhlas süresi okumalıdır.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Üç yerde ölüm korkusu vardır.
+            Üç yaşında, sekiz yaşında ve otuz yaşında.
+            Bunları atlatırsa seksen sekiz yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 3 %} <!--İKİZLER-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Üçüncü Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa alimleri sever ve katip olur. Muradına erer. İlme meraklı olur.<br>
+            <br>
+            İyi adamlarla görüşür. Zengin olur. Mal kazanıp israf eder.<br>
+            <br>
+            Kardeşlerinden çok fayda görür.
+            Anne ve babasından hoşnut olur.
+            Oğlu ve kızı çok olur.
+            Evladı çok, ekseri erkek olur. Lâkin tebea illeti olur.<br>
+            <br>
+            İki nikâh yapar.
+            Kadını saliha olur.<br>
+            <br>
+            Hastalığı ayak ve diz ağrısından olur ve tez geçer.
+            Ölümü yürek ağrısından olur.
+            Sağında bir sihir alâmetinden ağrı olur.
+            Müvesvis olur.<br>
+            <br>
+            Gözünde bir nişan olur.
+            Ayağında kelb ısırığı ve yanık olur.<br>
+            <br>
+            Düşmanları çok olup zafer bulamazlar. Lâkin Çarşamba günü ve Zilhicce ayında yararlı olur.<br>
+            <br>
+            Yeni ay görse akçeye baksın. On Fatiha ve on Elem neşrahleke okusun, kutlu ve hayırlı tir.
+            Yeşil elbise giymelidir.<br>
+            <br>
+            Uluların sağında dursa dilek ve isteki yerine gelir.
+            Mühim işleri için Çarşamba günü Esmaül Hüsnâ yazıp taşımalıdır.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Ölüm korkusu üç yerde olur.
+            Yedi yaşında, kırk yaşında ve kırk üç yaşında.
+            Bunları geçerse seksen yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 4 %} <!--YENGEÇ-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Dördüncü Burç</h1>
+        <p class="lead my-3">Her kim bu burçta olursa ak tenli, ela gözlü ve salih olur.<br>
+            <br>
+            Ravza-i Mutahhare'yi ziyaret edip Haccı yerine getirir.
+            Yüksek yerden, eski duvardan sakınmalıdır.
+            Fatiha, İhlâs ve Muavvizeteyni misk ile yazıp başında taşısın, muradına erer.<br>
+            <br>
+            Dirliği, yaşamı uzun ve zengin olur.<br>
+            <br>
+            Kardeşleri ve komşularıyla daima düşmanlık eder.
+            Oğlu ve kızı çok olur. Ama onların kahrını çeker.<br>
+            <br>
+            Seyahat etmek iyi olur.<br>
+            <br>
+            İşi müşkil olur ve padişahlık işini işler.<br>
+            <br>
+            Hastalığı yürek, karın, istiska vücudun su toplaması ve öksürükten olur.<br>
+            <br>
+            Kadından daima kahır çeker.
+            Eğer kendi milletinden kadın alırsa iyi olur.<br>
+            <br>
+            Ümidi Hak Tealadan hasıl olur.<br>
+            <br>
+            Düşmanları olup hazer etmelidir, sakınmalıdır.
+            İhlas okumalıdır. Pazartesi günü Hafız ve Mücîb isimlerini adedince okumalıdır.
+            Ta ki kuvvetli kapıları açılsın ve düşmanlardan kurtulsun.
+            Muharrem ayı yararlı olur.<br>
+            <br>
+            Yeni ay görse on iki Salavat-ı Şerife ve on Fatiha, on İhlası Şerif, on Elem neşrah leke okumalıdır.
+            Burcu kutlu ve hayırlı olur. Gerek nikah gerek gayrı olsun.<br>
+            <br>
+            Ulular katında sol yanında durmalıdır, haceti yerine gelir.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Ömründe üç ölüm korkusu vardır.
+            Dört yaşında veya altı yaşında, yahut yirmi yaşında.
+            Bunları geçince uzun ömürlü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.<br>
+            <br>
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 5 %} <!--ASLAN-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Beşinci Burç</h1>
+        <p class="lead my-3">Her kim bu burçta olursa  yüzü değirmi ve ak tenli, büyük ağızlı ve büyük gözlü, kısa boylu,
+            kuzgun benizli, şehvetperest ve asi olup, sonra tevbe eder.<br>
+            <br>
+            İki kadın sütünü emmiş olur.
+            Susuzluk tutmaz.
+            Padişahlar ve beyler hizmetinde iyi olur.<br>
+            <br>
+            Sağlık ve huzuru uzun, malı ve nimeti çok olur.
+            Daima zengin olur. Malı bol olur.<br>
+            <br>
+            Kardeşleri ile daima gülmekte ve oynamakta olur.
+            Anne ve babasından çok kahır ve cefa çeker.
+            Evlattan aydın olur. Onları okumaya versin. İsimlerini Muhammed ve Fatıma koysun.<br>
+            <br>
+            Hastalığı soğuktan safradan, ve yürek ağrısından olur.
+            Mevti, ölümü boğaz ağrısından olur.<br>
+            <br>
+            Her kadından hoşnut olmaz.
+            Ömründe dört nikâh görür.<br>
+            <br>
+            Seyahat etmek kutlu ve hayırlı olur. Çok kahır çeker.<br>
+            <br>
+            İşinde hayır görür.<br>
+            <br>
+            Her ümidine nail olur.<br>
+            <br>
+            Düşmanları zayıf ve kendisi kuvvetli düşman olur.
+            Hizmet ettiği yere düşmanlık etmeye sebep olur.
+            Azîz ismini daima adedince okuyup taşımalıdır.
+            Düşmandan muhafaza olur.
+            Pazartesi yararlı olur.
+            Cuma günü her şeyden sakınmalıdır.<br>
+            <br>
+            Safer evi ola.<br>
+            <br>
+            Kızıl ve sarı elbise giymesi iyi olur.<br>
+            <br>
+            Yeni ay görse taze oğlan yüzüne baksın, kutlu ve hayırlı olur.
+            On kere salavat-ı şerife, İhlâs ve Fatiha okumalıdır.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Büyüklerin sağ yanında durursa dilek ve isteki yerine gelir.<br>
+            <br>
+            Ölüm korkusu iki yerde olur.
+            Bir yaşında ve kırk yaşında.
+            Onları da geçerse seksen yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 6 %} <!--BAŞAK-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Altıncı Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa büyük gözlü büyük gözlü, buğday renkli, bağrı yassı, sakalı değirmi olur.<br>
+            <br>
+            İlim, hikmet ve hikâyet cemiyetlerini bilir. Zevk ehli, cömert ve sofi olur. Hacca gitmeye delâlet eder.
+            Boynunda veya behlüsünde veya baldırında devlet nişanı olur. Ama meşhur olur.
+            Esmâül Hüsna'yı yazıp yanında taşımalıdır, kutlu ve hayırlı olur.
+            Ama ayın ilk Çarşambasında olmalıdır.<br>
+            <br>
+            Sağlıklı ve huzurulu bir hayatı olur. Hayır olmayan yerden eline mal geçer.<br>
+            <br>
+            Kardeşlerinden az hayır görüp çok zahmet ve kahır çeker. Annesi ve babasından yüzü aydın olur.
+            Mallarından hayır görür. Ama oğlundan ve kızından çok kahır çeker.<br>
+            <br>
+            Hastalığı yürek, veya ciğer veya dalak yahut ayak ya da yelden ve soğuktan olur.<br>
+            <br>
+            Kadınlarden gözü aydın olur. Zenperest ve şehvetperest olur.<br>
+            <br>
+            Ölümü hararetten ve kan, yahut cin fiilinden olur.<br>
+            <br>
+            Seyahat etmek iyidir. Cuma günü her nereye gitse kutlu ve hayırlı olur. Çok mal elde eder.<br>
+            <br>
+            İşinden hoşnut olur. Beylere hizmet etse kutlu ve hayırlı olur.
+            Ekseri ümidi ve maksudu seyahatden hasıl olur.<br>
+            <br>
+            Ekseri düşmanları padişah tarafından olur. Avam tarafından olanlardan çekinmelidir.<br>
+            <br>
+            Günlerden Çarşamba günü kutlu ve hayırlı olur.
+            İlaç kullanmak, müshil almak ve bir işe başlamak hepsi de Çarşamba günü yararlı olur.<br>
+            <br>
+            Büyüklerin yanına vardığında sol yanında durmak iyi olur. Dilek ve isteki yerine gelir.<br>
+            <br>
+            Cumartesi günü yaramaz olur. Aylardan rabîul evvel ayı kutlu ve hayırlı ve mesud olur.<br>
+            <br>
+            Yeni ay görse yeşil nesneye bakmalı ve on iki kere salavat-ı Şerife,
+            on kere İhlâs-ı Şerife ve on kere Fâtiha-i Şerife, on kere Elam neşrah leke okumalıdır,
+            kutlu ve hayırlı ve mesud olur.<br>
+            <br>
+            Her Çarşamba günü elli beş kere Ya Mücîb ism-i şerifini okumalıdır.
+            Yirmi kere Ya Vedûd ismini söylemelidir. Her muradı hasıl olur.<br>
+            <br>
+            Evlenmek murad ederse yıldızına muvafık ve mutabık kadın almalıdır.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Uç yerde ölüm korkusu vardır.
+            Bir yaşında, beş yaşında ve on sekiz yaşında.
+            Bunları geçerse yetmiş yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 7 %} <!--TERAZİ-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Yedinci Burç</h1>
+        <p class="lead my-3">Her kim bu burçta olursa, bu şanslı kişi hacca gider.<br>
+            <br>
+            Akıllı, zarif, izzeti nefis sahibi ve çalışkandırlar.
+            Çok rüyalar görür ama unutkan olur. Gülüp oynar. Erkek mizaçlı ve eli açık olur.
+            Otuz yaşında mal sahibi olur. Ömrü ahirinde tevbe edip insafa gelir. Salih biri olur.
+            Makamını görmeyince dünyadan gitmez.<br>
+            <br>
+            Ateşten, ağaçtan ve yüksek yerden sakınmalıdır.<br>
+            <br>
+            Sağlık ve huzuru uzun ve mal sahibidir.<br>
+            <br>
+            Malı zahmet ile kazanır.<br>
+            <br>
+            Kardeşlerinden memnun olur. Anne ve babasından hoşnut olmayacaktır, kahır çeker.
+            Onlardan kalan mal payidar olmaz. Evlattan bîhuzur olur ve çok keder çeker.<br>
+            <br>
+            Hastalığı ekseri sevdadan, göbekten, kusma zahmetinden olur.<br>
+            <br>
+            Kadını daima çekişen olup ondan kahır görür.<br>
+            <br>
+            Ölümü baş ağrısından olur veya kulunçtan olur.<br>
+            <br>
+            Seyahatden çok şey tahsil eder.<br>
+            <br>
+            İşi güç hasıl olur. Padişah ve ekâbirlerin işini işlemek iyi olur.<br>
+            <br>
+            Ümidi daima iyi olur. Padişah ve dost yüzünden olur.<br>
+            <br>
+            Düşmanları çok olur. Ayın ilk Cumasında Emsaulhüsna ve Ayetül Kürsî yazıp taşımalıdır.
+            Cuma günü üç yüz sekiz kere yazarak ismini okumalıdır ve yazıp taşımalıdır.
+            Düşmanları hakir, kendisi aziz ve muhterem olur, kibri gider.<br>
+            <br>
+            Pazar günü sakınmalıdır.
+            Rebîulâhir ayı kutlu ve hayırlı olur.<br>
+            <br>
+            Uluların sağ yanında durursa dilek ve isteki yerine gelir.<br>
+            <br>
+            Yeni ay gördüğünde salavat, Fatiha, İhlâs ve Elem neşrah leke'yi on kere okumalıdır.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Uç yerde ölüm korkusu vardır.
+            Altı yaşında, on yaşında ve kırk yaşında.
+            Eğer bunları geçerse altmış bir yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 8 %} <!--AKREP-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Sekizinci Burç</h1>
+        <p class="lead my-3">Her kim bu burçta olursa kaba tenli ve kaba yüzlü, öfkeli, işinde sabırsız olur,
+            tez bırakıp tez vazgeçer.<br>
+            <br>
+            Daima gülüp oynamayı sevmez.
+            Tabiatları hırçındır. Kendilerini her zaman hayata hazırlarlar.
+            Kimsenin yanında sözü geçmez.
+            Kibirli olup kimsenin iyiliğini bilmez.
+            Gıybet, günah, zina ve livata edici olur.
+            Namaza cahil olsa her kime hizmet ederse akıbet zarar görür ve yavuzluğa erişir.
+            Düşleri çok görür. Unutkan olur.
+            Her kim bu burçtan olursa gerektir ki yüz yirmi dokuz kere ya Latif,
+            iki yüz seksen altı kere Ya Raûfu okumalıdır.
+            Her Cumartesi günü olmalıdır. Ayın ilk Cumartesi günü hurûf-i heca veyahut mukattaa ile yazıp taşımalıdır.
+            Güzel koku ile başında bulundurmalıdır.
+            Ta ki yavuz hasletlerden ve nefs-i emmareden mahfuz olsun.<br>
+            <br>
+            Sağlık ve huzuru güç olur.
+            Hastalığı sıcaktan, başından, kan almaktan, sarılıktan olur.
+            Kan aldırmak, iyi gelir<br>
+            <br>
+            Mal elde eder.<br>
+            <br>
+            Kardeşlerinden ve komşularından kahır çeker, bîhuzur olur.
+            Onlardan fayda göremez. Sonradan mal sahibi olur. Evladından zor görür.<br>
+            <br>
+            Başından dört nikâh geçer.<br>
+            <br>
+            Ölümü yürek ağrısından olur. seyahate çıkarsa iyi gelir. Başlangıçta gitmelidir, kutlu ve hayırlı olur.<br>
+            <br>
+            İşi ve gücü faydalı olur.
+            Her taraftan hayır görür.<br>
+            <br>
+            Düşmanları genç kişiler ve kadınlar olur.<br>
+            <br>
+            Cumartesi yararlı olur ve ilaç kullanmak iyi gelir.
+            Safer ayı kutlu ve hayırlı olur.<br>
+            <br>
+            Yeni ay görse parmaklarına bakıp on iki kere Salavat, on kere Fâtiha-i Şerife, on kere Ayetül kürsî ve
+            on kere Elem neşrah leke okumalıdır.
+            Zira her işinde hayırlı olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Ölüm korkusu iki yaşında ve otuz yaşında olur.
+            Eğer bunları geçerse seksen yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 9 %} <!--YAY-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Dokuzuncu Burç</h1>
+        <p class="lead my-3">Her kim bu burçta olursa uzun boylu ve yavaş sözlü olur.
+            Alimleri sever veya kendisi alim olur.<br>
+            <br>
+            Adamlara iyi niyet sahibi olur.
+            Hep işleri rağbetli olur.
+            Çok fazla şehvetperest olur.
+            Demir yarası vurulmuş olur.
+            Hacc sevabı kazanmış olur.
+            Dünyada kendini cennette görür.
+            Ama sarışın adamlardan sakınmalıdır.<br>
+            <br>
+            Ömründe üç nikâh görünüyor.<br>
+            <br>
+            Sağlık ve huzuru uzun olur.
+            Kırk yaşında mal sahibi olur.<br>
+            <br>
+            Annesi ve babasından fayda olmaz.
+            Onlardan kalan fayda etmez.
+            Oğlu ve kızı olup onlardan çok kahır çeker.<br>
+            <br>
+            Ekseri hastalığı yürek ve baş ağrısından olur.
+            Kadınlarden kah hoşnut, kah hoşnut olmaz.<br>
+            <br>
+            Ölümü bütün bedenindeki ağrıyla olur veya yürekten olur.<br>
+            <br>
+            Seyahati kutlu ve hayırlı olur. Pazar günü kutlu ve hayırlı olur.<br>
+            <br>
+            İşinde hayırlı olur. Her yaptıkları işten fayda görürler. Devlet duası taşımalıdır. Her işi kolay olur.<br>
+            <br>
+            Her ümidi hayırlı olur ve rast gelir.<br>
+            <br>
+            Düşmanları kuvvetli ve çok olur.
+            Devlet duası ve Esmaül Hüsna yazıp taşımalıdır.
+            İşleri hallolur.<br>
+            <br>
+            Ramazanı Şerif kutlu ve hayırlı olur.
+            Yeni ay görse kadın üzerine bakıp on Salavat, on Fatiha, on Elemn neşrah leke okumalıdır.
+            Kutlu ve hayırlı olur.<br>
+            <br>
+            Ulular katına vardığında sağ yanına durmalıdır, dilek ve isteki yerine gelir.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Üç yerde ölüm korkusu vardır.
+            Altı yaşında, on yaşında ve yirmi yaşında.
+            Eğer bunları geçerse yetmiş üç yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 10 %} <!--OĞLAK-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Onuncu Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa güzel yüzlü, saçı çok olur.<br>
+            <br>
+            Yüzünde bir nişan olur. Kerem sahibi olur.
+            Bina içinde korkan biri olur.
+            Gözünde bir taş nişanı olur.
+            Yüreğinde sancı olur.
+            Ayağında bir alameti olur.
+            Mücamaayı çok seven biri olur.
+            Ruhu hafif olur.
+            Evvelinden ahiri daha hayırlı olur.<br>
+            <br>
+            Ay görse kadın yüzüne bakmalıdır.<br>
+            <br>
+            Hakim karşısında sağ tarafına durmalıdır, haceti olur.<br>
+            <br>
+            Uykuya vardığında sol tarafına yatmalıdır.
+            Cin taifesinden muhafaza olur.<br>
+            <br>
+            Sarı ve beyaz ona yararlı olur.<br>
+            <br>
+            Kardeşlerinden bir faydası olmaz.
+            Annesi ve babasından çok hayırlar görür.
+            Evlatlarından da çok hayırlar görür.<br>
+            <br>
+            Hastalığı yelden olur. Kollarında bir ağrı olur.<br>
+            <br>
+            Başından üç nikah geçer.
+            İlki vefat eder.
+            İkincisi kıtlık sebebi olur.
+            Üçüncüsü ile ömür sürer. Çok hayır görür.<br>
+            <br>
+            Ölümü ya sihir alametinden yahut demir yarasından olur.<br>
+            <br>
+            Padişahlardan ve ekabirden bir fayda görür, sevinir.<br>
+            <br>
+            Düşmaları çok olur. Lakin bir şey yapmaya kadir olamazlar.<br>
+            <br>
+            Cumartesi günü mübarek olur. Cemaziyelahirden sakınmalıdır.
+            Perşembe gününden sakınmalıdır.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Üç yaşında ve sekiz yaşında ölüm tehlikesini atlatırsa yetmiş iki yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'erkek' and mod == 11 %} <!--KOVA-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Onbirinci Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa sarı benizli olur.
+            Hayatının bazı dönemlerinde fakir bazı dönemlerinde zengin olur. Saadet içinde vefat ederler.<br>
+            <br>
+            Hâkimin huzuruna vardığında sağ tarafında durmalıdır.
+            Dilekleri yerine gelir.<br>
+            <br>
+            Kardeşlerinden çok hayır görür.
+            Annesinden evvel babası vefat etmiş olur. Çok fayda görür.
+            Evladı olur. Erkek ve beş kız olur. Kızlardan fayda görür.<br>
+            <br>
+            Hastalığı, safra, baş ve bel ağrısından olur.<br>
+            <br>
+            Başından üç nikâh geçer.<br>
+            <br>
+            Yolculuk etse yararlı olur.<br>
+            <br>
+            Düşmanları çok olur. Asıl düşmanı ailesi olur. Kendisini ondan sakınmalıdır.
+            Her sırrını eşine söylememelidir, gayet dikkat etmelidir.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            İki yerde ölüm korkusu vardır. Bir yaşında ve yirmi yaşında.
+            Bunu da geçerse doksan yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 0 %} <!--BALIK-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Onikinci Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa güzel suretli ve uygun boylu olur.
+            Ne uzun, ne kısa olur. Hiçbir kadınla kıyaslanmaz. Akıl sahibi olur.<br>
+            <br>
+            Ayağında bir yanık yeri olur.<br>
+            <br>
+            Düşmanı çok olur.<br>
+            <br>
+            Kardeşleri tarafından sevilir.
+            Babasından çok fayda görür. Evlatlarından çok kahır çeker.<br>
+            <br>
+            Hastalığı korkudan olur.
+            Gece uykuda korkar. Rüya görse hatırlamaz.<br>
+            <br>
+            Eşi, üzerine iki kadın alır. Aralarında çok kavga olur.<br>
+            <br>
+            Zilhicce ayı ve Perşembe günü kutlu ve hayırlı olur.
+            Cemâziyelâhir ve Nisan ayı ile Pazartesi günü yaramaz olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Üç yerde ölüm korkusu olur.
+            Biri doğumunda, biri yirmi yaşında, biri de kırk yaşında.
+            Eğer bunları geçerse doksan bir yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 1 %} <!--KOÇ-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Birinci Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa beyaz tenli, dili uzun, dişleri seyrek olur.
+            Ailesi yanında sevgili olur.<br>
+            <br>
+            Sağ elinde bir nişan alâmeti bulunur.
+            Sözünde sadık ve yemekte cömert olur.
+            Şedîdülbekar ve yaşı ağırkan olur.<br>
+            <br>
+            Rızkı bol ve müdebbir olur. Hazreti Allah saadet kapılarını açar.<br>
+            <br>
+            Kardeşleri yanında sevgili olur. Kardeşlerinden eline miras geçer.
+            Çocukluğunda babaları vefat etmiş olur.
+            Evladı çok, lakin faydalı olmazlar. Kendinde tabi illeti olur.<br>
+            <br>
+            Hastalığı ins ve cin nazarından olur.
+            Üzerinde nüsha taşırsa ortadan kalkar.<br>
+            <br>
+            Başından iki nikah geçer.
+            Birincisinden fayda görmez, ikincisi dindar ve emniyetli bir olur, çok fayda görür.<br>
+            <br>
+            Düşmanları kendisine sihir etmiş olurlar, yahut ederler.
+            İki erkek yahut kadın olurlar.
+            Onlardan sakınmalıdır.<br>
+            <br>
+            Salı günü kutlu ve hayırlı olur.
+            Çarşamba ve Cuma günü yaramaz olur.
+            Aylardan Muharrem ve Nisan kutlu ve hayırlı olur.
+            Receb ve Teşrinievvel'den sakınmalıdır.<br>
+            <br>
+            Parmağında kırmızı yakut taşımalıdır, kutlu ve hayırlı olur.
+            Kırmızı elbise giyerse mübarek olur.
+            Ne kadar ekşi şey yerse iyidir.<br>
+            <br>
+            Eğer baş ağrısı gelirse ve çok olursa yahut başka bir hastalık gelirse dühni tukır,
+            zencefil suyu ve demirhindiyi bir temiz su içine koyup sabahleyin üç gün aç karnına içmelidir.
+            Biiznillah kaybolacaktır. Vefkul Müşteri ve hırzul aksam dahi yazdırıp üzerinde taşımalıdır.
+            Biiznillah şifa bulur.
+            Bu nüshaları tütsü etmeli, kıstıladen, mıhleb kabuğu, mey'aisaile, lebanızüker ve mastakî
+            bunları bir yere toplayıp iyi zeytinyağı ile halledip vücuduna sürmeli.
+            Bu nüshaları tütsü etmeli. Biiznillahi teala iyi olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Uç yerde ölüm korkusu vardır: İki yaşında, yirmi yaşında yahut yirmi beş yaşında.
+            Eğer bunları geçerse çok uzun ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 2 %} <!--BOĞA-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">İkinci Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa güzel yüzlü, güzel suretli, güzel gözlü, güzellik ve cemal sahibi olur.
+            Her kadınla kıyas edilemez.
+            Cömert ve kerim olur.
+            Kalbi merhametli olur.
+            Çalgı ve oynamayı sever.
+            Lisanı tatlı olur.
+            Kendisinde bir nişan alameti olur.
+            Ailesi tarafında kasavet, sıkıntı cok olur.<br>
+            <br>
+            Ömrü uzun olur.
+            Dişleri seyrek olur.
+            Rızkı çok olur. Akrabasından miras hasıl olur.<br>
+            <br>
+            Kardeşlerinden faydası olmaz.
+            Yakın ve uzakta kendine ahbab olanlar iyi olur.
+            Analarından fayda görmez.
+            Evladı çok olur. Lakin tebei karın, ümmüssıbyan ve nazari ile illeti gider, fayda olmaz.
+            Üzerinde sin bulundurmalı, evlatları selim olur.<br>
+            <br>
+            Hastalığı safra galebesinden olur.
+            Nar suyu iyi gelir.
+            Kalbi ferah olur.
+            Arkalarında ve yanlarında bir ağrı olur.
+            Yengeç ile zeytinyağı iyi gelir.
+            Sürünür, şifa bulunur.<br>
+            <br>
+            Başından iki nikah geçer.
+            İkinci eşi faydalı olur.
+            İnsanlar arasında büyük bir kıymeti olur.<br>
+            <br>
+            Düşmanı kendi cinsinden olur.<br>
+            <br>
+            Cuma günü mübarek olur.
+            Perşembe günü yaramaz olur.
+            Recep ayı mübarek olur.
+            Şaban ve Nisan yaramaz olur.<br>
+            <br>
+            Eğer yeni ay görse erkek yüzüne baksın.
+            Yatarken sol yanına yatıp, başını kıbleye yüzünü garp tarafına koysun.
+            Cin taifesinden halas olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Üç yerde ölüm korkusu vardır.
+            İki yaşında, beş yaşında veya yirmi yaşında.
+            Eğer bunları geçerse yüz yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 3 %} <!--İKİZLER-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Üçüncü Burç</h1>
+        <p class="lead my-3">Her kim bu burçta olursa, şirin yüzlü ve güzel gözlü olur. Yüzü büyük olur.
+            Mütenasip boylu, çabuk kızan biri olur. Çok cömert biri olur. Her kadıne kıyas edilemez.
+            Allah Teala'dan korkan biri olur.<br>
+            <br>
+            Çok mala, izzete ve devlete erişir.<br>
+            <br>
+            Babasından anasından çok hayırlar görür.
+            Evladları çok olur.
+            Evladının evladını görür.<br>
+            <br>
+            Hastalığı safradan olur.<br>
+            <br>
+            Başından iki nikah geçer, ikinciden çok hayırlar görür.<br>
+            <br>
+            Ahir vaktinde bir yüksek yerden düşer, yahut vücudunu sıkıntı kaplar.<br>
+            <br>
+            İzzet ve devlet bulur.<br>
+            <br>
+            Düşmanları bir şey edemezler. Lakin sihir alameti olur.
+            Eğer hastalığa müptela olursa horozun kaşından olan deriyi,
+            ibiğini ve dimağını susam yağı ile kavurup vücuduna sürmelidir.
+            Bütün hastalıklarından kurtulur.<br>
+            <br>
+            Çarşamba günü yararlı olur.
+            Salı gününden sakınmalıdır.
+            Haziran ayı iyi olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Üç yerde ölüm korkusu vardır.
+            İki yaşında, yirmi yaşında veya yirmi beş yaşında.
+            Eğer bunları geçerse doksan beş yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 4 %} <!--YENGEÇ-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Dördüncü Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa orta boylu olur. Beyaz tenli olur. Hacetleri yerine gelir.
+            Hüsnü cemali iyi olur. Her kadıne kıyas edilmeyecek kadar iyi huylu ve eli açık olur.
+            Yüzünde bir nişanı olur.<br>
+            <br>
+            Ömrü uzun olur. Ömrünün evveli mutlu olur.<br>
+            <br>
+            Kardeşleri sevgili olurlar.
+            Babasından annesinden ihsanlara ulaşır.
+            Evladına muhabbeti olmaz. Evladı tebeat karına, ümmü sıbyan illetinden gider.
+            Üzerinde nüsha taşısın, biiznillahi teala halas olur.<br>
+            <br>
+            Hastalığı baş ve göz ağrısından olur.<br>
+            <br>
+            Zevceleri muhabbet gösterirler.<br>
+            <br>
+            Ölümü bir ağrıdan olur. Hiç gece ve gündüz rahatı olmaz.<br>
+            <br>
+            Düşmanı çok olur. Sihir yaparlar. Üzerinde nüsha taşımalıdır. Sihir etki etmez.
+            Eğer kendisine hastalık gelirse, tatlı su yengecini dövdükten sonra zeytinyağıyla kaynatıp vücuduna sürsün,
+            şifa bulur.<br>
+            <br>
+            Pazartesi günü yararlı olur.
+            Pazar ve Cumartesi gününden sakınmalıdır.
+            Yeni ay görürse kadın yüzüne bakmalıdır.
+            Yatarken sol tarafına yatsa iyi olur.
+            Kanuniahir yaramaz olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            İki yerde ölüm korkusu vardır.
+            Yedi yaşında, yirmi yaşında.
+            Eğer bunları geçerse yetmiş dört sene ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 5 %} <!--ASLAN-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Beşinci Burç</h1>
+        <p class="lead my-3">Her kim bu burçta olursa çok hastalığı olur. Dişleri seyrek olur.
+            Boyu uzun, beyaz tenli olup, kırmızıya meyyal olur. Elinde veya belinde bir nişanı olur.<br>
+            <br>
+            Ömrü uzun olur.
+            Mutlu olur.
+            Düşmanları kahr olur.
+            Ömrünün son kısmı mutlu olur.<br>
+            <br>
+            Malı çok olur.<br>
+            <br>
+            Babası ve annesinden çok hayır görür.
+            Kardeşleri yanında sevgili olur.
+            Evladı hayırlı olur.<br>
+            <br>
+            Başından iki nikah geçer.
+            İkincisinden kalbi rahat olur.<br>
+            <br>
+            Hastalığı safra ve balgamdan olur.<br>
+            <br>
+            Korkusu sudan ya da ateşten olur.<br>
+            <br>
+            Nefsi aziz olur. Hizmetinden herkes haz eder.<br>
+            <br>
+            Her ne bahane ederse kabul olur.<br>
+            <br>
+            Düşmanları çok olur. Lakin hiç bir şey yapmaya kadir olamazlar.<br>
+            <br>
+            Yeni ay görse erkek yüzüne nazar etmelidir.<br>
+            <br>
+            Pazar günü mübarek olur.
+            Çarşamba ve Cumartesi günleri herşeyden ve Cemaziyelevvel ayı mübarek olur.
+            Zilkade ayında işten sakınmalıdır.<br>
+            <br>
+            Yatarken sağ tarafına yatıp başını şimal tarafına koymalıdır.
+            Bütün afetlerden muhafaza olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Üç yerde ölüm korkusu olur.
+            Biri beş yaşında, biri yirmi dört yaşında biri de kırk yaşında.
+            Eğer bunları atlatırsa doksan yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 6 %} <!--BAŞAK-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Altıncı Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa esmer benizli olur.
+            Gözleri siyah ve ahlakı güzel olur.
+            Güzel boylu olur.
+            Dilek ve istekleri kabul olur.
+            Şirin yüzlü olur.<br>
+            <br>
+            Yüzünde bir nişan olur.
+            Ayağında kelb ısırığı yahut yanık yarası olur.
+            Ömrü uzun olur. Rızkı çok olur.
+            Hatalı işleri bilip tevbe eder.<br>
+            <br>
+            Akrabasından yahut eşinden çok miras eline geçer.
+            Babası annesi hanesi kendine baki kalmaz.
+            Kardeşleri çok olur.
+            Evladı az olur.
+            Kendisinde tebaa ve ümmüssıbyan olur.
+            Çocukları olmaz.
+            Üzerinde nüsha taşırsa halas olur.<br>
+            <br>
+            Soğuktan sakınmalıdır.
+            Soğuk şey yemekten gayet kaçınmalıdır.<br>
+            <br>
+            Başından üç nikah geçer.
+            Üçüncüsü faydalı ve muhabbetli olur.<br>
+            <br>
+            Sağ yanında ve sol yanında bir ağrı olur. Lakin bir yüksek yerden düşer.<br>
+            <br>
+            Her ne reca ederse makbul olur.<br>
+            <br>
+            Düşmanları çok olur. Hased edenleri çok olur.
+            Eğer hasta olursa yedi karabiberi ateşten yakıp arpa unuyla döğüp yedi adet nohut kadar hap yapmalı ve
+            günde bir tane aç karnına yutmalıdır. Her hastalıktan kurtulur.<br>
+            <br>
+            Salı ve Çarşamba günü kutlu ve hayırlı olur.
+            Cuma günü yaramaz olur.
+            Eylül ayı mübarek olur.
+            Şubat ayı yaramaz olur.<br>
+            <br>
+            Yeni ay görse kadın yüzüne bakmak kutlu ve hayırlı olur.
+            Uykuya yatarken sol tarafına yatmalıdır.
+            Başını garp tarafına koymalıdır.
+            Bütün evhamdan kurtulur olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Uç yerde ölüm korkusu vardır.
+            Altı yaşında, yirmi dört yaşında, kırk yaşında.
+            Eğer bunları geçerse doksan dokuz yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 7 %} <!--TERAZİ-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Yedinci Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa büyük yüzlü olur.
+            Güzel suretli, orta boylu olur.
+            Ahlakı güzel olur.
+            Eli açık olur.<br>
+            <br>
+            Başında bir eser olur.
+            Elinde bir nişanı bulunur.
+            Ayağında bir yarık yahut kelb ısırığı olur.
+            Göğsünde bir ağrı olur.
+            Hareketleri güzel ve mutlu olur.
+            Halinde mutavassıt, orta halli olur.<br>
+            <br>
+            Kardeşlerini sevmez.
+            Babasından annesinden çok mirasa kavuşur.
+            Evlatları çok olur. Lakin çoğunu defneder.<br>
+            <br>
+            Hastalığı soğuktan olur. Başı ağrır. Kan aldırırsa iyi olur.<br>
+            <br>
+            Başından iki nikah geçer.
+            İkinci eşinden fayda görür ve Mesud olur.<br>
+            <br>
+            Rızkı çok olur.<br>
+            <br>
+            Düşmanları çok olur.
+            Büyük düşmanı padişah tarafından olur.
+            Allah Teala kendisine nusrat eylesin.<br>
+            <br>
+            Erkeklerde Muhammed, kadınlerde Hamide ve Meryem ismi kutlu ve hayırlı olur.<br>
+            <br>
+            Yürek çarpıntısı olur.
+            Gözü oynar.
+            Eğer üzerine bir illet gelirse vefk-i venüs ve Ayetül Kürsî, Muavvizeteyn, Fatiha-i Şerif-i yazıp taşımalıdır.
+            Kutlu ve hayırlı olur.
+            İnsanlar ve cinlerin şerrinden emin olur.<br>
+            <br>
+            Teşrinievvel ve Recep ayları kutlu ve hayırlı olur.
+            Nisan ve Muharrem'den sakınmalıdır.
+            Cuma günü kutlu ve hayırlı olur.
+            Çarşamba gününden sakınmalıdır.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 8 %} <!--AKREP-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Sekizinci Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa, ahlakı ve güzelliği iyi olur.
+            Dolgun vücutlu ve hatları zarif olur.<br>
+            <br>
+            Ayağında bir taş değmiş nişan olur.
+            Vakar sahibi olur.
+            Gazab sahibi olur.
+            Çabuk razı olur.
+            Tatlı bir sureti olur.
+            Dilek ve isteki kabul olur.
+            Dişleri seyrek olur.
+            Eli açık, cömert olur.
+            Nefsi aziz olur.
+            Yüzünde bir nişan olur.<br>
+            <br>
+            Malı çok olur.
+            Allah Teala saadet kapılarını açar, yıldızı said olur. Hased edicileri çok olur.<br>
+            <br>
+            Hiçbir kardeşi kendisini sevmez olurlar.
+            Kendi sağlığında anası babası vefat etmiş olurlar.
+            Evlatlarından orta halli olur.<br>
+            <br>
+            Hastalığı baş ağrısından ve balgamdan olur.<br>
+            <br>
+            Zevcesi yanında sevgili olur ve çok hayırlar görür.<br>
+            <br>
+            Yeni ay göre altına bakmalıdır. Kutlu ve hayırlı olur.<br>
+            <br>
+            Düşmanları padişah tarafından olur.
+            Hased edicileri çok olur.
+            Asıl düşmanları kadın olur.
+            Hazreti Allah onlara kendisini galip getirsin.<br>
+            <br>
+            Şaban ayı mübarek olur.
+            Rebiülahir yaramaz olur.
+            Salı günü mübarek olur.
+            Cuma günü ve Çarşamba günü yaramaz olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            Uç yerde ölüm korkusu vardır.
+            İki yaşında, yedi yaşında veya yirmi yaşında.
+            Eğer bunları geçerse yetmiş sene ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 9 %} <!--YAY-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Dokuzuncu Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa, çok konuşan ve kalbinde hased olan olur.
+            Ne uzun, ne kısa olur.
+            Dedikodu sahibi olur.
+            Alnında ve yüzünde bir nişanı olur.
+            Ayağında köpek ısırığı bir yarası olur.
+            Güzellik sahibi olur.<br>
+            <br>
+            Kardeşlerinden çok gam görür.
+            Babasından çok mal kalır ve hayır görür.
+            Evlatlarını sevmez olur. Çok kahır çeker.<br>
+            <br>
+            Hastalığı bel ağrısından olur.<br>
+            <br>
+            Başından üç nikâh geçer.<br>
+            <br>
+            Başından ve üzerinden nüsha taşırsa çok iyi olur.
+            Nefsi aziz olur.<br>
+            <br>
+            Düşmanları çok olur.
+            Daima aralarında husumet vaki olur.<br>
+            <br>
+            Altın yüzük taşırsa kutlu ve hayırlı olur.
+            Ekşi yemek iyi olur.
+            Eğer hasta olursa zencefil suyu ve badem yağını suya damlatıp aç karnına içse iyi olur.<br>
+            <br>
+            Ramazan ayı ve Cemaziyülevvel kutlu ve hayırlı olur.
+            Haziran ve Rabiulahir ayı ve Pazartesi yaramaz olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            İki yerde ölüm korkusu vardır.
+            Yirmi yaşında ve otuz yaşında.
+            Eğer bunları geçerse doksan dokuz yıl ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% elif cinsiyet == 'kadın' and mod == 10 %} <!--OĞLAK-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Onuncu Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa, saçları kumral olur.
+            Güzel yüzlü, akıllı biri olur.
+            Erkek sevmez olur.<br>
+            <br>
+            Üzerinde suubet illeti, zorluk güçlük hastalığı olur.
+            İnsanlar arasında sevgili ve fiilleri sevilen olur.
+            Sağında ve solunda bir eser olur.
+            Sarıbenizli, açık ve hak sahibi olur.
+            Kötü işleri sevmez.<br>
+            <br>
+            Mal toplar, kendine hayır etmeyip başka kimselere fayda eder.<br>
+            <br>
+            Kardeşlerinin ekserisi vefat eder.
+            Babası taşrada vefat etmiş olur.
+            Evladı eceli mevhume ile vefat eder.<br>
+            <br>
+            Hastalıklarında tez ilaç kullanırsa iyi olur.<br>
+            <br>
+            Başından bir kaç nikah geçer.<br>
+            <br>
+            Hamamdan sakınsın.
+            Haccı şerifi ziyaret etsin.<br>
+            <br>
+            Nefsi aziz olur.
+            Evvelinden ahiri mübarek olur.
+            Sadık sözlü olur.<br>
+            <br>
+            Düşmanları çok olur. Allaha Teala kendisine nusrat versin.<br>
+            <br>
+            Kanunuevvel ve Şevval ayı mübarek olur.
+            Rabiulahir ve Temmuz yaramaz olur.
+            Cuma günü ve Cumartesi günü mübarek olur.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            İki yerde ölüm korkusu olur.
+            Yirmi yaşında ve kırk yaşında.
+            Eğer bunları geçerse yetmiş yedi sene ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% else %} <!--cinsiyet == 'kadın' and mod == 11-----KOVA-->
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">Onbirinci Burç</h1>
+        <p class="lead my-3">
+            Her kim bu burçta olursa, sahibine kutlu ve hayırlı olur.
+            Gayet erkek sever olur.
+            Giyinip gezmeyi ve yiyip içmeyi seven biri olur.
+            İster hayır ister şer olsun sırrını gizler.
+            Başında ve şakaklarında bir ağrı olur.
+            Gayet beyaz tenli olur.
+            Bu tali'de olanda sihir yahut tebeat illeti olur.
+            Üzerinde nüsha taşırsa iyi olur.<br>
+            <br>
+            Malı çok olur.<br>
+            <br>
+            Kardeşini sevmez olur.
+            Sağlığında babasından mirasını alır.
+            Evladını sevmez olur.
+            Evlatları kan illetinden gider.<br>
+            <br>
+            Hastalığı yüreğnde bir ağrı olur.<br>
+            <br>
+            Zevcinden müfarakat eder, ayrılır.
+            Tekrar başkasına varır, rahat eder.<br>
+            <br>
+            Hased edicileri ve düşmanı çok olur.
+            Eğer hasta olursa turuncu yaprağını döğmeli, ya şeker yahut pekmez ile karıştırıp sabah aç karnına içirirler.
+            Biiznillahi teâlâ şifa bulur.<br>
+            <br>
+            Zilkade ve Şubat ayı kutlu ve hayırlı olur.
+            Rebiulahirden sakınmalıdır.
+            Cumartesi günü kutlu ve hayırlı olur.
+            Çarşamba gününden sakınmalıdır.<br>
+            <br>
+            Namazını terk etmemelidir.<br>
+            <br>
+            İki yerde ölüm korkusu vardır.
+            Yedi yaşında ve yirmi yaşında.
+            Eğer bunları geçerse yetmiş üç sene ömrü olur.<br>
+            <br>
+            Geleceği yanlız ALLAH bilir.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Tekrar için Tıklayınız...</a></p>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+

@@ -1,0 +1,22 @@
+{% extends 'ruyatabirleri/temel_anasayfa.html' %}
+
+{% block content %}
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">RÜYA TABİRLERİ</h1>
+        <p class="lead my-3">
+            Bu bölümde rüyanızda gördüğünüz olayları kelimeler ile özetleyerek arama yapabilirsiniz.
+            Örneğin rüyanızda arabaya bindiğinizi gördünüz ise sadece Araba kelimesini kullanarak arama yapmalısınız.
+        </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:ruyatabirleri'%}" class="text-white font-weight-bold">Rüya Tabirleri için Tıklayınız...</a></p>
+    </div>
+</div>
+<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h1 class="display-4 font-italic">YILDIZNAME</h1>
+        <p class="lead my-3">
+            Bu bölümde kendinizin ve annenizin ismini uygulamaya girerek burcunuzla ilgili bilgileri okuyabilirsiniz. </p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Yıldızname için Tıklayınız...</a></p>
+    </div>
+</div>
+{% endblock %}

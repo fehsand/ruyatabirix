@@ -7,24 +7,30 @@
         <div class="row mt-5 m-0 p-0">
             <div class="col-sm-4"></div>
             <div class="col-sm-5">
-                <h1 class="display-4 font-italic border-bottom box-shadow">GİRİŞ</h1>
+                <h1 class="display-4 font-italic border-bottom box-shadow">YILDIZNAME</h1>
             </div>
             <div class="col-sm-3"></div>
         </div>
         <div class="row my-5 mx-0 p-0">
             <div class="col-sm-3 m-0 p-0"></div>
             <div class="col-sm-6 m-0 p-0 text-center">
-                <form class="m-0 p-0" method="post">
+                <form class="m-0 p-0 " action="{% url 'ruyatabirleri:yildizname' %}" method="post">
                     {% csrf_token %}
-                    <div class="form-group mt-3">
-                        <input class="form-control m-0" type="text" name="username" placeholder="Kullanıcı Adı">
+                    <div class="input-group">
+                        <select class="custom-select" name="cinsiyet">
+                            <option selected>Cinsiyetiniz</option>
+                            <option value="erkek">Erkek</option>
+                            <option value="kadın">Kadın</option>
+                        </select>
                     </div>
                     <div class="form-group mt-3">
-                        <input class="form-control m-0" type="password" name="password" placeholder="Şifreniz">
+                        <input class="form-control m-0" type="text" name="isim" placeholder="İsminiz">
                     </div>
                     <div class="form-group mt-3">
-                        <button class="btn-lg btn-dark mx-3 p-2 px-3 border-0" type="submit" name="save">GİRİŞ YAP</button>
-                        <a class="m-0 p-0" href="{% url 'register:register' %}">ÜYE OL</a> veya <a class="m-0 p-0" href="{% url 'register:password_reset' %}">ŞİFRE AL</a>
+                        <input class="form-control m-0" type="text" name="anne_ismi" placeholder="Annenizin ismi">
+                    </div>
+                    <div class="form-group mt-3">
+                        <button class="btn-lg btn-dark mx-3 p-2 px-3 border-0" type="submit" name="save">BAŞLA</button>
                     </div>
                 </form>
                 <div class="row m-0 p-0">{{mesaj}}</div>
@@ -33,5 +39,6 @@
         </div>
     </div>
     <div class="col-sm-2"></div>
+
 </div>
 {% endblock %}

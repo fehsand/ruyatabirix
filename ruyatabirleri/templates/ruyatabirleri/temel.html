@@ -1,9 +1,23 @@
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158769165-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-158769165-1');
+    </script>
+    <script data-ad-client="ca-pub-8505283121324462" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"">
     <meta name="description" content="Anasayfa">
-    <meta name="keywords" content="rüya, rüyada, tabir, tabiri, tabirleri, ruyatabirix, görmek">
+    <meta name="keywords" content="rüya, rüyada, tabir, tabiri, tabirleri, ruyatabirix, görmek,
+     gördüm, dream, dream interpretation, rüya yorumu, rüya tabirleri, dream meanings, islamic dream meanings,
+     islamic dream interpretations, dreams fortune teller, fortune teller, burçlar, yildizname, yıldızname,
+      fal, balık, koç, boğa, ikizler, yengeç, aslan, başak, terazi, akrep, yay, oğlak, kova,
+       horoscopes, aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces">
     <meta name="author" content="fehsand">
     <title>ruyatabirix.com</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +29,8 @@
     body { background-color: #ccffff;}
 
     .logo1 {background-color: #1affff; background-image: linear-gradient(#1affff, white); font-family: Comic Sans MS;
-     font-size: 10vw; border: none; text-decoration: none; display: block; cursor: pointer; cursor: not-allowed;}
+     font-size: 10vw; border: none; text-decoration: none; display: block; text-align: center;}
+    #a.logo1:hover {text-decoration: none; background-color: #ccffff;}
 
     .ana_metin {background:  #ccffff; font-size: 15px; text-align: justify; font-family: verdana; line-height: 2;}
 
@@ -27,7 +42,7 @@
 <div class="container-fluid m-0 p-0">
     <div class="row m-0 p-0">
         <div class="col m-0 p-0">
-            <button class="logo1 w-100 m-0 py-5 text-white">RÜYATABİRİ<i><b>X</b></i></button>
+            <a class="logo1 w-100 m-0 py-5 text-white" href="{% url 'ruyatabirleri:anasayfa'%}">RÜYATABİRİ<i><b>X</b></i></a>
         </div>
     </div>
     <!-- A grey horizontal navbar that becomes vertical on small screens -->
@@ -95,7 +110,7 @@
                 <!-- Grid column -->
                 <hr class="w-100 clearfix d-md-none">
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold"><a class="text-white" href="http://127.0.0.1:8000/sitemap.xml">Site Haritası</a></h6>
+                    <h6 class="text-uppercase mb-4 font-weight-bold"><a class="text-white">Site Haritası</a></h6>
 
                 </div>
                 <hr class="w-100 clearfix d-md-none">

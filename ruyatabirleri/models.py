@@ -29,3 +29,19 @@ class ArananKelimeler (models.Model):
     def __str__(self):
         return self.kelime
 
+class yildizname (models.Model):
+    isim = models.CharField (max_length=200)
+    anne_ismi = models.CharField(max_length=200)
+    cinsiyet = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.isim
+
+class iletisim (models.Model):
+    isim = models.CharField(max_length=200)
+    soy_isim = models.CharField(max_length=200)
+    eposta = models.EmailField(max_length=200)
+    mesaj = models.TextField()
+
+    def __str__(self):
+        return self.mesaj
