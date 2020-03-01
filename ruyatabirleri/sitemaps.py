@@ -5,11 +5,12 @@ class StaticViewSitemap(Sitemap):
 
     def items(self):
         return ['ruyatabirleri:anasayfa',
-                'ruyatabirleri:ruyatabirleri',
+                'ruyatabirleri:iletisim',
+                'ruyatabirleri:gizlilik',
                 'ruyatabirleri:yildizname',
                 'ruyatabirleri:yildizname_nedir',
+                'ruyatabirleri:ruyatabirleri',
                 'ruyatabirleri:ruyatabirleri_nedir',
-                'ruyatabirleri:gizlilik',
                 ]
     def location(self, item):
         return reverse(item)

@@ -33,6 +33,11 @@
                         <input type="hidden" name="next" value="{{ next }}" />
                         <a class="m-0 p-0" href="{% url 'register:register' %}">ÜYE OL</a> veya <a class="m-0 p-0" >ŞİFRE AL</a><!--href="{% url 'register:password_reset' %}"-->
                     </div>
+                    <div class="form-group mt-3">
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
                 </form>
             </div>
             <div class="col-sm-3 m-0 p-0"></div>
