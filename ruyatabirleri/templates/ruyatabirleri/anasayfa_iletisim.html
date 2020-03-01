@@ -1,0 +1,70 @@
+{% extends 'ruyatabirleri/temel_anasayfa.html' %}
+
+{% block content %}
+<div class="row my-0 mx-0 p-0">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 m-0 p-0">
+        <div class="row mt-5 m-0 p-0">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-5">
+                <h1 class="display-4 font-italic border-bottom box-shadow">İLETİŞİM</h1>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-sm-3 m-0 p-0"></div>
+            <div class="col-sm-6 m-0 p-0 text-center">
+                <form class="m-0 p-0 " action="{% url 'ruyatabirleri:iletisim' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="text" name="isim" placeholder="İsminiz" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.isim.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="text" name="soy_isim" placeholder="Soyisminiz" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.soy_isim.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="email" name="eposta" placeholder="örnek@eposta.com" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.eposta.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control m-0" name="mesaj" placeholder="Mesajınızı Yazınız" rows="3" required></textarea>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.mesaj.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3">
+                        <button class="btn-lg btn-dark mx-3 p-2 px-3 border-0" type="submit" name="save">GÖNDER</button>
+                    </div>
+                </form>
+                <div class="row m-0 p-0">{{mesaj}}</div>
+            </div>
+            <div class="col-sm-3 m-0 p-0"></div>
+        </div>
+        <div class="row mt-5 m-0 p-0">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <h1 class="display-4 font-italic border-bottom box-shadow">SOSYAL MEDYA</h1>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-md-4 mx-auto mt-3">
+                <p><i class="fa fa-home fa-lg mr-3"></i><a class="" href="{% url 'ruyatabirleri:anasayfa'%}">www.ruyatabirix.com</a></p>
+                <p><i class="fa fa-envelope fa-lg mr-3"></i><a class="">ruyatabirix@outlook.com</a></p>
+                <p><i class="fa fa-instagram fa-lg mr-3"></i><a class="" href="https://www.instagram.com/ruyatabirix/?hl=tr">instgram</a></p>
+                <p><i class="fa fa-youtube fa-lg mr-3"></i><a class="">Youtube</a></p>
+                <p><i class="fa fa-facebook-f fa-lg mr-3"></i><a class="" href="https://www.facebook.com/ruya.tabirix.5"> Facebook</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+{% endblock %}

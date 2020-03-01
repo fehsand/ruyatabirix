@@ -1,7 +1,6 @@
 from django import forms
 from .models import ArananKelimeler, yildizname, iletisim
 
-
 class AramaForm (forms.ModelForm):
 
     class Meta:

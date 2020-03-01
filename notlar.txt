@@ -1,13 +1,13 @@
+
+Github güncelleme:
 git status
-
 git add --all .
+git status
+git commit -m "Gelistirme."
+git push
 
+style="background-color: gray; background-image: linear-gradient(to right, gray, white,gray);"
 
-$ git status
-$ git add --all .
-$ git status
-$ git commit -m "Gelistirme."
-$ git push
 
 #href="http://ruyatabirix.pythonanywhere.com/sitemap.xml/"
 

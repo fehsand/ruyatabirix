@@ -1,7 +1,6 @@
 from .forms import AramaForm, YildiznameForm, iletisimForm
 from .models import Ruyatabirleri, ArananKelimeler
-#from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404
 
 def ruyatabirleri (response):
     if response.method == "POST":
@@ -18,9 +17,9 @@ def ruyatabirleri (response):
             harfler='bcçdfgğhjklmnprsştvyzwqxaeıiuüoö '
             for harf in n:
                 if not harf in harfler:
-                    mesaj = 'Lütfen Yazdığınız Harfleri Kontrol Ediniz ve Tekrar Deneyiniz.'
+                    mesaj = 'Kelimeleriniz Türkçe Harflerden Oluşmalıdır.'
                     form = AramaForm ()
-                    return render (response, 'ruyatabirleri/ruyatabirleri_sonuc_hata.html', {'mesaj': mesaj, 'form':form})
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form':form})
                 else:
                     pass
             #--------------------Karakter Kontrolü bitti----------------
@@ -39,13 +38,35 @@ def ruyatabirleri (response):
             if not tabir1:
                 mesaj="Aradığınız Rüya Yorumu Bulunamamıştır. Lütfen Farklı Kelimeler ile Deneyiniz. "
                 form = AramaForm ()
-                return render (response, 'ruyatabirleri/ruyatabirleri_sonuc_hata.html', {'mesaj': mesaj, 'form': form})
+                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
             #-----------------------------------------------------------------------------
             else:
                 form = AramaForm ()
-                return render (response, 'ruyatabirleri/ruyatabirleri_sonuc.html', {'arama_sonuc_sayisi':arama_sonuc_sayisi, 'tabir1':tabir1, 'form':form})
+                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'arama_sonuc_sayisi':arama_sonuc_sayisi, 'tabir1':tabir1, 'form':form})
 
-        return HttpResponseRedirect ("/ruyatabirleri/")
+        form = AramaForm ()
+        mesaj = 'Lütfen Bir Kelime Yazınız.'
+
+        # ------En çok aranan kelimenin bulunması
+
+        kutu = []  # aranan kelimeler kaydediliyor her kelime bir kez kaydediliyor
+        kelimeler_aranan_anasayfa = ArananKelimeler.objects.all ()  # Aranan kelimelerin hepsini alıyoruz
+        for i in kelimeler_aranan_anasayfa:
+            if not i.kelime in kutu:
+                kutu += [i.kelime]
+        # aranan kelimelerin onaylı olanlarının keç kere arandığını hesaplayıp ana tabloyu güncelliyoruz
+        for i1 in kutu:
+            arama_sayisi = ArananKelimeler.objects.filter (kelime=i1, uygunluk_onayi=True).count ()
+            Ruyatabirleri.objects.filter (kelime=i1).update (aranma_sayisi=arama_sayisi)
+
+        son_liste = Ruyatabirleri.objects.all ().order_by ('-aranma_sayisi')[:10]
+        # ----------------------------------------------------
+
+        son_eklenen_kelimeler = Ruyatabirleri.objects.all ().order_by ('-ekleme_tarihi')[:10]
+
+        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form, 'son_liste': son_liste,
+                                                                               'son_eklenen_kelimeler': son_eklenen_kelimeler})
+
     else:
         form = AramaForm ()
 
@@ -69,19 +90,8 @@ def ruyatabirleri (response):
         return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form':form, 'son_liste': son_liste,
                                                                     'son_eklenen_kelimeler': son_eklenen_kelimeler })
 
-
-def ruya_ile_amel (request):
-    return render(request,'ruyatabirleri/ruyatabirleri_ruya_ile_amel.html', {})
-
 def gizlilik (request):
-    return render(request,'ruyatabirleri/ruyatabirleri_gizlilik.html', {})
-
-#@login_required
-def ruya_nedir (request):
-    return render(request,'ruyatabirleri/ruyatabirleri_ruya_nedir.html', {})
-
-def ruya_hadis (request):
-    return render(request,'ruyatabirleri/ruyatabirleri_ruya_hadis.html', {})
+    return render(request,'ruyatabirleri/anasayfa_gizlilik.html', {})
 
 def ruyatabirleri_ayrinti (response, slug=None):
     tabir1 = get_object_or_404 (Ruyatabirleri, slug=slug)
@@ -100,9 +110,25 @@ def ruyatabirleri_ayrinti (response, slug=None):
 
 def harf_sayfalari (response, harf):
     tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
-    arama_sonuc_sayisi=len(tabir1)
     form = AramaForm ()
-    return render(response,'ruyatabirleri/ruyatabirleri_sonuc.html', {'arama_sonuc_sayisi': arama_sonuc_sayisi, 'tabir1': tabir1, 'form': form})
+    # ------En çok aranan kelimenin bulunması
+
+    kutu = []  # aranan kelimeler kaydediliyor her kelime bir kez kaydediliyor
+    kelimeler_aranan_anasayfa = ArananKelimeler.objects.all ()  # Aranan kelimelerin hepsini alıyoruz
+    for i in kelimeler_aranan_anasayfa:
+        if not i.kelime in kutu:
+            kutu += [i.kelime]
+    # aranan kelimelerin onaylı olanlarının keç kere arandığını hesaplayıp ana tabloyu güncelliyoruz
+    for i1 in kutu:
+        arama_sayisi = ArananKelimeler.objects.filter (kelime=i1, uygunluk_onayi=True).count ()
+        Ruyatabirleri.objects.filter (kelime=i1).update (aranma_sayisi=arama_sayisi)
+
+    son_liste = Ruyatabirleri.objects.all ().order_by ('-aranma_sayisi')[:10]
+    # ----------------------------------------------------
+
+    son_eklenen_kelimeler = Ruyatabirleri.objects.all ().order_by ('-ekleme_tarihi')[:10]
+
+    return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'son_eklenen_kelimeler': son_eklenen_kelimeler, 'son_liste': son_liste, 'tabir1': tabir1, 'form': form})
 
 def anasayfa (request):
     return render(request,'ruyatabirleri/anasayfa.html', {})
@@ -212,27 +238,23 @@ def iletisim (response):
         form = iletisimForm(response.POST)
         if form.is_valid():
             isim = form.cleaned_data.get ('isim')
-            print(isim)
             soy_isim = form.cleaned_data.get ('soy_isim')
-            print(soy_isim)
             eposta = form.cleaned_data.get ('eposta')
-            print(eposta)
             ileti = form.cleaned_data.get ('mesaj')
-            print(ileti)
             #----Tüm kutucukların doldurulması sağlandı yoksa hata verecek---
             if len(isim)<1 or len(soy_isim)<1 or len(eposta)<1 or len(ileti)<1:
                 mesaj = 'Kutucukları Doldurunuz.'
                 form = iletisimForm ()
-                return render (response, 'ruyatabirleri/iletisim.html', {'mesaj': mesaj, 'form': form})
+                return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'mesaj': mesaj, 'form': form})
             else:
                 pass
             #--------------------kutu Kontrolü bitti----------------
             form.save()
             mesaj= "Gönderiniz başarıyla kaydedildi."
             form = iletisimForm ()
-            return render(response, 'ruyatabirleri/iletisim.html', {'form': form, 'mesaj': mesaj})
+            return render(response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form, 'mesaj': mesaj})
         mesaj = 'Lütfen Formu Doldurunuz.'
-        return render (response, 'ruyatabirleri/iletisim.html', {'form': form, 'mesaj': mesaj})
+        return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form, 'mesaj': mesaj})
     else:
         form = iletisimForm ()
-        return render(response, 'ruyatabirleri/iletisim.html', {'form': form})
+        return render(response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form})

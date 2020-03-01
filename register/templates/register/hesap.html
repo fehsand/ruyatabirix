@@ -1,35 +1,45 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
 
 {% block content %}
-<div class="row m-0 p-0">
-    <div class="col-sm-12 m-0 p-0">
-        <div class="m-5 p-5">
-            <div class="m-0 p-3 bg-secondary"><h4 class="m-0 p-0 text-white">Hesabım</h4></div>
-            <table class="table">
-                <tbody>
-                <tr>
-                    <th scope="row">Adınız :</th>
-                    <td>{{user.first_name}}</td>
-                </tr>
-                <tr>
-                    <th scope="row">Soyadınız :</th>
-                    <td>{{user.last_name}}</td>
-                </tr>
-                <tr>
-                    <th scope="row">Kullanıcı Adınız :</th>
-                    <td>{{user.username}}</td>
-                </tr>
-                <tr>
-                    <th scope="row">Eposta :</th>
-                    <td>{{user.email}}</td>
-                </tr>
-                <tr>
-                    <th scope="row">Üyelik Başlangıçı :</th>
-                    <td>{{user.date_joined.day}}/{{user.date_joined.month}}/{{user.date_joined.year}}</td>
-                </tr>
-                </tbody>
-            </table>
+<div class="row my-5 mx-0 p-0">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 m-0 p-0">
+        <div class="row mt-5 m-0 p-0">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-5">
+                <h1 class="display-4 font-italic border-bottom box-shadow">HESABIM</h1>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-sm-12 m-0 p-0">
+                <table class="table border-bottom">
+                    <tbody>
+                    <tr>
+                        <th scope="row">Adınız :</th>
+                        <td>{{user.first_name}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Soyadınız :</th>
+                        <td>{{user.last_name}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kullanıcı Adınız :</th>
+                        <td>{{user.username}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Eposta :</th>
+                        <td>{{user.email}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Üyelik Başlangıçı :</th>
+                        <td>{{user.date_joined.day}}/{{user.date_joined.month}}/{{user.date_joined.year}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
+    <div class="col-sm-2"></div>
 </div>
 {% endblock %}

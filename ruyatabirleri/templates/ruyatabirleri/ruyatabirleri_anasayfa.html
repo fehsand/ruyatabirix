@@ -1,176 +1,187 @@
-{% extends 'ruyatabirleri/temel.html' %}
+{% extends 'ruyatabirleri/temel_anasayfa.html' %}
 
 {% block content %}
-<div class="row m-0 p-0">
-    <div class="col-sm-12 m-0 my-5 px-0 py-5 text-center">
-        <form class="m-0 p-0 " action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
-            {% csrf_token %}
-            <div class="form-row m-0 p-0">
-                <div class="form-group col-md-3 m-0 p-0"></div>
-                <div class="form-group col-md-5 m-0 p-0">
-                    <input class="form-control form-control-lg" type="text" name="kelime" placeholder="Aramak istediğiniz kelimeyi yazınız.">
+<div class="row my-5 mx-0 p-0">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 m-0 p-0">
+        <div class="row mt-5 m-0 p-0">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-7">
+                <h1 class="display-4 font-italic border-bottom box-shadow">RÜYA TABİRLERİ</h1>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-sm-4 m-0 p-0"></div>
+            <div class="col-sm-4 m-0 p-0 text-center">
+                <form class="m-0 p-0 " action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="text" name="kelime" placeholder="Aramak İstediğin Kelimeyi Yaz">
+                    </div>
+                    <div class="form-group mt-3">
+                        <button class="btn-lg btn-dark mx-3 p-2 px-3 border-0" type="submit" name="save">ARA</button>
+                    </div>
+                </form>
+                <div class="row m-0 p-0 text-danger">{{mesaj}}</div>
+            </div>
+            <div class="col-sm-4 m-0 p-0"></div>
+        </div>
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-sm-12 m-0 p-0">
+                {% for item in tabir1 %}
+                <div class="m-0 mt-1 p-3 w-50 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
+                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.slug %}">Rüyada {{item.kelime}} görmek</a></h6>
                 </div>
-                <div class="form-group col-md-1 m-0 p-0">
-                     <button class="btn-lg btn-light m-0 p-2 px-3 border-0" type="submit" name="save">ARA</button>
-                </div>
-                <div class="form-group col-md-3 m-0 p-0"></div>
-            </div>
-        </form>
-    </div>
-</div>
-<div class="row m-0 p-0">
-    <div class="col-sm-12 m-0 p-0">
-        <div class="form-group row m-0 p-0">
-            <div class="col-sm-12 m-0 p-0 text-center">
-                <p>Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz</p>
+                {% endfor %}
             </div>
         </div>
-        <div class="form-group row m-0 p-0">
-            <div class="col-sm-4 m-0 p-0"></div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='a' %}" role="button">A</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='b' %}" role="button">B</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='c' %}" role="button">C</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ç' %}" role="button">Ç</a>
-            </div>
-            <div class="col-sm-4 m-0 p-0"></div>
-        </div>
-        <div class="form-group row m-0 p-0">
-            <div class="col-sm-4 m-0 p-0"></div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='d' %}" role="button">D</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='e' %}" role="button">E</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='f' %}" role="button">F</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='g' %}" role="button">G</a>
-            </div>
-            <div class="col-sm-4 m-0 p-0"></div>
-        </div>
-        <div class="form-group row m-0 p-0">
-            <div class="col-sm-4 m-0 p-0"></div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='h' %}" role="button">H</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ı' %}" role="button">I</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='i' %}" role="button">İ</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='j' %}" role="button">J</a>
-            </div>
-            <div class="col-sm-4 m-0 p-0"></div>
-        </div>
-        <div class="form-group row m-0 p-0">
-            <div class="col-sm-4 m-0 p-0"></div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='k' %}" role="button">K</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='l' %}" role="button">L</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='m' %}" role="button">M</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='n' %}" role="button">N</a>
-            </div>
-            <div class="col-sm-4 m-0 p-0"></div>
-        </div>
+
+        <div class="row mb-3 m-0 p-0">
+            <div class="col-sm-12 m-0 p-0">
                 <div class="form-group row m-0 p-0">
-            <div class="col-sm-4 m-0 p-0"></div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='o' %}" role="button">O</a>
+                    <div class="col-sm-12 m-0 p-0 text-center">
+                        <p class="lead my-3 text-center">Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz</p>
+                    </div>
+                </div>
+                <div class="form-group row m-0 p-0">
+                    <div class="col-sm-4 m-0 p-0"></div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='a' %}" role="button">A</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='b' %}" role="button">B</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='c' %}" role="button">C</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ç' %}" role="button">Ç</a>
+                    </div>
+                    <div class="col-sm-4 m-0 p-0"></div>
+                </div>
+                <div class="form-group row m-0 p-0">
+                    <div class="col-sm-4 m-0 p-0"></div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='d' %}" role="button">D</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='e' %}" role="button">E</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='f' %}" role="button">F</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='g' %}" role="button">G</a>
+                    </div>
+                    <div class="col-sm-4 m-0 p-0"></div>
+                </div>
+                <div class="form-group row m-0 p-0">
+                    <div class="col-sm-4 m-0 p-0"></div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='h' %}" role="button">H</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ı' %}" role="button">I</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='i' %}" role="button">İ</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='j' %}" role="button">J</a>
+                    </div>
+                    <div class="col-sm-4 m-0 p-0"></div>
+                </div>
+                <div class="form-group row m-0 p-0">
+                    <div class="col-sm-4 m-0 p-0"></div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='k' %}" role="button">K</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='l' %}" role="button">L</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='m' %}" role="button">M</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='n' %}" role="button">N</a>
+                    </div>
+                    <div class="col-sm-4 m-0 p-0"></div>
+                </div>
+                        <div class="form-group row m-0 p-0">
+                    <div class="col-sm-4 m-0 p-0"></div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='o' %}" role="button">O</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ö' %}" role="button">Ö</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='p' %}" role="button">P</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='r' %}" role="button">R</a>
+                    </div>
+                    <div class="col-sm-4 m-0 p-0"></div>
+                </div>
+                <div class="form-group row m-0 p-0">
+                    <div class="col-sm-4 m-0 p-0"></div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='s' %}" role="button">S</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ş' %}" role="button">Ş</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='t' %}" role="button">T</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='u' %}" role="button">U</a>
+                    </div>
+                    <div class="col-sm-4 m-0 p-0"></div>
+                </div>
+                <div class="form-group row m-0 p-0">
+                    <div class="col-sm-4 m-0 p-0"></div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ü' %}" role="button">Ü</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='v' %}" role="button">V</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='y' %}" role="button">Y</a>
+                    </div>
+                    <div class="col-sm-1 m-0 p-0">
+                        <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='z' %}" role="button">Z</a>
+                    </div>
+                    <div class="col-sm-4 m-0 p-0"></div>
+                </div>
             </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ö' %}" role="button">Ö</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='p' %}" role="button">P</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='r' %}" role="button">R</a>
-            </div>
-            <div class="col-sm-4 m-0 p-0"></div>
         </div>
-        <div class="form-group row m-0 p-0">
-            <div class="col-sm-4 m-0 p-0"></div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='s' %}" role="button">S</a>
+        <div class="row my-5 mx-0 p-0">
+            <div class="jumbotron col-md-5 p-3 p-md-5 text-white rounded bg-dark">
+                <h5 class="font-italic">En Çok Aranan Rüyalar</h5>
+                <div class="m-0 px-5">
+                    <ol class="m-0 px-3">
+                        {% for item in son_liste %}
+                        <p class="lead my-3 mx-0 p-0 h6"><li class="m-0 py-2">{{item.kelime|title}}</li></p>
+                        {% endfor %}
+                    </ol>
+                </div>
             </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ş' %}" role="button">Ş</a>
+            <div class="col-md-2"></div>
+            <div class="jumbotron col-md-5 p-3 p-md-5 text-white rounded bg-dark">
+                <h5 class="font-italic">Son Eklenen Rüyalar</h5>
+                <div class="m-0 px-5 ">
+                    <ol class="m-0 px-3">
+                        {% for item in son_eklenen_kelimeler %}
+                        <p class="lead my-3 mx-0 p-0 h6"><li class="m-0 py-2"><a class="text-white" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.slug %}">{{item.kelime|title}}</a></li></p>
+                        {% endfor %}
+                    </ol>
+                </div>
             </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='t' %}" role="button">T</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='u' %}" role="button">U</a>
-            </div>
-            <div class="col-sm-4 m-0 p-0"></div>
-        </div>
-        <div class="form-group row m-0 p-0">
-            <div class="col-sm-4 m-0 p-0"></div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='ü' %}" role="button">Ü</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='v' %}" role="button">V</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='y' %}" role="button">Y</a>
-            </div>
-            <div class="col-sm-1 m-0 p-0">
-                <a class="btn btn-info btn-lg btn-block" href="{% url 'ruyatabirleri:harf_sayfalari' harf='z' %}" role="button">Z</a>
-            </div>
-            <div class="col-sm-4 m-0 p-0"></div>
         </div>
     </div>
-</div>
-<div class="row m-0 p-0">
-    <div class="col-sm-1 mt-5 p-0"></div>
-    <div class="col-sm-4 mt-5 p-0" >
-        <div class="border border-white rounded-pill m-1 p-0 text-center">
-            <h4 class="p-3">En çok Aranan Rüyalar</h4>
-        </div>
-        <div class="border border-white m-1 p-0 ">
-            <div class="m-0 px-5 ">
-                <ol class="m-0 px-3">
-                    {% for item in son_liste %}
-                    <h5 class="m-0 p-0"><li class="m-0 py-2">{{item.kelime|title}}</li></h5>
-                    {% endfor %}
-                </ol>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-1 mt-5 p-0"></div>
-    <div class="col-sm-1 mt-5 p-0"></div>
-    <div class="col-sm-4  mt-5 p-0">
-        <div class="border border-white rounded-pill m-1 p-0 text-center">
-            <h4 class="p-3">En Son Eklenen Rüyalar</h4>
-        </div>
-        <div class="border border-white m-1 p-0 ">
-            <div class="m-0 px-5 ">
-                <ol class="m-0 px-3">
-                    {% for item in son_eklenen_kelimeler %}
-                    <h5 class="m-0 p-0"><li class="m-0 py-2"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.slug %}">{{item.kelime|title}}</a></li></h5>
-                    {% endfor %}
-                </ol>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-1 mt-5 p-0"></div>
+    <div class="col-sm-2"></div>
 </div>
 {% endblock %}

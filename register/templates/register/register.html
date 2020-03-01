@@ -1,90 +1,66 @@
-{% extends 'ruyatabirleri/temel.html' %}
+{% extends 'ruyatabirleri/temel_anasayfa.html' %}
 
 {% block content %}
-<div class="row m-0 p-0">
-    <div class="col-sm-12 m-0 p-0">
-        <h4 class="m-0 p-0 py-5 text-center">Bilgileri Eksiksiz Doldurunuz.</h4>
-    </div>
-</div>
-<div class="row m-0 p-0">
-    <div class="col-sm-12 m-0 p-0">
-        <form method="post">
-            {% csrf_token %}
-            <div class="form-group row ">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-lg" name="username" placeholder="Kullanıcı Adınız">
-                    <!--<small name ="username" class="form-text text-muted">Kullanıcı adınız en fazla 20 karekter uzunluğunda olmalı, sayı ve harf dışında karakter içermemelidir.</small>-->
-                </div>
-                <div class="col-sm-4"></div>
+<div class="row my-1 mx-0 p-0">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 m-0 p-0">
+        <div class="row mt-5 m-0 p-0">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-5">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Üye Ol</h1>
             </div>
-            <div class="form-group row ">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-lg" name="first_name" placeholder="Adınız">
-                </div>
-                <div class="col-sm-4"></div>
-            </div>
-            <div class="form-group row ">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <input type="text" class="form-control form-control-lg" name="last_name" placeholder="Soyadınız">
-                </div>
-                <div class="col-sm-4"></div>
-            </div>
-            <div class="form-group row ">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <input type="email" class="form-control form-control-lg" name="email" placeholder="E-posta Adresiniz">
-                </div>
-                <div class="col-sm-4"></div>
-            </div>
-            <div class="form-group row ">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <input type="password" class="form-control form-control-lg" name="password1" placeholder="Şifreniz">
-                </div>
-                <div class="col-sm-4"></div>
-            </div>
-            <div class="form-group row ">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <input type="password" class="form-control form-control-lg" name="password2" placeholder="Şifrenizi Tekrar Giriniz">
-                </div>
-                <div class="col-sm-4"></div>
-            </div>
-            <div class="form-group row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <div class="form-row m-0 p-0">
-                        <button type="submit" class="btn btn-lg btn-success w-100 mx-auto">Giriş Yap</button>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-sm-3 m-0 p-0"></div>
+            <div class="col-sm-6 m-0 p-0 text-center">
+                <form class="m-0 p-0" method="post">
+                    {% csrf_token %}
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="text" name="username" placeholder="Kullanıcı Adınız" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.username.errors.as_text}}</p>
+                        {% endif %}
                     </div>
-                </div>
-                <div class="col-sm-4"></div>
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="text" name="first_name" placeholder="Adınız" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.first_name.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="text" name="last_name" placeholder="Soyadınız" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.last_name.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="email" name="email" placeholder="E-posta Adresiniz" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.username.email.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="password" name="password1" placeholder="Şifreniz" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.password1.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="password" name="password2" placeholder="Şifrenizi Tekrar Giriniz" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.password2.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3">
+                        <button class="btn-lg btn-dark mx-3 p-2 px-3 border-0" type="submit" name="save">ÜYE OL</button>
+                    </div>
+                </form>
             </div>
-        </form>
+            <div class="col-sm-3 m-0 p-0"></div>
+        </div>
     </div>
+    <div class="col-sm-2"></div>
 </div>
 {% endblock %}
 
-<!--
-<div class="row m-0 p-0">
-    <div class="col-sm-12 m-0 p-0">
-        <form method="post">
-            {% csrf_token %}
-            {% for field in form %}
-            <div style="margin:10px 0 0 0; padding:0;">
-                {{ field }}
-                {% if field.help_text %}
-                <small style="color: grey">{{ field.help_text }}</small>
-                {% endif %}
-                {% for error in field.errors %}
-                <p style="color: red">{{ error }}</p>
-                {% endfor %}
-            </div>
-            {% endfor %}
-            <button class="logindiv2formbutton" type="submit">Giriş Yap</button>
-        </form>
-    </div>
-</div>
--->
