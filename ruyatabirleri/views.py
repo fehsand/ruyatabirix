@@ -26,8 +26,6 @@ def ruyatabirleri (response):
 
             tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=n)
 
-            arama_sonuc_sayisi=len(tabir1)
-
             #----Aranan Kelime db de varsa En çok Aranan Kelimelere girmesi için onay veriyoruz----
             if tabir1:
                 ArananKelimeler.objects.create (kelime=n, uygunluk_onayi=True)  # aranan kelime kontrollerden sonra Uygun olarak db kaydedildi.
@@ -42,53 +40,15 @@ def ruyatabirleri (response):
             #-----------------------------------------------------------------------------
             else:
                 form = AramaForm ()
-                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'arama_sonuc_sayisi':arama_sonuc_sayisi, 'tabir1':tabir1, 'form':form})
+                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1':tabir1, 'form':form})
 
         form = AramaForm ()
         mesaj = 'Lütfen Bir Kelime Yazınız.'
-
-        # ------En çok aranan kelimenin bulunması
-
-        kutu = []  # aranan kelimeler kaydediliyor her kelime bir kez kaydediliyor
-        kelimeler_aranan_anasayfa = ArananKelimeler.objects.all ()  # Aranan kelimelerin hepsini alıyoruz
-        for i in kelimeler_aranan_anasayfa:
-            if not i.kelime in kutu:
-                kutu += [i.kelime]
-        # aranan kelimelerin onaylı olanlarının keç kere arandığını hesaplayıp ana tabloyu güncelliyoruz
-        for i1 in kutu:
-            arama_sayisi = ArananKelimeler.objects.filter (kelime=i1, uygunluk_onayi=True).count ()
-            Ruyatabirleri.objects.filter (kelime=i1).update (aranma_sayisi=arama_sayisi)
-
-        son_liste = Ruyatabirleri.objects.all ().order_by ('-aranma_sayisi')[:10]
-        # ----------------------------------------------------
-
-        son_eklenen_kelimeler = Ruyatabirleri.objects.all ().order_by ('-ekleme_tarihi')[:10]
-
-        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form, 'son_liste': son_liste,
-                                                                               'son_eklenen_kelimeler': son_eklenen_kelimeler})
+        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
 
     else:
         form = AramaForm ()
-
-        #------En çok aranan kelimenin bulunması
-
-        kutu=[]#aranan kelimeler kaydediliyor her kelime bir kez kaydediliyor
-        kelimeler_aranan_anasayfa=ArananKelimeler.objects.all() #Aranan kelimelerin hepsini alıyoruz
-        for i in kelimeler_aranan_anasayfa:
-            if not i.kelime in kutu:
-                kutu +=[i.kelime]
-        #aranan kelimelerin onaylı olanlarının keç kere arandığını hesaplayıp ana tabloyu güncelliyoruz
-        for i1 in kutu:
-            arama_sayisi=ArananKelimeler.objects.filter(kelime=i1, uygunluk_onayi=True).count()
-            Ruyatabirleri.objects.filter(kelime=i1).update(aranma_sayisi=arama_sayisi)
-
-        son_liste = Ruyatabirleri.objects.all ().order_by ('-aranma_sayisi')[:10]
-        #----------------------------------------------------
-
-        son_eklenen_kelimeler = Ruyatabirleri.objects.all ().order_by('-ekleme_tarihi')[:10]
-
-        return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form':form, 'son_liste': son_liste,
-                                                                    'son_eklenen_kelimeler': son_eklenen_kelimeler })
+        return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form':form})
 
 def gizlilik (request):
     return render(request,'ruyatabirleri/anasayfa_gizlilik.html', {})
@@ -111,24 +71,7 @@ def ruyatabirleri_ayrinti (response, slug=None):
 def harf_sayfalari (response, harf):
     tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
     form = AramaForm ()
-    # ------En çok aranan kelimenin bulunması
-
-    kutu = []  # aranan kelimeler kaydediliyor her kelime bir kez kaydediliyor
-    kelimeler_aranan_anasayfa = ArananKelimeler.objects.all ()  # Aranan kelimelerin hepsini alıyoruz
-    for i in kelimeler_aranan_anasayfa:
-        if not i.kelime in kutu:
-            kutu += [i.kelime]
-    # aranan kelimelerin onaylı olanlarının keç kere arandığını hesaplayıp ana tabloyu güncelliyoruz
-    for i1 in kutu:
-        arama_sayisi = ArananKelimeler.objects.filter (kelime=i1, uygunluk_onayi=True).count ()
-        Ruyatabirleri.objects.filter (kelime=i1).update (aranma_sayisi=arama_sayisi)
-
-    son_liste = Ruyatabirleri.objects.all ().order_by ('-aranma_sayisi')[:10]
-    # ----------------------------------------------------
-
-    son_eklenen_kelimeler = Ruyatabirleri.objects.all ().order_by ('-ekleme_tarihi')[:10]
-
-    return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'son_eklenen_kelimeler': son_eklenen_kelimeler, 'son_liste': son_liste, 'tabir1': tabir1, 'form': form})
+    return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1, 'form': form})
 
 def anasayfa (request):
     return render(request,'ruyatabirleri/anasayfa.html', {})

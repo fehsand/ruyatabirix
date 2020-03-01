@@ -30,7 +30,7 @@
         <div class="row my-5 mx-0 p-0">
             <div class="col-sm-12 m-0 p-0">
                 {% for item in tabir1 %}
-                <div class="m-0 mt-1 p-3 w-50 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
+                <div class="m-0 mt-1 p-3 w-100 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
                     <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.slug %}">Rüyada {{item.kelime}} görmek</a></h6>
                 </div>
                 {% endfor %}
@@ -155,29 +155,6 @@
                         <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='z' %}" role="button">Z</a>
                     </div>
                     <div class="col-sm-4 m-0 p-0"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row my-5 mx-0 p-0">
-            <div class="jumbotron col-md-5 p-3 p-md-5 text-white rounded bg-dark">
-                <h5 class="font-italic">En Çok Aranan Rüyalar</h5>
-                <div class="m-0 px-5">
-                    <ol class="m-0 px-3">
-                        {% for item in son_liste %}
-                        <p class="lead my-3 mx-0 p-0 h6"><li class="m-0 py-2">{{item.kelime|title}}</li></p>
-                        {% endfor %}
-                    </ol>
-                </div>
-            </div>
-            <div class="col-md-2"></div>
-            <div class="jumbotron col-md-5 p-3 p-md-5 text-white rounded bg-dark">
-                <h5 class="font-italic">Son Eklenen Rüyalar</h5>
-                <div class="m-0 px-5 ">
-                    <ol class="m-0 px-3">
-                        {% for item in son_eklenen_kelimeler %}
-                        <p class="lead my-3 mx-0 p-0 h6"><li class="m-0 py-2"><a class="text-white" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.slug %}">{{item.kelime|title}}</a></li></p>
-                        {% endfor %}
-                    </ol>
                 </div>
             </div>
         </div>
