@@ -6,41 +6,69 @@ def ruyatabirleri (response):
     if response.method == "POST":
         form = AramaForm(response.POST)
         if form.is_valid():
-            n = form.cleaned_data["kelime"]
+            n1 = form.cleaned_data["kelime"]
+
             #------------girilen kelime küçük harflere dönüştürüldü----------
-            n=n.replace("I", "ı").replace("İ", "i").lower()
+            n=n1.replace("I", "ı").replace("İ", "i").lower()
             #------------------------------------------------------
 
             #------------Karakter Kontrolü yapıldı. Uygun olmayan varsa hata verildi.-------------
             sesli_harfler= 'aeıiuüoö'
             sessiz_harfler= 'bcçdfgğhjklmnprsştvyzwqx'
-            harfler='bcçdfgğhjklmnprsştvyzwqxaeıiuüoö '
+            harfler='bcçdfgğhjklmnprsştvyzaeıiuüo ö'
             for harf in n:
                 if not harf in harfler:
-                    mesaj = 'Kelimeleriniz Türkçe Harflerden Oluşmalıdır.'
-                    form = AramaForm ()
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form':form})
+                    mesaj = ' : Sadece Türkçe Harflerden Oluşmalıdır.'
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'n1': n1, 'mesaj': mesaj})
                 else:
                     pass
             #--------------------Karakter Kontrolü bitti----------------
 
-            tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=n)
+            #-----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
+            tabir1 = Ruyatabirleri.objects.filter (kelime__contains=n)
 
-            #----Aranan Kelime db de varsa En çok Aranan Kelimelere girmesi için onay veriyoruz----
             if tabir1:
-                ArananKelimeler.objects.create (kelime=n, uygunluk_onayi=True)  # aranan kelime kontrollerden sonra Uygun olarak db kaydedildi.
+                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1}) #tabir var
             else:
-                ArananKelimeler.objects.create (kelime=n) #aranan kelime kontrollerden sonra db kaydedildi.
+#--birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
+                kelimlere_ayir = n.split (" ")
+                print (kelimlere_ayir)
+                print(len(kelimlere_ayir))
+                tabir_listesi=[]
+                print("tabir_listesi_ilk:",tabir_listesi)
+                kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'rüyada' if i != 'görmek'
+                                   if i != 'rüyamda' if i != 'ruyada' if i != 'ruyamda' if i != 'gördüm']
+                print("kelimelere_ayir2:",kelimlere_ayir2)
 
-            #-----------Aranan kelime db tabloda yoksa verilecek uyarı------------
-            if not tabir1:
-                mesaj="Aradığınız Rüya Yorumu Bulunamamıştır. Lütfen Farklı Kelimeler ile Deneyiniz. "
-                form = AramaForm ()
-                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
-            #-----------------------------------------------------------------------------
-            else:
-                form = AramaForm ()
-                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1':tabir1, 'form':form})
+                for klm in kelimlere_ayir2:
+                    tabir1 = Ruyatabirleri.objects.filter (kelime__contains=klm)
+                    print("aranan ifade bölündükten sonra kelime tabirleri:",tabir1)
+                    if not tabir1:
+                        s=0
+                        while not tabir1:
+                            k=len(klm)
+                            s +=1
+                            k1=k-s
+                            klm1=klm[:k1]
+                            print(klm1)
+                            tabir1 = Ruyatabirleri.objects.filter (kelime__contains=klm1)
+                            print("kelimeden harf eksilttikten sonra tabir1:", tabir1)
+                        for i in tabir1:
+                            tabir_listesi +=[i]
+                    else:
+                        for i in tabir1:
+                            print("tabir1 in for ile içine baktık:",i)
+                            tabir_listesi += [i]
+                            print("tabir_listesine_yazınca :",tabir_listesi)
+
+                print ("tabir_listesinin_son hali:",tabir_listesi)
+                tabir1=tabir_listesi
+                print("tabir_listesini tabir1 e attık:",tabir1)
+                print(type(tabir1))
+                mesaj = "Aradığınız rüya yorumu bulunamamıştır. En yakın yorumlar aşağıda listelenmişti."
+                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'tabir1': tabir1})
+        else:
+            pass
 
         form = AramaForm ()
         mesaj = 'Lütfen Bir Kelime Yazınız.'
