@@ -45,3 +45,25 @@ class iletisim (models.Model):
 
     def __str__(self):
         return self.mesaj
+
+class KuranBilgi (models.Model):
+    sure_no = models.IntegerField()
+    sure_isim = models.CharField(max_length=200)
+    ayet_say = models.IntegerField()
+    ayet_no = models.IntegerField()
+    ayet = models.TextField()
+    ayet_meal = models.TextField()
+
+    def __str__(self):
+        return self.sure_isim
+
+class KuranKelime (models.Model):
+    sure_no = models.IntegerField()
+    ayet_no = models.IntegerField()
+    kelime_no = models.IntegerField()
+    kelime_arapca = models.CharField(max_length=200)
+    kelime_turkce = models.CharField (max_length=200)
+
+
+    def __str__(self):
+        return self.kelime_turkce

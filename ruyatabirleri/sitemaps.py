@@ -5,6 +5,8 @@ class StaticViewSitemap(Sitemap):
 
     def items(self):
         return ['ruyatabirleri:anasayfa',
+                'ruyatabirleri:tefeul',
+                'ruyatabirleri:tefeul_nedir',
                 'ruyatabirleri:iletisim',
                 'ruyatabirleri:gizlilik',
                 'ruyatabirleri:yildizname',

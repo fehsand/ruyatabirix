@@ -1,5 +1,6 @@
+import random
 from .forms import AramaForm, YildiznameForm, iletisimForm
-from .models import Ruyatabirleri, ArananKelimeler
+from .models import Ruyatabirleri, KuranBilgi, KuranKelime
 from django.shortcuts import render, get_object_or_404
 
 def ruyatabirleri (response):
@@ -229,3 +230,25 @@ def iletisim (response):
     else:
         form = iletisimForm ()
         return render(response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form})
+
+def tefeul (request):
+    besmele = KuranBilgi.objects.get (id=1)  # besmele
+    return render(request,'ruyatabirleri/tefeul.html', {'besmele': besmele})
+
+def tefeul_yap (request):
+    besmele = KuranBilgi.objects.get (id=1)  # besmele
+    hangi_sure = random.randint (1, 114)
+    bilgi_satiri = KuranBilgi.objects.filter (sure_no=hangi_sure)
+    for item in bilgi_satiri:
+        x1 = item.ayet_say
+        hangi_ayet = random.randint (1, x1)
+        bilgi_satiri_2 = KuranBilgi.objects.filter (sure_no=hangi_sure).filter (ayet_no=hangi_ayet)
+        kelime_sayisi=KuranKelime.objects.filter (sure_no=hangi_sure).filter (ayet_no=hangi_ayet).count()
+        hangi_kelime = random.randint (1, kelime_sayisi)
+        bilgi_satiri_3 = KuranKelime.objects.filter (sure_no=hangi_sure).filter (ayet_no=hangi_ayet).filter (kelime_no=hangi_kelime)
+        bilgi="Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı olabilir."
+        return render (request, 'ruyatabirleri/tefeul.html', {'besmele': besmele, 'bilgi_satiri_2': bilgi_satiri_2, 'hangi_kelime':hangi_kelime,
+                                                              'bilgi':bilgi, 'bilgi_satiri_3':bilgi_satiri_3})
+
+def tefeul_nedir (request):
+    return render(request,'ruyatabirleri/tefeul_nedir.html', {})

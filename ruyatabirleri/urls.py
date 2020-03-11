@@ -5,6 +5,9 @@ app_name = "ruyatabirleri"
 
 urlpatterns = [
     path('', views.anasayfa, name='anasayfa'),
+    path('tefeul', views.tefeul, name='tefeul'),
+    path('tefeul/tefeul_nedir', views.tefeul_nedir, name='tefeul_nedir'),
+    path('tefeul/tefeul_yap', views.tefeul_yap, name='tefeul_yap'),
     path('iletisim/', views.iletisim, name='iletisim'),
     path('ruyatabirleri_gizlilik/', views.gizlilik, name='gizlilik'),
     path('yildizname/', views.yildizname, name='yildizname'),
