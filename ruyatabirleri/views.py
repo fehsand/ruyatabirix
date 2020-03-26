@@ -1,6 +1,6 @@
 import random
 from .forms import AramaForm, YildiznameForm, iletisimForm
-from .models import Ruyatabirleri, KuranBilgi, KuranKelime
+from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler
 from django.shortcuts import render, get_object_or_404
 
 def ruyatabirleri (response):
@@ -14,8 +14,8 @@ def ruyatabirleri (response):
             #------------------------------------------------------
 
             #------------Karakter Kontrolü yapıldı. Uygun olmayan varsa hata verildi.-------------
-            sesli_harfler= 'aeıiuüoö'
-            sessiz_harfler= 'bcçdfgğhjklmnprsştvyzwqx'
+            #sesli_harfler= 'aeıiuüoö'
+            #sessiz_harfler= 'bcçdfgğhjklmnprsştvyzwqx'
             harfler='bcçdfgğhjklmnprsştvyzaeıiuüo ö'
             for harf in n:
                 if not harf in harfler:
@@ -24,7 +24,7 @@ def ruyatabirleri (response):
                 else:
                     pass
             #--------------------Karakter Kontrolü bitti----------------
-
+            ArananKelimeler.objects.create (kelime=n)  # aranan kelime kontrollerden sonra db kaydedildi.
             #-----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
             tabir1 = Ruyatabirleri.objects.filter (kelime__contains=n)
 
@@ -33,17 +33,11 @@ def ruyatabirleri (response):
             else:
 #--birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
                 kelimlere_ayir = n.split (" ")
-                print (kelimlere_ayir)
-                print(len(kelimlere_ayir))
                 tabir_listesi=[]
-                print("tabir_listesi_ilk:",tabir_listesi)
                 kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'rüyada' if i != 'görmek'
                                    if i != 'rüyamda' if i != 'ruyada' if i != 'ruyamda' if i != 'gördüm']
-                print("kelimelere_ayir2:",kelimlere_ayir2)
-
                 for klm in kelimlere_ayir2:
                     tabir1 = Ruyatabirleri.objects.filter (kelime__contains=klm)
-                    print("aranan ifade bölündükten sonra kelime tabirleri:",tabir1)
                     if not tabir1:
                         s=0
                         while not tabir1:
@@ -51,30 +45,20 @@ def ruyatabirleri (response):
                             s +=1
                             k1=k-s
                             klm1=klm[:k1]
-                            print(klm1)
                             tabir1 = Ruyatabirleri.objects.filter (kelime__contains=klm1)
-                            print("kelimeden harf eksilttikten sonra tabir1:", tabir1)
                         for i in tabir1:
                             tabir_listesi +=[i]
                     else:
                         for i in tabir1:
-                            print("tabir1 in for ile içine baktık:",i)
                             tabir_listesi += [i]
-                            print("tabir_listesine_yazınca :",tabir_listesi)
-
-                print ("tabir_listesinin_son hali:",tabir_listesi)
                 tabir1=tabir_listesi
-                print("tabir_listesini tabir1 e attık:",tabir1)
-                print(type(tabir1))
                 mesaj = "Aradığınız rüya yorumu bulunamamıştır. En yakın yorumlar aşağıda listelenmişti."
                 return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'tabir1': tabir1})
         else:
             pass
-
         form = AramaForm ()
         mesaj = 'Lütfen Bir Kelime Yazınız.'
         return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
-
     else:
         form = AramaForm ()
         return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form':form})
@@ -104,9 +88,6 @@ def harf_sayfalari (response, harf):
 
 def anasayfa (request):
     return render(request,'ruyatabirleri/anasayfa.html', {})
-
-def yildizname (request):
-    return render(request,'ruyatabirleri/yildizname.html', {})
 
 def yildizname_nedir (request):
     return render(request,'ruyatabirleri/yildizname_nedir.html', {})
@@ -237,7 +218,8 @@ def tefeul (request):
 
 def tefeul_yap (request):
     besmele = KuranBilgi.objects.get (id=1)  # besmele
-    hangi_sure = random.randint (1, 114)
+    #hangi_sure = random.randint (1, 114)
+    hangi_sure = 1
     bilgi_satiri = KuranBilgi.objects.filter (sure_no=hangi_sure)
     for item in bilgi_satiri:
         x1 = item.ayet_say
@@ -252,3 +234,30 @@ def tefeul_yap (request):
 
 def tefeul_nedir (request):
     return render(request,'ruyatabirleri/tefeul_nedir.html', {})
+
+def dua (request):
+    return render(request,'ruyatabirleri/dua.html', {})
+
+def dua_nedir (request):
+    return render(request,'ruyatabirleri/dua_nedir.html', {})
+
+def yasin (request):
+    return render(request,'ruyatabirleri/dua_yasin.html', {})
+
+def yasin_arapca (request):
+    return render(request,'ruyatabirleri/dua_yasin_arapca.html', {})
+
+def mubin (request):
+    return render(request,'ruyatabirleri/dua_yasin_mubin.html', {})
+
+def dua_ayet (request):
+    return render(request,'ruyatabirleri/dua_dua_ayet.html', {})
+
+def esmaul_husna (request):
+    return render(request,'ruyatabirleri/dua_esmaul_husna.html', {})
+
+def tefriciye (request):
+    return render(request,'ruyatabirleri/dua_tefriciye.html', {})
+
+def tefriciye_arapca (request):
+    return render(request,'ruyatabirleri/dua_tefriciye_arapca.html', {})

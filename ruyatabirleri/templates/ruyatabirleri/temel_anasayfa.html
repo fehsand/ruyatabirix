@@ -13,12 +13,13 @@
     <script data-ad-client="ca-pub-8505283121324462" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Anasayfa">
-    <meta name="keywords" content="rüya, rüyada, tabir, tabiri, tabirleri, ruyatabirix, görmek,
+    <meta name="description" content="Rüya Tabirleri, Rüyada gördüğünüz olayları kelimeler ile özetleyerek arama yapabilirsiniz. Rüyada görmek.">
+    <meta name="keywords" content="Rüya Tabirleri, rüya, rüyada, tabir, tabiri, tabirleri, ruyatabirix, görmek,
      gördüm, dream, dream interpretation, rüya yorumu, rüya tabirleri, dream meanings, islamic dream meanings,
      islamic dream interpretations, dreams fortune teller, fortune teller, burçlar, yildizname, yıldızname,
       fal, balık, koç, boğa, ikizler, yengeç, aslan, başak, terazi, akrep, yay, oğlak, kova,
-       horoscopes, aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces">
+       horoscopes, aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces,
+        tefe'ul, tefe'ül, tefeul, tefeül, tefeül yap, tefeül nedir, tefe'ül nedir, tefe'ul nedir">
     <meta name="author" content="fehsand">
     <title>ruyatabirix.com</title>
     <!-- Bootstrap core CSS -->
@@ -37,15 +38,18 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'ruyatabirleri:ruyatabirleri_nedir'%}">Rüya Tabirleri Nedir?</a>
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item ">
+                <a class="nav-link" href="{% url 'ruyatabirleri:ruyatabirleri_nedir'%}">Rüya Nedir?</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'ruyatabirleri:yildizname_nedir'%}">Yıldızname Nedir?</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'ruyatabirleri:tefeul_nedir'%}">Tefe'ül Nedir?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'ruyatabirleri:dua_nedir'%}">Dua Nedir?</a>
             </li>
         </ul>
         {% if user.is_authenticated %}
