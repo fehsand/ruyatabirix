@@ -1,27 +1,22 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
 
 {% block content %}
-<div class="row my-5 mx-0 p-0">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 m-0 p-0">
+<div class="row mt-3 mb-5 mx-0 p-0">
+    <div class="col-md-12 m-0 p-0">
         <div class="row mt-5 m-0 p-0">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
+            <div class="col-md-6 my-0 mx-auto p-0">
                 <h1 class="display-4 font-italic border-bottom box-shadow">TEFE'ÜL</h1>
                 <p class="lead my-3">Niyet ediniz ve başlatınız.</p>
-                <p class="lead my-3 text-right">{{besmele.ayet}}</p>
+                <p class="lead my-3 text-center" style="font-size:25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
             </div>
-            <div class="col-sm-3"></div>
         </div>
         <div class="row my-5 mx-0 p-0">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6 m-0 p-0">
+            <div class="col-md-6 my-0 mx-auto p-0">
                 <a href="{% url 'ruyatabirleri:tefeul_yap' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">TEFE'ÜL YAP</a>
             </div>
-            <div class="col-sm-3"></div>
         </div>
         <div class="row my-5 mx-0 p-0">
-            <div class="col-sm-12 text-center">
+            <div class="col-md-12 text-center">
                 {% for item in bilgi_satiri_2 %}
                 <p class="lead my-3">{{item.sure_no}}. surenin {{item.ayet_no}}. ayetinin {{hangi_kelime}}. kelimesi.</p>
                 {% endfor %}
@@ -33,13 +28,12 @@
                 <p class="lead my-3">Ayet : {{item.ayet}} &#1757</p>
                 <p class="lead my-3">Meal : {{item.ayet_meal}}</p>
                 <p class="lead my-3">Sure : {{item.sure_isim}}</p>
-                <p class="lead my-3 border-top">BİLGİ : {{bilgi}}</p>
+                <p class="lead my-3 border-top">BİLGİ : Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı olabilir.</p>
                 <p><a href="http://tanzil.net/#1:7">Tanzil.net</a></p>
                 <p><a href="http://kuranharitasi.com/kuran.aspx?sureno=1&ayetno=1">Kuranharitasi.com</a></p>
                 {% endfor %}
             </div>
         </div>
     </div>
-    <div class="col-sm-2"></div>
 </div>
 {% endblock %}

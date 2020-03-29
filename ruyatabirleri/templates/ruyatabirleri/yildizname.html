@@ -2,18 +2,14 @@
 
 {% block content %}
 <div class="row my-5 mx-0 p-0">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 m-0 p-0">
+    <div class="col-md-8 my-0 mx-auto p-0">
         <div class="row mt-5 m-0 p-0">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-5">
+            <div class="col-md-12">
                 <h1 class="display-4 font-italic border-bottom box-shadow">YILDIZNAME</h1>
             </div>
-            <div class="col-sm-3"></div>
         </div>
         <div class="row my-5 mx-0 p-0">
-            <div class="col-sm-3 m-0 p-0"></div>
-            <div class="col-sm-6 m-0 p-0 text-center">
+            <div class="col-md-6 my-0 mx-auto p-0 text-center">
                 <form class="m-0 p-0 " action="{% url 'ruyatabirleri:yildizname' %}" method="post">
                     {% csrf_token %}
                     <div class="input-group">
@@ -35,9 +31,7 @@
                 </form>
                 <div class="row m-0 p-0 text-danger">{{mesaj}}</div>
             </div>
-            <div class="col-sm-3 m-0 p-0"></div>
         </div>
     </div>
-    <div class="col-sm-2"></div>
 </div>
 {% endblock %}

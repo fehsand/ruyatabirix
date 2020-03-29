@@ -3,22 +3,18 @@
 
 {% block content %}
 <div class="row my-5 mx-0 p-0">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 m-0 p-0">
+    <div class="col-md-10 my-0 mx-auto p-0">
         <div class="row mt-5 m-0 p-0">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-7">
+            <div class="col-md-12">
                 <h1 class="display-4 font-italic border-bottom box-shadow">RÜYA TABİRLERİ</h1>
             </div>
-            <div class="col-sm-2"></div>
         </div>
         <div class="row my-5 mx-0 p-0">
-            <div class="col-sm-4 m-0 p-0"></div>
-            <div class="col-sm-4 m-0 p-0 text-center">
+            <div class="col-md-8 my-0 mx-auto p-0 text-center">
                 <form class="m-0 p-0 " action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
                     {% csrf_token %}
                     <div class="form-group mt-3">
-                        <input class="form-control m-0" type="text" name="kelime" placeholder="Aramak İstediğin Kelimeyi Yaz">
+                        <input class="form-control m-0 text-center" type="text" name="kelime" placeholder="Aramak İstediğin Kelimeyi Yaz">
                     </div>
                     <div class="form-group mt-3">
                         <button class="btn-lg btn-dark mx-3 p-2 px-3 border-0" type="submit" name="save">ARA</button>
@@ -26,7 +22,6 @@
                 </form>
                 <div class="row m-0 p-0 text-danger">{{mesaj}}</div>
             </div>
-            <div class="col-sm-4 m-0 p-0"></div>
         </div>
         <div class="row m-0 p-0">
             <div class="col-md-12 m-0 p-4 border-bottom">
@@ -35,7 +30,7 @@
             </div>
         </div>
         <div class="row m-0 p-0 mt-3">
-            <div class="col-sm-12 m-0 p-0">
+            <div class="col-md-12 m-0 p-0">
                 {% get_comment_count for ruyatabirleri.ruyatabirleri object_pk as comment_count %}
                 <nav class="navbar navbar-dark bg-dark text-white font-italic">
                     <h6>{{ comment_count }} adet yorum bulunmaktadır.</h6>
@@ -63,7 +58,7 @@
         </div>
         {% if user.is_authenticated %}
         <div class="row m-0 p-0">
-            <div class="col-sm-12 m-0 p-0">
+            <div class="col-md-12 m-0 p-0">
                 {% get_comment_form for tabir1 as form %}
                 <div class="m-0 p-0">
                     <form class="m-0 p-0" action="{% comment_form_target %}" method="post">
@@ -95,6 +90,5 @@
         </div>
         {% endif %}
     </div>
-    <div class="col-sm-2"></div>
 </div>
 {% endblock %}

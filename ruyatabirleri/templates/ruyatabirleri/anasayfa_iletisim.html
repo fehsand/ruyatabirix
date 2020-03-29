@@ -1,19 +1,15 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
 
 {% block content %}
-<div class="row my-0 mx-0 p-0">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 m-0 p-0">
+<div class="row my-0 mx-0 p-0 ">
+    <div class="col-md-6 my-0 p-0 mx-auto">
         <div class="row mt-5 m-0 p-0">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-5">
+            <div class="col-md-12">
                 <h1 class="display-4 font-italic border-bottom box-shadow">İLETİŞİM</h1>
             </div>
-            <div class="col-sm-3"></div>
         </div>
         <div class="row my-5 mx-0 p-0">
-            <div class="col-sm-3 m-0 p-0"></div>
-            <div class="col-sm-6 m-0 p-0 text-center">
+            <div class="col-md-8 my-0 p-0 mx-auto">
                 <form class="m-0 p-0 " action="{% url 'ruyatabirleri:iletisim' %}" method="post">
                     {% csrf_token %}
                     <div class="form-group mt-3">
@@ -40,23 +36,20 @@
                         <p class="lead m-0 p-0 text-danger">{{form.mesaj.errors.as_text}}</p>
                         {% endif %}
                     </div>
-                    <div class="form-group mt-3">
-                        <button class="btn-lg btn-dark mx-3 p-2 px-3 border-0" type="submit" name="save">GÖNDER</button>
+                    <div class="form-group mt-3 text-center">
+                        <button class="btn-lg btn-dark border-0" type="submit" name="save">GÖNDER</button>
                     </div>
                 </form>
                 <div class="row m-0 p-0">{{mesaj}}</div>
             </div>
-            <div class="col-sm-3 m-0 p-0"></div>
         </div>
         <div class="row mt-5 m-0 p-0">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
+            <div class="col-md-12">
                 <h1 class="display-4 font-italic border-bottom box-shadow">SOSYAL MEDYA</h1>
             </div>
-            <div class="col-sm-2"></div>
         </div>
         <div class="row my-5 mx-0 p-0">
-            <div class="col-md-5 mx-auto mt-3">
+            <div class="col-md-12">
                 <p><i class="fa fa-home fa-lg mr-3"></i><a class="" href="{% url 'ruyatabirleri:anasayfa'%}">www.ruyatabirix.com</a></p>
                 <p><i class="fa fa-envelope fa-lg mr-3"></i><a class="">ruyatabirix.com@gmail.com</a></p>
                 <p><i class="fa fa-instagram fa-lg mr-3"></i><a class="" href="https://www.instagram.com/ruyatabirix/?hl=tr">instgram</a></p>
@@ -66,6 +59,5 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-2"></div>
 </div>
 {% endblock %}

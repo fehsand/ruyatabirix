@@ -1,37 +1,40 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
 
 {% block content %}
-<div class="row my-5 mx-0 p-0">
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 m-0 p-0">
+<div class="row my-3 mx-0 p-0">
+    <div class="col-md-8 mx-auto my-0 p-0">
         <div class="row mt-5 m-0 p-0">
-            <div class="col-sm-12">
+            <div class="col-md-6 mx-auto my-0 p-0">
                 <h1 class="display-4 font-italic border-bottom box-shadow">DUA</h1>
                 <p class="lead my-3 text-center">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
             </div>
         </div>
         <div class="row mt-3 mb-2 mx-0 p-0">
-            <div class="col-sm-12 m-0 p-0">
+            <div class="col-md-6 mx-auto my-0 p-0">
                 <a href="{% url 'ruyatabirleri:yasin' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">YASİN-İ ŞERİF</a>
             </div>
         </div>
+        <div class="row mt-3 mb-2 mx-0 p-0">
+            <div class="col-md-6 mx-auto my-0 p-0">
+                <a href="{% url 'ruyatabirleri:ayetelkursi' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">AYETEL KÜRSİ</a>
+            </div>
+        </div>
         <div class="row my-2 mx-0 p-0">
-            <div class="col-sm-12 m-0 p-0">
+            <div class="col-md-6 mx-auto my-0 p-0">
                 <a href="{% url 'ruyatabirleri:dua_ayet' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">DUA AYETLERİ</a>
             </div>
         </div>
         <div class="row my-2 mx-0 p-0">
-            <div class="col-sm-12 m-0 p-0">
+            <div class="col-md-6 mx-auto my-0 p-0">
                 <a href="{% url 'ruyatabirleri:esmaul_husna' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">ESMAÜL HÜSNA</a>
             </div>
         </div>
         <div class="row my-2 mx-0 p-0">
-            <div class="col-sm-12 m-0 p-0">
+            <div class="col-md-6 mx-auto my-0 p-0">
                 <a href="{% url 'ruyatabirleri:tefriciye' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">SALATI TEFRİCİYE</a>
             </div>
         </div>
     </div>
-    <div class="col-sm-2"></div>
 </div>
 {% endblock %}
 

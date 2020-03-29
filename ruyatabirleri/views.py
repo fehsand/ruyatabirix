@@ -228,9 +228,8 @@ def tefeul_yap (request):
         kelime_sayisi=KuranKelime.objects.filter (sure_no=hangi_sure).filter (ayet_no=hangi_ayet).count()
         hangi_kelime = random.randint (1, kelime_sayisi)
         bilgi_satiri_3 = KuranKelime.objects.filter (sure_no=hangi_sure).filter (ayet_no=hangi_ayet).filter (kelime_no=hangi_kelime)
-        bilgi="Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı olabilir."
         return render (request, 'ruyatabirleri/tefeul.html', {'besmele': besmele, 'bilgi_satiri_2': bilgi_satiri_2, 'hangi_kelime':hangi_kelime,
-                                                              'bilgi':bilgi, 'bilgi_satiri_3':bilgi_satiri_3})
+                                                              'bilgi_satiri_3':bilgi_satiri_3})
 
 def tefeul_nedir (request):
     return render(request,'ruyatabirleri/tefeul_nedir.html', {})
@@ -249,6 +248,12 @@ def yasin_arapca (request):
 
 def mubin (request):
     return render(request,'ruyatabirleri/dua_yasin_mubin.html', {})
+
+def ayetelkursi (request):
+    return render(request,'ruyatabirleri/dua_ayetelkursi.html', {})
+
+def ayetelkursi_arapca (request):
+    return render(request,'ruyatabirleri/dua_ayetelkursi_arapca.html', {})
 
 def dua_ayet (request):
     return render(request,'ruyatabirleri/dua_dua_ayet.html', {})
