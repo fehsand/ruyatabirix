@@ -10,6 +10,8 @@ class StaticViewSitemap(Sitemap):
                 'ruyatabirleri:yasin',
                 'ruyatabirleri:mubin',
                 'ruyatabirleri:yasin_arapca',
+                'ruyatabirleri:ayetelkursi',
+                'ruyatabirleri:ayetelkursi_arapca',
                 'ruyatabirleri:dua_ayet',
                 'ruyatabirleri:esmaul_husna',
                 'ruyatabirleri:tefriciye',
