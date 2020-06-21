@@ -5,6 +5,12 @@ git status
 git commit -m "Gelistirme."
 git push
 
+<img class="first-slide w-100" src="/static/logo_marka_2.png" height="600" alt="First slide">
+
+src="{% static 'images/logo_marka_2.png' %}"
+
+<a class="btn btn-outline-dark" href="{% url 'register:login' %}?next={{request.path}}">Giriş Yap</a>
+
 style="background-color: gray; background-image: linear-gradient(to right, gray, white,gray);"
 
 

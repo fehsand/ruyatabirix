@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158769165-1"></script>
@@ -37,7 +37,9 @@
 
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom box-shadow fixed-top">
-    <a class="navbar-brand" href="{% url 'ruyatabirleri:anasayfa'%}">Ruyatabirix.com</a>
+    <a class="navbar-brand" href="{% url 'ruyatabirleri:anasayfa'%}">
+        <img src="/static/logo_marka_2.png" class="rounded-circle" width="90" height="60" class="d-inline-block align-top" alt="logo">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -67,7 +69,7 @@
             </div>
         </div>
         {% else %}
-        <a class="btn btn-outline-dark" href="{% url 'register:login' %}?next={{request.path}}">Giriş Yap</a>
+        <a class="btn btn-outline-dark" href="{% url 'register:login' %}">Giriş Yap</a>
         {% endif %}
     </div>
 </nav>
