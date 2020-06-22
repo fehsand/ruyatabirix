@@ -12,6 +12,16 @@ Run compilemessages:
 django-admin compilemessages
 
 
+Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak bulabilirsiniz.
+Örneğin rüyanızda araba kullandığınızı gördünüz zaman, sadece ARABA kelimesini kullanarak arama yapmalısınız.
+In this section, you can find the meanings of the events you see in your dream using keywords.
+For example, when you see that you are driving in your dream, you should search using only the word CAR.
+
+Bu bölümde kendinizin ve annenizin ismini yazarak burcunuz hakkındaki bilgileri okuyabilirsiniz.
+In this section, you can read the information about your horoscope by writing the name of yourself and your mother.
+
+
+
 <img class="first-slide w-100" src="/static/logo_marka_2.png" height="600" alt="First slide">
 
 src="{% static 'images/logo_marka_2.png' %}"
