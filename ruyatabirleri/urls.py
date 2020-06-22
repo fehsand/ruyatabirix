@@ -1,11 +1,12 @@
 from django.urls import path
 from .import views
+from django.utils.translation import gettext_lazy as _
 
 app_name = "ruyatabirleri"
 
 urlpatterns = [
     path('', views.anasayfa, name='anasayfa'),
-    path('dua', views.dua, name='dua'),
+    path(_('dua'), views.dua, name='dua'),
     path('dua/dua_nedir', views.dua_nedir, name='dua_nedir'),
     path('dua/yasin', views.yasin, name='yasin'),
     path('dua/yasin/mubin', views.mubin, name='mubin'),

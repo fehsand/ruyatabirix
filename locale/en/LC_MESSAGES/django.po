@@ -1,0 +1,1258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-22 17:25+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\ruyatabirix\settings.py:149
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: .\ruyatabirix\settings.py:149
+msgid "English"
+msgstr "İngilizce"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:50
+msgid "Rüya Nedir?"
+msgstr "What is Dream?"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:53
+msgid "Yıldızname Nedir?"
+msgstr "What is Yildizname?"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:56
+msgid "Tefe'ül Nedir?"
+msgstr "What is Tefeul?"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:59
+msgid "Dua Nedir?"
+msgstr "What is Prayer?"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:80
+msgid "Türkçe"
+msgstr ""
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:87
+msgid "İngilizce"
+msgstr ""
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:98
+msgid "Hesabım"
+msgstr "My Account"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:99
+msgid "Çıkış Yap"
+msgstr "Log Out"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:103
+msgid "Giriş Yap"
+msgstr "Log in"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:114
+msgid "Başa Dön"
+msgstr "Back to Top"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:115
+msgid "Gizlilik Politikası"
+msgstr "Privacy Policy"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:116
+msgid "İletişim"
+msgstr "Contact Us"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:116
+msgid "Sosyal Medya"
+msgstr "Social Media"
+
+#: .\ruyatabirleri\urls.py:9
+msgid "dua"
+msgstr "prayer"
+
+#: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
+msgid "Messages"
+msgstr "Mesajlar"
+
+#: .\sanor\Lib\site-packages\django\contrib\sitemaps\apps.py:7
+msgid "Site Maps"
+msgstr "Site Haritası"
+
+#: .\sanor\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\paginator.py:45
+msgid "That page number is not an integer"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\paginator.py:47
+msgid "That page number is less than 1"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\paginator.py:52
+msgid "That page contains no results"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:31
+msgid "Enter a valid value."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:102
+#: .\sanor\Lib\site-packages\django\forms\fields.py:658
+msgid "Enter a valid URL."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:154
+msgid "Enter a valid integer."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:165
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\sanor\Lib\site-packages\django\core\validators.py:239
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:246
+msgid ""
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:255
+#: .\sanor\Lib\site-packages\django\core\validators.py:275
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:260
+#: .\sanor\Lib\site-packages\django\core\validators.py:276
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:270
+#: .\sanor\Lib\site-packages\django\core\validators.py:274
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:304
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:310
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:342
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:351
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:361
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:376
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:395
+#: .\sanor\Lib\site-packages\django\forms\fields.py:290
+#: .\sanor\Lib\site-packages\django\forms\fields.py:325
+msgid "Enter a number."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:397
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:402
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:407
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:469
+#, python-format
+msgid ""
+"File extension '%(extension)s' is not allowed. Allowed extensions are: "
+"'%(allowed_extensions)s'."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\core\validators.py:521
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\base.py:1162
+#: .\sanor\Lib\site-packages\django\forms\models.py:756
+msgid "and"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\base.py:1164
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:104
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:105
+msgid "This field cannot be null."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:106
+msgid "This field cannot be blank."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:107
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:111
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:128
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:905
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1772
+msgid "Integer"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:909
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1770
+#, python-format
+msgid "'%(value)s' value must be an integer."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:984
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1850
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:996
+#, python-format
+msgid "'%(value)s' value must be either True or False."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:997
+#, python-format
+msgid "'%(value)s' value must be either True, False, or None."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:999
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1040
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1104
+msgid "Comma-separated integers"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1153
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1155
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1298
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1158
+msgid "Date (without time)"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1296
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1300
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1304
+msgid "Date (with time)"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1452
+#, python-format
+msgid "'%(value)s' value must be a decimal number."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1454
+msgid "Decimal number"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1593
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1596
+msgid "Duration"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1646
+msgid "Email address"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1669
+msgid "File path"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1735
+#, python-format
+msgid "'%(value)s' value must be a float."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1737
+msgid "Floating point number"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1866
+msgid "IPv4 address"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1897
+msgid "IP address"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1977
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1978
+#, python-format
+msgid "'%(value)s' value must be either None, True or False."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:1980
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2015
+msgid "Positive integer"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2028
+msgid "Positive small integer"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2042
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2074
+msgid "Small integer"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2081
+msgid "Text"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2109
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2111
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2114
+msgid "Time"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2240
+msgid "URL"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2262
+msgid "Raw binary data"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2312
+#, python-format
+msgid "'%(value)s' is not a valid UUID."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\__init__.py:2314
+msgid "Universally unique identifier"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\files.py:221
+msgid "File"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\files.py:360
+msgid "Image"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\related.py:778
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\related.py:780
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\related.py:1007
+msgid "One-to-one relationship"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\related.py:1057
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\related.py:1058
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\db\models\fields\related.py:1100
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: .\sanor\Lib\site-packages\django\forms\boundfield.py:146
+msgid ":?.!"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:53
+msgid "This field is required."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:245
+msgid "Enter a whole number."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:396
+#: .\sanor\Lib\site-packages\django\forms\fields.py:1126
+msgid "Enter a valid date."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:420
+#: .\sanor\Lib\site-packages\django\forms\fields.py:1127
+msgid "Enter a valid time."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:442
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:471
+msgid "Enter a valid duration."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:472
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:532
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:533
+msgid "No file was submitted."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:534
+msgid "The submitted file is empty."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:536
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:539
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:600
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:762
+#: .\sanor\Lib\site-packages\django\forms\fields.py:852
+#: .\sanor\Lib\site-packages\django\forms\models.py:1270
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:853
+#: .\sanor\Lib\site-packages\django\forms\fields.py:968
+#: .\sanor\Lib\site-packages\django\forms\models.py:1269
+msgid "Enter a list of values."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:969
+msgid "Enter a complete value."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\fields.py:1185
+msgid "Enter a valid UUID."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: .\sanor\Lib\site-packages\django\forms\forms.py:86
+msgid ":"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\forms.py:212
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\formsets.py:91
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\formsets.py:338
+#, python-format
+msgid "Please submit %d or fewer forms."
+msgid_plural "Please submit %d or fewer forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\forms\formsets.py:345
+#, python-format
+msgid "Please submit %d or more forms."
+msgid_plural "Please submit %d or more forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\forms\formsets.py:371
+#: .\sanor\Lib\site-packages\django\forms\formsets.py:373
+msgid "Order"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\formsets.py:375
+msgid "Delete"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\models.py:751
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\models.py:755
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\models.py:761
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\models.py:770
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\models.py:1091
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\models.py:1158
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\models.py:1272
+#, python-format
+msgid "\"%(pk)s\" is not a valid value."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\utils.py:162
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\widgets.py:395
+msgid "Clear"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\widgets.py:396
+msgid "Currently"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\widgets.py:397
+msgid "Change"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\widgets.py:709
+msgid "Unknown"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\widgets.py:710
+msgid "Yes"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\forms\widgets.py:711
+msgid "No"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\template\defaultfilters.py:788
+msgid "yes,no,maybe"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\template\defaultfilters.py:817
+#: .\sanor\Lib\site-packages\django\template\defaultfilters.py:834
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\template\defaultfilters.py:836
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\template\defaultfilters.py:838
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\template\defaultfilters.py:840
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\template\defaultfilters.py:842
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\template\defaultfilters.py:844
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dateformat.py:62
+msgid "p.m."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dateformat.py:63
+msgid "a.m."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dateformat.py:68
+msgid "PM"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dateformat.py:69
+msgid "AM"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dateformat.py:150
+msgid "midnight"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dateformat.py:152
+msgid "noon"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:6
+msgid "Monday"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:6
+msgid "Tuesday"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:6
+msgid "Wednesday"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:6
+msgid "Thursday"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:6
+msgid "Friday"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:7
+msgid "Saturday"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:7
+msgid "Sunday"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:10
+msgid "Tue"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:10
+msgid "Fri"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:11
+msgid "Sat"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:14
+msgid "January"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:14
+msgid "February"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:14
+msgid "March"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:14
+msgid "April"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:14
+msgid "May"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:14
+msgid "June"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:15
+msgid "July"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:15
+msgid "August"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:15
+msgid "September"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:15
+msgid "October"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:15
+msgid "November"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:16
+msgid "December"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:19
+msgid "jan"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:19
+msgid "feb"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:19
+msgid "mar"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:19
+msgid "apr"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:19
+msgid "may"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:19
+msgid "jun"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:20
+msgid "jul"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:20
+msgid "aug"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:20
+msgid "sep"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:20
+msgid "oct"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:20
+msgid "nov"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:20
+msgid "dec"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:23
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:24
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:25
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:26
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:27
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:28
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:29
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:30
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:31
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:32
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:33
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:34
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:37
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:38
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:39
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:40
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:41
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:42
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:43
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:44
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:45
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:46
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:47
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\dates.py:48
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\text.py:67
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\text.py:233
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: .\sanor\Lib\site-packages\django\utils\text.py:252
+#: .\sanor\Lib\site-packages\django\utils\timesince.py:83
+msgid ", "
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\utils\timesince.py:14
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\sanor\Lib\site-packages\django\utils\timesince.py:72
+msgid "0 minutes"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\csrf.py:110
+msgid "Forbidden"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\csrf.py:111
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\csrf.py:115
+msgid ""
+"You are seeing this message because this HTTPS site requires a 'Referer "
+"header' to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\csrf.py:120
+msgid ""
+"If you have configured your browser to disable 'Referer' headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for 'same-"
+"origin' requests."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\csrf.py:124
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the 'Referrer-Policy: no-referrer' header, please remove them. The "
+"CSRF protection requires the 'Referer' header to do strict referer checking. "
+"If you're concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" ...> for links to third-party sites."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\csrf.py:132
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\csrf.py:137
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for 'same-origin' requests."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\csrf.py:142
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:41
+msgid "No year specified"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:61
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:111
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:208
+msgid "Date out of range"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:90
+msgid "No month specified"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:142
+msgid "No day specified"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:188
+msgid "No week specified"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:338
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:367
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:589
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\dates.py:623
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\detail.py:54
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\list.py:67
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\list.py:72
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\generic\list.py:154
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\static.py:40
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\static.py:42
+#, python-format
+msgid "\"%(path)s\" does not exist"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\static.py:80
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:6
+msgid "Django: the Web framework for perfectionists with deadlines."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:345
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:367
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:368
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:383
+msgid "Django Documentation"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:384
+msgid "Topics, references, &amp; how-to's"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:395
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:396
+msgid "Get started with Django"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:407
+msgid "Django Community"
+msgstr ""
+
+#: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
+msgid "Connect, get help, or contribute"
+msgstr ""

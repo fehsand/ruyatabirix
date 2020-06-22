@@ -5,6 +5,13 @@ git status
 git commit -m "Gelistirme."
 git push
 
+Run makemessages:
+django-admin makemessages -l en
+
+Run compilemessages:
+django-admin compilemessages
+
+
 <img class="first-slide w-100" src="/static/logo_marka_2.png" height="600" alt="First slide">
 
 src="{% static 'images/logo_marka_2.png' %}"

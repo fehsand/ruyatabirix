@@ -1,3 +1,4 @@
+{% load i18n %}
 <!doctype html>
 <html>
 <head>
@@ -46,30 +47,60 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto ">
             <li class="nav-item ">
-                <a class="nav-link" href="{% url 'ruyatabirleri:ruyatabirleri_nedir'%}">Rüya Nedir?</a>
+                <a class="nav-link" href="{% url 'ruyatabirleri:ruyatabirleri_nedir'%}">{% trans "Rüya Nedir?" %}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'ruyatabirleri:yildizname_nedir'%}">Yıldızname Nedir?</a>
+                <a class="nav-link" href="{% url 'ruyatabirleri:yildizname_nedir'%}">{% trans "Yıldızname Nedir?" %}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'ruyatabirleri:tefeul_nedir'%}">Tefe'ül Nedir?</a>
+                <a class="nav-link" href="{% url 'ruyatabirleri:tefeul_nedir'%}">{% trans "Tefe'ül Nedir?" %}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'ruyatabirleri:dua_nedir'%}">Dua Nedir?</a>
+                <a class="nav-link" href="{% url 'ruyatabirleri:dua_nedir'%}">{% trans "Dua Nedir?" %}</a>
             </li>
         </ul>
+        <div class="dropdown p-0 m-0 my-1">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+            {% if language.code == LANGUAGE_CODE %}
+            <button class="btn btn-outline-dark mx-1 dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-globe fa-lg px-1"></i>
+                {{ language.name_local }}
+            </button>
+            {% endif %}
+            {% endfor %}
+            <div class="dropdown-menu dropdown-menu-left m-0 p-0" aria-labelledby="dropdownMenuButton">
+                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="/" />
+                    <a class="dropdown-item m-0 p-0">
+                        <button type="submit" name="language" value="tr" class="btn btn-link btn-block my-0 p-3">{% trans "Türkçe" %}</button>
+                    </a>
+                </form>
+                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}" />
+                    <a class="dropdown-item m-0 p-0">
+                        <button type="submit" name="language" value="en" class="btn btn-link btn-block my-0 p-3">{% trans "İngilizce" %}</button>
+                    </a>
+                </form>
+            </div>
+        </div>
         {% if user.is_authenticated %}
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-user"></i> {{user.username}}</button>
             <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="{% url 'register:hesap' %}">Hesabım</a>
-                <a class="dropdown-item" href="{% url 'register:logout' %}">Çıkış Yap</a>
+                <a class="dropdown-item" href="{% url 'register:hesap' %}">{% trans "Hesabım" %}</a>
+                <a class="dropdown-item" href="{% url 'register:logout' %}">{% trans "Çıkış Yap" %}</a>
             </div>
         </div>
         {% else %}
-        <a class="btn btn-outline-dark" href="{% url 'register:login' %}">Giriş Yap</a>
+        <a class="btn btn-outline-dark" href="{% url 'register:login' %}">{% trans "Giriş Yap" %}</a>
         {% endif %}
     </div>
 </nav>
@@ -80,9 +111,9 @@
 </main><!-- /.container -->
 <!-- FOOTER -->
 <footer class="container">
-    <p class="float-right"><a href="{% url 'ruyatabirleri:anasayfa'%}">Başa Dön</a></p>
-    <p>&copy; 2020 Ruyatabirix.com &middot; <a href="{% url 'ruyatabirleri:gizlilik'%}">Gizlilik Politikası</a>
-        &middot; <a href="{% url 'ruyatabirleri:iletisim'%}">İletişim/Sosyal Medya</a>
+    <p class="float-right"><a href="{% url 'ruyatabirleri:anasayfa'%}">{% trans "Başa Dön" %}</a></p>
+    <p>&copy; 2020 Ruyatabirix.com &middot; <a href="{% url 'ruyatabirleri:gizlilik'%}">{% trans "Gizlilik Politikası" %}</a>
+        &middot; <a href="{% url 'ruyatabirleri:iletisim'%}">{% trans "İletişim" %}/{% trans "Sosyal Medya" %}</a>
     </p>
 </footer>
 <!-- Bootstrap core JavaScript

@@ -7,6 +7,8 @@ from django.contrib.sitemaps import GenericSitemap
 
 from ruyatabirleri.sitemaps import StaticViewSitemap
 
+from django.conf.urls.i18n import i18n_patterns
+
 sitemaps = {
     'ruyatabirleri': GenericSitemap({
         'queryset': Ruyatabirleri.objects.all(),
@@ -17,8 +19,13 @@ sitemaps = {
 
 urlpatterns = [
     path ('sitemap.xml/', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path('i18n/', include('django.conf.urls.i18n')),
     path ('w2e3r4t5_admin/', admin.site.urls),
-    path ('', include ('ruyatabirleri.urls')),
     path ('register/', include('register.urls')),
     path ('comments/', include('django_comments.urls')),
 ]
+
+urlpatterns += i18n_patterns(
+    path('', include('ruyatabirleri.urls')),
+    prefix_default_language=False,
+)
