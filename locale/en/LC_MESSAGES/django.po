@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 17:25+0300\n"
+"POT-Creation-Date: 2020-06-22 22:25+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,38 @@ msgstr "Türkçe"
 #: .\ruyatabirix\settings.py:149
 msgid "English"
 msgstr "İngilizce"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:7
+msgid "RÜYA TABİRLERİ"
+msgstr "DREAM INTERPRETATION"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:12
+msgid "Rüya Tabirleri için Tıklayınız..."
+msgstr "Click for Dream Interpretations..."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:17
+msgid "YILDIZNAME"
+msgstr "HOROSCOPE"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:20
+msgid "Yıldızname için Tıklayınız..."
+msgstr "Click for Horoscope..."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:25
+msgid "TEFE'ÜL"
+msgstr "TEFEUL"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:35
+msgid "Tefe'ül için Tıklayınız..."
+msgstr "Click for Tefeul..."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:40
+msgid "DUA"
+msgstr "PRAYER"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:52
+msgid "Dua Bölümü için Tıklayınız..."
+msgstr "Click for Prayer"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:50
 msgid "Rüya Nedir?"
@@ -44,11 +76,11 @@ msgstr "What is Prayer?"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:80
 msgid "Türkçe"
-msgstr ""
+msgstr "Turkish"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:87
 msgid "İngilizce"
-msgstr ""
+msgstr "English"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:98
 msgid "Hesabım"
