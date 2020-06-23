@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 23:44+0300\n"
+"POT-Creation-Date: 2020-06-23 14:20+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,14 @@ msgid ""
 "<br>Aradığınız çıkış yolu bazen kelimede, bazen ayette bazen de surede gizli "
 "olabilir.<br>Hepsini beraber değerlendirmek, tefsir kitaplarından daha fazla "
 "bilgi edinmek gerektiğini unutmayınız.<br>"
-msgstr "\"If I lose the halves of my camel, I will find it in the Qur'an.\"<br> Ibn Abbas (R.A.)<br><br>In order to get your own share from the Quran, you start the \"Tefeul\" by stating the subject you want to consult with a clean intention.<br>What you are looking for can sometimes be hidden in the word, sometimes in the verse and sometimes in the sura.<br>Do not forget that it is necessary to evaluate all of them together and to learn more from tafsir books."
+msgstr ""
+"\"If I lose the halves of my camel, I will find it in the Qur'an.\"<br> Ibn "
+"Abbas (R.A.)<br><br>In order to get your own share from the Quran, you start "
+"the \"Tefeul\" by stating the subject you want to consult with a clean "
+"intention.<br>What you are looking for can sometimes be hidden in the word, "
+"sometimes in the verse and sometimes in the sura.<br>Do not forget that it "
+"is necessary to evaluate all of them together and to learn more from tafsir "
+"books."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:23
 msgid "Tefe'ül için Tıklayınız..."
@@ -91,7 +98,14 @@ msgid ""
 "40/60)<br><br>Duada biri zikir ve saygı, diğeri de dilek olmak üzere iki "
 "unsur bulunur.<br><br>Bu bölümde dileklerimizin gerçekleşmesi için nasıl dua "
 "etmeliyiz anlatılmıştır."
-msgstr "Prayer means asking or asking for help.<br>It is the fact that man turns to Allah with all his self and supplies his material and spiritual desires to Him.<br><br>What would my Lord value you if you do not have a prayer? (al-Furkan, 25/77)<br> Pray for me so that I will respond to you. (al-Mu'min, 40/60)<br> There are two elements in prayer, one of which is dhikr and respect and the other is wish. This section describes how we should pray for our wishes to come true."
+msgstr ""
+"Prayer means asking or asking for help.<br>It is the fact that man turns to "
+"Allah with all his self and supplies his material and spiritual desires to "
+"Him.<br><br>What would my Lord value you if you do not have a prayer? (al-"
+"Furkan, 25/77)<br> Pray for me so that I will respond to you. (al-Mu'min, "
+"40/60)<br> There are two elements in prayer, one of which is dhikr and "
+"respect and the other is wish. This section describes how we should pray for "
+"our wishes to come true."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:30
 msgid "Dua Bölümü için Tıklayınız..."
@@ -152,6 +166,42 @@ msgstr "Social Media"
 #: .\ruyatabirleri\urls.py:9
 msgid "dua"
 msgstr "prayer"
+
+#: .\ruyatabirleri\urls.py:10
+msgid "dua/dua_nedir"
+msgstr "prayer/what-is-prayer"
+
+#: .\ruyatabirleri\urls.py:20
+msgid "tefeul"
+msgstr "tefeul"
+
+#: .\ruyatabirleri\urls.py:21
+msgid "tefeul/tefeul_nedir"
+msgstr "tefeul/what-is-tefeul"
+
+#: .\ruyatabirleri\urls.py:23
+msgid "iletisim/"
+msgstr "contact/"
+
+#: .\ruyatabirleri\urls.py:24
+msgid "ruyatabirleri_gizlilik/"
+msgstr "dreaminterpretations-privacy"
+
+#: .\ruyatabirleri\urls.py:25
+msgid "yildizname/"
+msgstr "horoscope/"
+
+#: .\ruyatabirleri\urls.py:26
+msgid "yidizname/yildizname_nedir/"
+msgstr "horoscope/what-is-horoscope/"
+
+#: .\ruyatabirleri\urls.py:27
+msgid "ruyatabirleri/"
+msgstr "dreaminterpretations/"
+
+#: .\ruyatabirleri\urls.py:28
+msgid "ruyatabirleri/ruyatabirleri_nedir/"
+msgstr "dreaminterpretations/what-is-dreaminterpretations/"
 
 #: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
