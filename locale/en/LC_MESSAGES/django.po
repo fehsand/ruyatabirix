@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-23 22:44+0300\n"
+"POT-Creation-Date: 2020-06-24 14:55+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgstr "Click for Dream Interpretations..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
 msgid "YILDIZNAME"
-msgstr "HOROSCOPE"
+msgstr "YILDIZNAME"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:15
 msgid ""
@@ -58,6 +58,7 @@ msgstr ""
 "writing the name of yourself and your mother."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:16
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:26
 msgid "Yıldızname için Tıklayınız..."
 msgstr "Click for Horoscope..."
 
@@ -128,7 +129,11 @@ msgid ""
 "            3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli insanların "
 "gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.\n"
 "            "
-msgstr "Dream means what is seen while sleeping. Dreams are three parts: <br> 1. Bad dreams produced by Satan, <br> 2. Subconscious dreams. Dreams about what people are busy with, <br> 3. Other dreams. Dreams that are seen by kindhearted people, outside the first and second kind of dreams."
+msgstr ""
+"Dream means what is seen while sleeping. Dreams are three parts: <br> 1. Bad "
+"dreams produced by Satan, <br> 2. Subconscious dreams. Dreams about what "
+"people are busy with, <br> 3. Other dreams. Dreams that are seen by "
+"kindhearted people, outside the first and second kind of dreams."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:14
 msgid "Rüyanın Etkileri"
@@ -144,7 +149,13 @@ msgid ""
 "olduğunu belirtse de genel olarak rüya ile amel edilemez.\n"
 "            Rüya yorumunda rüyanın iyi ve isabetli yorumlanması esastır.\n"
 "            "
-msgstr "People are responsible for the state of wakefulness. In other words, except for wakefulness, such as sleep and fainting, he was not held responsible for his work.<br>News coming in a positive or negative way in the dream does not represent an objective value.<br>Although some people state that they have exceptions, they cannot be operated with dreams in general. Good and accurate interpretation of the dream is essential in dream interpretation."
+msgstr ""
+"People are responsible for the state of wakefulness. In other words, except "
+"for wakefulness, such as sleep and fainting, he was not held responsible for "
+"his work.<br>News coming in a positive or negative way in the dream does not "
+"represent an objective value.<br>Although some people state that they have "
+"exceptions, they cannot be operated with dreams in general. Good and "
+"accurate interpretation of the dream is essential in dream interpretation."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:22
 msgid "Rüya ile İlgili Hadisler"
@@ -182,9 +193,23 @@ msgid ""
 "sığınsın! Çünkü (o zaman) o rüya kendisine\n"
 "            zarar vermez!” Ebu Davud 5021<br>\n"
 "            "
-msgstr "Abu Said alKhudri reported:<br> The Prophet, peace and blessings be upon him, said, \"When one of you sees a dream he likes, it is from Allah so let him praise Allah for it and speak about it. When one of you sees something else he dislikes, it is from Satan so let him seek refuge from its evil and not mention it to anyone. It will not harm him.\"<br><br>Abu Qatadah reported:<br> The Prophet, peace and blessings be upon him, said, \"The good dream is from Allah and the bad dream is from Satan. Whoever sees something he dislikes, let him blow to his left side three times and seek refuge from Satan. Verily, it will not harm him and Satan cannot appear in my form.\"<br><br>Abu Huraira reported:<br> The Messenger of Allah, peace and blessings be upon him, said, \"When the end of time approaches, the dream of a believer can hardly be false. The dream of a believer is one of forty six parts of prophecy and whatever is from prophecy cannot be false.\"<br><br>"
+msgstr ""
+"Abu Said alKhudri reported:<br> The Prophet, peace and blessings be upon "
+"him, said, \"When one of you sees a dream he likes, it is from Allah so let "
+"him praise Allah for it and speak about it. When one of you sees something "
+"else he dislikes, it is from Satan so let him seek refuge from its evil and "
+"not mention it to anyone. It will not harm him.\"<br><br>Abu Qatadah "
+"reported:<br> The Prophet, peace and blessings be upon him, said, \"The good "
+"dream is from Allah and the bad dream is from Satan. Whoever sees something "
+"he dislikes, let him blow to his left side three times and seek refuge from "
+"Satan. Verily, it will not harm him and Satan cannot appear in my form."
+"\"<br><br>Abu Huraira reported:<br> The Messenger of Allah, peace and "
+"blessings be upon him, said, \"When the end of time approaches, the dream of "
+"a believer can hardly be false. The dream of a believer is one of forty six "
+"parts of prophecy and whatever is from prophecy cannot be false.\"<br><br>"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:53
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:7
 msgid "Yıldızname Nedir?"
 msgstr "What is Yildizname?"
 
@@ -196,57 +221,91 @@ msgstr "What is Tefeul?"
 msgid "Dua Nedir?"
 msgstr "What is Prayer?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:80
-msgid "Türkçe"
-msgstr "Turkish"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:87
-msgid "İngilizce"
-msgstr "English"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:98
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:69
 msgid "Hesabım"
 msgstr "My Account"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:99
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:70
 msgid "Çıkış Yap"
 msgstr "Log Out"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:103
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:74
 msgid "Giriş Yap"
 msgstr "Log in"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:114
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:95
+msgid "Türkçe"
+msgstr "Turkish"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:102
+msgid "İngilizce"
+msgstr "English"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:116
 msgid "Başa Dön"
 msgstr "Back to Top"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:115
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:117
 msgid "Gizlilik Politikası"
 msgstr "Privacy Policy"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:116
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
 msgid "İletişim"
 msgstr "Contact Us"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:116
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
 msgid "Sosyal Medya"
 msgstr "Social Media"
 
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:9
+msgid ""
+" Yıldız falı yıldızların konum ve hareketlerinin bir işaret sistemi "
+"oluşturduğuna,\n"
+"            bu sayede insan hayatının evrelerinin bilinebileceği iddiasına "
+"dayanır.\n"
+"            Yıldız falına bakmak üzere yazılmış kitaplara da yıldıznâme "
+"denir.<br><br>\n"
+"            Yıldız falı genellikle evlilik, iş hayatı, yolculuk ve savaş "
+"gibi önemli işlere karar vermeden önce sonucun\n"
+"            uğurlu olup olmadığını öğrenmek için yapılmaktaydı.<br><br>\n"
+"            Yıldıznâmelerde burçların özelliklerine dair yer alan bilgiler "
+"geçmiş tecrübeler sayesinde ortaya çıkmıştır.<br><br>\n"
+"            Unutmamak gerekir ki birtakım işlemler sonucu yıldızların "
+"insanları etkilediğine inanmak tevhid inancına aykırı bir durumdur.\n"
+"            Bu tür faaliyetler inanç boyutuna taşınmadan eğlence diye "
+"yapılmalıdır.\n"
+"            "
+msgstr "The horoscope is based on the claim that the positions and movements of stars form a sign system, so that the phases of human life can be known. Books written for horoscope are also called \"YILDIZNAME\".<br><br>Horoscope is usually done to find out if the result is auspicious before deciding on important jobs such as marriage, business, travel and war. <br><br> The information about the features of the zodiac signs in Yildizname has been obtained with past experiences.<br><br>It should not be forgotten that believing that stars affect people as a result of some operations is contrary to our religious belief. Such activities should be done as entertainment."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:19
+msgid "Nasıl Hesaplanır?"
+msgstr "How is it Calculated?"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:21
+msgid ""
+" Ebced hesabıyla yıldızname bakılırken, kişinin anne ismi ile kendi isminin "
+"her harfinin\n"
+"            Ebced-i Kebir değerleri toplanır ve 12 ye bölünür. Kalan sayı "
+"kaç numaralı burca bakılması gerektiğini\n"
+"            söyler ve o kişinin yıldıznamesi bulunmuş olur.\n"
+"            "
+msgstr "While calculating \"Yildizname\" with Abjad system, Abjad values of each letter of the person and mother's name are added and divided by 12. The remaining number tells which section should be read and the horoscope of that person has been found."
+
 #: .\ruyatabirleri\urls.py:9
 msgid "dua"
-msgstr "prayer"
+msgstr "prayer/"
 
 #: .\ruyatabirleri\urls.py:10
 msgid "dua/dua_nedir"
-msgstr "prayer/what-is-prayer"
+msgstr "prayer/what-is-prayer/"
 
 #: .\ruyatabirleri\urls.py:20
 msgid "tefeul"
-msgstr "tefeul"
+msgstr "tefeul/"
 
 #: .\ruyatabirleri\urls.py:21
 msgid "tefeul/tefeul_nedir"
-msgstr "tefeul/what-is-tefeul"
+msgstr "tefeul/what-is-tefeul/"
 
 #: .\ruyatabirleri\urls.py:23
 msgid "iletisim/"
@@ -254,7 +313,7 @@ msgstr "contact/"
 
 #: .\ruyatabirleri\urls.py:24
 msgid "ruyatabirleri_gizlilik/"
-msgstr "dreaminterpretations-privacy"
+msgstr "dreaminterpretations-privacy/"
 
 #: .\ruyatabirleri\urls.py:25
 msgid "yildizname/"

@@ -1,10 +1,12 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
+{% load i18n %}
 
 {% block content %}
 <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
     <div class="col-md-12 px-0">
-        <h1 class="display-4 font-italic">Yıldızname Nedir?</h1>
-        <p class="lead my-3">Yıldız falı yıldızların konum ve hareketlerinin bir işaret sistemi oluşturduğuna,
+        <h1 class="display-4 font-italic">{% trans "Yıldızname Nedir?" %}</h1>
+        <p class="lead my-3">
+            {% blocktrans %} Yıldız falı yıldızların konum ve hareketlerinin bir işaret sistemi oluşturduğuna,
             bu sayede insan hayatının evrelerinin bilinebileceği iddiasına dayanır.
             Yıldız falına bakmak üzere yazılmış kitaplara da yıldıznâme denir.<br><br>
             Yıldız falı genellikle evlilik, iş hayatı, yolculuk ve savaş gibi önemli işlere karar vermeden önce sonucun
@@ -12,13 +14,16 @@
             Yıldıznâmelerde burçların özelliklerine dair yer alan bilgiler geçmiş tecrübeler sayesinde ortaya çıkmıştır.<br><br>
             Unutmamak gerekir ki birtakım işlemler sonucu yıldızların insanları etkilediğine inanmak tevhid inancına aykırı bir durumdur.
             Bu tür faaliyetler inanç boyutuna taşınmadan eğlence diye yapılmalıdır.
+            {% endblocktrans %}
         </p>
-        <h1 class="display-4 font-italic">Nasıl Hesaplanır?</h1>
-        <p class="lead my-3">Ebced hesabıyla yıldızname bakılırken, kişinin anne ismi ile kendi isminin her harfinin
+        <h1 class="display-4 font-italic">{% trans "Nasıl Hesaplanır?" %}</h1>
+        <p class="lead my-3">
+            {% blocktrans %} Ebced hesabıyla yıldızname bakılırken, kişinin anne ismi ile kendi isminin her harfinin
             Ebced-i Kebir değerleri toplanır ve 12 ye bölünür. Kalan sayı kaç numaralı burca bakılması gerektiğini
             söyler ve o kişinin yıldıznamesi bulunmuş olur.
+            {% endblocktrans %}
         </p>
-        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">Yıldızname için Tıklayınız...</a></p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:yildizname'%}" class="text-white font-weight-bold">{% trans "Yıldızname için Tıklayınız..." %}</a></p>
         </div>
 </div>
 {% endblock %}
