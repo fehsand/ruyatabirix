@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-23 14:20+0300\n"
+"POT-Creation-Date: 2020-06-23 22:44+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,7 @@ msgstr ""
 "dream, you should search using only the word CAR."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:44
 msgid "Rüya Tabirleri için Tıklayınız..."
 msgstr "Click for Dream Interpretations..."
 
@@ -111,9 +112,77 @@ msgstr ""
 msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Click for Prayer"
 
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:6
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:50
 msgid "Rüya Nedir?"
 msgstr "What is Dream?"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:8
+msgid ""
+" Rüya, uyku halindeki görüş veya görülen şey demektir. Rüyalar üç kısımdır :"
+"<br>\n"
+"            1. İnsanları mahzun etmek için şeytan tarafından üretilen kötü "
+"ve korkunç rüyalar,<br>\n"
+"            2. İnsanın uyanıkken meşgul olduğu şeylere ait gördüğü rüyalar, "
+"(Bunlara Bilinçaltı rüyaları da diyoruz.)<br>\n"
+"            3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli insanların "
+"gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.\n"
+"            "
+msgstr "Dream means what is seen while sleeping. Dreams are three parts: <br> 1. Bad dreams produced by Satan, <br> 2. Subconscious dreams. Dreams about what people are busy with, <br> 3. Other dreams. Dreams that are seen by kindhearted people, outside the first and second kind of dreams."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:14
+msgid "Rüyanın Etkileri"
+msgstr "Effects of Dream"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:16
+msgid ""
+" İnsan uyanıklık hali ile sorumludur. Yani uyanıklık haricinde uyku ve "
+"baygınlık gibi yaptığı işlerden\n"
+"            sorumlu tutulmamıştır. Rüyada ister olumlu ister olumsuz manada "
+"gelen haberler objektif bir değer ifade etmez.\n"
+"            Bağlayıcı bir delil kabul edilemez. Bazı kimseler istisnaları "
+"olduğunu belirtse de genel olarak rüya ile amel edilemez.\n"
+"            Rüya yorumunda rüyanın iyi ve isabetli yorumlanması esastır.\n"
+"            "
+msgstr "People are responsible for the state of wakefulness. In other words, except for wakefulness, such as sleep and fainting, he was not held responsible for his work.<br>News coming in a positive or negative way in the dream does not represent an objective value.<br>Although some people state that they have exceptions, they cannot be operated with dreams in general. Good and accurate interpretation of the dream is essential in dream interpretation."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:22
+msgid "Rüya ile İlgili Hadisler"
+msgstr "Hadith on Dreams"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:24
+msgid ""
+" 1. “Rüya tabir edildiği şekilde gerçekleşir. Bunun örneği ise ayağını "
+"kaldıran ve onu yere\n"
+"            koyacağı zamanı bekleyen kimsenin durumuna benzer. Buna göre "
+"sizden herhangi bir kimse bir rüya görecek olursa\n"
+"            onu ya kendisinin iyiliğini isteyen, samimi birisine ya da (rüya "
+"tabirinden anlayan) alim birisine anlatsın!\n"
+"            Başkasına anlatmasın!” Hakim Müstedrek 4/391<br>\n"
+"            <br>\n"
+"            2. “Rüya yorumlanmadığı sürece bir kuşun ayağı üzerindedir (yani "
+"istikrarsızdır). Yorumlandığı zaman\n"
+"            (yorumlandığı şekilde) gerçekleşir. Sen onu (seni) seven ve "
+"(rüya tabirini) bilen kimseden başkasına anlatma!”\n"
+"            Ebu Davud 5020<br>\n"
+"            <br>\n"
+"            3. “Mü’minin rüyası, Nebîliğin kırk altı parçasından bir "
+"parçadır!” Darimi 2143<br>\n"
+"            <br>\n"
+"            4. “İyi rüya Allah’tandır. Bu sebeple biriniz sevdiği bir rüya "
+"gördüğünde Allah’a hamdetsin ve onu sadece sevdiği\n"
+"            kimselere anlatsın! Biriniz hoşlanmadığı bir rüya gördüğünde ise "
+"soluna üç defa tükürsün ve şerrinden Allah’a sığınsın,\n"
+"            onu hiç kimseye de anlatmasın! Artık o kötü rüya ona zarar "
+"veremez.” Darimi 2148<br>\n"
+"            <br>\n"
+"            5. “Rüya Allah’tandır. Kötü, korkunç ve çirkin rüya ise "
+"şeytandadır! Biriniz, hoşlanmadığı bir rüya görürse\n"
+"            sol tarafına üç defa tükürüp sonra o rüyanın şerrinden Allah’a "
+"sığınsın! Çünkü (o zaman) o rüya kendisine\n"
+"            zarar vermez!” Ebu Davud 5021<br>\n"
+"            "
+msgstr "Abu Said alKhudri reported:<br> The Prophet, peace and blessings be upon him, said, \"When one of you sees a dream he likes, it is from Allah so let him praise Allah for it and speak about it. When one of you sees something else he dislikes, it is from Satan so let him seek refuge from its evil and not mention it to anyone. It will not harm him.\"<br><br>Abu Qatadah reported:<br> The Prophet, peace and blessings be upon him, said, \"The good dream is from Allah and the bad dream is from Satan. Whoever sees something he dislikes, let him blow to his left side three times and seek refuge from Satan. Verily, it will not harm him and Satan cannot appear in my form.\"<br><br>Abu Huraira reported:<br> The Messenger of Allah, peace and blessings be upon him, said, \"When the end of time approaches, the dream of a believer can hardly be false. The dream of a believer is one of forty six parts of prophecy and whatever is from prophecy cannot be false.\"<br><br>"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:53
 msgid "Yıldızname Nedir?"
