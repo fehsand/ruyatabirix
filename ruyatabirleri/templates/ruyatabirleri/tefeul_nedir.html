@@ -1,11 +1,12 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
+{% load i18n %}
 
 {% block content %}
 <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
     <div class="col-md-12 px-0">
-        <h1 class="display-4 font-italic">Tefe'ül Nedir?</h1>
+        <h1 class="display-4 font-italic">{% trans "Tefe'ül Nedir?" %}</h1>
         <p class="lead my-3">
-            Bir kitabı gelişigüzel açarak ilk tevafuk eden yeri okuyup ondan bir mesaj çıkarmaya tefe'ül denmektedir.<br>
+            {% blocktrans %} Bir kitabı gelişigüzel açarak ilk tevafuk eden yeri okuyup ondan bir mesaj çıkarmaya tefe'ül denmektedir.<br>
             Tefeül bir şeyi uğur saymak, bir olayı bir hayrın başlangıçı görmektir.<br>
             Ayrıca Kuranı Kerime bakarak karar vermektir.<br>
             <br>
@@ -29,10 +30,11 @@
             <br>
             Bununla, “Kur’an’da her şey var.. Fakat bir kısmı açık, bir kısmı işari yolla ifade edilmiş..<br>
             Herkes kendi ilmi birikimine göre, anlayış ve kabiliyetine göre aradığını onda bulabileceğini..”  kastetmiştir.
+            {% endblocktrans %}
         </p>
-        <h1 class="display-4 font-italic">Tefe'ül Nasıl Yapılır?</h1>
+        <h1 class="display-4 font-italic">{% trans "Tefe'ül Nasıl Yapılır?" %}</h1>
         <p class="lead my-3">
-            Tefeül de esas olan bunun bir fal olmadığını, istişare olduğunu akılda tutmak temiz bir niyet ile yapmaktır.
+            {% blocktrans %}Tefeül de esas olan bunun bir fal olmadığını, istişare olduğunu akılda tutmak temiz bir niyet ile yapmaktır.
             Kuranı kerim aracılığıyla Rabbimizle istişare ediyoruz. Yani Ona danışıyoruz.<br>
             <br>
             Tefeül ile yaşanılan durumda yapılması gerekenin ne olduğuna bakılır.
@@ -47,8 +49,9 @@
             Hiç bir zaman umutsuzluğa kapılmadan belirli zaman aralıklarıyla tefeül tekrar edilebilir.<br>
             <br>
             Tefeül'ün bir fal olmadığı akıldan çıkarılmamalıdır.
+            {% endblocktrans %}
         </p>
-        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:tefeul'%}" class="text-white font-weight-bold">Tefe'ül için Tıklayınız...</a></p>
+        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:tefeul'%}" class="text-white font-weight-bold">{% trans "Tefe'ül için Tıklayınız..." %}</a></p>
         </div>
 </div>
 {% endblock %}
