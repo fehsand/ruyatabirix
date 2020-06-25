@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-24 22:45+0300\n"
+"POT-Creation-Date: 2020-06-25 23:26+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,7 @@ msgstr "İngilizce"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:7
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:9
 msgid "RÜYA TABİRLERİ"
 msgstr "DREAM INTERPRETATION"
 
@@ -116,6 +117,25 @@ msgstr ""
 msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Click for Prayer"
 
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:7
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:117
+msgid "Gizlilik Politikası"
+msgstr "Privacy Policy"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
+msgid "İletişim"
+msgstr "Contact Us"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:41
+msgid "GÖNDER"
+msgstr "SEND"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:49
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
+msgid "Sosyal Medya"
+msgstr "Social Media"
+
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:7
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:59
 msgid "Dua Nedir?"
@@ -165,12 +185,9 @@ msgstr ""
 "be upon him, said, \"Prayer is the essence of worship.\" "
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:18
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:20
 msgid "ARA"
 msgstr "SEARCH"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:28
-msgid "Rüyada {{item.kelime}} görmek"
-msgstr "To see {{item.kelime}} in a dream"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:35
 msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
@@ -398,18 +415,6 @@ msgstr "English"
 msgid "Başa Dön"
 msgstr "Back to Top"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:117
-msgid "Gizlilik Politikası"
-msgstr "Privacy Policy"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
-msgid "İletişim"
-msgstr "Contact Us"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
-msgid "Sosyal Medya"
-msgstr "Social Media"
-
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:9
 msgid ""
 " Yıldız falı yıldızların konum ve hareketlerinin bir işaret sistemi "
@@ -497,6 +502,11 @@ msgstr "dreaminterpretations/"
 #: .\ruyatabirleri\urls.py:28
 msgid "ruyatabirleri/ruyatabirleri_nedir/"
 msgstr "dreaminterpretations/what-is-dreaminterpretations/"
+
+#: .\ruyatabirleri\views.py:8 .\ruyatabirleri\views.py:72
+#: .\ruyatabirleri\views.py:88
+msgid "Aramak İstediğin Kelimeyi Yaz"
+msgstr "Write the keyword"
 
 #: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -1672,3 +1682,6 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "Rüyada {{item.kelime}} görmek"
+#~ msgstr "To see {{item.kelime}} in a dream"

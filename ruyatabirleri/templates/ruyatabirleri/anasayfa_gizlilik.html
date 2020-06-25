@@ -1,9 +1,10 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
+{% load i18n %}
 
 {% block content %}
 <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
     <div class="col-md-12 px-0">
-        <h1 class="display-4 font-italic">Gizlilik Politikası</h1>
+        <h1 class="display-4 font-italic">{% trans "Gizlilik Politikası" %}</h1>
         <p class="lead my-3">
             Sitemizi kullanmaya başladığınız andan itibaren burada yazılı olan kuralları kabul etmiş sayılmaktasınız.
             Sitede yer alan bilgiler, yazılar genel bilgi paylaşımı amaçlıdır.
@@ -64,7 +65,6 @@
             <br> veya<br>
             <br>
             https://support.google.com/analytics/answer/6004245?hl=tr<br>
-            <br>
         </p>
     </div>
 </div>
