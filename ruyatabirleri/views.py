@@ -2,8 +2,10 @@ import random
 from .forms import AramaForm, YildiznameForm, iletisimForm
 from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler
 from django.shortcuts import render, get_object_or_404
+from django.utils.translation import gettext_lazy as _
 
 def ruyatabirleri (response):
+    place_holder_1 = _('Aramak İstediğin Kelimeyi Yaz')
     if response.method == "POST":
         form = AramaForm(response.POST)
         if form.is_valid():
@@ -20,7 +22,7 @@ def ruyatabirleri (response):
             for harf in n:
                 if not harf in harfler:
                     mesaj = ' : Sadece Türkçe Harflerden Oluşmalıdır.'
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'n1': n1, 'mesaj': mesaj})
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'n1': n1, 'mesaj': mesaj, 'place_holder_1':place_holder_1})
                 else:
                     pass
             #--------------------Karakter Kontrolü bitti----------------
@@ -29,7 +31,7 @@ def ruyatabirleri (response):
             tabir1 = Ruyatabirleri.objects.filter (kelime__contains=n)
 
             if tabir1:
-                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1}) #tabir var
+                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1, 'place_holder_1':place_holder_1}) #tabir var
             else:
 #--birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
                 kelimlere_ayir = n.split (" ")
@@ -53,20 +55,21 @@ def ruyatabirleri (response):
                             tabir_listesi += [i]
                 tabir1=tabir_listesi
                 mesaj = "Aradığınız rüya yorumu bulunamamıştır. En yakın yorumlar aşağıda listelenmişti."
-                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'tabir1': tabir1})
+                return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'tabir1': tabir1, 'place_holder_1':place_holder_1})
         else:
             pass
         form = AramaForm ()
         mesaj = 'Lütfen Bir Kelime Yazınız.'
-        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
+        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form, 'place_holder_1':place_holder_1})
     else:
         form = AramaForm ()
-        return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form':form})
+        return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form':form, 'place_holder_1':place_holder_1})
 
 def gizlilik (request):
     return render(request,'ruyatabirleri/anasayfa_gizlilik.html', {})
 
 def ruyatabirleri_ayrinti (response, slug=None):
+    place_holder_1 = _('Aramak İstediğin Kelimeyi Yaz')
     tabir1 = get_object_or_404 (Ruyatabirleri, slug=slug)
     karakter_satiri=int(len (tabir1.tabiri)/100)
     sayac=0
@@ -79,12 +82,13 @@ def ruyatabirleri_ayrinti (response, slug=None):
         satir=(sayac+2)
     object_pk=tabir1.id
     form = AramaForm ()
-    return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html', {'satir':satir,'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
+    return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html', {'satir':satir,'tabir1': tabir1, 'form': form, 'object_pk': object_pk, 'place_holder_1':place_holder_1})
 
 def harf_sayfalari (response, harf):
+    place_holder_1 = _('Aramak İstediğin Kelimeyi Yaz')
     tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
     form = AramaForm ()
-    return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1, 'form': form})
+    return render(response,'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1, 'form': form, 'place_holder_1':place_holder_1})
 
 def anasayfa (request):
     return render(request,'ruyatabirleri/anasayfa.html', {})

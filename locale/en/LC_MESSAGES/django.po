@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-24 17:22+0300\n"
+"POT-Creation-Date: 2020-06-24 22:45+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,7 @@ msgid "English"
 msgstr "İngilizce"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:7
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:8
 msgid "RÜYA TABİRLERİ"
 msgstr "DREAM INTERPRETATION"
 
@@ -155,7 +156,25 @@ msgid ""
 "            yaratıklara dua ve ibadet edilmemesi Kur’an’da ısrarla "
 "vurgulanmıştır (Şuarâ, 26/213; Kasas, 28/88).\n"
 "            "
-msgstr "Dua means literally, calling, asking, asking for help. As a religious term, it is the fact that people present their material and spiritual desires to Allah.<br><br>Prayer is a liaison between God and the servant. There is always praise and demanding Allah in prayer. Prayer is also dhikr and worship.<br><br>For this reason, The Messenger of Allah, peace and blessings be upon him, said, \"Prayer is the essence of worship.\" "
+msgstr ""
+"Dua means literally, calling, asking, asking for help. As a religious term, "
+"it is the fact that people present their material and spiritual desires to "
+"Allah.<br><br>Prayer is a liaison between God and the servant. There is "
+"always praise and demanding Allah in prayer. Prayer is also dhikr and "
+"worship.<br><br>For this reason, The Messenger of Allah, peace and blessings "
+"be upon him, said, \"Prayer is the essence of worship.\" "
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:18
+msgid "ARA"
+msgstr "SEARCH"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:28
+msgid "Rüyada {{item.kelime}} görmek"
+msgstr "To see {{item.kelime}} in a dream"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:35
+msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
+msgstr "Dream Dictionary"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:6
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:50
