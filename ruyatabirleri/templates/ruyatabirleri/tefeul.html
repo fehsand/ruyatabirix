@@ -1,34 +1,35 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
+{% load i18n %}
 
 {% block content %}
 <div class="row mt-3 mb-5 mx-0 p-0">
     <div class="col-md-12 m-0 p-0">
         <div class="row mt-5 m-0 p-0">
             <div class="col-md-6 my-0 mx-auto p-0">
-                <h1 class="display-4 font-italic border-bottom box-shadow">TEFE'ÜL</h1>
-                <p class="lead my-3">Niyet ediniz ve başlatınız.</p>
+                <h1 class="display-4 font-italic border-bottom box-shadow">{% trans "TEFE'ÜL" %}</h1>
+                <p class="lead my-3">{% trans "Niyet ediniz ve başlatınız." %}</p>
                 <p class="lead my-3 text-center" style="font-size:25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
             </div>
         </div>
         <div class="row my-5 mx-0 p-0">
             <div class="col-md-6 my-0 mx-auto p-0">
-                <a href="{% url 'ruyatabirleri:tefeul_yap' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">TEFE'ÜL YAP</a>
+                <a href="{% url 'ruyatabirleri:tefeul_yap' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">{% trans "BAŞLAT" %}</a>
             </div>
         </div>
         <div class="row my-5 mx-0 p-0">
             <div class="col-md-12 text-center">
                 {% for item in bilgi_satiri_2 %}
-                <p class="lead my-3">{{item.sure_no}}. surenin {{item.ayet_no}}. ayetinin {{hangi_kelime}}. kelimesi.</p>
+                <p class="lead my-3">{{item.sure_no}}. {% trans "Sure" %} {{item.ayet_no}}. {% trans "Ayet" %} {{hangi_kelime}}. {% trans "Kelime" %}.</p>
                 {% endfor %}
                 {% for item in bilgi_satiri_3 %}
-                <p class="lead my-3 py-3 border w-50 mx-auto h1">Kelime : {{item.kelime_arapca}}</p>
-                <p class="lead my-3">Anlamı : {{item.kelime_turkce}}</p>
+                <p class="lead my-3 py-3 border w-50 mx-auto h1">{% trans "Kelime" %} : {{item.kelime_arapca}}</p>
+                <p class="lead my-3">{% trans "Anlamı" %} : {{item.kelime_turkce}}</p>
                 {% endfor %}
                 {% for item in bilgi_satiri_2 %}
-                <p class="lead my-3">Ayet : {{item.ayet}} &#1757</p>
-                <p class="lead my-3">Meal : {{item.ayet_meal}}</p>
-                <p class="lead my-3">Sure : {{item.sure_isim}}</p>
-                <p class="lead my-3 border-top">BİLGİ : Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı olabilir.</p>
+                <p class="lead my-3">{% trans "Ayet" %} : {{item.ayet}} &#1757</p>
+                <p class="lead my-3">{% trans "Anlamı" %} : {{item.ayet_meal}}</p>
+                <p class="lead my-3">{% trans "Sure" %} : {{item.sure_isim}}</p>
+                <p class="lead my-3 border-top">{% trans "BİLGİ" %} : {% trans "Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı olabilir." %}</p>
                 <p><a href="http://tanzil.net/#1:7">Tanzil.net</a></p>
                 <p><a href="http://kuranharitasi.com/kuran.aspx?sureno=1&ayetno=1">Kuranharitasi.com</a></p>
                 {% endfor %}

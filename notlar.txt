@@ -1,4 +1,11 @@
 
+
+#~ msgid "Rüyada {{item.kelime}} görmek"
+#~ msgstr "To see {{item.kelime}} in a dream"
+
+
+
+
 Github güncelleme:
 git status
 git add --all .

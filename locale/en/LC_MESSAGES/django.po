@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-25 23:26+0300\n"
+"POT-Creation-Date: 2020-06-26 17:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,7 @@ msgid "Rüya Tabirleri için Tıklayınız..."
 msgstr "Click for Dream Interpretations..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:9
 msgid "YILDIZNAME"
 msgstr "YILDIZNAME"
 
@@ -65,6 +66,7 @@ msgid "Yıldızname için Tıklayınız..."
 msgstr "Click for Horoscope..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:9
 msgid "TEFE'ÜL"
 msgstr "TEFEUL"
 
@@ -91,6 +93,7 @@ msgid "Tefe'ül için Tıklayınız..."
 msgstr "Click for Tefeul..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:28
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:9
 msgid "DUA"
 msgstr "PRAYER"
 
@@ -122,6 +125,122 @@ msgstr "Click for Prayer"
 msgid "Gizlilik Politikası"
 msgstr "Privacy Policy"
 
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:9
+msgid ""
+"Sitemizi kullanmaya başladığınız andan itibaren burada yazılı olan kuralları "
+"kabul etmiş sayılmaktasınız.\n"
+"            Sitede yer alan bilgiler, yazılar genel bilgi paylaşımı "
+"amaçlıdır.\n"
+"            Hiçbir şeyde kesin bilgi, kesin doğruluk iddiası yoktur.\n"
+"            Bilgilerin çoğu konusunda uzman kişlerin makalelerinden "
+"derlenmiştir.<br><br>\n"
+"            Ruyatabirix.com sitemiz, kullanıcılarının güvenliğini esas alan "
+"ve bu güvenliği korumak için üstüne düşen görevleri yerine getiren bir yayın "
+"politikası izlemektedir.\n"
+"            Ruyatabirix.com sitemizde reklam hizmeti sunmak için 3. taraf "
+"reklam hizmeti veren şirketleri kullanmaktayız.\n"
+"            Bu reklam şirketleri, ziyaretiniz sırasında elde ettikleri bazı "
+"bilgileri, ilginizi çekecek ürünlerin ve hizmetlerin reklamını size "
+"göstermek için kullanabilir.\n"
+"            Bu durum hakkında daha detaylı bilgi edinmek ve bu bilgilerin "
+"başka reklam şirketleri tarafından kullanılmasını engellemek istiyorsanız "
+"http://www.networkadvertising.org/sites/default/files/imce/principles.pdf "
+"belgesinin A ekini inceleyebilirsiniz.<br><br>\n"
+"            Ruyatabirix.com sitemiz değişik internet sitelerine link "
+"vermektedir. Ruyatabirlerix.com sitemiz bağlantı verdiği bu sitelerin "
+"gizlilik prensiplerinden ve yayın içeriğinden sorumlu değildir.<br><br>\n"
+"            3. taraf reklam gösterici bir firma olan Google, Ruyatabirix.com "
+"sitesinde reklam yayınlamak için bilgisayarınızdaki çerezlerden yararlanır.\n"
+"            Çerez, belirli web sitelerinin, bu tür siteleri ziyaret "
+"ettiğinizde bilgisayarınızın sabit diskine yazdıkları veri dosyalarıdır.\n"
+"            Çerez dosyaları, kullanıcının ziyaret ettiği sayfaların kaydını "
+"tutan kullanıcı tanımlama kodları gibi bilgiler içerebilir.\n"
+"            Bu bilgilerle herhangi bir kullanıcının kişisel verileri "
+"ilişkilendirilmez.\n"
+"            Ayrıca bir sonraki girişinizde sitenin sizi hatırlamasını "
+"istediğiniz takdir de bunun için ayrı bir çerez oluştururuz burada da "
+"kullanıcı adınız veya kullanıcı numaranız yazılır.\n"
+"            Birçok web sitesi tarayıcısı çerezleri otomatik olarak kabul "
+"etmektedir.\n"
+"            Ancak kullanıcılar genellikle tarayıcı ayarlarını değiştirerek "
+"bir çerezi kabul etmeden önce uyarılmayı ya da tüm çerezleri reddetmeyi "
+"seçmektedirler.\n"
+"            Ancak web sitemizden gelecek çerezlerin alımını kapattığınızda, "
+"web sitemizin belirli özelliklerini kullanamayabilirsiniz.<br><br>\n"
+"            Bu konuda daha geniş bilgi almak ve bu reklamların "
+"bilgisayarınızda gösterilmesini engellemek için\n"
+"            http://www.google.com/privacy_ads.html web sayfasını ziyaret "
+"edebilirsiniz.<br><br>\n"
+"            Sitemiz, uygun görülmeyen yorumları ve rüyaları yayınlamama "
+"hakkına sahiptir.<br><br>\n"
+"            Google Analytics<br><br>\n"
+"            Bu web sitesi, Google tarafından sağlanan web analiz hizmetini "
+"kullanır.\n"
+"            Web sitemizi kullandığınızda, bu kullanım hakkındaki bilgiler, "
+"bilgisayarınızda üretilen, çerez adı verilen bir metin dosyasında saklanır.\n"
+"            Bu “çerez” yani metin dosyasında bulunan, web sitemizi ziyaret "
+"etmenizle ilgili tüm veriler Genelllikle ABD’de bulunan bir Google "
+"sunucusuna gönderilir ve orada saklanır.\n"
+"            Google bu verileri web analiz hizmetleri için kullanır ve "
+"oluşturduğu raporları web sitemizle paylaşır.\n"
+"            Eğer isterseniz tarayıcınızda bulunan “çerez” ayarları ile "
+"çerezlerin oluşmasını engelleyebilirsiniz.\n"
+"            Ayrıca, http://tools.google.com/dlpage/gaoptout?"
+"hl=tr bağlantısında bulunan eklentiyi bilgisayarınıza kurarak bu saklanan "
+"çerezlerde bulunan kişisel verilerinizin Google tarafından kullanılmasını "
+"engelleyebilirsiniz.\n"
+"            Verilerinizin güvenliğini koruma ve Google Analytics hakkında "
+"daha fazla bilgiyi aşağıdaki bağlantılardan bulabilirsiniz.<br><br>\n"
+"            http://www.google.com/analytics/terms/tr.html veya https://"
+"support.google.com/analytics/answer/6004245?hl=tr\n"
+"            "
+msgstr ""
+"From the moment you start using this website, you are deemed to have "
+"accepted the rules written here. Articles on the site are for general "
+"information sharing. There is no claim for exact information and accuracy in "
+"any information. Most of the information was compiled from the articles of "
+"experts.<br><br>The Ruyatabirix.com website follows a publishing policy that "
+"is based on the security of its users and that performs its duties to "
+"protect this security. Ruyatabirix.com website uses companies that provide "
+"3rd party advertising services to provide advertisement services. These "
+"advertising companies may use some of the information they obtained during "
+"your visit to show you the advertisement of the products and services that "
+"may be of interest to you. If you want to get more detailed information "
+"about this situation and to prevent this information from being used by "
+"other advertising companies, you can review the annex A of http://www."
+"networkadvertising.org/sites/default/files/imce/principles.pdf document."
+"<br><br> Ruyatabirix.com website provides links to different websites. "
+"Ruyatabirlerix.com website is not responsible for the privacy principles and "
+"broadcasting content of these sites.<br><br>Google, a third-party ad-display "
+"company, uses cookies on your computer to advertise on the Ruyatabirix.com "
+"website. Cookies are data files that certain websites write to your "
+"computer's hard drive when you visit such sites. Cookie files can contain "
+"information such as user identification codes that keep a record of the "
+"pages visited by the user. No personal data of any user is associated with "
+"this information. We also create a separate cookie for your appreciation "
+"that you want the site to remember you next time you enter your username or "
+"user number here. Many website browsers automatically accept cookies. "
+"However, users generally choose to be warned or reject all cookies before "
+"accepting a cookie by changing their browser settings. When you turn off the "
+"reception of cookies from our website, you may not be able to use certain "
+"features of our website.<br><br>You can visit the http://www.google.com/"
+"privacy_ads.html web page to get more information about this and prevent "
+"these ads from showing on your computer.<br><br>Our site has the right not "
+"to publish comments and dreams that are not considered appropriate."
+"<br><br>Google Analytics<br><br>This website uses the web analysis service "
+"provided by Google. When you use this website, information about this use is "
+"stored in a text file on your computer called a cookie. All data contained "
+"in this text file related to your visit to our website is usually sent to a "
+"Google server in the USA and stored there. Google uses this data for web "
+"analysis services and shares the reports it creates with our website. If you "
+"want, you can prevent the formation of cookies with the cookie settings in "
+"your browser. You can also prevent the use of your personal data in these "
+"stored cookies by Google by installing the plug-in located at http://tools."
+"google.com/dlpage/gaoptout?hl=en. You can find more information about "
+"keeping your data safe and Google Analytics at the links below."
+"<br><br>http://www.google.com/analytics/terms/en.html or https://support."
+"google.com/analytics/answer/6004245?hl=en"
+
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
 msgid "İletişim"
@@ -135,6 +254,26 @@ msgstr "SEND"
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
 msgid "Sosyal Medya"
 msgstr "Social Media"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:15
+msgid "YASİN-İ ŞERİF"
+msgstr "Surah Yaseen"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:20
+msgid "AYETEL KÜRSİ"
+msgstr "The Greatest Verse of Quran"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:25
+msgid "DUA AYETLERİ"
+msgstr "Verses of Quran for Wishes"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:30
+msgid "ESMAÜL HÜSNA"
+msgstr "Names of ALLAH"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:35
+msgid "SALATI TEFRİCİYE"
+msgstr "Salati Tefriciye"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:7
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:59
@@ -288,6 +427,46 @@ msgstr ""
 "a believer can hardly be false. The dream of a believer is one of forty six "
 "parts of prophecy and whatever is from prophecy cannot be false.\"<br><br>"
 
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
+msgid "Niyet ediniz ve başlatınız."
+msgstr "Intend and Start"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:16
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:30
+msgid "BAŞLAT"
+msgstr "START"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:22
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:31
+msgid "Sure"
+msgstr "Surahs"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:22
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:29
+msgid "Ayet"
+msgstr "Verse"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:22
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:25
+msgid "Kelime"
+msgstr "Word"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:30
+msgid "Anlamı"
+msgstr "Meaning"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:32
+msgid "BİLGİ"
+msgstr "Information"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:32
+msgid ""
+"Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı "
+"olabilir."
+msgstr ""
+"It may be more useful to read the previous or next verse or the whole sura."
+
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:7
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:56
 msgid "Tefe'ül Nedir?"
@@ -415,6 +594,18 @@ msgstr "English"
 msgid "Başa Dön"
 msgstr "Back to Top"
 
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:18
+msgid "Cinsiyetiniz"
+msgstr "Gender"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:19
+msgid "Erkek"
+msgstr "Male"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:20
+msgid "Kadın"
+msgstr "Female"
+
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:9
 msgid ""
 " Yıldız falı yıldızların konum ve hareketlerinin bir işaret sistemi "
@@ -507,6 +698,14 @@ msgstr "dreaminterpretations/what-is-dreaminterpretations/"
 #: .\ruyatabirleri\views.py:88
 msgid "Aramak İstediğin Kelimeyi Yaz"
 msgstr "Write the keyword"
+
+#: .\ruyatabirleri\views.py:103
+msgid "İsminiz"
+msgstr "Your Name"
+
+#: .\ruyatabirleri\views.py:104
+msgid "Annenizin İsmi"
+msgstr "Your Mother's Name"
 
 #: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -1682,6 +1881,3 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
-
-#~ msgid "Rüyada {{item.kelime}} görmek"
-#~ msgstr "To see {{item.kelime}} in a dream"

@@ -1,11 +1,12 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
+{% load i18n %}
 
 {% block content %}
 <div class="row my-5 mx-0 p-0">
     <div class="col-md-8 my-0 mx-auto p-0">
         <div class="row mt-5 m-0 p-0">
             <div class="col-md-12">
-                <h1 class="display-4 font-italic border-bottom box-shadow">YILDIZNAME</h1>
+                <h1 class="display-4 font-italic border-bottom box-shadow">{% trans "YILDIZNAME" %}</h1>
             </div>
         </div>
         <div class="row my-5 mx-0 p-0">
@@ -14,19 +15,19 @@
                     {% csrf_token %}
                     <div class="input-group">
                         <select class="custom-select" name="cinsiyet">
-                            <option selected>Cinsiyetiniz</option>
-                            <option value="erkek">Erkek</option>
-                            <option value="kadın">Kadın</option>
+                            <option selected>{% trans "Cinsiyetiniz" %}</option>
+                            <option value="erkek">{% trans "Erkek" %}</option>
+                            <option value="kadın">{% trans "Kadın" %}</option>
                         </select>
                     </div>
                     <div class="form-group mt-3">
-                        <input class="form-control m-0" type="text" name="isim" placeholder="İsminiz">
+                        <input class="form-control m-0" type="text" name="isim" placeholder="{{place_holder_isminiz}}">
                     </div>
                     <div class="form-group mt-3">
-                        <input class="form-control m-0" type="text" name="anne_ismi" placeholder="Annenizin ismi">
+                        <input class="form-control m-0" type="text" name="anne_ismi" placeholder="{{place_holder_annenizin_ismi}}">
                     </div>
                     <div class="form-group mt-3">
-                        <button class="btn-lg btn-dark mx-3 p-2 px-3 border-0" type="submit" name="save">BAŞLA</button>
+                        <button class="btn-lg btn-dark mx-3 p-2 px-3 border-0" type="submit" name="save">{% trans "BAŞLAT" %}</button>
                     </div>
                 </form>
                 <div class="row m-0 p-0 text-danger">{{mesaj}}</div>

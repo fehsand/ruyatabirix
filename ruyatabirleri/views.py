@@ -100,6 +100,8 @@ def ruyatabirleri_nedir (request):
     return render(request,'ruyatabirleri/ruyatabirleri_nedir.html', {})
 
 def yildizname (response):
+    place_holder_isminiz = _('İsminiz')
+    place_holder_annenizin_ismi = _('Annenizin İsmi')
     if response.method == "POST":
         form = YildiznameForm(response.POST)
         if form.is_valid():
@@ -114,7 +116,7 @@ def yildizname (response):
             if cinsiyet == "Cinsiyetiniz":
                 mesaj = 'Lütfen Cinsiyet Seçimini Yapınız'
                 form = YildiznameForm ()
-                return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form})
+                return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form, 'place_holder_isminiz':place_holder_isminiz, 'place_holder_annenizin_ismi':place_holder_annenizin_ismi})
             else:
                 pass
             sesli_harfler= 'aeıiuüoö'
@@ -123,21 +125,21 @@ def yildizname (response):
             if len(isim)<3 or len(anne_ismi)<3:
                 mesaj = 'İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz.'
                 form = YildiznameForm ()
-                return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form})
+                return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form, 'place_holder_isminiz':place_holder_isminiz, 'place_holder_annenizin_ismi':place_holder_annenizin_ismi})
             else:
                 pass
             for harf in isim:
                 if not harf in harfler:
                     mesaj = 'İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız.'
                     form = YildiznameForm ()
-                    return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form})
+                    return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form, 'place_holder_isminiz':place_holder_isminiz, 'place_holder_annenizin_ismi':place_holder_annenizin_ismi})
                 else:
                     pass
             for harf in anne_ismi:
                 if not harf in harfler:
                     mesaj = 'Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız.'
                     form = YildiznameForm ()
-                    return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form})
+                    return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form, 'place_holder_isminiz':place_holder_isminiz, 'place_holder_annenizin_ismi':place_holder_annenizin_ismi})
                 else:
                     pass
             #--------------------Karakter Kontrolü bitti----------------
@@ -184,10 +186,10 @@ def yildizname (response):
             #-----------EBCED Hesabı Bitti. Mod Bulundu.---------------
             return render (response, 'ruyatabirleri/yildizname_sonuc.html', {'cinsiyet': cinsiyet, 'mod': mod})
         mesaj = 'Lütfen Formu Doldurunuz.'
-        return render(response, 'ruyatabirleri/yildizname.html', {'form': form, 'mesaj': mesaj})
+        return render(response, 'ruyatabirleri/yildizname.html', {'form': form, 'mesaj': mesaj, 'place_holder_isminiz':place_holder_isminiz, 'place_holder_annenizin_ismi':place_holder_annenizin_ismi})
     else:
         form = YildiznameForm ()
-        return render(response, 'ruyatabirleri/yildizname.html', {'form': form})
+        return render(response, 'ruyatabirleri/yildizname.html', {'form': form, 'place_holder_isminiz':place_holder_isminiz, 'place_holder_annenizin_ismi':place_holder_annenizin_ismi})
 
 
 def iletisim (response):
