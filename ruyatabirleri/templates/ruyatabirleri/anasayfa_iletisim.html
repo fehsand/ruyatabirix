@@ -14,25 +14,25 @@
                 <form class="m-0 p-0 " action="{% url 'ruyatabirleri:iletisim' %}" method="post">
                     {% csrf_token %}
                     <div class="form-group mt-3">
-                        <input class="form-control m-0" type="text" name="isim" placeholder="İsminiz" required>
+                        <input class="form-control m-0" type="text" name="isim" placeholder="{{place_holder_isminiz}}" required>
                         {% if form.errors %}
                         <p class="lead m-0 p-0 text-danger">{{form.isim.errors.as_text}}</p>
                         {% endif %}
                     </div>
                     <div class="form-group mt-3">
-                        <input class="form-control m-0" type="text" name="soy_isim" placeholder="Soyisminiz" required>
+                        <input class="form-control m-0" type="text" name="soy_isim" placeholder="{{place_holder_soyisminiz}}" required>
                         {% if form.errors %}
                         <p class="lead m-0 p-0 text-danger">{{form.soy_isim.errors.as_text}}</p>
                         {% endif %}
                     </div>
                     <div class="form-group mt-3">
-                        <input class="form-control m-0" type="email" name="eposta" placeholder="örnek@eposta.com" required>
+                        <input class="form-control m-0" type="email" name="eposta" placeholder="{{place_holder_ornek}}" required>
                         {% if form.errors %}
                         <p class="lead m-0 p-0 text-danger">{{form.eposta.errors.as_text}}</p>
                         {% endif %}
                     </div>
                     <div class="form-group mt-3">
-                        <textarea class="form-control m-0" name="mesaj" placeholder="Mesajınızı Yazınız" rows="3" required></textarea>
+                        <textarea class="form-control m-0" name="mesaj" placeholder="{{place_holder_mesaj}}" rows="3" required></textarea>
                         {% if form.errors %}
                         <p class="lead m-0 p-0 text-danger">{{form.mesaj.errors.as_text}}</p>
                         {% endif %}

@@ -193,6 +193,10 @@ def yildizname (response):
 
 
 def iletisim (response):
+    place_holder_isminiz = _('İsminiz')
+    place_holder_soyisminiz = _('Soyisminiz')
+    place_holder_ornek = _('örnek@posta.com')
+    place_holder_mesaj = _('Mesajınızı Yazınız')
     if response.method == "POST":
         form = iletisimForm(response.POST)
         if form.is_valid():
@@ -202,21 +206,21 @@ def iletisim (response):
             ileti = form.cleaned_data.get ('mesaj')
             #----Tüm kutucukların doldurulması sağlandı yoksa hata verecek---
             if len(isim)<1 or len(soy_isim)<1 or len(eposta)<1 or len(ileti)<1:
-                mesaj = 'Kutucukları Doldurunuz.'
+                mesaj = _('Kutucukları Doldurunuz.')
                 form = iletisimForm ()
-                return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'mesaj': mesaj, 'form': form})
+                return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'mesaj': mesaj, 'form': form, 'place_holder_isminiz': place_holder_isminiz, 'place_holder_soyisminiz':place_holder_soyisminiz, 'place_holder_ornek':place_holder_ornek, 'place_holder_mesaj':place_holder_mesaj})
             else:
                 pass
             #--------------------kutu Kontrolü bitti----------------
             form.save()
-            mesaj= "Gönderiniz başarıyla kaydedildi."
+            mesaj= _("Gönderiniz başarıyla kaydedildi.")
             form = iletisimForm ()
-            return render(response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form, 'mesaj': mesaj})
-        mesaj = 'Lütfen Formu Doldurunuz.'
-        return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form, 'mesaj': mesaj})
+            return render(response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form, 'mesaj': mesaj, 'place_holder_isminiz': place_holder_isminiz, 'place_holder_soyisminiz':place_holder_soyisminiz, 'place_holder_ornek':place_holder_ornek, 'place_holder_mesaj':place_holder_mesaj})
+        mesaj = _('Lütfen Formu Doldurunuz.')
+        return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form, 'mesaj': mesaj, 'place_holder_isminiz': place_holder_isminiz, 'place_holder_soyisminiz':place_holder_soyisminiz, 'place_holder_ornek':place_holder_ornek, 'place_holder_mesaj':place_holder_mesaj})
     else:
         form = iletisimForm ()
-        return render(response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form})
+        return render(response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form, 'place_holder_isminiz': place_holder_isminiz, 'place_holder_soyisminiz':place_holder_soyisminiz, 'place_holder_ornek':place_holder_ornek, 'place_holder_mesaj':place_holder_mesaj})
 
 def tefeul (request):
     besmele = KuranBilgi.objects.get (id=1)  # besmele

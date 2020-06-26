@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 17:01+0300\n"
+"POT-Creation-Date: 2020-06-26 17:35+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -699,13 +699,37 @@ msgstr "dreaminterpretations/what-is-dreaminterpretations/"
 msgid "Aramak İstediğin Kelimeyi Yaz"
 msgstr "Write the keyword"
 
-#: .\ruyatabirleri\views.py:103
+#: .\ruyatabirleri\views.py:103 .\ruyatabirleri\views.py:196
 msgid "İsminiz"
 msgstr "Your Name"
 
 #: .\ruyatabirleri\views.py:104
 msgid "Annenizin İsmi"
 msgstr "Your Mother's Name"
+
+#: .\ruyatabirleri\views.py:197
+msgid "Soyisminiz"
+msgstr "Your Surname"
+
+#: .\ruyatabirleri\views.py:198
+msgid "örnek@posta.com"
+msgstr "example@example.com"
+
+#: .\ruyatabirleri\views.py:199
+msgid "Mesajınızı Yazınız"
+msgstr "Write your message"
+
+#: .\ruyatabirleri\views.py:209
+msgid "Kutucukları Doldurunuz."
+msgstr "Fill in the blanks"
+
+#: .\ruyatabirleri\views.py:216
+msgid "Gönderiniz başarıyla kaydedildi."
+msgstr "Your post has been successfully saved."
+
+#: .\ruyatabirleri\views.py:219
+msgid "Lütfen Formu Doldurunuz."
+msgstr "Please, Fill in the form."
 
 #: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
