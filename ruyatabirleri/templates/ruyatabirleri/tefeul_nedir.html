@@ -2,56 +2,62 @@
 {% load i18n %}
 
 {% block content %}
-<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-    <div class="col-md-12 px-0">
-        <h1 class="display-4 font-italic">{% trans "Tefe'ül Nedir?" %}</h1>
-        <p class="lead my-3">
-            {% blocktrans %} Bir kitabı gelişigüzel açarak ilk tevafuk eden yeri okuyup ondan bir mesaj çıkarmaya tefe'ül denmektedir.<br>
-            Tefeül bir şeyi uğur saymak, bir olayı bir hayrın başlangıçı görmektir.<br>
-            Ayrıca Kuranı Kerime bakarak karar vermektir.<br>
-            <br>
-            Peygamber Efendimiz buyurmuştur:<br>
-            <br>
-            "Hayra yorma, güzel söz, temiz laf hoşuma gider."<br>
-            <br>
-            İnsan hayırlı söz söylemeli, fena ve uğursuz sözlerden dilini korumalıdır.<br>
-            <br>
-            Ebu Hüreyre'den (ra) Resülullah'ın (asm):<br>
-            <br>
-            "İslâm'da teşe'üm yoktur, en hayırlısı tefe'üldür" buyurduğunu işittim, dediği rivayet olunmuştur.<br>
-            Mecliste bulunanlar: Tefe'ül nedir Ya Resülallâh! diye sordular.<br>
-            Resül-i Ekrem: Sizden birinizin duyduğu güzel sözdür buyurdu.<br>
-            <br>
-            Bazı alimler arasında Kur'an ayetleriyle tefe'ülde yaygındı.<br>
-            Kuranı Kerim'de Müslümanlarla birlikte kafirlerden, münafıklardan bahsettiği gibi;
-            sadece cennetten değil cehennemden de bahsettiği için Kuranla tefeül yaparken ümitsizliğe kapılmamak gerekmektedir.<br>
-            <br>
-            İbn Abbas (r.a) "Devemin yularını kaybetsem Kuran'da bulurum " demiştir.<br>
-            <br>
-            Bununla, “Kur’an’da her şey var.. Fakat bir kısmı açık, bir kısmı işari yolla ifade edilmiş..<br>
-            Herkes kendi ilmi birikimine göre, anlayış ve kabiliyetine göre aradığını onda bulabileceğini..”  kastetmiştir.
-            {% endblocktrans %}
-        </p>
-        <h1 class="display-4 font-italic">{% trans "Tefe'ül Nasıl Yapılır?" %}</h1>
-        <p class="lead my-3">
-            {% blocktrans %}Tefeül de esas olan bunun bir fal olmadığını, istişare olduğunu akılda tutmak temiz bir niyet ile yapmaktır.
-            Kuranı kerim aracılığıyla Rabbimizle istişare ediyoruz. Yani Ona danışıyoruz.<br>
-            <br>
-            Tefeül ile yaşanılan durumda yapılması gerekenin ne olduğuna bakılır.
-            Hakkımızda hayır olanı bildirmesi için Hakka danışılır.<br>
-            <br>
-            Önce temiz bir kalp ile niyet edilir. Sonra tefeül başlatılır.<br>
-            <br>
-            Önce sure sonra ayet sonra da kelime ekrana yansıtılacaktır.
-            Bazen kelime bazen ayet bazende süre aradığınız çıkış yolunu size gösteriyor olabilir.
-            Bunun için hepsi birlikte değerlendirilmeli ve tefsir kitaplarında da daha kapsamlı bilgi edinilmelidir.<br>
-            <br>
-            Hiç bir zaman umutsuzluğa kapılmadan belirli zaman aralıklarıyla tefeül tekrar edilebilir.<br>
-            <br>
-            Tefeül'ün bir fal olmadığı akıldan çıkarılmamalıdır.
-            {% endblocktrans %}
-        </p>
-        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:tefeul'%}" class="text-white font-weight-bold">{% trans "Tefe'ül için Tıklayınız..." %}</a></p>
+<div class="container">
+    <div class="jumbotron mt-3 p-3 p-md-5 text-white rounded bg-primary">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic">{% trans "Tefe'ül Nedir?" %}</h1>
+            <p class="lead my-3">
+                {% blocktrans %} Bir kitabı gelişigüzel açarak ilk tevafuk eden yeri okuyup ondan bir mesaj çıkarmaya tefe'ül denmektedir.<br>
+                Tefeül bir şeyi uğur saymak, bir olayı bir hayrın başlangıçı görmektir.<br>
+                Ayrıca Kuranı Kerime bakarak karar vermektir.<br>
+                <br>
+                Peygamber Efendimiz buyurmuştur:<br>
+                <br>
+                "Hayra yorma, güzel söz, temiz laf hoşuma gider."<br>
+                <br>
+                İnsan hayırlı söz söylemeli, fena ve uğursuz sözlerden dilini korumalıdır.<br>
+                <br>
+                Ebu Hüreyre'den (ra) Resülullah'ın (asm):<br>
+                <br>
+                "İslâm'da teşe'üm yoktur, en hayırlısı tefe'üldür" buyurduğunu işittim, dediği rivayet olunmuştur.<br>
+                Mecliste bulunanlar: Tefe'ül nedir Ya Resülallâh! diye sordular.<br>
+                Resül-i Ekrem: Sizden birinizin duyduğu güzel sözdür buyurdu.<br>
+                <br>
+                Bazı alimler arasında Kur'an ayetleriyle tefe'ülde yaygındı.<br>
+                Kuranı Kerim'de Müslümanlarla birlikte kafirlerden, münafıklardan bahsettiği gibi;
+                sadece cennetten değil cehennemden de bahsettiği için Kuranla tefeül yaparken ümitsizliğe kapılmamak gerekmektedir.<br>
+                <br>
+                İbn Abbas (r.a) "Devemin yularını kaybetsem Kuran'da bulurum " demiştir.<br>
+                <br>
+                Bununla, “Kur’an’da her şey var.. Fakat bir kısmı açık, bir kısmı işari yolla ifade edilmiş..<br>
+                Herkes kendi ilmi birikimine göre, anlayış ve kabiliyetine göre aradığını onda bulabileceğini..”  kastetmiştir.
+                {% endblocktrans %}
+            </p>
         </div>
+    </div>
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-primary">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic">{% trans "Tefe'ül Nasıl Yapılır?" %}</h1>
+            <p class="lead my-3">
+                {% blocktrans %}Tefeül de esas olan bunun bir fal olmadığını, istişare olduğunu akılda tutmak temiz bir niyet ile yapmaktır.
+                Kuranı kerim aracılığıyla Rabbimizle istişare ediyoruz. Yani Ona danışıyoruz.<br>
+                <br>
+                Tefeül ile yaşanılan durumda yapılması gerekenin ne olduğuna bakılır.
+                Hakkımızda hayır olanı bildirmesi için Hakka danışılır.<br>
+                <br>
+                Önce temiz bir kalp ile niyet edilir. Sonra tefeül başlatılır.<br>
+                <br>
+                Önce sure sonra ayet sonra da kelime ekrana yansıtılacaktır.
+                Bazen kelime bazen ayet bazende süre aradığınız çıkış yolunu size gösteriyor olabilir.
+                Bunun için hepsi birlikte değerlendirilmeli ve tefsir kitaplarında da daha kapsamlı bilgi edinilmelidir.<br>
+                <br>
+                Hiç bir zaman umutsuzluğa kapılmadan belirli zaman aralıklarıyla tefeül tekrar edilebilir.<br>
+                <br>
+                Tefeül'ün bir fal olmadığı akıldan çıkarılmamalıdır.
+                {% endblocktrans %}
+            </p>
+            <p class="lead mb-0"><a href="{% url 'ruyatabirleri:tefeul'%}" class="text-white font-weight-bold">{% trans "Tefe'ül için Tıklayınız..." %}</a></p>
+            </div>
+    </div>
 </div>
 {% endblock %}

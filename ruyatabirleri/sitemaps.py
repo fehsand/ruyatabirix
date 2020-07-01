@@ -2,7 +2,9 @@ from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 
 class StaticViewSitemap(Sitemap):
-
+    changefreq = "weekly"
+    priority = 0.9
+    i18n = True
     def items(self):
         return ['ruyatabirleri:anasayfa',
                 'ruyatabirleri:dua',

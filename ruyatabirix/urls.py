@@ -13,17 +13,17 @@ sitemaps = {
     'ruyatabirleri': GenericSitemap({
         'queryset': Ruyatabirleri.objects.all(),
         'date_field': 'updated',
-    }, priority=0.9),
+    }, priority=0.9, changefreq = "weekly"),
     'static': StaticViewSitemap,
 }
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
     path ('w2e3r4t5_admin/', admin.site.urls),
+    path ('sitemap.xml/', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]
 
 urlpatterns += i18n_patterns(
-    path ('sitemap.xml/', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('', include('ruyatabirleri.urls')),
     path ('register/', include('register.urls')),
     path ('comments/', include('django_comments.urls')),

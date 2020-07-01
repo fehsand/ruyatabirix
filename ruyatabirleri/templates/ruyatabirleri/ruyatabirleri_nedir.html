@@ -1,48 +1,58 @@
 {% extends 'ruyatabirleri/temel_anasayfa.html' %}
 {% load i18n %}
 {% block content %}
-<div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-    <div class="col-md-12 px-0">
-        <h1 class="display-4 font-italic">{% trans "Rüya Nedir?" %}</h1>
-        <p class="lead my-3">
-            {% blocktrans %} Rüya, uyku halindeki görüş veya görülen şey demektir. Rüyalar üç kısımdır :<br>
-            1. İnsanları mahzun etmek için şeytan tarafından üretilen kötü ve korkunç rüyalar,<br>
-            2. İnsanın uyanıkken meşgul olduğu şeylere ait gördüğü rüyalar, (Bunlara Bilinçaltı rüyaları da diyoruz.)<br>
-            3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli insanların gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.
-            {% endblocktrans %}
-        </p>
-        <h1 class="display-4 font-italic">{% trans "Rüyanın Etkileri" %}</h1>
-        <p class="lead my-3">
-            {% blocktrans %} İnsan uyanıklık hali ile sorumludur. Yani uyanıklık haricinde uyku ve baygınlık gibi yaptığı işlerden
-            sorumlu tutulmamıştır. Rüyada ister olumlu ister olumsuz manada gelen haberler objektif bir değer ifade etmez.
-            Bağlayıcı bir delil kabul edilemez. Bazı kimseler istisnaları olduğunu belirtse de genel olarak rüya ile amel edilemez.
-            Rüya yorumunda rüyanın iyi ve isabetli yorumlanması esastır.
-            {% endblocktrans %}
-        </p>
-        <h1 class="display-4 font-italic">{% trans "Rüya ile İlgili Hadisler" %}</h1>
-        <p class="lead my-3">
-            {% blocktrans %} 1. “Rüya tabir edildiği şekilde gerçekleşir. Bunun örneği ise ayağını kaldıran ve onu yere
-            koyacağı zamanı bekleyen kimsenin durumuna benzer. Buna göre sizden herhangi bir kimse bir rüya görecek olursa
-            onu ya kendisinin iyiliğini isteyen, samimi birisine ya da (rüya tabirinden anlayan) alim birisine anlatsın!
-            Başkasına anlatmasın!” Hakim Müstedrek 4/391<br>
-            <br>
-            2. “Rüya yorumlanmadığı sürece bir kuşun ayağı üzerindedir (yani istikrarsızdır). Yorumlandığı zaman
-            (yorumlandığı şekilde) gerçekleşir. Sen onu (seni) seven ve (rüya tabirini) bilen kimseden başkasına anlatma!”
-            Ebu Davud 5020<br>
-            <br>
-            3. “Mü’minin rüyası, Nebîliğin kırk altı parçasından bir parçadır!” Darimi 2143<br>
-            <br>
-            4. “İyi rüya Allah’tandır. Bu sebeple biriniz sevdiği bir rüya gördüğünde Allah’a hamdetsin ve onu sadece sevdiği
-            kimselere anlatsın! Biriniz hoşlanmadığı bir rüya gördüğünde ise soluna üç defa tükürsün ve şerrinden Allah’a sığınsın,
-            onu hiç kimseye de anlatmasın! Artık o kötü rüya ona zarar veremez.” Darimi 2148<br>
-            <br>
-            5. “Rüya Allah’tandır. Kötü, korkunç ve çirkin rüya ise şeytandadır! Biriniz, hoşlanmadığı bir rüya görürse
-            sol tarafına üç defa tükürüp sonra o rüyanın şerrinden Allah’a sığınsın! Çünkü (o zaman) o rüya kendisine
-            zarar vermez!” Ebu Davud 5021<br>
-            {% endblocktrans %}
-        </p>
-        <p class="lead mb-0"><a href="{% url 'ruyatabirleri:ruyatabirleri'%}" class="text-white font-weight-bold">{% trans "Rüya Tabirleri için Tıklayınız..." %}</a></p>
+<div class="container">
+    <div class="jumbotron mt-3 p-3 p-md-5 text-white rounded bg-primary">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic">{% trans "Rüya Nedir?" %}</h1>
+            <p class="lead my-3">
+                {% blocktrans %} Rüya, uyku halindeki görüş veya görülen şey demektir. Rüyalar üç kısımdır :<br>
+                1. İnsanları mahzun etmek için şeytan tarafından üretilen kötü ve korkunç rüyalar,<br>
+                2. İnsanın uyanıkken meşgul olduğu şeylere ait gördüğü rüyalar, (Bunlara Bilinçaltı rüyaları da diyoruz.)<br>
+                3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli insanların gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-primary">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic">{% trans "Rüyanın Etkileri" %}</h1>
+            <p class="lead my-3">
+                {% blocktrans %} İnsan uyanıklık hali ile sorumludur. Yani uyanıklık haricinde uyku ve baygınlık gibi yaptığı işlerden
+                sorumlu tutulmamıştır. Rüyada ister olumlu ister olumsuz manada gelen haberler objektif bir değer ifade etmez.
+                Bağlayıcı bir delil kabul edilemez. Bazı kimseler istisnaları olduğunu belirtse de genel olarak rüya ile amel edilemez.
+                Rüya yorumunda rüyanın iyi ve isabetli yorumlanması esastır.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-primary">
+        <div class="col-md-12 px-0">
+            <h1 class="display-4 font-italic">{% trans "Rüya ile İlgili Hadisler" %}</h1>
+            <p class="lead my-3">
+                {% blocktrans %} 1. “Rüya tabir edildiği şekilde gerçekleşir. Bunun örneği ise ayağını kaldıran ve onu yere
+                koyacağı zamanı bekleyen kimsenin durumuna benzer. Buna göre sizden herhangi bir kimse bir rüya görecek olursa
+                onu ya kendisinin iyiliğini isteyen, samimi birisine ya da (rüya tabirinden anlayan) alim birisine anlatsın!
+                Başkasına anlatmasın!” Hakim Müstedrek 4/391<br>
+                <br>
+                2. “Rüya yorumlanmadığı sürece bir kuşun ayağı üzerindedir (yani istikrarsızdır). Yorumlandığı zaman
+                (yorumlandığı şekilde) gerçekleşir. Sen onu (seni) seven ve (rüya tabirini) bilen kimseden başkasına anlatma!”
+                Ebu Davud 5020<br>
+                <br>
+                3. “Mü’minin rüyası, Nebîliğin kırk altı parçasından bir parçadır!” Darimi 2143<br>
+                <br>
+                4. “İyi rüya Allah’tandır. Bu sebeple biriniz sevdiği bir rüya gördüğünde Allah’a hamdetsin ve onu sadece sevdiği
+                kimselere anlatsın! Biriniz hoşlanmadığı bir rüya gördüğünde ise soluna üç defa tükürsün ve şerrinden Allah’a sığınsın,
+                onu hiç kimseye de anlatmasın! Artık o kötü rüya ona zarar veremez.” Darimi 2148<br>
+                <br>
+                5. “Rüya Allah’tandır. Kötü, korkunç ve çirkin rüya ise şeytandadır! Biriniz, hoşlanmadığı bir rüya görürse
+                sol tarafına üç defa tükürüp sonra o rüyanın şerrinden Allah’a sığınsın! Çünkü (o zaman) o rüya kendisine
+                zarar vermez!” Ebu Davud 5021<br>
+                {% endblocktrans %}
+            </p>
+            <p class="lead mb-0"><a href="{% url 'ruyatabirleri:ruyatabirleri'%}" class="text-white font-weight-bold">{% trans "Rüya Tabirleri için Tıklayınız..." %}</a></p>
 
+        </div>
     </div>
 </div>
 

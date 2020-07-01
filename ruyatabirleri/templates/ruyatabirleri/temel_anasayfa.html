@@ -33,6 +33,10 @@
 
     <style>
         body { padding-top: 5rem;}
+        .carousel {  margin-bottom: 4rem; }
+        .carousel-caption {   bottom: 6rem;   z-index: 20; }
+        .carousel-item {   height: 40rem;   background-color: #777;}
+        .carousel-item > img {   position: absolute;   top: 0;   left: 0;   min-width: 100%;   height: 40rem; }
     </style>
 </head>
 
@@ -107,10 +111,9 @@
 
 </nav>
 
-<main role="main" class="container">
-    {% block content %}
-    {% endblock %}
-</main><!-- /.container -->
+{% block content %}
+{% endblock %}
+
 <!-- FOOTER -->
 <footer class="container">
     <p class="float-right"><a href="{% url 'ruyatabirleri:anasayfa'%}">{% trans "Başa Dön" %}</a></p>
