@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 17:35+0300\n"
+"POT-Creation-Date: 2020-07-02 15:11+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,13 @@ msgstr "Türkçe"
 msgid "English"
 msgstr "İngilizce"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:7
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:12
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:8
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:9
 msgid "RÜYA TABİRLERİ"
 msgstr "DREAM INTERPRETATION"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:13
 msgid ""
 "Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler "
 "kullanarak bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz "
@@ -42,17 +42,17 @@ msgstr ""
 "dream using keywords. For example, when you see that you are driving in your "
 "dream, you should search using only the word CAR."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:44
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
 msgid "Rüya Tabirleri için Tıklayınız..."
 msgstr "Click for Dream Interpretations..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:24
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:9
 msgid "YILDIZNAME"
 msgstr "YILDIZNAME"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:15
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:25
 msgid ""
 "Bu bölümde kendinizin ve annenizin ismini yazarak burcunuz hakkındaki "
 "bilgileri okuyabilirsiniz."
@@ -60,17 +60,17 @@ msgstr ""
 "In this section, you can read the information about your horoscope by "
 "writing the name of yourself and your mother."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:16
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:31
 msgid "Yıldızname için Tıklayınız..."
 msgstr "Click for Horoscope..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:35
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:9
 msgid "TEFE'ÜL"
 msgstr "TEFEUL"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:22
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:36
 msgid ""
 "\"Devemin yularını kaybetsem Kuran'da bulurum\"<br>İbn Abbas (r."
 "a.)<br><br>Sizde Kur'an-ı Kerim'den kendi hissenizi almak için, temiz bir "
@@ -87,17 +87,17 @@ msgstr ""
 "is necessary to evaluate all of them together and to learn more from tafsir "
 "books."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:23
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:54
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:37
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:59
 msgid "Tefe'ül için Tıklayınız..."
 msgstr "Click for Tefeul..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:28
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:46
 #: .\ruyatabirleri\templates\ruyatabirleri\dua.html:9
 msgid "DUA"
 msgstr "PRAYER"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:29
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:47
 msgid ""
 "Dua, istemek veya yardım talep etmek demektir.<br>İnsanın bütün benliğiyle "
 "Allah’a yönelerek maddî ve manevî isteklerini O’na arz etmesidir."
@@ -115,85 +115,89 @@ msgstr ""
 "respect and the other is wish. This section describes how we should pray for "
 "our wishes to come true."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:30
-#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:32
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:48
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:33
 msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Click for Prayer"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:7
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:117
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:120
 msgid "Gizlilik Politikası"
 msgstr "Privacy Policy"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:10
 msgid ""
 "Sitemizi kullanmaya başladığınız andan itibaren burada yazılı olan kuralları "
 "kabul etmiş sayılmaktasınız.\n"
-"            Sitede yer alan bilgiler, yazılar genel bilgi paylaşımı "
+"                Sitede yer alan bilgiler, yazılar genel bilgi paylaşımı "
 "amaçlıdır.\n"
-"            Hiçbir şeyde kesin bilgi, kesin doğruluk iddiası yoktur.\n"
-"            Bilgilerin çoğu konusunda uzman kişlerin makalelerinden "
+"                Hiçbir şeyde kesin bilgi, kesin doğruluk iddiası yoktur.\n"
+"                Bilgilerin çoğu konusunda uzman kişlerin makalelerinden "
 "derlenmiştir.<br><br>\n"
-"            Ruyatabirix.com sitemiz, kullanıcılarının güvenliğini esas alan "
-"ve bu güvenliği korumak için üstüne düşen görevleri yerine getiren bir yayın "
-"politikası izlemektedir.\n"
-"            Ruyatabirix.com sitemizde reklam hizmeti sunmak için 3. taraf "
-"reklam hizmeti veren şirketleri kullanmaktayız.\n"
-"            Bu reklam şirketleri, ziyaretiniz sırasında elde ettikleri bazı "
-"bilgileri, ilginizi çekecek ürünlerin ve hizmetlerin reklamını size "
+"                Ruyatabirix.com sitemiz, kullanıcılarının güvenliğini esas "
+"alan ve bu güvenliği korumak için üstüne düşen görevleri yerine getiren bir "
+"yayın politikası izlemektedir.\n"
+"                Ruyatabirix.com sitemizde reklam hizmeti sunmak için 3. "
+"taraf reklam hizmeti veren şirketleri kullanmaktayız.\n"
+"                Bu reklam şirketleri, ziyaretiniz sırasında elde ettikleri "
+"bazı bilgileri, ilginizi çekecek ürünlerin ve hizmetlerin reklamını size "
 "göstermek için kullanabilir.\n"
-"            Bu durum hakkında daha detaylı bilgi edinmek ve bu bilgilerin "
-"başka reklam şirketleri tarafından kullanılmasını engellemek istiyorsanız "
-"http://www.networkadvertising.org/sites/default/files/imce/principles.pdf "
-"belgesinin A ekini inceleyebilirsiniz.<br><br>\n"
-"            Ruyatabirix.com sitemiz değişik internet sitelerine link "
+"                Bu durum hakkında daha detaylı bilgi edinmek ve bu "
+"bilgilerin başka reklam şirketleri tarafından kullanılmasını engellemek "
+"istiyorsanız http://www.networkadvertising.org/sites/default/files/imce/"
+"principles.pdf belgesinin A ekini inceleyebilirsiniz.<br><br>\n"
+"                Ruyatabirix.com sitemiz değişik internet sitelerine link "
 "vermektedir. Ruyatabirlerix.com sitemiz bağlantı verdiği bu sitelerin "
 "gizlilik prensiplerinden ve yayın içeriğinden sorumlu değildir.<br><br>\n"
-"            3. taraf reklam gösterici bir firma olan Google, Ruyatabirix.com "
-"sitesinde reklam yayınlamak için bilgisayarınızdaki çerezlerden yararlanır.\n"
-"            Çerez, belirli web sitelerinin, bu tür siteleri ziyaret "
+"                3. taraf reklam gösterici bir firma olan Google, Ruyatabirix."
+"com sitesinde reklam yayınlamak için bilgisayarınızdaki çerezlerden "
+"yararlanır.\n"
+"                Çerez, belirli web sitelerinin, bu tür siteleri ziyaret "
 "ettiğinizde bilgisayarınızın sabit diskine yazdıkları veri dosyalarıdır.\n"
-"            Çerez dosyaları, kullanıcının ziyaret ettiği sayfaların kaydını "
-"tutan kullanıcı tanımlama kodları gibi bilgiler içerebilir.\n"
-"            Bu bilgilerle herhangi bir kullanıcının kişisel verileri "
+"                Çerez dosyaları, kullanıcının ziyaret ettiği sayfaların "
+"kaydını tutan kullanıcı tanımlama kodları gibi bilgiler içerebilir.\n"
+"                Bu bilgilerle herhangi bir kullanıcının kişisel verileri "
 "ilişkilendirilmez.\n"
-"            Ayrıca bir sonraki girişinizde sitenin sizi hatırlamasını "
+"                Ayrıca bir sonraki girişinizde sitenin sizi hatırlamasını "
 "istediğiniz takdir de bunun için ayrı bir çerez oluştururuz burada da "
 "kullanıcı adınız veya kullanıcı numaranız yazılır.\n"
-"            Birçok web sitesi tarayıcısı çerezleri otomatik olarak kabul "
+"                Birçok web sitesi tarayıcısı çerezleri otomatik olarak kabul "
 "etmektedir.\n"
-"            Ancak kullanıcılar genellikle tarayıcı ayarlarını değiştirerek "
-"bir çerezi kabul etmeden önce uyarılmayı ya da tüm çerezleri reddetmeyi "
-"seçmektedirler.\n"
-"            Ancak web sitemizden gelecek çerezlerin alımını kapattığınızda, "
-"web sitemizin belirli özelliklerini kullanamayabilirsiniz.<br><br>\n"
-"            Bu konuda daha geniş bilgi almak ve bu reklamların "
+"                Ancak kullanıcılar genellikle tarayıcı ayarlarını "
+"değiştirerek bir çerezi kabul etmeden önce uyarılmayı ya da tüm çerezleri "
+"reddetmeyi seçmektedirler.\n"
+"                Ancak web sitemizden gelecek çerezlerin alımını "
+"kapattığınızda, web sitemizin belirli özelliklerini kullanamayabilirsiniz."
+"<br><br>\n"
+"                Bu konuda daha geniş bilgi almak ve bu reklamların "
 "bilgisayarınızda gösterilmesini engellemek için\n"
-"            http://www.google.com/privacy_ads.html web sayfasını ziyaret "
+"                http://www.google.com/privacy_ads.html web sayfasını ziyaret "
 "edebilirsiniz.<br><br>\n"
-"            Sitemiz, uygun görülmeyen yorumları ve rüyaları yayınlamama "
+"                Sitemiz, uygun görülmeyen yorumları ve rüyaları yayınlamama "
 "hakkına sahiptir.<br><br>\n"
-"            Google Analytics<br><br>\n"
-"            Bu web sitesi, Google tarafından sağlanan web analiz hizmetini "
-"kullanır.\n"
-"            Web sitemizi kullandığınızda, bu kullanım hakkındaki bilgiler, "
-"bilgisayarınızda üretilen, çerez adı verilen bir metin dosyasında saklanır.\n"
-"            Bu “çerez” yani metin dosyasında bulunan, web sitemizi ziyaret "
-"etmenizle ilgili tüm veriler Genelllikle ABD’de bulunan bir Google "
+"                Google Analytics<br><br>\n"
+"                Bu web sitesi, Google tarafından sağlanan web analiz "
+"hizmetini kullanır.\n"
+"                Web sitemizi kullandığınızda, bu kullanım hakkındaki "
+"bilgiler, bilgisayarınızda üretilen, çerez adı verilen bir metin dosyasında "
+"saklanır.\n"
+"                Bu “çerez” yani metin dosyasında bulunan, web sitemizi "
+"ziyaret etmenizle ilgili tüm veriler Genelllikle ABD’de bulunan bir Google "
 "sunucusuna gönderilir ve orada saklanır.\n"
-"            Google bu verileri web analiz hizmetleri için kullanır ve "
+"                Google bu verileri web analiz hizmetleri için kullanır ve "
 "oluşturduğu raporları web sitemizle paylaşır.\n"
-"            Eğer isterseniz tarayıcınızda bulunan “çerez” ayarları ile "
+"                Eğer isterseniz tarayıcınızda bulunan “çerez” ayarları ile "
 "çerezlerin oluşmasını engelleyebilirsiniz.\n"
-"            Ayrıca, http://tools.google.com/dlpage/gaoptout?"
+"                Ayrıca, http://tools.google.com/dlpage/gaoptout?"
 "hl=tr bağlantısında bulunan eklentiyi bilgisayarınıza kurarak bu saklanan "
 "çerezlerde bulunan kişisel verilerinizin Google tarafından kullanılmasını "
 "engelleyebilirsiniz.\n"
-"            Verilerinizin güvenliğini koruma ve Google Analytics hakkında "
-"daha fazla bilgiyi aşağıdaki bağlantılardan bulabilirsiniz.<br><br>\n"
-"            http://www.google.com/analytics/terms/tr.html veya https://"
+"                Verilerinizin güvenliğini koruma ve Google Analytics "
+"hakkında daha fazla bilgiyi aşağıdaki bağlantılardan bulabilirsiniz."
+"<br><br>\n"
+"                http://www.google.com/analytics/terms/tr.html veya https://"
 "support.google.com/analytics/answer/6004245?hl=tr\n"
-"            "
+"                "
 msgstr ""
 "From the moment you start using this website, you are deemed to have "
 "accepted the rules written here. Articles on the site are for general "
@@ -242,7 +246,7 @@ msgstr ""
 "google.com/analytics/answer/6004245?hl=en"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:121
 msgid "İletişim"
 msgstr "Contact Us"
 
@@ -251,7 +255,7 @@ msgid "GÖNDER"
 msgstr "SEND"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:49
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:118
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:121
 msgid "Sosyal Medya"
 msgstr "Social Media"
 
@@ -275,46 +279,46 @@ msgstr "Names of ALLAH"
 msgid "SALATI TEFRİCİYE"
 msgstr "Salati Tefriciye"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:7
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:59
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:63
 msgid "Dua Nedir?"
 msgstr "What is Prayer?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:10
 msgid ""
 " Sözlük anlamı ile dua “çağırmak, seslenmek, istemek, yardım talep etmek” "
 "demektir.<br>\n"
-"            Dinî bir terim olarak ise, insanın bütün benliğiyle Allah’a "
+"                Dinî bir terim olarak ise, insanın bütün benliğiyle Allah’a "
 "yönelerek maddî ve manevî isteklerini\n"
-"            O’na arz etmesidir.<br>\n"
-"            <br>\n"
-"            Temeli, insanın Allah’a hâlini arz etmesi ve O’na niyazda "
+"                O’na arz etmesidir.<br>\n"
+"                <br>\n"
+"                Temeli, insanın Allah’a hâlini arz etmesi ve O’na niyazda "
 "bulunması olduğuna göre dua,\n"
-"            Allah ile kul arasında bir irtibattır.<br>\n"
-"            <br>\n"
-"            Duada daima tâzim (Allah’ı yüceleme) ve tâzimle birlikte istekte "
-"bulunma anlamı vardır.<br>\n"
-"            <br>\n"
-"            Dua aynı zamanda zikir ve ibadettir.<br>\n"
-"            <br>\n"
-"            Böylece duada biri zikir ve saygı, diğeri de dilek olmak üzere "
-"iki unsur hep yan yana bulunur.<br>\n"
-"            Bu sebeple Hz. Peygamber (s.a.s.), “Dua, ibadetin "
+"                Allah ile kul arasında bir irtibattır.<br>\n"
+"                <br>\n"
+"                Duada daima tâzim (Allah’ı yüceleme) ve tâzimle birlikte "
+"istekte bulunma anlamı vardır.<br>\n"
+"                <br>\n"
+"                Dua aynı zamanda zikir ve ibadettir.<br>\n"
+"                <br>\n"
+"                Böylece duada biri zikir ve saygı, diğeri de dilek olmak "
+"üzere iki unsur hep yan yana bulunur.<br>\n"
+"                Bu sebeple Hz. Peygamber (s.a.s.), “Dua, ibadetin "
 "özüdür.” (Tirmizî, Deavât, 2) buyurmuştur.<br>\n"
-"            <br>\n"
-"            Aynı sebeple en önemli ibadet olan namaz, dua (salât) "
+"                <br>\n"
+"                Aynı sebeple en önemli ibadet olan namaz, dua (salât) "
 "kelimesiyle ifade edilmiştir (En’âm, 6/52; Kehf, 18/28).<br>\n"
-"            <br>\n"
-"            Diğer bir âyette de, “De ki; duanız (kulluğunuz) olmasa Rabbim "
-"size ne diye değer versin.” (Furkân, 25/77)\n"
-"            buyurulmak suretiyle insanın ancak Allah’a olan bu yönelişiyle "
-"değer kazanabileceği belirtilmiştir.<br>\n"
-"            <br>\n"
-"            Duanın sadece Allah’a yöneltilmesi; Allah’tan başkasına, putlara "
-"veya kendilerine üstün nitelikler izafe edilen başka\n"
-"            yaratıklara dua ve ibadet edilmemesi Kur’an’da ısrarla "
+"                <br>\n"
+"                Diğer bir âyette de, “De ki; duanız (kulluğunuz) olmasa "
+"Rabbim size ne diye değer versin.” (Furkân, 25/77)\n"
+"                buyurulmak suretiyle insanın ancak Allah’a olan bu "
+"yönelişiyle değer kazanabileceği belirtilmiştir.<br>\n"
+"                <br>\n"
+"                Duanın sadece Allah’a yöneltilmesi; Allah’tan başkasına, "
+"putlara veya kendilerine üstün nitelikler izafe edilen başka\n"
+"                yaratıklara dua ve ibadet edilmemesi Kur’an’da ısrarla "
 "vurgulanmıştır (Şuarâ, 26/213; Kasas, 28/88).\n"
-"            "
+"                "
 msgstr ""
 "Dua means literally, calling, asking, asking for help. As a religious term, "
 "it is the fact that people present their material and spiritual desires to "
@@ -332,42 +336,43 @@ msgstr "SEARCH"
 msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
 msgstr "Dream Dictionary"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:6
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:50
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:7
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:54
 msgid "Rüya Nedir?"
 msgstr "What is Dream?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:9
 msgid ""
 " Rüya, uyku halindeki görüş veya görülen şey demektir. Rüyalar üç kısımdır :"
 "<br>\n"
-"            1. İnsanları mahzun etmek için şeytan tarafından üretilen kötü "
-"ve korkunç rüyalar,<br>\n"
-"            2. İnsanın uyanıkken meşgul olduğu şeylere ait gördüğü rüyalar, "
-"(Bunlara Bilinçaltı rüyaları da diyoruz.)<br>\n"
-"            3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli insanların "
-"gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.\n"
-"            "
+"                1. İnsanları mahzun etmek için şeytan tarafından üretilen "
+"kötü ve korkunç rüyalar,<br>\n"
+"                2. İnsanın uyanıkken meşgul olduğu şeylere ait gördüğü "
+"rüyalar, (Bunlara Bilinçaltı rüyaları da diyoruz.)<br>\n"
+"                3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli "
+"insanların gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.\n"
+"                "
 msgstr ""
 "Dream means what is seen while sleeping. Dreams are three parts: <br> 1. Bad "
 "dreams produced by Satan, <br> 2. Subconscious dreams. Dreams about what "
 "people are busy with, <br> 3. Other dreams. Dreams that are seen by "
 "kindhearted people, outside the first and second kind of dreams."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:14
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:19
 msgid "Rüyanın Etkileri"
 msgstr "Effects of Dream"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:16
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:21
 msgid ""
 " İnsan uyanıklık hali ile sorumludur. Yani uyanıklık haricinde uyku ve "
 "baygınlık gibi yaptığı işlerden\n"
-"            sorumlu tutulmamıştır. Rüyada ister olumlu ister olumsuz manada "
-"gelen haberler objektif bir değer ifade etmez.\n"
-"            Bağlayıcı bir delil kabul edilemez. Bazı kimseler istisnaları "
-"olduğunu belirtse de genel olarak rüya ile amel edilemez.\n"
-"            Rüya yorumunda rüyanın iyi ve isabetli yorumlanması esastır.\n"
-"            "
+"                sorumlu tutulmamıştır. Rüyada ister olumlu ister olumsuz "
+"manada gelen haberler objektif bir değer ifade etmez.\n"
+"                Bağlayıcı bir delil kabul edilemez. Bazı kimseler "
+"istisnaları olduğunu belirtse de genel olarak rüya ile amel edilemez.\n"
+"                Rüya yorumunda rüyanın iyi ve isabetli yorumlanması "
+"esastır.\n"
+"                "
 msgstr ""
 "People are responsible for the state of wakefulness. In other words, except "
 "for wakefulness, such as sleep and fainting, he was not held responsible for "
@@ -376,42 +381,42 @@ msgstr ""
 "exceptions, they cannot be operated with dreams in general. Good and "
 "accurate interpretation of the dream is essential in dream interpretation."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:22
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:31
 msgid "Rüya ile İlgili Hadisler"
 msgstr "Hadith on Dreams"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:24
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:33
 msgid ""
 " 1. “Rüya tabir edildiği şekilde gerçekleşir. Bunun örneği ise ayağını "
 "kaldıran ve onu yere\n"
-"            koyacağı zamanı bekleyen kimsenin durumuna benzer. Buna göre "
+"                koyacağı zamanı bekleyen kimsenin durumuna benzer. Buna göre "
 "sizden herhangi bir kimse bir rüya görecek olursa\n"
-"            onu ya kendisinin iyiliğini isteyen, samimi birisine ya da (rüya "
-"tabirinden anlayan) alim birisine anlatsın!\n"
-"            Başkasına anlatmasın!” Hakim Müstedrek 4/391<br>\n"
-"            <br>\n"
-"            2. “Rüya yorumlanmadığı sürece bir kuşun ayağı üzerindedir (yani "
-"istikrarsızdır). Yorumlandığı zaman\n"
-"            (yorumlandığı şekilde) gerçekleşir. Sen onu (seni) seven ve "
+"                onu ya kendisinin iyiliğini isteyen, samimi birisine ya da "
+"(rüya tabirinden anlayan) alim birisine anlatsın!\n"
+"                Başkasına anlatmasın!” Hakim Müstedrek 4/391<br>\n"
+"                <br>\n"
+"                2. “Rüya yorumlanmadığı sürece bir kuşun ayağı üzerindedir "
+"(yani istikrarsızdır). Yorumlandığı zaman\n"
+"                (yorumlandığı şekilde) gerçekleşir. Sen onu (seni) seven ve "
 "(rüya tabirini) bilen kimseden başkasına anlatma!”\n"
-"            Ebu Davud 5020<br>\n"
-"            <br>\n"
-"            3. “Mü’minin rüyası, Nebîliğin kırk altı parçasından bir "
+"                Ebu Davud 5020<br>\n"
+"                <br>\n"
+"                3. “Mü’minin rüyası, Nebîliğin kırk altı parçasından bir "
 "parçadır!” Darimi 2143<br>\n"
-"            <br>\n"
-"            4. “İyi rüya Allah’tandır. Bu sebeple biriniz sevdiği bir rüya "
-"gördüğünde Allah’a hamdetsin ve onu sadece sevdiği\n"
-"            kimselere anlatsın! Biriniz hoşlanmadığı bir rüya gördüğünde ise "
-"soluna üç defa tükürsün ve şerrinden Allah’a sığınsın,\n"
-"            onu hiç kimseye de anlatmasın! Artık o kötü rüya ona zarar "
+"                <br>\n"
+"                4. “İyi rüya Allah’tandır. Bu sebeple biriniz sevdiği bir "
+"rüya gördüğünde Allah’a hamdetsin ve onu sadece sevdiği\n"
+"                kimselere anlatsın! Biriniz hoşlanmadığı bir rüya gördüğünde "
+"ise soluna üç defa tükürsün ve şerrinden Allah’a sığınsın,\n"
+"                onu hiç kimseye de anlatmasın! Artık o kötü rüya ona zarar "
 "veremez.” Darimi 2148<br>\n"
-"            <br>\n"
-"            5. “Rüya Allah’tandır. Kötü, korkunç ve çirkin rüya ise "
+"                <br>\n"
+"                5. “Rüya Allah’tandır. Kötü, korkunç ve çirkin rüya ise "
 "şeytandadır! Biriniz, hoşlanmadığı bir rüya görürse\n"
-"            sol tarafına üç defa tükürüp sonra o rüyanın şerrinden Allah’a "
-"sığınsın! Çünkü (o zaman) o rüya kendisine\n"
-"            zarar vermez!” Ebu Davud 5021<br>\n"
-"            "
+"                sol tarafına üç defa tükürüp sonra o rüyanın şerrinden "
+"Allah’a sığınsın! Çünkü (o zaman) o rüya kendisine\n"
+"                zarar vermez!” Ebu Davud 5021<br>\n"
+"                "
 msgstr ""
 "Abu Said alKhudri reported:<br> The Prophet, peace and blessings be upon "
 "him, said, \"When one of you sees a dream he likes, it is from Allah so let "
@@ -467,50 +472,50 @@ msgid ""
 msgstr ""
 "It may be more useful to read the previous or next verse or the whole sura."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:7
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:56
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:60
 msgid "Tefe'ül Nedir?"
 msgstr "What is Tefeul?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:10
 msgid ""
 " Bir kitabı gelişigüzel açarak ilk tevafuk eden yeri okuyup ondan bir mesaj "
 "çıkarmaya tefe'ül denmektedir.<br>\n"
-"            Tefeül bir şeyi uğur saymak, bir olayı bir hayrın başlangıçı "
+"                Tefeül bir şeyi uğur saymak, bir olayı bir hayrın başlangıçı "
 "görmektir.<br>\n"
-"            Ayrıca Kuranı Kerime bakarak karar vermektir.<br>\n"
-"            <br>\n"
-"            Peygamber Efendimiz buyurmuştur:<br>\n"
-"            <br>\n"
-"            \"Hayra yorma, güzel söz, temiz laf hoşuma gider.\"<br>\n"
-"            <br>\n"
-"            İnsan hayırlı söz söylemeli, fena ve uğursuz sözlerden dilini "
-"korumalıdır.<br>\n"
-"            <br>\n"
-"            Ebu Hüreyre'den (ra) Resülullah'ın (asm):<br>\n"
-"            <br>\n"
-"            \"İslâm'da teşe'üm yoktur, en hayırlısı tefe'üldür\" buyurduğunu "
-"işittim, dediği rivayet olunmuştur.<br>\n"
-"            Mecliste bulunanlar: Tefe'ül nedir Ya Resülallâh! diye sordular."
+"                Ayrıca Kuranı Kerime bakarak karar vermektir.<br>\n"
+"                <br>\n"
+"                Peygamber Efendimiz buyurmuştur:<br>\n"
+"                <br>\n"
+"                \"Hayra yorma, güzel söz, temiz laf hoşuma gider.\"<br>\n"
+"                <br>\n"
+"                İnsan hayırlı söz söylemeli, fena ve uğursuz sözlerden "
+"dilini korumalıdır.<br>\n"
+"                <br>\n"
+"                Ebu Hüreyre'den (ra) Resülullah'ın (asm):<br>\n"
+"                <br>\n"
+"                \"İslâm'da teşe'üm yoktur, en hayırlısı tefe'üldür\" "
+"buyurduğunu işittim, dediği rivayet olunmuştur.<br>\n"
+"                Mecliste bulunanlar: Tefe'ül nedir Ya Resülallâh! diye "
+"sordular.<br>\n"
+"                Resül-i Ekrem: Sizden birinizin duyduğu güzel sözdür buyurdu."
 "<br>\n"
-"            Resül-i Ekrem: Sizden birinizin duyduğu güzel sözdür buyurdu."
+"                <br>\n"
+"                Bazı alimler arasında Kur'an ayetleriyle tefe'ülde yaygındı."
 "<br>\n"
-"            <br>\n"
-"            Bazı alimler arasında Kur'an ayetleriyle tefe'ülde yaygındı."
-"<br>\n"
-"            Kuranı Kerim'de Müslümanlarla birlikte kafirlerden, "
+"                Kuranı Kerim'de Müslümanlarla birlikte kafirlerden, "
 "münafıklardan bahsettiği gibi;\n"
-"            sadece cennetten değil cehennemden de bahsettiği için Kuranla "
-"tefeül yaparken ümitsizliğe kapılmamak gerekmektedir.<br>\n"
-"            <br>\n"
-"            İbn Abbas (r.a) \"Devemin yularını kaybetsem Kuran'da bulurum \" "
-"demiştir.<br>\n"
-"            <br>\n"
-"            Bununla, “Kur’an’da her şey var.. Fakat bir kısmı açık, bir "
+"                sadece cennetten değil cehennemden de bahsettiği için "
+"Kuranla tefeül yaparken ümitsizliğe kapılmamak gerekmektedir.<br>\n"
+"                <br>\n"
+"                İbn Abbas (r.a) \"Devemin yularını kaybetsem Kuran'da "
+"bulurum \" demiştir.<br>\n"
+"                <br>\n"
+"                Bununla, “Kur’an’da her şey var.. Fakat bir kısmı açık, bir "
 "kısmı işari yolla ifade edilmiş..<br>\n"
-"            Herkes kendi ilmi birikimine göre, anlayış ve kabiliyetine göre "
-"aradığını onda bulabileceğini..”  kastetmiştir.\n"
-"            "
+"                Herkes kendi ilmi birikimine göre, anlayış ve kabiliyetine "
+"göre aradığını onda bulabileceğini..”  kastetmiştir.\n"
+"                "
 msgstr ""
 "It is called \"Tefeul\" by opening a book randomly, reading the first part "
 "encountered and extracting a message from it.<br><br>Tefeul is to consider "
@@ -523,35 +528,36 @@ msgstr ""
 "sometimes in the sura.<br><br>Do not forget that it is necessary to evaluate "
 "all of them together and to learn more from tafsir books."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:40
 msgid "Tefe'ül Nasıl Yapılır?"
 msgstr "How is Tefeul Done?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:37
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:42
 msgid ""
 "Tefeül de esas olan bunun bir fal olmadığını, istişare olduğunu akılda "
 "tutmak temiz bir niyet ile yapmaktır.\n"
-"            Kuranı kerim aracılığıyla Rabbimizle istişare ediyoruz. Yani Ona "
-"danışıyoruz.<br>\n"
-"            <br>\n"
-"            Tefeül ile yaşanılan durumda yapılması gerekenin ne olduğuna "
+"                Kuranı kerim aracılığıyla Rabbimizle istişare ediyoruz. Yani "
+"Ona danışıyoruz.<br>\n"
+"                <br>\n"
+"                Tefeül ile yaşanılan durumda yapılması gerekenin ne olduğuna "
 "bakılır.\n"
-"            Hakkımızda hayır olanı bildirmesi için Hakka danışılır.<br>\n"
-"            <br>\n"
-"            Önce temiz bir kalp ile niyet edilir. Sonra tefeül başlatılır."
-"<br>\n"
-"            <br>\n"
-"            Önce sure sonra ayet sonra da kelime ekrana yansıtılacaktır.\n"
-"            Bazen kelime bazen ayet bazende süre aradığınız çıkış yolunu "
+"                Hakkımızda hayır olanı bildirmesi için Hakka danışılır.<br>\n"
+"                <br>\n"
+"                Önce temiz bir kalp ile niyet edilir. Sonra tefeül "
+"başlatılır.<br>\n"
+"                <br>\n"
+"                Önce sure sonra ayet sonra da kelime ekrana "
+"yansıtılacaktır.\n"
+"                Bazen kelime bazen ayet bazende süre aradığınız çıkış yolunu "
 "size gösteriyor olabilir.\n"
-"            Bunun için hepsi birlikte değerlendirilmeli ve tefsir "
+"                Bunun için hepsi birlikte değerlendirilmeli ve tefsir "
 "kitaplarında da daha kapsamlı bilgi edinilmelidir.<br>\n"
-"            <br>\n"
-"            Hiç bir zaman umutsuzluğa kapılmadan belirli zaman aralıklarıyla "
-"tefeül tekrar edilebilir.<br>\n"
-"            <br>\n"
-"            Tefeül'ün bir fal olmadığı akıldan çıkarılmamalıdır.\n"
-"            "
+"                <br>\n"
+"                Hiç bir zaman umutsuzluğa kapılmadan belirli zaman "
+"aralıklarıyla tefeül tekrar edilebilir.<br>\n"
+"                <br>\n"
+"                Tefeül'ün bir fal olmadığı akıldan çıkarılmamalıdır.\n"
+"                "
 msgstr ""
 "The main thing in Tefeul is to keep in mind that this is not a fortune "
 "telling, but to consult and to do it with a clean intention.<br><br>We "
@@ -565,32 +571,32 @@ msgstr ""
 "intervals without ever despair. It should be noted that Tefeul is not a "
 "fortune-telling."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:53
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:7
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:57
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
 msgid "Yıldızname Nedir?"
 msgstr "What is Yildizname?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:69
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:73
 msgid "Hesabım"
 msgstr "My Account"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:70
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:74
 msgid "Çıkış Yap"
 msgstr "Log Out"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:74
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:78
 msgid "Giriş Yap"
 msgstr "Log in"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:95
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:99
 msgid "Türkçe"
 msgstr "Turkish"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:102
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:106
 msgid "İngilizce"
 msgstr "English"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:116
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:119
 msgid "Başa Dön"
 msgstr "Back to Top"
 
@@ -606,24 +612,24 @@ msgstr "Male"
 msgid "Kadın"
 msgstr "Female"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:10
 msgid ""
 " Yıldız falı yıldızların konum ve hareketlerinin bir işaret sistemi "
 "oluşturduğuna,\n"
-"            bu sayede insan hayatının evrelerinin bilinebileceği iddiasına "
-"dayanır.\n"
-"            Yıldız falına bakmak üzere yazılmış kitaplara da yıldıznâme "
+"                bu sayede insan hayatının evrelerinin bilinebileceği "
+"iddiasına dayanır.\n"
+"                Yıldız falına bakmak üzere yazılmış kitaplara da yıldıznâme "
 "denir.<br><br>\n"
-"            Yıldız falı genellikle evlilik, iş hayatı, yolculuk ve savaş "
+"                Yıldız falı genellikle evlilik, iş hayatı, yolculuk ve savaş "
 "gibi önemli işlere karar vermeden önce sonucun\n"
-"            uğurlu olup olmadığını öğrenmek için yapılmaktaydı.<br><br>\n"
-"            Yıldıznâmelerde burçların özelliklerine dair yer alan bilgiler "
-"geçmiş tecrübeler sayesinde ortaya çıkmıştır.<br><br>\n"
-"            Unutmamak gerekir ki birtakım işlemler sonucu yıldızların "
+"                uğurlu olup olmadığını öğrenmek için yapılmaktaydı.<br><br>\n"
+"                Yıldıznâmelerde burçların özelliklerine dair yer alan "
+"bilgiler geçmiş tecrübeler sayesinde ortaya çıkmıştır.<br><br>\n"
+"                Unutmamak gerekir ki birtakım işlemler sonucu yıldızların "
 "insanları etkilediğine inanmak tevhid inancına aykırı bir durumdur.\n"
-"            Bu tür faaliyetler inanç boyutuna taşınmadan eğlence diye "
+"                Bu tür faaliyetler inanç boyutuna taşınmadan eğlence diye "
 "yapılmalıdır.\n"
-"            "
+"                "
 msgstr ""
 "The horoscope is based on the claim that the positions and movements of "
 "stars form a sign system, so that the phases of human life can be known. "
@@ -636,18 +642,18 @@ msgstr ""
 "contrary to our religious belief. Such activities should be done as "
 "entertainment."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:19
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:24
 msgid "Nasıl Hesaplanır?"
 msgstr "How is it Calculated?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:26
 msgid ""
 " Ebced hesabıyla yıldızname bakılırken, kişinin anne ismi ile kendi isminin "
 "her harfinin\n"
-"            Ebced-i Kebir değerleri toplanır ve 12 ye bölünür. Kalan sayı "
-"kaç numaralı burca bakılması gerektiğini\n"
-"            söyler ve o kişinin yıldıznamesi bulunmuş olur.\n"
-"            "
+"                Ebced-i Kebir değerleri toplanır ve 12 ye bölünür. Kalan "
+"sayı kaç numaralı burca bakılması gerektiğini\n"
+"                söyler ve o kişinin yıldıznamesi bulunmuş olur.\n"
+"                "
 msgstr ""
 "While calculating \"Yildizname\" with Abjad system, Abjad values of each "
 "letter of the person and mother's name are added and divided by 12. The "
@@ -655,44 +661,84 @@ msgstr ""
 "that person has been found."
 
 #: .\ruyatabirleri\urls.py:9
-msgid "dua"
-msgstr "prayer/"
+msgid "dua/"
+msgstr "pray/"
 
 #: .\ruyatabirleri\urls.py:10
-msgid "dua/dua_nedir"
-msgstr "prayer/what-is-prayer/"
+msgid "dua-nedir/"
+msgstr "what-is-prayer/"
+
+#: .\ruyatabirleri\urls.py:11
+msgid "dua/yasin"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:12
+msgid "dua/yasin/mubin"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:13
+msgid "dua/yasin/arapca"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:14
+msgid "dua/ayetelkursi"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:15
+msgid "dua/ayetelkursi/arapca"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:16
+msgid "dua/dua_ayet"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:17
+msgid "dua/esmaul_husna"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:18
+msgid "dua/tefriciye"
+msgstr "pray/tefriciye/"
+
+#: .\ruyatabirleri\urls.py:19
+msgid "dua/tefriciye/arapca"
+msgstr "pray/tefriciye/arabic/"
 
 #: .\ruyatabirleri\urls.py:20
-msgid "tefeul"
+msgid "tefeul/"
 msgstr "tefeul/"
 
 #: .\ruyatabirleri\urls.py:21
-msgid "tefeul/tefeul_nedir"
-msgstr "tefeul/what-is-tefeul/"
+msgid "tefeul-nedir/"
+msgstr "what-is-tefeul/"
+
+#: .\ruyatabirleri\urls.py:22
+msgid "tefeul/tefeul_yap"
+msgstr "tefeul/do-tefeul/"
 
 #: .\ruyatabirleri\urls.py:23
 msgid "iletisim/"
 msgstr "contact/"
 
 #: .\ruyatabirleri\urls.py:24
-msgid "ruyatabirleri_gizlilik/"
-msgstr "dreaminterpretations-privacy/"
+msgid "gizlilik/"
+msgstr "privacy/"
 
 #: .\ruyatabirleri\urls.py:25
 msgid "yildizname/"
 msgstr "horoscope/"
 
 #: .\ruyatabirleri\urls.py:26
-msgid "yidizname/yildizname_nedir/"
-msgstr "horoscope/what-is-horoscope/"
+msgid "yildizname-nedir/"
+msgstr "what-is-yildizname/"
 
 #: .\ruyatabirleri\urls.py:27
 msgid "ruyatabirleri/"
 msgstr "dreaminterpretations/"
 
 #: .\ruyatabirleri\urls.py:28
-msgid "ruyatabirleri/ruyatabirleri_nedir/"
-msgstr "dreaminterpretations/what-is-dreaminterpretations/"
+msgid "ruyatabirleri-nedir/"
+msgstr "what-is-dreaminterpretations/"
 
 #: .\ruyatabirleri\views.py:8 .\ruyatabirleri\views.py:72
 #: .\ruyatabirleri\views.py:88
@@ -1905,3 +1951,15 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "dua"
+#~ msgstr "prayer/"
+
+#~ msgid "ruyatabirleri_gizlilik/"
+#~ msgstr "dreaminterpretations-privacy/"
+
+#~ msgid "yidizname/yildizname_nedir/"
+#~ msgstr "horoscope/what-is-horoscope/"
+
+#~ msgid "ruyatabirleri/ruyatabirleri_nedir/"
+#~ msgstr "dreaminterpretations/what-is-dreaminterpretations/"
