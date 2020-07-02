@@ -11,7 +11,7 @@ git status
 git add --all .
 git status
 git commit -m "Gelistirme."
-
+git push
 
 Run makemessages:
 django-admin makemessages -l en
@@ -19,6 +19,57 @@ django-admin makemessages -l en
 Run compilemessages:
 django-admin compilemessages
 
+#------------------------------------------------
+from ruyatabirleri.models import Ruyatabirleri
+
+from django.contrib.sitemaps.views import sitemap
+from django.contrib.sitemaps import GenericSitemap
+
+from ruyatabirleri.sitemaps import StaticViewSitemap
+
+sitemaps = {
+    'ruyatabirleri': GenericSitemap({
+        'queryset': Ruyatabirleri.objects.all(),
+        'date_field': 'updated',
+    }, priority=0.9, changefreq = "weekly"),
+    'static': StaticViewSitemap,
+}
+#path ('sitemap.xml/', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+#sitemap
+from django.contrib.sitemaps import Sitemap
+from django.urls import reverse
+
+class StaticViewSitemap(Sitemap):
+    changefreq = "weekly"
+    priority = 0.9
+    i18n = True
+    def items(self):
+        return ['ruyatabirleri:anasayfa',
+                'ruyatabirleri:dua',
+                'ruyatabirleri:dua_nedir',
+                'ruyatabirleri:yasin',
+                'ruyatabirleri:mubin',
+                'ruyatabirleri:yasin_arapca',
+                'ruyatabirleri:ayetelkursi',
+                'ruyatabirleri:ayetelkursi_arapca',
+                'ruyatabirleri:dua_ayet',
+                'ruyatabirleri:esmaul_husna',
+                'ruyatabirleri:tefriciye',
+                'ruyatabirleri:tefriciye_arapca',
+                'ruyatabirleri:tefeul',
+                'ruyatabirleri:tefeul_nedir',
+                'ruyatabirleri:iletisim',
+                'ruyatabirleri:gizlilik',
+                'ruyatabirleri:yildizname',
+                'ruyatabirleri:yildizname_nedir',
+                'ruyatabirleri:ruyatabirleri',
+                'ruyatabirleri:ruyatabirleri_nedir',
+                ]
+    def location(self, item):
+        return reverse(item)
+
+
+#-----------------------------------------------------
 
 Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak bulabilirsiniz.
 Örneğin rüyanızda araba kullandığınızı gördünüz zaman, sadece ARABA kelimesini kullanarak arama yapmalısınız.

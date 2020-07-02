@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django_comments',
     'register',
     'django.contrib.sitemaps',
+    'qartez',
 ]
 #-----------------------------------------------------------
 
@@ -58,7 +59,7 @@ MIDDLEWARE = [
 ]
 #----------------------------------------------------------
 
-# local de açık yayında kapalı
+
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = 'DENY'

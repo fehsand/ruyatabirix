@@ -1,26 +1,25 @@
 from django.contrib import admin
 from django.urls import path, include
-from ruyatabirleri.models import Ruyatabirleri
-
-from django.contrib.sitemaps.views import sitemap
-from django.contrib.sitemaps import GenericSitemap
-
-from ruyatabirleri.sitemaps import StaticViewSitemap
-
 from django.conf.urls.i18n import i18n_patterns
+from django.contrib.sitemaps.views import sitemap as sitemaps_sitemap
+from ruyatabirleri.sitemap import (
+    foo_static_sitemap,
+    FooItemSitemap,
+    FooItemAlternateHreflangSitemap2,
+    FooItemAlternateHreflangSitemap,
+)
 
 sitemaps = {
-    'ruyatabirleri': GenericSitemap({
-        'queryset': Ruyatabirleri.objects.all(),
-        'date_field': 'updated',
-    }, priority=0.9, changefreq = "weekly"),
-    'static': StaticViewSitemap,
+    'foo-items-alternate-hreflang': FooItemAlternateHreflangSitemap,
+    'foo-items': FooItemSitemap,
+    'foo-items-alternate-hreflang2': FooItemAlternateHreflangSitemap2,
+    'foo-static': foo_static_sitemap,
 }
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
     path ('w2e3r4t5_admin/', admin.site.urls),
-    path ('sitemap.xml/', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path('sitemap.xml/', sitemaps_sitemap, {'sitemaps': sitemaps, 'template_name': 'ruyatabirleri/rel_alternate_hreflang_sitemap.xml'}, name='django.contrib.sitemaps.views.sitemap'),
 ]
 
 urlpatterns += i18n_patterns(

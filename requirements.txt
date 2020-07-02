@@ -1,3 +1,4 @@
 Django~=2.2.4
 django-contrib-comments
 mysqlclient
+django-qartez
