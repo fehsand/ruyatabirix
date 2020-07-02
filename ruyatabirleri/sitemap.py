@@ -43,7 +43,7 @@ class FooItemSitemap(Sitemap):
 
 
 # ---------------------- Static PAge Normal sitemap part ---------------------------
-# Normal Foo items sitemap.
+# Static PAge_Normal Foo items sitemap.
 class FooItemAlternateHreflangSitemap2(RelAlternateHreflangSitemap):
     changefreq = "weekly"
     priority = 1.0
@@ -54,11 +54,10 @@ class FooItemAlternateHreflangSitemap2(RelAlternateHreflangSitemap):
                 ('es', item.altr_es_url),
                 ('ru', item.altr_ru_url),
                 ('ch', item.altr_ch_url),
-                ('in', item.altr_in_url),
                 ]
 
     def items(self):
-        return Ruyatabirlerix_sbt._default_manager.exclude(altr_en_url=None).exclude(altr_ar_url =None).exclude(altr_es_url =None).exclude(altr_ru_url =None).exclude(altr_ch_url =None).exclude(altr_in_url =None)
+        return Ruyatabirlerix_sbt._default_manager.exclude(altr_en_url=None).exclude(altr_ar_url =None).exclude(altr_es_url =None).exclude(altr_ru_url =None).exclude(altr_ch_url =None)
 
 # ---------------------- Alternate hreflang sitemap part ---------------
 # Alternate hreflang sitemap.
@@ -72,8 +71,7 @@ class FooItemAlternateHreflangSitemap(RelAlternateHreflangSitemap):
                 ('es', item.altr_es_url),
                 ('ru', item.altr_ru_url),
                 ('ch', item.altr_ch_url),
-                ('in', item.altr_in_url),
                 ]
 
     def items(self):
-        return Ruyatabirlerix._default_manager.exclude(altr_en_url=None).exclude(altr_ar_url =None).exclude(altr_es_url =None).exclude(altr_ru_url =None).exclude(altr_ch_url =None).exclude(altr_in_url =None)
+        return Ruyatabirlerix._default_manager.exclude(altr_en_url=None).exclude(altr_ar_url =None).exclude(altr_es_url =None).exclude(altr_ru_url =None).exclude(altr_ch_url =None)

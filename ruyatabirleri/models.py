@@ -89,9 +89,6 @@ class Ruyatabirlerix (models.Model):
     kelime_ch = models.CharField(max_length=200, null=True)
     tabir_ch = models.TextField(null=True)
     altr_ch_url = models.URLField (blank=True, null=True)
-    kelime_in = models.CharField(max_length=200, null=True)
-    tabir_in = models.TextField(null=True)
-    altr_in_url = models.URLField (blank=True, null=True)
     updated = models.DateTimeField (auto_now=True, null=True)
 
     def __str__(self):
@@ -114,7 +111,6 @@ class Ruyatabirlerix_sbt (models.Model):
     altr_ru_url = models.URLField (blank=True, null=True)
     altr_es_url = models.URLField (blank=True, null=True)
     altr_ch_url = models.URLField (blank=True, null=True)
-    altr_in_url = models.URLField (blank=True, null=True)
     updated = models.DateTimeField (auto_now=True, null=True)
 
     def __str__(self):
