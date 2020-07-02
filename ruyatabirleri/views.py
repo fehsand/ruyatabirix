@@ -1,6 +1,12 @@
 import random
 from .forms import AramaForm, YildiznameForm, iletisimForm
-from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler
+from .models import (
+    Ruyatabirleri,
+    KuranBilgi,
+    KuranKelime,
+    ArananKelimeler,
+    Ruyatabirlerix,
+    Ruyatabirlerix_sbt)
 from django.shortcuts import render, get_object_or_404
 from django.utils.translation import gettext_lazy as _
 
@@ -276,3 +282,7 @@ def tefriciye (request):
 
 def tefriciye_arapca (request):
     return render(request,'ruyatabirleri/dua_tefriciye_arapca.html', {})
+
+def ruyatabirleri_ayrinti_sbt_syf (response, slug=None):
+    tabir1 = get_object_or_404 (Ruyatabirlerix_sbt, slug=slug)
+    return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html', {'tabir1': tabir1})

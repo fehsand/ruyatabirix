@@ -104,3 +104,26 @@ class Ruyatabirlerix (models.Model):
     def get_absolute_url(self):
         return reverse ('ruyatabirleri:ruyatabirleri_ayrinti',
                         args=[str(self.slug)])
+
+class Ruyatabirlerix_sbt (models.Model):
+    kelime = models.CharField (default='', max_length=255)
+    slug = models.SlugField (default='', blank=True, max_length=255)
+    ekleme_tarihi = models.DateTimeField(auto_now_add=True)
+    altr_en_url = models.URLField (blank=True, null=True)
+    altr_ar_url = models.URLField (blank=True, null=True)
+    altr_ru_url = models.URLField (blank=True, null=True)
+    altr_es_url = models.URLField (blank=True, null=True)
+    altr_ch_url = models.URLField (blank=True, null=True)
+    altr_in_url = models.URLField (blank=True, null=True)
+    updated = models.DateTimeField (auto_now=True, null=True)
+
+    def __str__(self):
+        return self.kelime
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.kelime.replace('ı','i'))
+        super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return reverse ('ruyatabirleri:ruyatabirleri_ayrinti_sbt_syf',
+                        args=[str(self.slug)])
