@@ -147,7 +147,14 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'tr'
 
-LANGUAGES = [('tr', _('Turkish')), ('en', _('English')),]
+LANGUAGES = [
+    ('tr', _('Turkish')),
+    ('en', _('English')),
+    ('ar', _('Arabic')),
+    ('ru', _('Russian')),
+    ('es', _('Spanish')),
+    ('zh-hans', _('Chinese')),
+]
 
 TIME_ZONE = 'Europe/Istanbul'
 

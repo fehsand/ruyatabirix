@@ -86,9 +86,37 @@
                 </form>
                 <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
                     {% csrf_token %}
-                    <input name="next" type="hidden" value="{{ redirect_to }}" />
+                    <input name="next" type="hidden" value="/" />
                     <a class="dropdown-item m-0 p-0">
                         <button type="submit" name="language" value="en" class="btn btn-link btn-block my-0 p-3">{% trans "İngilizce" %}</button>
+                    </a>
+                </form>
+                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="/" />
+                    <a class="dropdown-item m-0 p-0">
+                        <button type="submit" name="language" value="ar" class="btn btn-link btn-block my-0 p-3">{% trans "Arapça" %}</button>
+                    </a>
+                </form>
+                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="/" />
+                    <a class="dropdown-item m-0 p-0">
+                        <button type="submit" name="language" value="ru" class="btn btn-link btn-block my-0 p-3">{% trans "Rusça" %}</button>
+                    </a>
+                </form>
+                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="/" />
+                    <a class="dropdown-item m-0 p-0">
+                        <button type="submit" name="language" value="es" class="btn btn-link btn-block my-0 p-3">{% trans "İspanyolca" %}</button>
+                    </a>
+                </form>
+                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="/" />
+                    <a class="dropdown-item m-0 p-0">
+                        <button type="submit" name="language" value="zh-hans" class="btn btn-link btn-block my-0 p-3">{% trans "Çince" %}</button>
                     </a>
                 </form>
             </div>
