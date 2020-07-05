@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-05 20:13+0300\n"
+"POT-Creation-Date: 2020-07-06 01:07+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -564,84 +564,84 @@ msgid ""
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:9
-msgid "dua/"
-msgstr "祷告/"
+msgid "ruyatabiri-dua/"
+msgstr "梦解-祷告/"
 
 #: .\ruyatabirleri\urls.py:10
-msgid "dua-nedir/"
-msgstr "什么是祈祷/"
+msgid "ruyatabiri-dua-nedir/"
+msgstr "梦解-什么是祈祷/"
 
 #: .\ruyatabirleri\urls.py:11
-msgid "dua/yasin"
+msgid "dua/yasin/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:12
-msgid "dua/yasin/mubin"
+msgid "dua/yasin/mubin/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:13
-msgid "dua/yasin/arapca"
+msgid "dua/yasin/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:14
-msgid "dua/ayetelkursi"
+msgid "dua/ayetelkursi/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:15
-msgid "dua/ayetelkursi/arapca"
+msgid "dua/ayetelkursi/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:16
-msgid "dua/dua_ayet"
+msgid "dua/dua_ayet/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:17
-msgid "dua/esmaul_husna"
+msgid "dua/esmaul_husna/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:18
-msgid "dua/tefriciye"
+msgid "dua/tefriciye/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:19
-msgid "dua/tefriciye/arapca"
+msgid "dua/tefriciye/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:20
-msgid "tefeul/"
-msgstr "tefeul/"
+msgid "ruyatabiri-tefeul/"
+msgstr "梦解-tefeul/"
 
 #: .\ruyatabirleri\urls.py:21
-msgid "tefeul-nedir/"
-msgstr "什么是-tefeul/"
+msgid "ruyatabiri-tefeul-nedir/"
+msgstr "梦解-什么是-tefeul/"
 
 #: .\ruyatabirleri\urls.py:22
-msgid "tefeul/tefeul_yap"
+msgid "tefeul/tefeul_yap/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:23
-msgid "iletisim/"
-msgstr "联系/"
+msgid "ruyatabiri-iletisim/"
+msgstr "梦解-联系/"
 
 #: .\ruyatabirleri\urls.py:24
-msgid "gizlilik/"
-msgstr "隐私/"
+msgid "ruyatabiri-gizlilik/"
+msgstr "梦解-隐私/"
 
 #: .\ruyatabirleri\urls.py:25
-msgid "yildizname/"
-msgstr "星座运势/"
+msgid "ruyatabiri-yildizname/"
+msgstr "梦解-yildizname/"
 
 #: .\ruyatabirleri\urls.py:26
-msgid "yildizname-nedir/"
-msgstr "什么是星座/"
+msgid "ruyatabiri-yildizname-nedir/"
+msgstr "梦解-什么是-yildizname"
 
 #: .\ruyatabirleri\urls.py:27
-msgid "ruyatabirleri/"
-msgstr "梦解/"
+msgid "ruyatabiri-ruyatabirleri/"
+msgstr "梦解-梦解/"
 
 #: .\ruyatabirleri\urls.py:28
-msgid "ruyatabirleri-nedir/"
-msgstr "什么是梦的诠释/"
+msgid "ruyatabiri-ruyatabirleri-nedir/"
+msgstr "梦解-什么是梦/"
 
 #: .\ruyatabirleri\views.py:14 .\ruyatabirleri\views.py:78
 #: .\ruyatabirleri\views.py:94
@@ -1854,3 +1854,5 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+

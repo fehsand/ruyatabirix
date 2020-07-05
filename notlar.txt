@@ -1,8 +1,5 @@
-
 #~ msgid "Rüyada {{item.kelime}} görmek"
 #~ msgstr "To see {{item.kelime}} in a dream"
-
-
 
 
 Github güncelleme:
@@ -14,6 +11,12 @@ git push
 
 Run makemessages:
 django-admin makemessages -l en
+django-admin makemessages -l ar
+django-admin makemessages -l es
+django-admin makemessages -l ru
+django-admin makemessages -l zh_Hans
+
+
 
 Run compilemessages:
 django-admin compilemessages

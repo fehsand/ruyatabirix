@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-03 23:13+0300\n"
+"POT-Creation-Date: 2020-07-05 22:27+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,10 @@ msgid ""
 "Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler "
 "kullanarak bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz "
 "zaman, sadece ARABA kelimesini kullanarak arama yapmalısınız."
-msgstr "في هذا القسم ، يمكنك العثور على معاني الأحداث التي تراها في حلمك باستخدام الكلمات الرئيسية. على سبيل المثال ، عندما ترى أنك تقود في حلمك ، يجب عليك البحث باستخدام كلمة سيارة فقط."
+msgstr ""
+"في هذا القسم ، يمكنك العثور على معاني الأحداث التي تراها في حلمك باستخدام "
+"الكلمات الرئيسية. على سبيل المثال ، عندما ترى أنك تقود في حلمك ، يجب عليك "
+"البحث باستخدام كلمة سيارة فقط."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
@@ -90,7 +93,12 @@ msgid ""
 "<br>Aradığınız çıkış yolu bazen kelimede, bazen ayette bazen de surede gizli "
 "olabilir.<br>Hepsini beraber değerlendirmek, tefsir kitaplarından daha fazla "
 "bilgi edinmek gerektiğini unutmayınız.<br>"
-msgstr "إذا فقدت نصفي من جملي فسوف أجده في القرآن. <br> (ابن عباس) <br> <br> من أجل الحصول على نصيبك من القرآن ، عليك أن تبدأ تفأل بقول الموضوع الذي تريد التشاور معه بحسن نية. <br> ما تبحث عنه يمكن أن يكون مخفيًا في بعض الأحيان في الكلمة ، وأحيانًا في الآية وأحيانًا في السورة. <br> لا تنس أنه من الضروري تقييم كل لهم معا وللتعلم أكثر من كتب التفسير."
+msgstr ""
+"إذا فقدت نصفي من جملي فسوف أجده في القرآن. <br> (ابن عباس) <br> <br> من أجل "
+"الحصول على نصيبك من القرآن ، عليك أن تبدأ تفأل بقول الموضوع الذي تريد "
+"التشاور معه بحسن نية. <br> ما تبحث عنه يمكن أن يكون مخفيًا في بعض الأحيان في "
+"الكلمة ، وأحيانًا في الآية وأحيانًا في السورة. <br> لا تنس أنه من الضروري "
+"تقييم كل لهم معا وللتعلم أكثر من كتب التفسير."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:37
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:59
@@ -111,7 +119,12 @@ msgid ""
 "40/60)<br><br>Duada biri zikir ve saygı, diğeri de dilek olmak üzere iki "
 "unsur bulunur.<br><br>Bu bölümde dileklerimizin gerçekleşmesi için nasıl dua "
 "etmeliyiz anlatılmıştır."
-msgstr "الدعاء يعني طلب المساعدة أو طلبها. <br>: حقيقة أن الإنسان يلجأ إلى الله بكل ذاته ويزوده برغباته المادية والروحية. <br> <br> ما الذي يقدركه ربي إذا لم تفعل لديك صلاة؟ (الفرقان ، 25/77) <br> ادعو لي لكي أجيب عليك. (المؤمن ، 40/60) <br> هناك قسمان في الدعاء ، أحدهما الذكر والاحترام والآخر رغب ، ويصف هذا القسم كيف نصلي من أجل تحقيق رغباتنا."
+msgstr ""
+"الدعاء يعني طلب المساعدة أو طلبها. <br>: حقيقة أن الإنسان يلجأ إلى الله بكل "
+"ذاته ويزوده برغباته المادية والروحية. <br> <br> ما الذي يقدركه ربي إذا لم "
+"تفعل لديك صلاة؟ (الفرقان ، 25/77) <br> ادعو لي لكي أجيب عليك. (المؤمن ، "
+"40/60) <br> هناك قسمان في الدعاء ، أحدهما الذكر والاحترام والآخر رغب ، ويصف "
+"هذا القسم كيف نصلي من أجل تحقيق رغباتنا."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:48
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:33
@@ -119,7 +132,7 @@ msgid "Dua Bölümü için Tıklayınız..."
 msgstr "انقر ل دعاء"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:146
 msgid "Gizlilik Politikası"
 msgstr "خصوصية"
 
@@ -199,7 +212,7 @@ msgid ""
 msgstr ""
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:149
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
 msgid "İletişim"
 msgstr "اتصل بنا"
 
@@ -208,7 +221,7 @@ msgid "GÖNDER"
 msgstr "إرسال"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:49
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:149
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
 msgid "Sosyal Medya"
 msgstr "وسائل التواصل الاجتماعي"
 
@@ -514,7 +527,7 @@ msgstr "تسجيل خروج"
 msgid "Giriş Yap"
 msgstr "تسجيل الدخول"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:145
 msgid "Başa Dön"
 msgstr "عد إلى الأعلى"
 
@@ -565,121 +578,121 @@ msgid ""
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:9
-msgid "dua/"
-msgstr "دعاء/"
+msgid "ruyatabiri-dua/"
+msgstr "تفسير-الأحلام-دعاء/"
 
 #: .\ruyatabirleri\urls.py:10
-msgid "dua-nedir/"
-msgstr ""
+msgid "ruyatabiri-dua-nedir/"
+msgstr "تفسير-الأحلام-ما-هو-الدعاء/"
 
 #: .\ruyatabirleri\urls.py:11
-msgid "dua/yasin"
+msgid "dua/yasin/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:12
-msgid "dua/yasin/mubin"
+msgid "dua/yasin/mubin/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:13
-msgid "dua/yasin/arapca"
+msgid "dua/yasin/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:14
-msgid "dua/ayetelkursi"
+msgid "dua/ayetelkursi/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:15
-msgid "dua/ayetelkursi/arapca"
+msgid "dua/ayetelkursi/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:16
-msgid "dua/dua_ayet"
+msgid "dua/dua_ayet/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:17
-msgid "dua/esmaul_husna"
+msgid "dua/esmaul_husna/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:18
-msgid "dua/tefriciye"
+msgid "dua/tefriciye/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:19
-msgid "dua/tefriciye/arapca"
+msgid "dua/tefriciye/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:20
-msgid "tefeul/"
-msgstr ""
+msgid "ruyatabiri-tefeul/"
+msgstr "تفسير-الأحلام-تفأل/"
 
 #: .\ruyatabirleri\urls.py:21
-msgid "tefeul-nedir/"
-msgstr ""
+msgid "ruyatabiri-tefeul-nedir/"
+msgstr "تفسير-الأحلام-ما-هو-تفأل/"
 
 #: .\ruyatabirleri\urls.py:22
-msgid "tefeul/tefeul_yap"
+msgid "tefeul/tefeul_yap/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:23
-msgid "iletisim/"
-msgstr ""
+msgid "ruyatabiri-iletisim/"
+msgstr "تفسير-الأحلام-اتصل-بنا/"
 
 #: .\ruyatabirleri\urls.py:24
-msgid "gizlilik/"
-msgstr ""
+msgid "ruyatabiri-gizlilik/"
+msgstr "تفسير-الأحلام-خصوصية/"
 
 #: .\ruyatabirleri\urls.py:25
-msgid "yildizname/"
-msgstr ""
+msgid "ruyatabiri-yildizname/"
+msgstr "تفسير-الأحلام-يلدزنم/"
 
 #: .\ruyatabirleri\urls.py:26
-msgid "yildizname-nedir/"
-msgstr ""
+msgid "ruyatabiri-yildizname-nedir/"
+msgstr "تفسير-الأحلام-ما-هو-يلدزنم/"
 
 #: .\ruyatabirleri\urls.py:27
-msgid "ruyatabirleri/"
-msgstr ""
+msgid "ruyatabiri-ruyatabirleri/"
+msgstr "تفسير-الأحلام-تفسير-الأحلام/"
 
 #: .\ruyatabirleri\urls.py:28
-msgid "ruyatabirleri-nedir/"
-msgstr ""
+msgid "ruyatabiri-ruyatabirleri-nedir/"
+msgstr "تفسير-الأحلام-ما-هو-تفسير-الأحلام/"
 
 #: .\ruyatabirleri\views.py:14 .\ruyatabirleri\views.py:78
 #: .\ruyatabirleri\views.py:94
 msgid "Aramak İstediğin Kelimeyi Yaz"
-msgstr ""
+msgstr "اكتب الكلمة الأساسية"
 
 #: .\ruyatabirleri\views.py:109 .\ruyatabirleri\views.py:202
 msgid "İsminiz"
-msgstr ""
+msgstr "اسمك"
 
 #: .\ruyatabirleri\views.py:110
 msgid "Annenizin İsmi"
-msgstr ""
+msgstr "اسم والدتك"
 
 #: .\ruyatabirleri\views.py:203
 msgid "Soyisminiz"
-msgstr ""
+msgstr "اللقب الخاص بك"
 
 #: .\ruyatabirleri\views.py:204
 msgid "örnek@posta.com"
-msgstr ""
+msgstr "مثال@مثال.com"
 
 #: .\ruyatabirleri\views.py:205
 msgid "Mesajınızı Yazınız"
-msgstr ""
+msgstr "اكتب رسالتك"
 
 #: .\ruyatabirleri\views.py:215
 msgid "Kutucukları Doldurunuz."
-msgstr ""
+msgstr "إملأ الفراغات"
 
 #: .\ruyatabirleri\views.py:222
 msgid "Gönderiniz başarıyla kaydedildi."
-msgstr ""
+msgstr "تم حفظ رسالتك بنجاح"
 
 #: .\ruyatabirleri\views.py:225
 msgid "Lütfen Formu Doldurunuz."
-msgstr ""
+msgstr "يرجى تعبئة النموذج"
 
 #: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-04 19:30+0300\n"
+"POT-Creation-Date: 2020-07-05 23:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,7 +118,7 @@ msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Haga clic para Oración..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:146
 msgid "Gizlilik Politikası"
 msgstr "Intimidad"
 
@@ -198,7 +198,7 @@ msgid ""
 msgstr ""
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:149
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
 msgid "İletişim"
 msgstr "Contacto"
 
@@ -207,7 +207,7 @@ msgid "GÖNDER"
 msgstr "ENVIAR"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:49
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:149
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
 msgid "Sosyal Medya"
 msgstr "Redes sociales"
 
@@ -513,7 +513,7 @@ msgstr "cerrar sesión"
 msgid "Giriş Yap"
 msgstr "iniciar sesión"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:145
 msgid "Başa Dön"
 msgstr "Volver arriba"
 
@@ -564,84 +564,84 @@ msgid ""
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:9
-msgid "dua/"
-msgstr "oración/"
+msgid "ruyatabiri-dua/"
+msgstr "interpretación-de-sueños-oración/"
 
 #: .\ruyatabirleri\urls.py:10
-msgid "dua-nedir/"
-msgstr "qué-es-la-oración/"
+msgid "ruyatabiri-dua-nedir/"
+msgstr "interpretación-de-sueños-qué-es-la-oración/"
 
 #: .\ruyatabirleri\urls.py:11
-msgid "dua/yasin"
+msgid "dua/yasin/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:12
-msgid "dua/yasin/mubin"
+msgid "dua/yasin/mubin/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:13
-msgid "dua/yasin/arapca"
+msgid "dua/yasin/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:14
-msgid "dua/ayetelkursi"
+msgid "dua/ayetelkursi/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:15
-msgid "dua/ayetelkursi/arapca"
+msgid "dua/ayetelkursi/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:16
-msgid "dua/dua_ayet"
+msgid "dua/dua_ayet/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:17
-msgid "dua/esmaul_husna"
+msgid "dua/esmaul_husna/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:18
-msgid "dua/tefriciye"
+msgid "dua/tefriciye/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:19
-msgid "dua/tefriciye/arapca"
+msgid "dua/tefriciye/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:20
-msgid "tefeul/"
-msgstr "tefeul/"
+msgid "ruyatabiri-tefeul/"
+msgstr "interpretación-de-sueños-tefeul/"
 
 #: .\ruyatabirleri\urls.py:21
-msgid "tefeul-nedir/"
-msgstr "qué-es-tefeul/"
+msgid "ruyatabiri-tefeul-nedir/"
+msgstr "interpretación-de-sueños-qué-es-tefeul/"
 
 #: .\ruyatabirleri\urls.py:22
-msgid "tefeul/tefeul_yap"
+msgid "tefeul/tefeul_yap/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:23
-msgid "iletisim/"
-msgstr "contacto/"
+msgid "ruyatabiri-iletisim/"
+msgstr "interpretación-de-sueños-contacto/"
 
 #: .\ruyatabirleri\urls.py:24
-msgid "gizlilik/"
-msgstr "intimidad/"
+msgid "ruyatabiri-gizlilik/"
+msgstr "interpretación-de-sueños-intimidad/"
 
 #: .\ruyatabirleri\urls.py:25
-msgid "yildizname/"
-msgstr "horóscopo/"
+msgid "ruyatabiri-yildizname/"
+msgstr "interpretación-de-sueños-horóscopo/"
 
 #: .\ruyatabirleri\urls.py:26
-msgid "yildizname-nedir/"
-msgstr "qué-es-yildizname/"
+msgid "ruyatabiri-yildizname-nedir/"
+msgstr "interpretación-de-sueños-qué-es-yildizname/"
 
 #: .\ruyatabirleri\urls.py:27
-msgid "ruyatabirleri/"
-msgstr "interpretación-de-sueños/"
+msgid "ruyatabiri-ruyatabirleri/"
+msgstr "interpretación-de-sueños-interpretación-de-sueños/"
 
 #: .\ruyatabirleri\urls.py:28
-msgid "ruyatabirleri-nedir/"
-msgstr "qué-es-la-interpretación-de-los-sueños/"
+msgid "ruyatabiri-ruyatabirleri-nedir/"
+msgstr "interpretación-de-sueños-qué-es-la-interpretación-de-los-sueños/"
 
 #: .\ruyatabirleri\views.py:14 .\ruyatabirleri\views.py:78
 #: .\ruyatabirleri\views.py:94
@@ -1854,3 +1854,5 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+

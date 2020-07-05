@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-04 16:26+0300\n"
+"POT-Creation-Date: 2020-07-06 00:39+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,7 @@ msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Нажмите для молитвы..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:146
 msgid "Gizlilik Politikası"
 msgstr "Конфиденциальность"
 
@@ -200,7 +200,7 @@ msgid ""
 msgstr ""
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:149
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
 msgid "İletişim"
 msgstr "контакт"
 
@@ -209,7 +209,7 @@ msgid "GÖNDER"
 msgstr "ОТПРАВИТЬ"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:49
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:149
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
 msgid "Sosyal Medya"
 msgstr "социальные медиа"
 
@@ -515,7 +515,7 @@ msgstr "выйти"
 msgid "Giriş Yap"
 msgstr "авторизоваться"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:145
 msgid "Başa Dön"
 msgstr "Вернуться к началу"
 
@@ -566,84 +566,84 @@ msgid ""
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:9
-msgid "dua/"
-msgstr "молитва/"
+msgid "ruyatabiri-dua/"
+msgstr "интерпретация-сна-молитва/"
 
 #: .\ruyatabirleri\urls.py:10
-msgid "dua-nedir/"
-msgstr "что-такое-молитва/"
+msgid "ruyatabiri-dua-nedir/"
+msgstr "интерпретация-сна-что-такое-молитва/"
 
 #: .\ruyatabirleri\urls.py:11
-msgid "dua/yasin"
+msgid "dua/yasin/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:12
-msgid "dua/yasin/mubin"
+msgid "dua/yasin/mubin/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:13
-msgid "dua/yasin/arapca"
+msgid "dua/yasin/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:14
-msgid "dua/ayetelkursi"
+msgid "dua/ayetelkursi/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:15
-msgid "dua/ayetelkursi/arapca"
+msgid "dua/ayetelkursi/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:16
-msgid "dua/dua_ayet"
+msgid "dua/dua_ayet/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:17
-msgid "dua/esmaul_husna"
+msgid "dua/esmaul_husna/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:18
-msgid "dua/tefriciye"
+msgid "dua/tefriciye/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:19
-msgid "dua/tefriciye/arapca"
+msgid "dua/tefriciye/arapca/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:20
-msgid "tefeul/"
-msgstr "tefeul/"
+msgid "ruyatabiri-tefeul/"
+msgstr "интерпретация-сна-tefeul/"
 
 #: .\ruyatabirleri\urls.py:21
-msgid "tefeul-nedir/"
-msgstr "что-такое-tefeul/"
+msgid "ruyatabiri-tefeul-nedir/"
+msgstr "интерпретация-сна-что-такое-tefeul/"
 
 #: .\ruyatabirleri\urls.py:22
-msgid "tefeul/tefeul_yap"
+msgid "tefeul/tefeul_yap/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:23
-msgid "iletisim/"
-msgstr "контакт/"
+msgid "ruyatabiri-iletisim/"
+msgstr "интерпретация-сна-контакт/"
 
 #: .\ruyatabirleri\urls.py:24
-msgid "gizlilik/"
-msgstr "Конфиденциальность/"
+msgid "ruyatabiri-gizlilik/"
+msgstr "интерпретация-сна-Конфиденциальность/"
 
 #: .\ruyatabirleri\urls.py:25
-msgid "yildizname/"
-msgstr "Гороскоп/"
+msgid "ruyatabiri-yildizname/"
+msgstr "интерпретация-сна-Гороскоп/"
 
 #: .\ruyatabirleri\urls.py:26
-msgid "yildizname-nedir/"
-msgstr "что-такое-гороскоп/"
+msgid "ruyatabiri-yildizname-nedir/"
+msgstr "интерпретация-сна-что-такое-гороскоп/"
 
 #: .\ruyatabirleri\urls.py:27
-msgid "ruyatabirleri/"
-msgstr "интерпретация-сна/"
+msgid "ruyatabiri-ruyatabirleri/"
+msgstr "интерпретация-сна-интерпретация-сна/"
 
 #: .\ruyatabirleri\urls.py:28
-msgid "ruyatabirleri-nedir/"
-msgstr "что-такое-толкование-снов/"
+msgid "ruyatabiri-ruyatabirleri-nedir/"
+msgstr "интерпретация-сна-что-такое-толкование-снов/"
 
 #: .\ruyatabirleri\views.py:14 .\ruyatabirleri\views.py:78
 #: .\ruyatabirleri\views.py:94
@@ -1856,3 +1856,5 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+
