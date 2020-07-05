@@ -1,9 +1,8 @@
 
-
 #~ msgid "Rüyada {{item.kelime}} görmek"
 #~ msgstr "To see {{item.kelime}} in a dream"
 
-value="{{ redirect_to }}"
+
 
 
 Github güncelleme:
@@ -19,7 +18,7 @@ django-admin makemessages -l en
 Run compilemessages:
 django-admin compilemessages
 -------------------------------------------
-python manage.py makemessages -l 'zh_CN'
+python manage.py makemessages -l zh_Hans
 python manage.py compilemessages
 
 
