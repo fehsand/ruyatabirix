@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-05 22:10+0300\n"
+"POT-Creation-Date: 2020-07-06 13:52+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -591,30 +591,6 @@ msgstr ""
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
 msgid "Yıldızname Nedir?"
 msgstr "What is Yildizname?"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:84
-msgid "Türkçe"
-msgstr "Turkish"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:91
-msgid "İngilizce"
-msgstr "English"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:98
-msgid "Arapça"
-msgstr "Arabic"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:105
-msgid "Rusça"
-msgstr "Russian"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:112
-msgid "İspanyolca"
-msgstr "Spanish"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:119
-msgid "Çince"
-msgstr "Chinese"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:130
 msgid "Hesabım"
@@ -1986,3 +1962,20 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
+#~ msgid "Türkçe"
+#~ msgstr "Turkish"
+
+#~ msgid "İngilizce"
+#~ msgstr "English"
+
+#~ msgid "Arapça"
+#~ msgstr "Arabic"
+
+#~ msgid "Rusça"
+#~ msgstr "Russian"
+
+#~ msgid "İspanyolca"
+#~ msgstr "Spanish"
+
+#~ msgid "Çince"
+#~ msgstr "Chinese"

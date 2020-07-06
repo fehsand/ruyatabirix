@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-05 23:29+0300\n"
+"POT-Creation-Date: 2020-07-06 13:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,6 +54,9 @@ msgid ""
 "kullanarak bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz "
 "zaman, sadece ARABA kelimesini kullanarak arama yapmalısınız."
 msgstr ""
+"En esta sección, puede encontrar el significado de los eventos que ve en su "
+"sueño usando palabras clave. Por ejemplo, cuando ve que está conduciendo en "
+"su sueño, debe buscar usando solo la palabra CAR."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
@@ -70,6 +73,8 @@ msgid ""
 "Bu bölümde kendinizin ve annenizin ismini yazarak burcunuz hakkındaki "
 "bilgileri okuyabilirsiniz."
 msgstr ""
+"En esta sección, puede leer la información sobre su horóscopo escribiendo su "
+"nombre y el de su madre."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:26
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:31
@@ -90,6 +95,12 @@ msgid ""
 "olabilir.<br>Hepsini beraber değerlendirmek, tefsir kitaplarından daha fazla "
 "bilgi edinmek gerektiğini unutmayınız.<br>"
 msgstr ""
+"\"Si pierdo las mitades de mi camello, lo encontraré en el Corán\". <br> Ibn "
+"Abbas <br> <br> Para obtener su propia parte del Corán, inicie el Tefeul "
+"indicando el tema que desea consultar con una buena intención.<br>Lo que "
+"está buscando a veces puede estar oculto en la palabra, a veces en el verso "
+"y a veces en la sura.<br> No olvide que es necesario evaluar todos juntos y "
+"aprender más de los libros de tafsir."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:37
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:59
@@ -111,6 +122,11 @@ msgid ""
 "unsur bulunur.<br><br>Bu bölümde dileklerimizin gerçekleşmesi için nasıl dua "
 "etmeliyiz anlatılmıştır."
 msgstr ""
+"Orar significa pedir o pedir ayuda.<br>Es el hecho de que el hombre se "
+"vuelve hacia Allah con todo su ser y le suministra sus deseos materiales y "
+"espirituales.<br><br>Hay dos elementos en la oración, uno de los cuales es "
+"dhikr y respeto y el otro es deseo. Esta sección describe cómo debemos orar "
+"para que nuestros deseos se hagan realidad."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:48
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:33
@@ -476,30 +492,6 @@ msgstr ""
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
 msgid "Yıldızname Nedir?"
 msgstr "¿Qué es Yildizname?"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:84
-msgid "Türkçe"
-msgstr "Turco"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:91
-msgid "İngilizce"
-msgstr "Inglés"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:98
-msgid "Arapça"
-msgstr "Arabico"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:105
-msgid "Rusça"
-msgstr "Ruso"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:112
-msgid "İspanyolca"
-msgstr "Español"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:119
-msgid "Çince"
-msgstr "Chino"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:130
 msgid "Hesabım"
@@ -1855,4 +1847,20 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
+#~ msgid "Türkçe"
+#~ msgstr "Turco"
 
+#~ msgid "İngilizce"
+#~ msgstr "Inglés"
+
+#~ msgid "Arapça"
+#~ msgstr "Arabico"
+
+#~ msgid "Rusça"
+#~ msgstr "Ruso"
+
+#~ msgid "İspanyolca"
+#~ msgstr "Español"
+
+#~ msgid "Çince"
+#~ msgstr "Chino"

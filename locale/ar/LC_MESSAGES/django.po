@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-05 22:27+0300\n"
+"POT-Creation-Date: 2020-07-06 13:54+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,11 +120,9 @@ msgid ""
 "unsur bulunur.<br><br>Bu bölümde dileklerimizin gerçekleşmesi için nasıl dua "
 "etmeliyiz anlatılmıştır."
 msgstr ""
-"الدعاء يعني طلب المساعدة أو طلبها. <br>: حقيقة أن الإنسان يلجأ إلى الله بكل "
-"ذاته ويزوده برغباته المادية والروحية. <br> <br> ما الذي يقدركه ربي إذا لم "
-"تفعل لديك صلاة؟ (الفرقان ، 25/77) <br> ادعو لي لكي أجيب عليك. (المؤمن ، "
-"40/60) <br> هناك قسمان في الدعاء ، أحدهما الذكر والاحترام والآخر رغب ، ويصف "
-"هذا القسم كيف نصلي من أجل تحقيق رغباتنا."
+"دعاء يعني طلب المساعدة أو طلبها. والحقيقة أن الإنسان يلجأ إلى الله بكل نفسه "
+"ويزوده برغباته المادية والروحية. هناك عنصران في الصلاة أحدهما الذكر "
+"والاحترام والآخر رغبته. يصف هذا القسم كيف يجب أن نصلي من أجل تحقيق رغباتنا."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:48
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:33
@@ -490,30 +488,6 @@ msgstr ""
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
 msgid "Yıldızname Nedir?"
 msgstr "ما هو يلدزنم؟"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:84
-msgid "Türkçe"
-msgstr "اللغة التركية"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:91
-msgid "İngilizce"
-msgstr "اللغة الإنكليزية"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:98
-msgid "Arapça"
-msgstr "اللغة العربية"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:105
-msgid "Rusça"
-msgstr "اللغة الروسية"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:112
-msgid "İspanyolca"
-msgstr "اللغة الأسبانية"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:119
-msgid "Çince"
-msgstr "لغة الصين"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:130
 msgid "Hesabım"
@@ -1868,3 +1842,21 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "Türkçe"
+#~ msgstr "اللغة التركية"
+
+#~ msgid "İngilizce"
+#~ msgstr "اللغة الإنكليزية"
+
+#~ msgid "Arapça"
+#~ msgstr "اللغة العربية"
+
+#~ msgid "Rusça"
+#~ msgstr "اللغة الروسية"
+
+#~ msgid "İspanyolca"
+#~ msgstr "اللغة الأسبانية"
+
+#~ msgid "Çince"
+#~ msgstr "لغة الصين"

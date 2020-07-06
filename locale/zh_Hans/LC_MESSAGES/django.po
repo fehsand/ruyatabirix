@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 01:07+0300\n"
+"POT-Creation-Date: 2020-07-06 13:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,6 +54,8 @@ msgid ""
 "kullanarak bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz "
 "zaman, sadece ARABA kelimesini kullanarak arama yapmalısınız."
 msgstr ""
+"在本节中，您可以使用关键字找到梦中看到的事件的含义。<br>例如，当您看到自己在"
+"梦中驾驶时，应仅使用汽车进行搜索。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
@@ -69,7 +71,7 @@ msgstr "YILDIZNAME"
 msgid ""
 "Bu bölümde kendinizin ve annenizin ismini yazarak burcunuz hakkındaki "
 "bilgileri okuyabilirsiniz."
-msgstr ""
+msgstr "在本部分中，您可以通过写下您自己和母亲的名字来阅读有关星座的信息。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:26
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:31
@@ -90,6 +92,9 @@ msgid ""
 "olabilir.<br>Hepsini beraber değerlendirmek, tefsir kitaplarından daha fazla "
 "bilgi edinmek gerektiğini unutmayınız.<br>"
 msgstr ""
+"为了从古兰经中获得自己的份额，您可以通过 很好地说明您要咨询的主题。<br>您所寻"
+"找的内容有时会隐藏在单词中，有时可能会隐藏在诗句中，有时会出现在叙词中。<br>"
+"不要忘记，有必要一起评估所有这些内容，并从书中学习更多知识。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:37
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:59
@@ -111,6 +116,9 @@ msgid ""
 "unsur bulunur.<br><br>Bu bölümde dileklerimizin gerçekleşmesi için nasıl dua "
 "etmeliyiz anlatılmıştır."
 msgstr ""
+"祈祷意味着寻求帮助。<br>这是事实，人类全心全意地转向真主，并向他提供他的物质"
+"和精神上的渴望。<br>祈祷中有两个要素，其中之一是尊敬和尊重，另一个是希望。本"
+"节描述了我们应该如何为自己的愿望实现祈祷。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:48
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:33
@@ -476,30 +484,6 @@ msgstr ""
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
 msgid "Yıldızname Nedir?"
 msgstr "什么是YILDIZNAME？"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:84
-msgid "Türkçe"
-msgstr "土耳其"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:91
-msgid "İngilizce"
-msgstr "英语"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:98
-msgid "Arapça"
-msgstr "阿拉伯"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:105
-msgid "Rusça"
-msgstr "俄语"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:112
-msgid "İspanyolca"
-msgstr "西班牙文"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:119
-msgid "Çince"
-msgstr "中文"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:130
 msgid "Hesabım"
@@ -1855,4 +1839,20 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
+#~ msgid "Türkçe"
+#~ msgstr "土耳其"
 
+#~ msgid "İngilizce"
+#~ msgstr "英语"
+
+#~ msgid "Arapça"
+#~ msgstr "阿拉伯"
+
+#~ msgid "Rusça"
+#~ msgstr "俄语"
+
+#~ msgid "İspanyolca"
+#~ msgstr "西班牙文"
+
+#~ msgid "Çince"
+#~ msgstr "中文"

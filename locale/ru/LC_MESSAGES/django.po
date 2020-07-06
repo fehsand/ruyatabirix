@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 00:39+0300\n"
+"POT-Creation-Date: 2020-07-06 13:58+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,6 +56,9 @@ msgid ""
 "kullanarak bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz "
 "zaman, sadece ARABA kelimesini kullanarak arama yapmalısınız."
 msgstr ""
+"В этом разделе вы можете найти значения событий, которые вы видите во сне, "
+"используя ключевые слова. Например, когда вы видите, что едете во сне, вы "
+"должны искать, используя только слово CAR."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
@@ -72,6 +75,8 @@ msgid ""
 "Bu bölümde kendinizin ve annenizin ismini yazarak burcunuz hakkındaki "
 "bilgileri okuyabilirsiniz."
 msgstr ""
+"В этом разделе вы можете прочитать информацию о своем гороскопе, написав имя "
+"себя и своей матери."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:26
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:31
@@ -92,6 +97,12 @@ msgid ""
 "olabilir.<br>Hepsini beraber değerlendirmek, tefsir kitaplarından daha fazla "
 "bilgi edinmek gerektiğini unutmayınız.<br>"
 msgstr ""
+"Если я потеряю половинки моего верблюда, я найду его в Коране.<br>(Ибн "
+"Аббас)<br><br>Чтобы получить свою долю от Корана, вы начинаете Tefeul, "
+"указав предмет, который вы хотите проконсультировать с добрым намерением."
+"<br>То, что вы ищете, иногда может быть скрыто в слове, иногда в стихах, а "
+"иногда в суре.<br>Не забывайте, что это Необходимо оценить их все вместе и "
+"узнать больше из книг Тафсира."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:37
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:59
@@ -113,6 +124,11 @@ msgid ""
 "unsur bulunur.<br><br>Bu bölümde dileklerimizin gerçekleşmesi için nasıl dua "
 "etmeliyiz anlatılmıştır."
 msgstr ""
+"Молитва означает просьбу или просьбу о помощи. <br> Это тот факт, что "
+"человек обращается к Аллаху со всей своей сущностью и предоставляет Ему свои "
+"материальные и духовные желания. <br> <br> В молитве есть два элемента, один "
+"из которых это зикр и уважение, а другое желание. В этом разделе "
+"описывается, как мы должны молиться, чтобы наши желания сбылись."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:48
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:33
@@ -478,30 +494,6 @@ msgstr ""
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
 msgid "Yıldızname Nedir?"
 msgstr "Что такое YILDIZNAME?"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:84
-msgid "Türkçe"
-msgstr "турецкий"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:91
-msgid "İngilizce"
-msgstr "английский"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:98
-msgid "Arapça"
-msgstr "арабский"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:105
-msgid "Rusça"
-msgstr "русский"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:112
-msgid "İspanyolca"
-msgstr "испанский"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:119
-msgid "Çince"
-msgstr "китайский"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:130
 msgid "Hesabım"
@@ -1857,4 +1849,20 @@ msgstr ""
 msgid "Connect, get help, or contribute"
 msgstr ""
 
+#~ msgid "Türkçe"
+#~ msgstr "турецкий"
 
+#~ msgid "İngilizce"
+#~ msgstr "английский"
+
+#~ msgid "Arapça"
+#~ msgstr "арабский"
+
+#~ msgid "Rusça"
+#~ msgstr "русский"
+
+#~ msgid "İspanyolca"
+#~ msgstr "испанский"
+
+#~ msgid "Çince"
+#~ msgstr "китайский"
