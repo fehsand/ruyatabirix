@@ -287,7 +287,7 @@ msgid ""
 "                yaratıklara dua ve ibadet edilmemesi Kur’an’da ısrarla "
 "vurgulanmıştır (Şuarâ, 26/213; Kasas, 28/88).\n"
 "                "
-msgstr ""
+msgstr "Orar significa literalmente, llamar, pedir, pedir ayuda. Como término religioso, es el hecho de que las personas presentan sus deseos materiales y espirituales a Allah. La oración es un enlace entre Dios y el siervo. Siempre hay alabanzas y demandas de Alá en la oración. La oración también es dhikr y adoración."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:18
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:20
@@ -314,7 +314,7 @@ msgid ""
 "                3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli "
 "insanların gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.\n"
 "                "
-msgstr ""
+msgstr "Sueño significa lo que se ve mientras se duerme. Los sueños son tres partes: malos sueños producidos por Satanás. Sueños subconscientes, sueños con los que la gente está ocupada. Otros sueños, sueños que son vistos por personas de buen corazón, fuera del primer y segundo tipo de sueños."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:19
 msgid "Rüyanın Etkileri"
@@ -331,7 +331,7 @@ msgid ""
 "                Rüya yorumunda rüyanın iyi ve isabetli yorumlanması "
 "esastır.\n"
 "                "
-msgstr ""
+msgstr "Las personas son responsables del estado de vigilia. En otras palabras, a excepción de la vigilia, como dormir y desmayarse, no se le hizo responsable de su trabajo. Las noticias que llegan de manera positiva o negativa en el sueño no representan un valor objetivo. Aunque algunas personas afirman que tienen excepciones, no pueden ser operadas con sueños en general. La interpretación buena y precisa del sueño es esencial en la interpretación del sueño."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:31
 msgid "Rüya ile İlgili Hadisler"
@@ -369,7 +369,7 @@ msgid ""
 "Allah’a sığınsın! Çünkü (o zaman) o rüya kendisine\n"
 "                zarar vermez!” Ebu Davud 5021<br>\n"
 "                "
-msgstr ""
+msgstr "Abu Said alKhudri informó: El Profeta, que la paz y las bendiciones sean con él, dijo: Cuando uno de ustedes ve un sueño que le gusta, es de Alá, así que elogie a Alá por él y hable sobre él. Cuando uno de ustedes ve algo que no le gusta, es de Satanás, así que déjelo buscar refugio de su maldad y no lo mencione a nadie. No le hará daño."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
 msgid "Niyet ediniz ve başlatınız."
@@ -454,7 +454,7 @@ msgid ""
 "                Herkes kendi ilmi birikimine göre, anlayış ve kabiliyetine "
 "göre aradığını onda bulabileceğini..”  kastetmiştir.\n"
 "                "
-msgstr ""
+msgstr "Se llama TEFEUL abriendo un libro al azar, leyendo la primera parte encontrada y extrayendo un mensaje de él. TEFEUL es considerar algo auspicioso, ver un evento como el comienzo de un bien. También es decidir mirando el Corán. Para obtener su propia parte del Corán, inicie el TEFEUL indicando el tema que desea consultar con una buena intención. Lo que estás buscando a veces puede estar oculto en la palabra, a veces en el verso y a veces en la sura. No olvide que es necesario evaluarlos todos juntos y aprender más de los libros. TEFEUL puede repetirse a ciertos intervalos de tiempo sin desesperación alguna. Cabe señalar que TEFEUL no es una adivinación."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:40
 msgid "Tefe'ül Nasıl Yapılır?"
@@ -486,7 +486,7 @@ msgid ""
 "                <br>\n"
 "                Tefeül'ün bir fal olmadığı akıldan çıkarılmamalıdır.\n"
 "                "
-msgstr ""
+msgstr "Lo principal en TEFEUL es tener en cuenta que esto no es una adivinación, sino consultar y hacerlo con una intención limpia. Consultamos con Allah si un incidente es beneficioso para nosotros a través de TEFEUL. En otras palabras, consultamos a Allah a través del Corán. Se pretende primero con un corazón limpio. Entonces se inicia el TEFEUL. Se muestran Sura, verso y palabra que aparecen como resultado de TEFEUL. La palabra, el verso o la sura pueden mostrar el resultado que estás buscando. Para esto, todos deben evaluarse juntos y se debe obtener información más completa en los libros. TEFEUL puede repetirse a ciertos intervalos de tiempo sin desesperación alguna. Cabe señalar que TEFEUL no es una adivinación."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:57
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
@@ -539,7 +539,7 @@ msgid ""
 "                Bu tür faaliyetler inanç boyutuna taşınmadan eğlence diye "
 "yapılmalıdır.\n"
 "                "
-msgstr ""
+msgstr "El horóscopo se basa en la afirmación de que las posiciones y los movimientos de las estrellas forman un sistema de signos, de modo que se pueden conocer las fases de la vida humana. Los libros escritos para el horóscopo también se llaman YILDIZNAME. El horóscopo generalmente se hace para averiguar si el resultado es auspicioso antes de decidir sobre trabajos importantes como el matrimonio, los negocios, los viajes y la guerra. La información sobre las características de los signos del zodiaco en YILDIZNAME se ha obtenido con experiencias pasadas. No debe olvidarse que creer que las estrellas afectan a las personas como resultado de algunas operaciones es contrario a nuestra creencia religiosa. Dichas actividades deben realizarse como entretenimiento."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:24
 msgid "Nasıl Hesaplanır?"
@@ -553,7 +553,7 @@ msgid ""
 "sayı kaç numaralı burca bakılması gerektiğini\n"
 "                söyler ve o kişinin yıldıznamesi bulunmuş olur.\n"
 "                "
-msgstr ""
+msgstr "Al calcular YILDIZNAME con el sistema Abjad, los valores de Abjad de cada letra de la persona y el nombre de la madre se suman y se dividen entre 12. El número restante indica qué sección se debe leer y se ha encontrado el horóscopo de esa persona."
 
 #: .\ruyatabirleri\urls.py:9
 msgid "ruyatabiri-dua/"

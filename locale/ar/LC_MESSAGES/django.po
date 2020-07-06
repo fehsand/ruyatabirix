@@ -283,7 +283,7 @@ msgid ""
 "                yaratıklara dua ve ibadet edilmemesi Kur’an’da ısrarla "
 "vurgulanmıştır (Şuarâ, 26/213; Kasas, 28/88).\n"
 "                "
-msgstr ""
+msgstr "دعاء تعني حرفيا ، الدعوة ، تطلب ، تطلب المساعدة. كمصطلح ديني ، حقيقة أن الناس يقدمون رغباتهم المادية والروحية إلى الله. <br> <br> الصلاة هي اتصال بين الله والعبد. هناك دائما الحمد ويطلبون الله في الصلاة. الصلاة هي أيضاً الذكر والعبادة."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:18
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:20
@@ -310,7 +310,7 @@ msgid ""
 "                3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli "
 "insanların gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.\n"
 "                "
-msgstr ""
+msgstr "الحلم يعني ما يُرى أثناء النوم. الأحلام ثلاثة أجزاء: الأحلام السيئة التي ينتجها الشيطان. أحلام لا واعية ، أحلام حول ما ينشغل به الناس. أحلام أخرى ، أحلام يراها الناس الطيبون ، خارج الأحلام الأولى والثانية."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:19
 msgid "Rüyanın Etkileri"
@@ -327,7 +327,7 @@ msgid ""
 "                Rüya yorumunda rüyanın iyi ve isabetli yorumlanması "
 "esastır.\n"
 "                "
-msgstr ""
+msgstr "الناس مسؤولون عن حالة اليقظة. وبعبارة أخرى ، باستثناء اليقظة ، مثل النوم والإغماء ، لم يكن مسؤولاً عن عمله. الأخبار القادمة بطريقة إيجابية أو سلبية في الحلم لا تمثل قيمة موضوعية. على الرغم من أن بعض الأشخاص يصرحون بأن لديهم استثناءات ، إلا أنه لا يمكن تشغيلهم بالأحلام بشكل عام. التفسير الجيد والدقيق للحلم ضروري في تفسير الحلم."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:31
 msgid "Rüya ile İlgili Hadisler"
@@ -365,7 +365,7 @@ msgid ""
 "Allah’a sığınsın! Çünkü (o zaman) o rüya kendisine\n"
 "                zarar vermez!” Ebu Davud 5021<br>\n"
 "                "
-msgstr ""
+msgstr "قال أبو سعيد الخضري: قال النبي صلى الله عليه وسلم: عندما يرى أحدكم من أحلامه يحبه فهو من عند الله فليحمده على الله ويتكلم عنه. عندما يرى أحدكم شيئًا آخر لا يعجبه ، فهو من الشيطان ، لذا دعه يلجأ من شره ولا يذكره لأحد. لن يؤذيه."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
 msgid "Niyet ediniz ve başlatınız."
@@ -450,7 +450,7 @@ msgid ""
 "                Herkes kendi ilmi birikimine göre, anlayış ve kabiliyetine "
 "göre aradığını onda bulabileceğini..”  kastetmiştir.\n"
 "                "
-msgstr ""
+msgstr "يطلق عليه TEFEUL عن طريق فتح كتاب بشكل عشوائي ، وقراءة الجزء الأول الذي واجهته واستخراج رسالة منه. TEFEUL هو التفكير في شيء ميمون ، لرؤية الحدث على أنه بداية سلعة. هو أيضا أن يقرر بالنظر إلى القرآن. من أجل الحصول على حصتك من القرآن ، يمكنك البدء في TEFEUL عن طريق ذكر الموضوع الذي تريد التشاور معه بحسن نية. ما تبحث عنه يمكن أن يكون مخفيًا في بعض الأحيان في الكلمة ، وأحيانًا في الآية وأحيانًا في السورة. لا تنس أنه من الضروري تقييمهم جميعًا معًا والتعرف على المزيد من الكتب. يمكن تكرار TEFEUL في فترات زمنية معينة دون اليأس. وتجدر الإشارة إلى أن TEFEUL ليس من الكهانة."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:40
 msgid "Tefe'ül Nasıl Yapılır?"
@@ -482,7 +482,7 @@ msgid ""
 "                <br>\n"
 "                Tefeül'ün bir fal olmadığı akıldan çıkarılmamalıdır.\n"
 "                "
-msgstr ""
+msgstr "الشيء الرئيسي في TEFEUL هو أن تضع في اعتبارك أن هذا ليس من الكهانة ، ولكن للتشاور والقيام به بنية نظيفة. نتشاور مع الله إذا كانت حادثة مفيدة عنا من خلال TEFEUL. بمعنى آخر نستشير الله من خلال القرآن. الغرض منه هو أولاً بقلب نظيف. ثم يبدأ TEFEUL. يتم عرض السورة والآية والكلمة التي تظهر نتيجة TEFEUL. قد تظهر الكلمة أو الآية أو السورة النتيجة التي تبحث عنها. لهذا ، يجب تقييمهم جميعًا معًا ويجب الحصول على معلومات أكثر شمولاً في الكتب. يمكن تكرار TEFEUL في فترات زمنية معينة دون اليأس. وتجدر الإشارة إلى أن TEFEUL ليس من الكهانة."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:57
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
@@ -535,7 +535,7 @@ msgid ""
 "                Bu tür faaliyetler inanç boyutuna taşınmadan eğlence diye "
 "yapılmalıdır.\n"
 "                "
-msgstr ""
+msgstr "يعتمد برجك على الادعاء بأن مواضع وحركات النجوم تشكل نظام تسجيل ، بحيث يمكن معرفة مراحل الحياة البشرية. تسمى الكتب المكتوبة لبرجك أيضًا باسم YILDIZNAME. عادةً ما يتم تنفيذ الأبراج لمعرفة ما إذا كانت النتيجة ميمونة قبل اتخاذ قرار بشأن وظائف مهمة مثل الزواج والأعمال والسفر والحرب. تم الحصول على معلومات حول ميزات علامات الأبراج في YILDIZNAME من خلال التجارب السابقة. لا ينبغي أن ننسى أن الاعتقاد بأن النجوم تؤثر على الناس نتيجة لبعض العمليات يتعارض مع معتقدنا الديني. مثل هذه الأنشطة يجب أن تتم للترفيه."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:24
 msgid "Nasıl Hesaplanır?"
@@ -549,7 +549,7 @@ msgid ""
 "sayı kaç numaralı burca bakılması gerektiğini\n"
 "                söyler ve o kişinin yıldıznamesi bulunmuş olur.\n"
 "                "
-msgstr ""
+msgstr "أثناء حساب YILDIZNAME مع نظام أبجد ، تتم إضافة قيم أبجد لكل حرف من اسم الشخص واسمه وتقسيمها على 12. ويخبر الرقم المتبقي أي قسم يجب قراءته وقد تم العثور على برجك."
 
 #: .\ruyatabirleri\urls.py:9
 msgid "ruyatabiri-dua/"

@@ -279,7 +279,7 @@ msgid ""
 "                yaratıklara dua ve ibadet edilmemesi Kur’an’da ısrarla "
 "vurgulanmıştır (Şuarâ, 26/213; Kasas, 28/88).\n"
 "                "
-msgstr ""
+msgstr "祷告的字面意思是打电话，寻求帮助。 作为一个宗教术语，人们向安拉表达了他们的物质和精神渴望。 祷告是神与仆人之间的联络人。 祈祷中总有赞美和要求真主。 祷告也是敬拜和崇拜。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:18
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:20
@@ -306,7 +306,7 @@ msgid ""
 "                3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli "
 "insanların gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.\n"
 "                "
-msgstr ""
+msgstr "梦意味着睡觉时看到的东西。 梦分为三个部分：撒旦制造的坏梦。 潜意识的梦想，人们正在忙于做什么的梦想。 除了第一种和第二种梦，其他的梦，也就是善良的人们看到的梦。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:19
 msgid "Rüyanın Etkileri"
@@ -323,7 +323,7 @@ msgid ""
 "                Rüya yorumunda rüyanın iyi ve isabetli yorumlanması "
 "esastır.\n"
 "                "
-msgstr ""
+msgstr "人们应对觉醒状态负责。 换句话说，除了诸如睡眠和昏厥之类的清醒外，他对自己的工作不承担任何责任。 在梦中以正面或负面的方式出现的新闻并不代表客观价值。 尽管有些人说他们有例外，但总的来说，他们不能凭梦想进行手术。 对梦的良好而准确的解释对于梦的解释至关重要。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:31
 msgid "Rüya ile İlgili Hadisler"
@@ -361,7 +361,7 @@ msgid ""
 "Allah’a sığınsın! Çünkü (o zaman) o rüya kendisine\n"
 "                zarar vermez!” Ebu Davud 5021<br>\n"
 "                "
-msgstr ""
+msgstr "阿布·赛义德·阿尔·库德里（Abu Said alKhudri）说：先知，和平与祝福降临在他身上。他说：当你们中的一个人看到他喜欢的梦时，梦来自安拉，所以让他为此赞美安拉并谈论它。 当你们中的一个人看到他不喜欢的其他东西时，那是来自撒但的，所以让他从邪恶中寻求庇护，而不要向任何人提及。 这不会伤害他。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
 msgid "Niyet ediniz ve başlatınız."
@@ -446,7 +446,7 @@ msgid ""
 "                Herkes kendi ilmi birikimine göre, anlayış ve kabiliyetine "
 "göre aradığını onda bulabileceğini..”  kastetmiştir.\n"
 "                "
-msgstr ""
+msgstr "通过随机打开一本书，阅读遇到的第一部分并从中提取消息的方法来将其称为TEFEUL。 TEFEUL应当将吉祥视为事物，将事件视为美好事物的开始。 还要看古兰经来决定。 为了从《古兰经》中获得自己的份额，您可以通过明确说明您想咨询的主题来开始TEFEUL。 您所寻找的内容有时可以隐藏在单词中，有时可以隐藏在诗句中，有时可以隐藏在诗经中。 不要忘记，有必要一起评估所有这些内容，并从书中学习更多知识。 TEFEUL可以每隔一定的时间重复一次，而不会感到绝望。 应当指出，TEFEUL不是算命的。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:40
 msgid "Tefe'ül Nasıl Yapılır?"
@@ -478,7 +478,7 @@ msgid ""
 "                <br>\n"
 "                Tefeül'ün bir fal olmadığı akıldan çıkarılmamalıdır.\n"
 "                "
-msgstr ""
+msgstr "TEFEUL的主要目的是要记住，这不是算命，而是以纯正的意图进行咨询和执行。 我们会通过TEFEUL向阿拉咨询事件是否对我们有利。 换句话说，我们通过古兰经咨询真主。 首先要有一颗干净的心。 然后启动TEFEUL。 显示由于TEFEUL而出现的苏拉，经文和单词。 文字或经文或Sura可能会显示您想要的结果。 为此，应将它们全部一起评估，并应在书中获得更全面的信息。 TEFEUL可以每隔一定的时间重复一次，而不会感到绝望。 应当指出，TEFEUL不是算命的。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:57
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
@@ -531,7 +531,7 @@ msgid ""
 "                Bu tür faaliyetler inanç boyutuna taşınmadan eğlence diye "
 "yapılmalıdır.\n"
 "                "
-msgstr ""
+msgstr "星座运势基于这样的主张，即恒星的位置和运动形成了一个信号系统，因此人们的生活阶段就可以知道。 为星座运势编写的书籍也称为YILDIZNAME。 在决定重要的工作，例如婚姻，商务，旅行和战争之前，通常会使用星座运势来找出结果是否吉祥。 有关YILDIZNAME中黄道十二宫特征的信息是从过去的经验中获得的。 不应忘记，相信恒星会因某些操作而影响人，这与我们的宗教信仰背道而驰。 这些活动应作为娱乐活动进行。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:24
 msgid "Nasıl Hesaplanır?"
@@ -545,7 +545,7 @@ msgid ""
 "sayı kaç numaralı burca bakılması gerektiğini\n"
 "                söyler ve o kişinin yıldıznamesi bulunmuş olur.\n"
 "                "
-msgstr ""
+msgstr "在使用Abjad系统计算YILDIZNAME时，将每个人的字母的Abjad值与母亲的名字相加并除以12。剩余的数字表明应该阅读哪个部分并找到了该人的星座。"
 
 #: .\ruyatabirleri\urls.py:9
 msgid "ruyatabiri-dua/"
