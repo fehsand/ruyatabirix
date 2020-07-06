@@ -77,48 +77,66 @@
             {% endif %}
             {% endfor %}
             <div class="dropdown-menu dropdown-menu-left m-0 p-0" aria-labelledby="dropdownMenuButton">
-                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="/" />
-                    <a class="dropdown-item m-0 p-0">
-                        <button type="submit" name="language" value="tr" class="btn btn-link btn-block my-0 p-3">Türkçe</button>
-                    </a>
-                </form>
-                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="/" />
-                    <a class="dropdown-item m-0 p-0">
-                        <button type="submit" name="language" value="en" class="btn btn-link btn-block my-0 p-3">English</button>
-                    </a>
-                </form>
-                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="/" />
-                    <a class="dropdown-item m-0 p-0">
-                        <button type="submit" name="language" value="ar" class="btn btn-link btn-block my-0 p-3">العربية</button>
-                    </a>
-                </form>
-                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="/" />
-                    <a class="dropdown-item m-0 p-0">
-                        <button type="submit" name="language" value="ru" class="btn btn-link btn-block my-0 p-3">русский</button>
-                    </a>
-                </form>
-                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="/" />
-                    <a class="dropdown-item m-0 p-0">
-                        <button type="submit" name="language" value="es" class="btn btn-link btn-block my-0 p-3">español</button>
-                    </a>
-                </form>
-                <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="/" />
-                    <a class="dropdown-item m-0 p-0">
-                        <button type="submit" name="language" value="zh-hans" class="btn btn-link btn-block my-0 p-3">中文</button>
-                    </a>
-                </form>
+                <div class="row m-0 p-0">
+                    <div class="col-6 m-0 p-0">
+                        <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="/" />
+                            <a class="dropdown-item m-0 p-0">
+                                <button type="submit" name="language" value="tr" class="btn btn-link btn-block m-0 px-2 py-4">Türkçe</button>
+                            </a>
+                        </form>
+                    </div>
+                    <div class="col-6 m-0 p-0">
+                        <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="/" />
+                            <a class="dropdown-item m-0 p-0">
+                                <button type="submit" name="language" value="en" class="btn btn-link btn-block m-0 px-2 py-4">English</button>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="row m-0 p-0 ">
+                    <div class="col-6 m-0 p-0">
+                        <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="/" />
+                            <a class="dropdown-item m-0 p-0">
+                                <button type="submit" name="language" value="ar" class="btn btn-link btn-block m-0 px-2 py-4">العربية</button>
+                            </a>
+                        </form>
+                    </div>
+                    <div class="col-6 m-0 p-0">
+                        <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="/" />
+                            <a class="dropdown-item m-0 p-0">
+                                <button type="submit" name="language" value="ru" class="btn btn-link btn-block m-0 px-2 py-4">русский</button>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="row m-0 p-0">
+                    <div class="col-6 m-0 p-0">
+                        <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="/" />
+                            <a class="dropdown-item m-0 p-0">
+                                <button type="submit" name="language" value="es" class="btn btn-link btn-block m-0 px-2 py-4">español</button>
+                            </a>
+                        </form>
+                    </div>
+                    <div class="col-6 m-0 p-0">
+                        <form class="m-0 p-0 " action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="/" />
+                            <a class="dropdown-item m-0 p-0">
+                                <button type="submit" name="language" value="zh-hans" class="btn btn-link btn-block m-0 px-2 py-4">中文</button>
+                            </a>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         {% if user.is_authenticated %}

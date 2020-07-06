@@ -203,7 +203,7 @@ msgid ""
 "                http://www.google.com/analytics/terms/tr.html veya https://"
 "support.google.com/analytics/answer/6004245?hl=tr\n"
 "                "
-msgstr ""
+msgstr "从您开始使用本网站的那一刻起，您就被视为已接受此处编写的规则。该网站上的文章用于一般信息共享。没有要求提供准确信息和任何信息的准确性。大多数信息是根据专家文章整理的。 <br> <br>此网站遵循发布政策，该政策基于其用户的安全性并执行其保护该安全性的职责。本网站使用提供第三方广告服务的公司来提供广告服务。这些广告公司可能会使用您在访问期间获得的一些信息来向您显示您可能感兴趣的产品和服务的广告。本网站提供指向不同网站的链接，对这些网站的隐私权原则和广播内容概不负责。<br> <br> Google使用您计算机上的Cookie在该网站上做广告。 Cookies是当您访问某些网站时某些网站将这些文件写入您计算机硬盘的数据文件。 Cookie文件可以包含诸如用户标识代码之类的信息，这些信息可以记录用户访问的页面。没有任何用户的个人数据与此信息相关联。许多网站浏览器会自动接受Cookie。但是，用户通常会通过更改其浏览器设置来选择接受警告或拒绝所有cookie，然后再接受cookie。当您关闭从我们的网站接收cookie时，您可能无法使用我们网站的某些功能。<br> <br>我们的网站有权不发表不适当的评论和梦想。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
