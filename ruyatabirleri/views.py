@@ -256,33 +256,6 @@ def dua (request):
 def dua_nedir (request):
     return render(request,'ruyatabirleri/dua_nedir.html', {})
 
-def yasin (request):
-    return render(request,'ruyatabirleri/dua_yasin.html', {})
-
-def yasin_arapca (request):
-    return render(request,'ruyatabirleri/dua_yasin_arapca.html', {})
-
-def mubin (request):
-    return render(request,'ruyatabirleri/dua_yasin_mubin.html', {})
-
-def ayetelkursi (request):
-    return render(request,'ruyatabirleri/dua_ayetelkursi.html', {})
-
-def ayetelkursi_arapca (request):
-    return render(request,'ruyatabirleri/dua_ayetelkursi_arapca.html', {})
-
-def dua_ayet (request):
-    return render(request,'ruyatabirleri/dua_dua_ayet.html', {})
-
-def esmaul_husna (request):
-    return render(request,'ruyatabirleri/dua_esmaul_husna.html', {})
-
-def tefriciye (request):
-    return render(request,'ruyatabirleri/dua_tefriciye.html', {})
-
-def tefriciye_arapca (request):
-    return render(request,'ruyatabirleri/dua_tefriciye_arapca.html', {})
-
 def ruyatabirleri_ayrinti_sbt_syf (response, slug=None):
     tabir1 = get_object_or_404 (Ruyatabirlerix_sbt, slug=slug)
     return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html', {'tabir1': tabir1})

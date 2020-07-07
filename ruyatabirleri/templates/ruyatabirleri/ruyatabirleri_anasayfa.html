@@ -30,6 +30,8 @@
                 {% endfor %}
             </div>
         </div>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'tr' %}
         <div class="row mb-3 m-0 p-0">
             <div class="col-md-8 my-0 p-0 mx-auto">
                 <h1 class="lead my-3 text-center">{% trans "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz." %}</h1>
@@ -143,10 +145,11 @@
                     <div class="col-md-3 m-0 p-0">
                         <a class="btn btn-dark btn-block border-bottom" href="{% url 'ruyatabirleri:harf_sayfalari' harf='z' %}" role="button">Z</a>
                     </div>
-
                 </div>
             </div>
         </div>
+        {% else %}
+        {% endif %}
     </div>
 </div>
 {% endblock %}

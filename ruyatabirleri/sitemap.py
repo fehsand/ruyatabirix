@@ -4,27 +4,9 @@ from ruyatabirleri.models import Ruyatabirleri, Ruyatabirlerix, Ruyatabirlerix_s
 
 # ---------------------- Static sitemap part ---------------------------
 # Sitemap for service pages like welcome and feedback.
-foo_static_sitemap = StaticSitemap(priority=0.5, changefreq='monthly')
+foo_static_sitemap = StaticSitemap(priority=0.7, changefreq='monthly')
 foo_static_sitemap.add_named_pattern('ruyatabirleri:anasayfa')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:dua')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:dua_nedir')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:yasin')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:mubin')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:yasin_arapca')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:ayetelkursi')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:ayetelkursi_arapca')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:dua_ayet')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:esmaul_husna')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:tefriciye')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:tefriciye_arapca')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:tefeul')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:tefeul_nedir')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:iletisim')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:gizlilik')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:yildizname')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:yildizname_nedir')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:ruyatabirleri')
-foo_static_sitemap.add_named_pattern('ruyatabirleri:ruyatabirleri_nedir')
+
 
 # ---------------------- Normal sitemap part ---------------------------
 # Normal Foo items sitemap.
@@ -45,8 +27,8 @@ class FooItemSitemap(Sitemap):
 # ---------------------- Static PAge Normal sitemap part ---------------------------
 # Static PAge_Normal Foo items sitemap.
 class FooItemAlternateHreflangSitemap2(RelAlternateHreflangSitemap):
-    changefreq = "weekly"
-    priority = 1.0
+    changefreq = "monthly"
+    priority = 0.7
 
     def alternate_hreflangs(self, item):
         return [('en', item.altr_en_url),
