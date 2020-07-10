@@ -8,6 +8,8 @@
             <h1 class="display-4 font-italic border-bottom box-shadow mx-auto">{% trans "RÜYA TABİRLERİ" %}</h1>
         </div>
         <div class="row my-5 mx-0 p-0">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'en' %}
             <div class="col-md-6 p-0 mx-auto">
                 <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
                     {% csrf_token %}
@@ -20,7 +22,106 @@
                 </form>
                 <div class="row m-0 p-0 text-danger">{{n1}}{{mesaj}}</div>
             </div>
+            {% elif LANGUAGE_CODE == 'es' %}
+            <div class="col-md-6 p-0 mx-auto">
+                <div class="col-md-6 p-0 mx-auto">
+                    <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
+                        {% csrf_token %}
+                        <div class="form-group mt-3">
+                            <input class="form-control m-0 text-center" type="text" name="kelime" placeholder="{{place_holder_1}}">
+                        </div>
+                        <div class="form-group mt-3 text-center">
+                            <button class="btn-lg btn-dark border-0" type="submit" name="save">{% trans "ARA" %}</button>
+                        </div>
+                    </form>
+                    <div class="row m-0 p-0 text-danger">{{n1}}{{mesaj}}</div>
+                </div>
+            </div>
+            {% elif LANGUAGE_CODE == 'ar' %}
+            <div class="col-md-6 p-0 mx-auto">
+                <h1>هذا القسم لا يزال قيد الإنشاء.</h1>
+                <h1>الرجاء التحقق مرة اخرى قريبا.</h1>
+                <h1>شكرا على اهتمامك.</h1>
+            </div>
+            {% elif LANGUAGE_CODE == 'ru' %}
+            <div class="col-md-6 p-0 mx-auto">
+                <h1>Этот раздел находится в стадии разработки.</h1>
+                <h1>Пожалуйста, зайдите в ближайшее время.</h1>
+                <h1>Спасибо за ваш интерес.</h1>
+            </div>
+            {% elif LANGUAGE_CODE == 'zh-hans' %}
+            <div class="col-md-6 p-0 mx-auto">
+                <h1>此部分仍在建设中。</h1>
+                <h1>请稍后再回来查看。</h1>
+                <h1>感谢您的关注。</h1>
+            </div>
+            {% else %}
+            <div class="col-md-6 p-0 mx-auto">
+                <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0 text-center" type="text" name="kelime" placeholder="{{place_holder_1}}">
+                    </div>
+                    <div class="form-group mt-3 text-center">
+                        <button class="btn-lg btn-dark border-0" type="submit" name="save">{% trans "ARA" %}</button>
+                    </div>
+                </form>
+                <div class="row m-0 p-0 text-danger">{{n1}}{{mesaj}}</div>
+            </div>
+            {% endif %}
         </div>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'en' %}
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-md-6 p-0 mx-auto">
+                {% for item in tabir1 %}
+                <div class="m-0 mt-1 p-3 w-100 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
+                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.kelime_en %}">The Meaning of {{item.kelime_en}} in Dreams</a></h6>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% elif LANGUAGE_CODE == 'zh-hans' %}
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-md-6 p-0 mx-auto">
+                {% for item in tabir1 %}
+                <div class="m-0 mt-1 p-3 w-100 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
+                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.kelime_ch %}">{{item.kelime_ch}}在梦中的意义</a></h6>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% elif LANGUAGE_CODE == 'es' %}
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-md-6 p-0 mx-auto">
+                {% for item in tabir1 %}
+                <div class="m-0 mt-1 p-3 w-100 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
+                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.slug_es %}">El significado de {{item.kelime_es}} en Dreams</a></h6>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% elif LANGUAGE_CODE == 'ru' %}
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-md-6 p-0 mx-auto">
+                {% for item in tabir1 %}
+                <div class="m-0 mt-1 p-3 w-100 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
+                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.slug_ru %}">Значение {{item.kelime_ru}} в снах</a></h6>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% elif LANGUAGE_CODE == 'ar' %}
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-md-6 p-0 mx-auto">
+                {% for item in tabir1 %}
+                <div class="m-0 mt-1 p-3 w-100 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
+                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.kelime_ar %}">معنى {{item.kelime_ar}} في الأحلام</a></h6>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% else %}
         <div class="row my-5 mx-0 p-0">
             <div class="col-md-6 p-0 mx-auto">
                 {% for item in tabir1 %}
@@ -30,6 +131,8 @@
                 {% endfor %}
             </div>
         </div>
+        {% endif %}
+
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE == 'tr' %}
         <div class="row mb-3 m-0 p-0">

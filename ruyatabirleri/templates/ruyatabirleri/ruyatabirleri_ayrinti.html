@@ -23,12 +23,51 @@
                 <div class="row m-0 p-0 text-danger">{{mesaj}}</div>
             </div>
         </div>
+        {% get_current_language as LANGUAGE_CODE %}
+        {% if LANGUAGE_CODE == 'en' %}
+        <div class="row m-0 p-0">
+            <div class="col-md-12 m-0 p-4 border-bottom">
+                <h1 class="display-4 font-italic border-bottom box-shadow">The Meaning of {{tabir1.kelime_en}} in Dreams</h1>
+                <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri_en}}</textarea>
+            </div>
+        </div>
+        {% elif LANGUAGE_CODE == 'zh-hans' %}
+        <div class="row m-0 p-0">
+            <div class="col-md-12 m-0 p-4 border-bottom">
+                <h1 class="display-4 font-italic border-bottom box-shadow">{{tabir1.kelime_ch}}在梦中的含义</h1>
+                <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabir_ch}}</textarea>
+            </div>
+        </div>
+        {% elif LANGUAGE_CODE == 'es' %}
+        <div class="row m-0 p-0">
+            <div class="col-md-12 m-0 p-4 border-bottom">
+                <h1 class="display-4 font-italic border-bottom box-shadow">El significado de {{tabir1.kelime_es}} en Dreams</h1>
+                <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri_es}}</textarea>
+            </div>
+        </div>
+        {% elif LANGUAGE_CODE == 'ru' %}
+        <div class="row m-0 p-0">
+            <div class="col-md-12 m-0 p-4 border-bottom">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Значение {{tabir1.kelime_ru}} в снах</h1>
+                <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabir_ru}}</textarea>
+            </div>
+        </div>
+        {% elif LANGUAGE_CODE == 'ar' %}
+        <div class="row m-0 p-0">
+            <div class="col-md-12 m-0 p-4 border-bottom">
+                <h1 class="display-4 font-italic border-bottom box-shadow">معنى {{tabir1.kelime_ar2}} في الأحلام</h1>
+                <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabir_ar}}</textarea>
+            </div>
+        </div>
+
+        {% else %}
         <div class="row m-0 p-0">
             <div class="col-md-12 m-0 p-4 border-bottom">
                 <h1 class="display-4 font-italic border-bottom box-shadow">Rüyada {{tabir1.kelime}} görmek</h1>
                 <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri}}</textarea>
             </div>
         </div>
+        {% endif %}
         <div class="row m-0 p-0 mt-3">
             <div class="col-md-12 m-0 p-0">
                 {% get_comment_count for ruyatabirleri.ruyatabirleri object_pk as comment_count %}
@@ -76,9 +115,20 @@
                         <div class="m-0 p-0 text-right">
                             <button class="btn-dark m-0 px-3 py-1 border-0" type="submit" name="submit" >Gönder</button>
                         </div>
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% if LANGUAGE_CODE == 'en' %}
+                        <div class="m-0 p-0">
+                            <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.kelime_en %}" />
+                        </div>
+                        {% elif LANGUAGE_CODE == 'es' %}
+                        <div class="m-0 p-0">
+                            <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.kelime_es %}" />
+                        </div>
+                        {% else %}
                         <div class="m-0 p-0">
                             <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug %}" />
                         </div>
+                        {% endif %}
                     </form>
                 </div>
             </div>

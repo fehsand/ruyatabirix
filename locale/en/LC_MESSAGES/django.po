@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 13:52+0300\n"
+"POT-Creation-Date: 2020-07-08 00:11+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,7 +109,7 @@ msgid "Tefe'ül için Tıklayınız..."
 msgstr "Click for Tefeul..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:46
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:10
 msgid "DUA"
 msgstr "PRAYER"
 
@@ -137,7 +137,7 @@ msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Click for Prayer"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:146
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:164
 msgid "Gizlilik Politikası"
 msgstr "Privacy Policy"
 
@@ -262,7 +262,7 @@ msgstr ""
 "google.com/analytics/answer/6004245?hl=en"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:165
 msgid "İletişim"
 msgstr "Contact Us"
 
@@ -271,29 +271,9 @@ msgid "GÖNDER"
 msgstr "SEND"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:49
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:165
 msgid "Sosyal Medya"
 msgstr "Social Media"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:15
-msgid "YASİN-İ ŞERİF"
-msgstr "Surah Yaseen"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:20
-msgid "AYETEL KÜRSİ"
-msgstr "The Greatest Verse of Quran"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:25
-msgid "DUA AYETLERİ"
-msgstr "Verses of Quran for Wishes"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:30
-msgid "ESMAÜL HÜSNA"
-msgstr "Names of ALLAH"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:35
-msgid "SALATI TEFRİCİYE"
-msgstr "Salati Tefriciye"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:8
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:63
@@ -348,7 +328,7 @@ msgstr ""
 msgid "ARA"
 msgstr "SEARCH"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:52
 msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
 msgstr "Dream Dictionary"
 
@@ -592,19 +572,19 @@ msgstr ""
 msgid "Yıldızname Nedir?"
 msgstr "What is Yildizname?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:130
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
 msgid "Hesabım"
 msgstr "My Account"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:131
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:149
 msgid "Çıkış Yap"
 msgstr "Log Out"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:135
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:153
 msgid "Giriş Yap"
 msgstr "Log in"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:145
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:163
 msgid "Başa Dön"
 msgstr "Back to Top"
 
@@ -677,115 +657,112 @@ msgid "ruyatabiri-dua-nedir/"
 msgstr "dreaminterpretation-what-is-prayer/"
 
 #: .\ruyatabirleri\urls.py:11
-msgid "dua/yasin/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:12
-msgid "dua/yasin/mubin/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:13
-#, fuzzy
-#| msgid "dua/tefriciye/arapca"
-msgid "dua/yasin/arapca/"
-msgstr "pray/tefriciye/arabic/"
-
-#: .\ruyatabirleri\urls.py:14
-msgid "dua/ayetelkursi/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:15
-msgid "dua/ayetelkursi/arapca/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:16
-msgid "dua/dua_ayet/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:17
-msgid "dua/esmaul_husna/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:18
-msgid "dua/tefriciye/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:19
-msgid "dua/tefriciye/arapca/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:20
 msgid "ruyatabiri-tefeul/"
 msgstr "dreaminterpretation-tefeul/"
 
-#: .\ruyatabirleri\urls.py:21
+#: .\ruyatabirleri\urls.py:12
 msgid "ruyatabiri-tefeul-nedir/"
 msgstr "dreaminterpretation-what-is-tefeul/"
 
-#: .\ruyatabirleri\urls.py:22
+#: .\ruyatabirleri\urls.py:13
 msgid "tefeul/tefeul_yap/"
 msgstr ""
 
-#: .\ruyatabirleri\urls.py:23
+#: .\ruyatabirleri\urls.py:14
 msgid "ruyatabiri-iletisim/"
 msgstr "dreaminterpretation-contact/"
 
-#: .\ruyatabirleri\urls.py:24
+#: .\ruyatabirleri\urls.py:15
 msgid "ruyatabiri-gizlilik/"
 msgstr "dreaminterpretation-privacy/"
 
-#: .\ruyatabirleri\urls.py:25
+#: .\ruyatabirleri\urls.py:16
 msgid "ruyatabiri-yildizname/"
 msgstr "dreaminterpretation-horoscope/"
 
-#: .\ruyatabirleri\urls.py:26
+#: .\ruyatabirleri\urls.py:17
 msgid "ruyatabiri-yildizname-nedir/"
 msgstr "dreaminterpretation-what-is-yildizname/"
 
-#: .\ruyatabirleri\urls.py:27
+#: .\ruyatabirleri\urls.py:18
 msgid "ruyatabiri-ruyatabirleri/"
 msgstr "dreaminterpretation-dreaminterpretations/"
 
-#: .\ruyatabirleri\urls.py:28
+#: .\ruyatabirleri\urls.py:19
 msgid "ruyatabiri-ruyatabirleri-nedir/"
 msgstr "dreaminterpretation-what-is-dreaminterpretations/"
 
-#: .\ruyatabirleri\views.py:14 .\ruyatabirleri\views.py:78
-#: .\ruyatabirleri\views.py:94
+#: .\ruyatabirleri\urls.py:20
+msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
+msgstr "dreaminterpretation/the-meaning-of-<slug:slug>-in-dreams/q1w2e3r4t5y6u7/"
+
+#: .\ruyatabirleri\views.py:10 .\ruyatabirleri\views.py:69
+#: .\ruyatabirleri\views.py:128 .\ruyatabirleri\views.py:197
+#: .\ruyatabirleri\views.py:253
 msgid "Aramak İstediğin Kelimeyi Yaz"
 msgstr "Write the keyword"
 
-#: .\ruyatabirleri\views.py:109 .\ruyatabirleri\views.py:202
+#: .\ruyatabirleri\views.py:54 .\ruyatabirleri\views.py:176
+msgid ""
+"Aradığınız rüya yorumu bulunamamıştır. En yakın yorumlar aşağıda "
+"listelenmişti."
+msgstr ""
+
+#: .\ruyatabirleri\views.py:60 .\ruyatabirleri\views.py:182
+msgid "Lütfen Bir Kelime Yazınız."
+msgstr ""
+
+#: .\ruyatabirleri\views.py:141
+msgid " : Sadece Türkçe Harflerden Oluşmalıdır."
+msgstr ""
+
+#: .\ruyatabirleri\views.py:273 .\ruyatabirleri\views.py:380
 msgid "İsminiz"
 msgstr "Your Name"
 
-#: .\ruyatabirleri\views.py:110
+#: .\ruyatabirleri\views.py:274
 msgid "Annenizin İsmi"
 msgstr "Your Mother's Name"
 
-#: .\ruyatabirleri\views.py:203
+#: .\ruyatabirleri\views.py:287
+msgid "Lütfen Cinsiyet Seçimini Yapınız"
+msgstr ""
+
+#: .\ruyatabirleri\views.py:298
+msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
+msgstr ""
+
+#: .\ruyatabirleri\views.py:307
+msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
+msgstr ""
+
+#: .\ruyatabirleri\views.py:316
+msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
+msgstr ""
+
+#: .\ruyatabirleri\views.py:368 .\ruyatabirleri\views.py:409
+msgid "Lütfen Formu Doldurunuz."
+msgstr "Please, Fill in the form."
+
+#: .\ruyatabirleri\views.py:381
 msgid "Soyisminiz"
 msgstr "Your Surname"
 
-#: .\ruyatabirleri\views.py:204
+#: .\ruyatabirleri\views.py:382
 msgid "örnek@posta.com"
 msgstr "example@example.com"
 
-#: .\ruyatabirleri\views.py:205
+#: .\ruyatabirleri\views.py:383
 msgid "Mesajınızı Yazınız"
 msgstr "Write your message"
 
-#: .\ruyatabirleri\views.py:215
+#: .\ruyatabirleri\views.py:393
 msgid "Kutucukları Doldurunuz."
 msgstr "Fill in the blanks"
 
-#: .\ruyatabirleri\views.py:222
+#: .\ruyatabirleri\views.py:403
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "Your post has been successfully saved."
-
-#: .\ruyatabirleri\views.py:225
-msgid "Lütfen Formu Doldurunuz."
-msgstr "Please, Fill in the form."
 
 #: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -1961,6 +1938,26 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "YASİN-İ ŞERİF"
+#~ msgstr "Surah Yaseen"
+
+#~ msgid "AYETEL KÜRSİ"
+#~ msgstr "The Greatest Verse of Quran"
+
+#~ msgid "DUA AYETLERİ"
+#~ msgstr "Verses of Quran for Wishes"
+
+#~ msgid "ESMAÜL HÜSNA"
+#~ msgstr "Names of ALLAH"
+
+#~ msgid "SALATI TEFRİCİYE"
+#~ msgstr "Salati Tefriciye"
+
+#, fuzzy
+#~| msgid "dua/tefriciye/arapca"
+#~ msgid "dua/yasin/arapca/"
+#~ msgstr "pray/tefriciye/arabic/"
 
 #~ msgid "Türkçe"
 #~ msgstr "Turkish"

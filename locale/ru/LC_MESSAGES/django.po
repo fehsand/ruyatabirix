@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-06 13:58+0300\n"
+"POT-Creation-Date: 2020-07-08 22:16+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,7 +110,7 @@ msgid "Tefe'ül için Tıklayınız..."
 msgstr "Нажмите для TEFEUL"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:46
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:10
 msgid "DUA"
 msgstr "МОЛИТВА"
 
@@ -136,7 +136,7 @@ msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Нажмите для молитвы..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:146
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:164
 msgid "Gizlilik Politikası"
 msgstr "Конфиденциальность"
 
@@ -213,10 +213,36 @@ msgid ""
 "                http://www.google.com/analytics/terms/tr.html veya https://"
 "support.google.com/analytics/answer/6004245?hl=tr\n"
 "                "
-msgstr "С того момента, как вы начинаете использовать этот веб-сайт, считается, что вы приняли правила, написанные здесь. Статьи на сайте предназначены для общего обмена информацией. Там нет претензий на точную информацию и точность в любой информации. Большая часть информации была составлена ​​из статей экспертов. <br> <br> Этот веб-сайт придерживается политики публикации, основанной на безопасности своих пользователей и выполняющей свои обязанности по защите этой безопасности. Этот сайт использует компании, которые предоставляют сторонние рекламные услуги для предоставления рекламных услуг. Эти рекламные компании могут использовать часть информации, которую они получили во время вашего визита, чтобы показать вам рекламу продуктов и услуг, которые могут вас заинтересовать. Этот веб-сайт содержит ссылки на различные веб-сайты и не несет ответственности за принципы конфиденциальности и трансляцию контента этих сайтов. <br> <br> Google использует файлы cookie на вашем компьютере для размещения рекламы на этом веб-сайте. Файлы cookie - это файлы данных, которые определенные веб-сайты записывают на жесткий диск вашего компьютера при посещении таких сайтов. Файлы cookie могут содержать такую ​​информацию, как идентификационные коды пользователя, которые хранят записи о посещенных пользователем страницах. Никакие личные данные любого пользователя не связаны с этой информацией. Многие браузеры веб-сайтов автоматически принимают файлы cookie. Однако пользователи обычно предпочитают получать предупреждения или отклонять все файлы cookie, прежде чем принимать файлы cookie, изменив настройки своего браузера. Когда вы отключите прием файлов cookie с нашего веб-сайта, вы не сможете использовать определенные функции нашего веб-сайта. <br> <br> Наш сайт имеет право не публиковать комментарии и мечты, которые не считаются подходящими."
+msgstr ""
+"С того момента, как вы начинаете использовать этот веб-сайт, считается, что "
+"вы приняли правила, написанные здесь. Статьи на сайте предназначены для "
+"общего обмена информацией. Там нет претензий на точную информацию и точность "
+"в любой информации. Большая часть информации была составлена ​​из статей "
+"экспертов. <br> <br> Этот веб-сайт придерживается политики публикации, "
+"основанной на безопасности своих пользователей и выполняющей свои "
+"обязанности по защите этой безопасности. Этот сайт использует компании, "
+"которые предоставляют сторонние рекламные услуги для предоставления "
+"рекламных услуг. Эти рекламные компании могут использовать часть информации, "
+"которую они получили во время вашего визита, чтобы показать вам рекламу "
+"продуктов и услуг, которые могут вас заинтересовать. Этот веб-сайт содержит "
+"ссылки на различные веб-сайты и не несет ответственности за принципы "
+"конфиденциальности и трансляцию контента этих сайтов. <br> <br> Google "
+"использует файлы cookie на вашем компьютере для размещения рекламы на этом "
+"веб-сайте. Файлы cookie - это файлы данных, которые определенные веб-сайты "
+"записывают на жесткий диск вашего компьютера при посещении таких сайтов. "
+"Файлы cookie могут содержать такую ​​информацию, как идентификационные коды "
+"пользователя, которые хранят записи о посещенных пользователем страницах. "
+"Никакие личные данные любого пользователя не связаны с этой информацией. "
+"Многие браузеры веб-сайтов автоматически принимают файлы cookie. Однако "
+"пользователи обычно предпочитают получать предупреждения или отклонять все "
+"файлы cookie, прежде чем принимать файлы cookie, изменив настройки своего "
+"браузера. Когда вы отключите прием файлов cookie с нашего веб-сайта, вы не "
+"сможете использовать определенные функции нашего веб-сайта. <br> <br> Наш "
+"сайт имеет право не публиковать комментарии и мечты, которые не считаются "
+"подходящими."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:165
 msgid "İletişim"
 msgstr "контакт"
 
@@ -225,29 +251,9 @@ msgid "GÖNDER"
 msgstr "ОТПРАВИТЬ"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:49
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:147
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:165
 msgid "Sosyal Medya"
 msgstr "социальные медиа"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:15
-msgid "YASİN-İ ŞERİF"
-msgstr ""
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:20
-msgid "AYETEL KÜRSİ"
-msgstr ""
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:25
-msgid "DUA AYETLERİ"
-msgstr ""
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:30
-msgid "ESMAÜL HÜSNA"
-msgstr ""
-
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:35
-msgid "SALATI TEFRİCİYE"
-msgstr ""
 
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:8
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:63
@@ -289,14 +295,18 @@ msgid ""
 "                yaratıklara dua ve ibadet edilmemesi Kur’an’da ısrarla "
 "vurgulanmıştır (Şuarâ, 26/213; Kasas, 28/88).\n"
 "                "
-msgstr "Молитва означает буквально: звонить, просить, просить о помощи. Как религиозный термин, это факт, что люди представляют свои материальные и духовные желания Аллаху. Молитва - это связь между Богом и слугой. В молитве всегда хвалят и требуют Аллаха. Молитва - это также зикр и поклонение."
+msgstr ""
+"Молитва означает буквально: звонить, просить, просить о помощи. Как "
+"религиозный термин, это факт, что люди представляют свои материальные и "
+"духовные желания Аллаху. Молитва - это связь между Богом и слугой. В молитве "
+"всегда хвалят и требуют Аллаха. Молитва - это также зикр и поклонение."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:18
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:20
 msgid "ARA"
 msgstr "ПОИСК"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:91
 msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
 msgstr "Словарь мечты"
 
@@ -316,7 +326,11 @@ msgid ""
 "                3. Rüyayı sâdıka, doğru sözlü, temiz ve pak yürekli "
 "insanların gördüğü, bir ve ikinici tür rüyaların dışındaki rüyalardır.\n"
 "                "
-msgstr "Сон означает то, что видно во сне. Сны состоят из трех частей: плохие сны, созданные сатаной. Подсознательные сны, сны о том, чем заняты люди. Другие сны, сны, которые видят добросердечные люди, за пределами первого и второго рода снов."
+msgstr ""
+"Сон означает то, что видно во сне. Сны состоят из трех частей: плохие сны, "
+"созданные сатаной. Подсознательные сны, сны о том, чем заняты люди. Другие "
+"сны, сны, которые видят добросердечные люди, за пределами первого и второго "
+"рода снов."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:19
 msgid "Rüyanın Etkileri"
@@ -333,7 +347,14 @@ msgid ""
 "                Rüya yorumunda rüyanın iyi ve isabetli yorumlanması "
 "esastır.\n"
 "                "
-msgstr "Люди несут ответственность за состояние бодрствования. Другими словами, за исключением бодрствования, такого как сон и обморок, он не считался ответственным за свою работу. Новости, поступающие во сне позитивно или негативно, не представляют объективной ценности. Хотя некоторые люди утверждают, что у них есть исключения, их нельзя оперировать сновидениями вообще. Хорошая и точная интерпретация сна имеет важное значение в интерпретации сна."
+msgstr ""
+"Люди несут ответственность за состояние бодрствования. Другими словами, за "
+"исключением бодрствования, такого как сон и обморок, он не считался "
+"ответственным за свою работу. Новости, поступающие во сне позитивно или "
+"негативно, не представляют объективной ценности. Хотя некоторые люди "
+"утверждают, что у них есть исключения, их нельзя оперировать сновидениями "
+"вообще. Хорошая и точная интерпретация сна имеет важное значение в "
+"интерпретации сна."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:31
 msgid "Rüya ile İlgili Hadisler"
@@ -371,7 +392,12 @@ msgid ""
 "Allah’a sığınsın! Çünkü (o zaman) o rüya kendisine\n"
 "                zarar vermez!” Ebu Davud 5021<br>\n"
 "                "
-msgstr "Абу Саид альХудри сообщил: Пророк, мир ему и благословение, сказал: когда один из вас видит сон, который ему нравится, он от Аллаха, так что пусть он похвалит Аллаха за это и скажет об этом. Когда один из вас видит что-то еще, что ему не нравится, это от сатаны, поэтому пусть он ищет убежища от его зла и никому не упоминает об этом. Это не навредит ему."
+msgstr ""
+"Абу Саид альХудри сообщил: Пророк, мир ему и благословение, сказал: когда "
+"один из вас видит сон, который ему нравится, он от Аллаха, так что пусть он "
+"похвалит Аллаха за это и скажет об этом. Когда один из вас видит что-то еще, "
+"что ему не нравится, это от сатаны, поэтому пусть он ищет убежища от его зла "
+"и никому не упоминает об этом. Это не навредит ему."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
 msgid "Niyet ediniz ve başlatınız."
@@ -456,7 +482,16 @@ msgid ""
 "                Herkes kendi ilmi birikimine göre, anlayış ve kabiliyetine "
 "göre aradığını onda bulabileceğini..”  kastetmiştir.\n"
 "                "
-msgstr "Это называется TEFEUL, когда книга открывается случайным образом, читается первая найденная часть и извлекается из нее сообщение. TEFEUL - считать что-то благоприятное, видеть событие как начало добра. Это также решить, взглянув на Коран. Чтобы получить свою долю от Корана, вы начинаете TEFEUL, указывая предмет, который вы хотите проконсультировать с добрым намерением. То, что вы ищете, иногда может быть скрыто в слове, иногда в стихах, а иногда в суре. Не забывайте, что нужно оценивать их все вместе и больше учиться по книгам. TEFEUL можно повторять через определенные промежутки времени, не отчаиваясь. Следует отметить, что TEFEUL не гадание."
+msgstr ""
+"Это называется TEFEUL, когда книга открывается случайным образом, читается "
+"первая найденная часть и извлекается из нее сообщение. TEFEUL - считать что-"
+"то благоприятное, видеть событие как начало добра. Это также решить, "
+"взглянув на Коран. Чтобы получить свою долю от Корана, вы начинаете TEFEUL, "
+"указывая предмет, который вы хотите проконсультировать с добрым намерением. "
+"То, что вы ищете, иногда может быть скрыто в слове, иногда в стихах, а "
+"иногда в суре. Не забывайте, что нужно оценивать их все вместе и больше "
+"учиться по книгам. TEFEUL можно повторять через определенные промежутки "
+"времени, не отчаиваясь. Следует отметить, что TEFEUL не гадание."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:40
 msgid "Tefe'ül Nasıl Yapılır?"
@@ -488,26 +523,35 @@ msgid ""
 "                <br>\n"
 "                Tefeül'ün bir fal olmadığı akıldan çıkarılmamalıdır.\n"
 "                "
-msgstr "Главное в TEFEUL - помнить, что это не гадание, а консультироваться и делать это с чистым намерением. Мы консультируемся с Аллахом о пользе инцидента для нас через TEFEUL. Другими словами, мы консультируемся с Аллахом через Коран. Это предназначено сначала с чистым сердцем. Затем TEFEUL запускается. Сура, стих и слово, которые появляются в результате TEFEUL отображаются. Слово, стих или сура могут показать результат, который вы ищете. Для этого все они должны оцениваться вместе, и более полная информация должна быть получена в книгах. TEFEUL можно повторять через определенные промежутки времени, не отчаиваясь. Следует отметить, что TEFEUL не гадание."
+msgstr ""
+"Главное в TEFEUL - помнить, что это не гадание, а консультироваться и делать "
+"это с чистым намерением. Мы консультируемся с Аллахом о пользе инцидента для "
+"нас через TEFEUL. Другими словами, мы консультируемся с Аллахом через Коран. "
+"Это предназначено сначала с чистым сердцем. Затем TEFEUL запускается. Сура, "
+"стих и слово, которые появляются в результате TEFEUL отображаются. Слово, "
+"стих или сура могут показать результат, который вы ищете. Для этого все они "
+"должны оцениваться вместе, и более полная информация должна быть получена в "
+"книгах. TEFEUL можно повторять через определенные промежутки времени, не "
+"отчаиваясь. Следует отметить, что TEFEUL не гадание."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:57
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
 msgid "Yıldızname Nedir?"
 msgstr "Что такое YILDIZNAME?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:130
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
 msgid "Hesabım"
 msgstr "мой счет"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:131
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:149
 msgid "Çıkış Yap"
 msgstr "выйти"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:135
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:153
 msgid "Giriş Yap"
 msgstr "авторизоваться"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:145
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:163
 msgid "Başa Dön"
 msgstr "Вернуться к началу"
 
@@ -541,7 +585,16 @@ msgid ""
 "                Bu tür faaliyetler inanç boyutuna taşınmadan eğlence diye "
 "yapılmalıdır.\n"
 "                "
-msgstr "Гороскоп основан на утверждении, что положения и движения звезд образуют систему знаков, так что фазы человеческой жизни могут быть известны. Книги, написанные для гороскопа, также называются YILDIZNAME. Гороскоп обычно делается, чтобы выяснить, является ли результат благоприятным, прежде чем принимать решение о важных работах, таких как брак, бизнес, путешествия и война. Информация об особенностях знаков зодиака в YILDIZNAME была получена из прошлого опыта. Не следует забывать, что вера в то, что звезды влияют на людей в результате некоторых операций, противоречит нашей религиозной вере. Такие действия должны быть сделаны как развлечение."
+msgstr ""
+"Гороскоп основан на утверждении, что положения и движения звезд образуют "
+"систему знаков, так что фазы человеческой жизни могут быть известны. Книги, "
+"написанные для гороскопа, также называются YILDIZNAME. Гороскоп обычно "
+"делается, чтобы выяснить, является ли результат благоприятным, прежде чем "
+"принимать решение о важных работах, таких как брак, бизнес, путешествия и "
+"война. Информация об особенностях знаков зодиака в YILDIZNAME была получена "
+"из прошлого опыта. Не следует забывать, что вера в то, что звезды влияют на "
+"людей в результате некоторых операций, противоречит нашей религиозной вере. "
+"Такие действия должны быть сделаны как развлечение."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:24
 msgid "Nasıl Hesaplanır?"
@@ -555,7 +608,11 @@ msgid ""
 "sayı kaç numaralı burca bakılması gerektiğini\n"
 "                söyler ve o kişinin yıldıznamesi bulunmuş olur.\n"
 "                "
-msgstr "При расчете YILDIZNAME по системе Abjad, значения Abjad для каждой буквы человека и имени матери складываются и делятся на 12. Оставшееся число указывает, какой раздел следует прочитать и какой гороскоп этого человека был найден."
+msgstr ""
+"При расчете YILDIZNAME по системе Abjad, значения Abjad для каждой буквы "
+"человека и имени матери складываются и делятся на 12. Оставшееся число "
+"указывает, какой раздел следует прочитать и какой гороскоп этого человека "
+"был найден."
 
 #: .\ruyatabirleri\urls.py:9
 msgid "ruyatabiri-dua/"
@@ -566,113 +623,99 @@ msgid "ruyatabiri-dua-nedir/"
 msgstr "интерпретация-сна-что-такое-молитва/"
 
 #: .\ruyatabirleri\urls.py:11
-msgid "dua/yasin/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:12
-msgid "dua/yasin/mubin/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:13
-msgid "dua/yasin/arapca/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:14
-msgid "dua/ayetelkursi/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:15
-msgid "dua/ayetelkursi/arapca/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:16
-msgid "dua/dua_ayet/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:17
-msgid "dua/esmaul_husna/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:18
-msgid "dua/tefriciye/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:19
-msgid "dua/tefriciye/arapca/"
-msgstr ""
-
-#: .\ruyatabirleri\urls.py:20
 msgid "ruyatabiri-tefeul/"
 msgstr "интерпретация-сна-tefeul/"
 
-#: .\ruyatabirleri\urls.py:21
+#: .\ruyatabirleri\urls.py:12
 msgid "ruyatabiri-tefeul-nedir/"
 msgstr "интерпретация-сна-что-такое-tefeul/"
 
-#: .\ruyatabirleri\urls.py:22
+#: .\ruyatabirleri\urls.py:13
 msgid "tefeul/tefeul_yap/"
 msgstr ""
 
-#: .\ruyatabirleri\urls.py:23
+#: .\ruyatabirleri\urls.py:14
 msgid "ruyatabiri-iletisim/"
 msgstr "интерпретация-сна-контакт/"
 
-#: .\ruyatabirleri\urls.py:24
+#: .\ruyatabirleri\urls.py:15
 msgid "ruyatabiri-gizlilik/"
 msgstr "интерпретация-сна-Конфиденциальность/"
 
-#: .\ruyatabirleri\urls.py:25
+#: .\ruyatabirleri\urls.py:16
 msgid "ruyatabiri-yildizname/"
 msgstr "интерпретация-сна-Гороскоп/"
 
-#: .\ruyatabirleri\urls.py:26
+#: .\ruyatabirleri\urls.py:17
 msgid "ruyatabiri-yildizname-nedir/"
 msgstr "интерпретация-сна-что-такое-гороскоп/"
 
-#: .\ruyatabirleri\urls.py:27
+#: .\ruyatabirleri\urls.py:18
 msgid "ruyatabiri-ruyatabirleri/"
 msgstr "интерпретация-сна-интерпретация-сна/"
 
-#: .\ruyatabirleri\urls.py:28
+#: .\ruyatabirleri\urls.py:19
 msgid "ruyatabiri-ruyatabirleri-nedir/"
 msgstr "интерпретация-сна-что-такое-толкование-снов/"
 
-#: .\ruyatabirleri\views.py:14 .\ruyatabirleri\views.py:78
-#: .\ruyatabirleri\views.py:94
+#: .\ruyatabirleri\urls.py:20
+msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
+msgstr "интерпретация-сна/значение-<slug:slug>-в-мечтах/q1w2e3r4t5y6u7/"
+
+#: .\ruyatabirleri\views.py:11 .\ruyatabirleri\views.py:68
+#: .\ruyatabirleri\views.py:127 .\ruyatabirleri\views.py:189
+#: .\ruyatabirleri\views.py:247 .\ruyatabirleri\views.py:305
+#: .\ruyatabirleri\views.py:368 .\ruyatabirleri\views.py:471
 msgid "Aramak İstediğin Kelimeyi Yaz"
 msgstr "Напишите ключевое слово"
 
-#: .\ruyatabirleri\views.py:109 .\ruyatabirleri\views.py:202
+#: .\ruyatabirleri\views.py:491 .\ruyatabirleri\views.py:598
 msgid "İsminiz"
 msgstr "Ваше имя"
 
-#: .\ruyatabirleri\views.py:110
+#: .\ruyatabirleri\views.py:492
 msgid "Annenizin İsmi"
 msgstr "Имя твоей матери"
 
-#: .\ruyatabirleri\views.py:203
+#: .\ruyatabirleri\views.py:505
+msgid "Lütfen Cinsiyet Seçimini Yapınız"
+msgstr ""
+
+#: .\ruyatabirleri\views.py:516
+msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
+msgstr ""
+
+#: .\ruyatabirleri\views.py:525
+msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
+msgstr ""
+
+#: .\ruyatabirleri\views.py:534
+msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
+msgstr ""
+
+#: .\ruyatabirleri\views.py:586 .\ruyatabirleri\views.py:627
+msgid "Lütfen Formu Doldurunuz."
+msgstr "пожалуйста, заполните форму"
+
+#: .\ruyatabirleri\views.py:599
 msgid "Soyisminiz"
 msgstr "Ваша фамилия"
 
-#: .\ruyatabirleri\views.py:204
+#: .\ruyatabirleri\views.py:600
 msgid "örnek@posta.com"
 msgstr "пример@пример.com"
 
-#: .\ruyatabirleri\views.py:205
+#: .\ruyatabirleri\views.py:601
 msgid "Mesajınızı Yazınız"
 msgstr "Напишите ваше сообщение"
 
-#: .\ruyatabirleri\views.py:215
+#: .\ruyatabirleri\views.py:611
 msgid "Kutucukları Doldurunuz."
 msgstr "Заполнить бланки"
 
-#: .\ruyatabirleri\views.py:222
+#: .\ruyatabirleri\views.py:621
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "Ваше сообщение было успешно сохранено."
-
-#: .\ruyatabirleri\views.py:225
-msgid "Lütfen Formu Doldurunuz."
-msgstr "пожалуйста, заполните форму"
 
 #: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"

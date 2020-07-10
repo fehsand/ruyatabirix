@@ -10,6 +10,38 @@
             </div>
         </div>
         <div class="row my-5 mx-0 p-0">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'en' %}
+            <div class="col-md-10 p-0 mx-auto">
+                <h1>This section is still under constraction.</h1>
+                <h1>Please check back soon.</h1>
+                <h1>Thanks for your interest..</h1>
+            </div>
+            {% elif LANGUAGE_CODE == 'es' %}
+            <div class="col-md-10 p-0 mx-auto">
+                <h1>Esta sección aún está en construcción.</h1>
+                <h1>Por favor, revise luego.</h1>
+                <h1>Gracias por tu interés.</h1>
+            </div>
+            {% elif LANGUAGE_CODE == 'ar' %}
+            <div class="col-md-10 p-0 mx-auto">
+                <h1>هذا القسم لا يزال قيد الإنشاء.</h1>
+                <h1>الرجاء التحقق مرة اخرى قريبا.</h1>
+                <h1>شكرا على اهتمامك.</h1>
+            </div>
+            {% elif LANGUAGE_CODE == 'ru' %}
+            <div class="col-md-10 p-0 mx-auto">
+                <h1>Этот раздел находится в стадии разработки.</h1>
+                <h1>Пожалуйста, зайдите в ближайшее время.</h1>
+                <h1>Спасибо за ваш интерес.</h1>
+            </div>
+            {% elif LANGUAGE_CODE == 'zh-hans' %}
+            <div class="col-md-10 p-0 mx-auto">
+                <h1>此部分仍在建设中。</h1>
+                <h1>请稍后再回来查看。</h1>
+                <h1>感谢您的关注。</h1>
+            </div>
+            {% else %}
             <div class="col-md-6 my-0 mx-auto p-0 text-center">
                 <form class="m-0 p-0 " action="{% url 'ruyatabirleri:yildizname' %}" method="post">
                     {% csrf_token %}
@@ -32,6 +64,7 @@
                 </form>
                 <div class="row m-0 p-0 text-danger">{{mesaj}}</div>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
