@@ -10,7 +10,7 @@
         <div class="row my-5 mx-0 p-0">
             {% get_current_language as LANGUAGE_CODE %}
             {% if LANGUAGE_CODE == 'en' %}
-            <div class="col-md-6 p-0 mx-auto">
+            <div class="col-md-8 p-0 mx-auto text-center">
                 <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
                     {% csrf_token %}
                     <div class="form-group mt-3">
@@ -23,19 +23,17 @@
                 <div class="row m-0 p-0 text-danger">{{n1}}{{mesaj}}</div>
             </div>
             {% elif LANGUAGE_CODE == 'es' %}
-            <div class="col-md-6 p-0 mx-auto">
-                <div class="col-md-6 p-0 mx-auto">
-                    <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
-                        {% csrf_token %}
-                        <div class="form-group mt-3">
-                            <input class="form-control m-0 text-center" type="text" name="kelime" placeholder="{{place_holder_1}}">
-                        </div>
-                        <div class="form-group mt-3 text-center">
-                            <button class="btn-lg btn-dark border-0" type="submit" name="save">{% trans "ARA" %}</button>
-                        </div>
-                    </form>
-                    <div class="row m-0 p-0 text-danger">{{n1}}{{mesaj}}</div>
-                </div>
+            <div class="col-md-6 p-0 mx-auto my-3">
+                <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0 text-center" type="text" name="kelime" placeholder="{{place_holder_1}}">
+                    </div>
+                    <div class="form-group mt-3 text-center">
+                        <button class="btn-lg btn-dark border-0" type="submit" name="save">{% trans "ARA" %}</button>
+                    </div>
+                </form>
+                <div class="row m-0 p-0 text-danger">{{n1}}{{mesaj}}</div>
             </div>
             {% elif LANGUAGE_CODE == 'ar' %}
             <div class="col-md-6 p-0 mx-auto">
@@ -45,9 +43,16 @@
             </div>
             {% elif LANGUAGE_CODE == 'ru' %}
             <div class="col-md-6 p-0 mx-auto">
-                <h1>Этот раздел находится в стадии разработки.</h1>
-                <h1>Пожалуйста, зайдите в ближайшее время.</h1>
-                <h1>Спасибо за ваш интерес.</h1>
+                <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0 text-center" type="text" name="kelime" placeholder="{{place_holder_1}}">
+                    </div>
+                    <div class="form-group mt-3 text-center">
+                        <button class="btn-lg btn-dark border-0" type="submit" name="save">{% trans "ARA" %}</button>
+                    </div>
+                </form>
+                <div class="row m-0 p-0 text-danger">{{n1}}{{mesaj}}</div>
             </div>
             {% elif LANGUAGE_CODE == 'zh-hans' %}
             <div class="col-md-6 p-0 mx-auto">

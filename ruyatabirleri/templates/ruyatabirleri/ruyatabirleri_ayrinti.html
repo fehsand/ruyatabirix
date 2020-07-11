@@ -2,15 +2,13 @@
 {% load i18n comments %}
 
 {% block content %}
-<div class="row my-5 mx-0 p-0">
-    <div class="col-md-10 my-0 mx-auto p-0">
-        <div class="row mt-5 m-0 p-0">
-            <div class="col-md-12">
-                <h1 class="display-4 font-italic border-bottom box-shadow">{% trans "RÜYA TABİRLERİ" %}</h1>
-            </div>
+<div class="row my-3 mx-0 p-0">
+    <div class="col-md-12 my-0 p-0">
+        <div class="row my-5 mx-0 p-0">
+            <h1 class="display-4 font-italic border-bottom box-shadow mx-auto">{% trans "RÜYA TABİRLERİ" %}</h1>
         </div>
         <div class="row my-5 mx-0 p-0">
-            <div class="col-md-8 my-0 mx-auto p-0 text-center">
+            <div class="col-md-8 my-0 p-0 mx-auto text-center">
                 <form class="m-0 p-0 " action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
                     {% csrf_token %}
                     <div class="form-group mt-3">
@@ -26,35 +24,35 @@
         {% get_current_language as LANGUAGE_CODE %}
         {% if LANGUAGE_CODE == 'en' %}
         <div class="row m-0 p-0">
-            <div class="col-md-12 m-0 p-4 border-bottom">
+            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
                 <h1 class="display-4 font-italic border-bottom box-shadow">The Meaning of {{tabir1.kelime_en}} in Dreams</h1>
                 <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri_en}}</textarea>
             </div>
         </div>
         {% elif LANGUAGE_CODE == 'zh-hans' %}
         <div class="row m-0 p-0">
-            <div class="col-md-12 m-0 p-4 border-bottom">
+            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
                 <h1 class="display-4 font-italic border-bottom box-shadow">{{tabir1.kelime_ch}}在梦中的含义</h1>
                 <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabir_ch}}</textarea>
             </div>
         </div>
         {% elif LANGUAGE_CODE == 'es' %}
         <div class="row m-0 p-0">
-            <div class="col-md-12 m-0 p-4 border-bottom">
+            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
                 <h1 class="display-4 font-italic border-bottom box-shadow">El significado de {{tabir1.kelime_es}} en Dreams</h1>
                 <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri_es}}</textarea>
             </div>
         </div>
         {% elif LANGUAGE_CODE == 'ru' %}
         <div class="row m-0 p-0">
-            <div class="col-md-12 m-0 p-4 border-bottom">
+            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
                 <h1 class="display-4 font-italic border-bottom box-shadow">Значение {{tabir1.kelime_ru}} в снах</h1>
-                <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabir_ru}}</textarea>
+                <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri_ru}}</textarea>
             </div>
         </div>
         {% elif LANGUAGE_CODE == 'ar' %}
         <div class="row m-0 p-0">
-            <div class="col-md-12 m-0 p-4 border-bottom">
+            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
                 <h1 class="display-4 font-italic border-bottom box-shadow">معنى {{tabir1.kelime_ar2}} في الأحلام</h1>
                 <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabir_ar}}</textarea>
             </div>
@@ -62,14 +60,14 @@
 
         {% else %}
         <div class="row m-0 p-0">
-            <div class="col-md-12 m-0 p-4 border-bottom">
+            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
                 <h1 class="display-4 font-italic border-bottom box-shadow">Rüyada {{tabir1.kelime}} görmek</h1>
                 <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri}}</textarea>
             </div>
         </div>
         {% endif %}
         <div class="row m-0 p-0 mt-3">
-            <div class="col-md-12 m-0 p-0">
+            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
                 {% get_comment_count for ruyatabirleri.ruyatabirleri object_pk as comment_count %}
                 <nav class="navbar navbar-dark bg-dark text-white font-italic">
                     <h6>{{ comment_count }} adet yorum bulunmaktadır.</h6>
@@ -97,7 +95,7 @@
         </div>
         {% if user.is_authenticated %}
         <div class="row m-0 p-0">
-            <div class="col-md-12 m-0 p-0">
+            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
                 {% get_comment_form for tabir1 as form %}
                 <div class="m-0 p-0">
                     <form class="m-0 p-0" action="{% comment_form_target %}" method="post">
@@ -122,7 +120,11 @@
                         </div>
                         {% elif LANGUAGE_CODE == 'es' %}
                         <div class="m-0 p-0">
-                            <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.kelime_es %}" />
+                            <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug_es %}" />
+                        </div>
+                        {% elif LANGUAGE_CODE == 'ru' %}
+                        <div class="m-0 p-0">
+                            <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug_ru %}" />
                         </div>
                         {% else %}
                         <div class="m-0 p-0">

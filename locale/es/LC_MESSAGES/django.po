@@ -619,51 +619,51 @@ msgstr ""
 
 #: .\ruyatabirleri\urls.py:9
 msgid "ruyatabiri-dua/"
-msgstr "interpretación-de-sueños-oración/"
+msgstr "interpretacion-de-suenos-oracion/"
 
 #: .\ruyatabirleri\urls.py:10
 msgid "ruyatabiri-dua-nedir/"
-msgstr "interpretación-de-sueños-qué-es-la-oración/"
+msgstr "interpretacion-de-suenos-que-es-la-oracion/"
 
 #: .\ruyatabirleri\urls.py:11
 msgid "ruyatabiri-tefeul/"
-msgstr "interpretación-de-sueños-tefeul/"
+msgstr "interpretacion-de-suenos-tefeul/"
 
 #: .\ruyatabirleri\urls.py:12
 msgid "ruyatabiri-tefeul-nedir/"
-msgstr "interpretación-de-sueños-qué-es-tefeul/"
+msgstr "interpretacion-de-suenos-que-es-tefeul/"
 
 #: .\ruyatabirleri\urls.py:13
 msgid "tefeul/tefeul_yap/"
-msgstr ""
+msgstr "tefeul/hacer-tefeul/"
 
 #: .\ruyatabirleri\urls.py:14
 msgid "ruyatabiri-iletisim/"
-msgstr "interpretación-de-sueños-contacto/"
+msgstr "interpretacion-de-suenos-contacto/"
 
 #: .\ruyatabirleri\urls.py:15
 msgid "ruyatabiri-gizlilik/"
-msgstr "interpretación-de-sueños-intimidad/"
+msgstr "interpretacion-de-suenos-intimidad/"
 
 #: .\ruyatabirleri\urls.py:16
 msgid "ruyatabiri-yildizname/"
-msgstr "interpretación-de-sueños-horóscopo/"
+msgstr "interpretacion-de-suenos-horoscopo/"
 
 #: .\ruyatabirleri\urls.py:17
 msgid "ruyatabiri-yildizname-nedir/"
-msgstr "interpretación-de-sueños-qué-es-yildizname/"
+msgstr "interpretacion-de-suenos-que-es-yildizname/"
 
 #: .\ruyatabirleri\urls.py:18
 msgid "ruyatabiri-ruyatabirleri/"
-msgstr "interpretación-de-sueños-interpretación-de-sueños/"
+msgstr "interpretacion-de-suenos-interpretacion-de-suenos/"
 
 #: .\ruyatabirleri\urls.py:19
 msgid "ruyatabiri-ruyatabirleri-nedir/"
-msgstr "interpretación-de-sueños-qué-es-la-interpretación-de-los-sueños/"
+msgstr "interpretacion-de-suenos-que-es-la-interpretacion-de-los-suenos/"
 
 #: .\ruyatabirleri\urls.py:20
 msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
-msgstr "interpretación-de-sueños/el-significado-de-<slug:slug>-en-sueños/q1w2e3r4t5y6u7"
+msgstr "interpretacion-de-suenos/el-significado-de-<slug:slug>-en-suenos/q1w2e3r4t5y6u7"
 
 #: .\ruyatabirleri\views.py:11 .\ruyatabirleri\views.py:69
 #: .\ruyatabirleri\views.py:127 .\ruyatabirleri\views.py:190
