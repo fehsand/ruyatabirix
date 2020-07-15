@@ -1,5 +1,5 @@
-{% load i18n %}
 <!doctype html>
+{% load i18n %}
 <html>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -8,29 +8,21 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-158769165-1');
     </script>
     <script data-ad-client="ca-pub-8505283121324462" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Rüya Tabirleri, Rüyada gördüğünüz olayları kelimeler ile özetleyerek arama yapabilirsiniz.
-     Yıldızname, Annenizin ve kendi isminizi programa girerek yıldıznamenize bakabilirsiniz.
-        Tefeül, Tüm sıkıntılarınız ve dilekleriniz için kurani kerime danışabilirsiniz.
-        Dua, her türlü sıkıntı ve dileklerinizi, Allah(C.C.)'a arz etmektir. Duanızın kabul olması için farklı yöntemler kullanabilirsiniz.">
-    <meta name="keywords" content="Rüya Tabirleri, rüya, rüyada, tabir, tabiri, tabirleri, ruyatabirix, görmek,
-     gördüm, dream, dream interpretation, rüya yorumu, rüya tabirleri, dream meanings, islamic dream meanings,
-     islamic dream interpretations, dreams fortune teller, fortune teller, burçlar, yildizname, yıldızname,
-      fal, balık, koç, boğa, ikizler, yengeç, aslan, başak, terazi, akrep, yay, oğlak, kova,
-       horoscopes, aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces,
-        tefe'ul, tefe'ül, tefeul, tefeül, tefeül yap, tefeül nedir, tefe'ül nedir, tefe'ul nedir,
-         Yasin, Yasini şerif, salati tefrice, kuran, ayet, dua, kassas, kassas süresi, Ya LATİF, LATİF, Ya ALLAH, ALLAH">
+    {% trans "Rüya Tabirleri bölümünde rüyanızda gördüğünüz olayları kelimeler ile özetleyerek arama yapabilir ya da rüya tabirleri formu ile bize gönderebilirsiniz. Yıldızname bölümünde, isminizi ve annenizin ismini uygulamaya girerek yıldıznamenize bakabilirsiniz. Diğer bölümlerde Tefeül yapabilir ya da Kurani Kerimden dua ayetlerini okuyabilirsiniz." as des_content_tu %}
+    <meta name="description" content="{{des_content_tu}}">
+    {% trans "ruyatabirix, rüya, rüyada, rüyamda, ruya, ruyada, ruyamda, tabir, tabiri, tabirleri, yorum, yorumu, yorumları, görmek, gördüm, rüya tabiri, ruya tabiri, rüya tabirleri, ruya tabirleri, rüya yorumu, ruya yorumu, islama uygun, islam, islamik, burçlar, yildizname, yıldızname, yıldızname nedir, yildizname nedir, fal, tefe'ul, tefe'ul nedir, tefe'ül, tefe'ül nedir, tefeul, tefeul nedir, tefeül, tefeül nedir, tefeül yap, ayet, dua" as key_content_tu  %}
+    <meta name="keywords" content="{{key_content_tu}}">
     <meta name="author" content="fehsand">
-    <title>ruyatabirix.com</title>
+    <title>{% trans "Ruyatabirix.com" %}</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png" />
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--icon için-->
-
     <style>
         body { padding-top: 5rem;}
         .carousel {  margin-bottom: 4rem; }
@@ -43,7 +35,7 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom box-shadow fixed-top">
     <a class="navbar-brand" href="{% url 'ruyatabirleri:anasayfa'%}">
-        <img src="/static/logo_marka_2.png" class="rounded-circle" width="90" height="60" class="d-inline-block align-top" alt="logo">
+        <img src="/static/logo_marka_2.png" class="rounded-circle d-inline-block align-top" width="90" height="60" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -141,10 +133,10 @@
         </div>
         {% if user.is_authenticated %}
         <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-user"></i> {{user.username}}</button>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton1">
                 <a class="dropdown-item" href="{% url 'register:hesap' %}">{% trans "Hesabım" %}</a>
                 <a class="dropdown-item" href="{% url 'register:logout' %}">{% trans "Çıkış Yap" %}</a>
             </div>

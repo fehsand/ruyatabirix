@@ -6,12 +6,12 @@
     <div id="myCarousel" class="carousel slide">
         <div class="carousel-inner ">
             <div class="carousel-item active">
-                <img class="first-slide w-100" src="/static/den5.jpg" alt="First slide">
+                <img class="first-slide" src="/static/den5.jpg" alt="First slide">
                 <div class="container ">
                     <div class="carousel-caption text-left">
                         <h1 class="display-1 font-italic">{% trans "RÜYA TABİRLERİ" %}</h1>
-                        <p class="lead my-3">{% trans "Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz zaman, sadece ARABA kelimesini kullanarak arama yapmalısınız." %}</p>
-                        <p class="pt-3"><a class="btn btn-lg btn-primary" href="{% url 'ruyatabirleri:ruyatabirleri'%}" role="button">{% trans "Rüya Tabirleri için Tıklayınız..." %}</a></p>
+                        <p class="lead">{% trans "Bu bölümde, isterseniz rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak arayabilirsiniz, isterseniz gördüğünüz rüyayı, rüya formunu doldurarak yorumlanması için bize gönderebilirsiniz." %}</p>
+                        <p><a class="btn btn-lg btn-primary" href="{% url 'ruyatabirleri:rtx_ara_yorum'%}" role="button">{% trans "Rüya Tabirleri için Tıklayınız..." %}</a></p>
                     </div>
                 </div>
             </div>

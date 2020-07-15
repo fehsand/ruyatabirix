@@ -1,3 +1,28 @@
+            # ----Tüm kutucukların doldurulması sağlanacak yoksa hata verecek---
+            if len (isim) < 1 or len (soy_isim) < 1 or len (eposta) < 1 or len (eposta1) < 1 or len (
+                    cinsiyet) < 1 or len (ruya_zamani) < 1 or len (bilinc_alti) < 1 or len (ruya) < 1:
+                mesaj = _ ('Kutucukları Doldurunuz.')
+                form = RTXYorumForm ()
+                return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'mesaj': mesaj, 'form': form,
+                                                                                    'place_holder_isim': place_holder_isim,
+                                                                                    'place_holder_soyisim': place_holder_soyisim,
+                                                                                    'place_holder_ornek': place_holder_ornek,
+                                                                                    'place_holder_ornek1': place_holder_ornek1,
+                                                                                    'place_holder_ruya': place_holder_ruya})
+            else:
+                pass
+            # --------------------kutu Kontrolü bitti----------------
+
+<link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" />
+
+dream meanings, islamic dream meanings,  islamic dream interpretations, dreams fortune teller, fortune teller,
+horoscopes, aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces,
+
+        body { padding-top: 5rem;}
+        .carousel {  margin-bottom: 2rem; }
+        .carousel-caption {   bottom: 3rem;   z-index: 20; }
+        .carousel-item {   height: 40rem;   background-color: #777;}
+        .carousel-item > img {   position: absolute;   top: 0;   left: 0;   min-width: 100%;   height: 40rem; }
 
 
                 <h1>Этот раздел находится в стадии разработки.</h1>
@@ -305,3 +330,8 @@ Ayrıntı
         return render(response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk,
                        'place_holder_1': place_holder_1})
+
+
+x = 'Hello World!'
+for i in x:
+    x = x[::-1]

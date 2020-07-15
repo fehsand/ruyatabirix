@@ -157,3 +157,19 @@ class Ruyatabirlerix3 (models.Model):
     def get_absolute_url(self):
         return reverse('ruyatabirleri:ruyatabirleri_ayrinti',
                         args=[str(self.slug_tr)])
+
+
+class RTXyorum (models.Model):
+    isim = models.CharField(max_length=200, help_text="Lütfen İsminizi Yazınız")
+    soy_isim = models.CharField(max_length=200, help_text="Lütfen Soyisminizi Yazınız")
+    cinsiyet = models.CharField(max_length=10, help_text="Lütfen Cinsiyetinizi Belirtiniz.")
+    eposta = models.EmailField(max_length=200, help_text="Lütfen Eposta Adresinizi Yazınız.")
+    eposta1 = models.EmailField(max_length=200, help_text="Lütfen Eposta Adresinizi Doğrulayınız.")
+    ruya_zamani = models.CharField(null=True, max_length=200, help_text="Lütfen rüyayı ne zaman gördüğünüzü belirtiniz.")
+    bilinc_alti = models.CharField(max_length=200, help_text="Yatmadan önce veya gün içerisinde gördüğünüz rüya ile ilgili bir olay yaşadınız mı? veya hayal kurdunuz mu?")
+    ruya = models.TextField(help_text="Lütfen rüyanızı basit cümlelerle ayrıntılı olarak anlatınız. Cümlelerin sonuna nokta işareti koymayı unutmayınızı.")
+    kayit_tarihi = models.DateTimeField(null=True, auto_now_add=True)
+    geri_donus = models.BooleanField (default=False, help_text="Cevap yazılan rüya tabirleri true yapılacak")
+
+    def __str__(self):
+        return self.eposta

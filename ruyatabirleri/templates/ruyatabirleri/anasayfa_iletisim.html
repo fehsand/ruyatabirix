@@ -10,6 +10,7 @@
             </div>
         </div>
         <div class="row my-5 mx-0 p-0">
+            <div class="row m-0 p-0"><h1>{{mesaj}}</h1></div>
             <div class="col-md-8 my-0 p-0 mx-auto">
                 <form class="m-0 p-0 " action="{% url 'ruyatabirleri:iletisim' %}" method="post">
                     {% csrf_token %}
@@ -41,7 +42,7 @@
                         <button class="btn-lg btn-dark border-0" type="submit" name="save">{% trans "GÖNDER" %}</button>
                     </div>
                 </form>
-                <div class="row m-0 p-0">{{mesaj}}</div>
+
             </div>
         </div>
         <div class="row mt-5 m-0 p-0">
