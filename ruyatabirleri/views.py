@@ -9,7 +9,6 @@ from django.utils.translation import get_language, gettext_lazy as _
 def ruyatabirleri(response):
     # ---------------ingilizce----------------------
     if get_language () == 'en':
-        place_holder_1 = _ ('Aramak İstediğin Kelimeyi Yaz')
         if response.method == "POST":
             form = AramaForm (response.POST)
             if form.is_valid ():
@@ -20,8 +19,7 @@ def ruyatabirleri(response):
                 for harf in n:
                     if not harf in harfler:
                         mesaj = ' : Please, Use Only English Letters.'
-                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                       {'n1': n1, 'mesaj': mesaj, 'place_holder_1': place_holder_1})
+                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'n1': n1, 'mesaj': mesaj})
                     else:
                         pass
                 # --------------------Karakter Kontrolü bitti----------------
@@ -29,8 +27,7 @@ def ruyatabirleri(response):
                 # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
                 tabir1 = Ruyatabirlerix3.objects.filter (kelime_en__contains=n)
                 if tabir1:
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                   {'tabir1': tabir1, 'place_holder_1': place_holder_1})  # tabir var
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1}) # tabir var
                 else:
                     # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
                     kelimlere_ayir = n.split (" ")
@@ -54,21 +51,17 @@ def ruyatabirleri(response):
                                 tabir_listesi += [i]
                     tabir1 = tabir_listesi
                     mesaj = "Unfortunately, The dream interpretation you are looking for has not been found. Other related dream interpretations were listed below."
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                   {'mesaj': mesaj, 'tabir1': tabir1, 'place_holder_1': place_holder_1})
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'tabir1': tabir1})
             else:
                 pass
             form = AramaForm ()
             mesaj = "Please, Write any keywords."
-            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                           {'mesaj': mesaj, 'form': form, 'place_holder_1': place_holder_1})
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
         else:
             form = AramaForm ()
-            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                           {'form': form, 'place_holder_1': place_holder_1})
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form': form})
     # ----------ispanyolca------
     elif get_language () == 'es':
-        place_holder_1 = _ ('Aramak İstediğin Kelimeyi Yaz')
         if response.method == "POST":
             form = AramaForm (response.POST)
             if form.is_valid ():
@@ -79,8 +72,7 @@ def ruyatabirleri(response):
                 for harf in n:
                     if not harf in harfler:
                         mesaj = ' : Por favor, use solo letras del alfabeto español.'
-                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                       {'n1': n1, 'mesaj': mesaj, 'place_holder_1': place_holder_1})
+                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'n1': n1, 'mesaj': mesaj})
                     else:
                         pass
                 # --------------------Karakter Kontrolü bitti----------------
@@ -88,8 +80,7 @@ def ruyatabirleri(response):
                 # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
                 tabir1 = Ruyatabirlerix3.objects.filter (kelime_es__contains=n)
                 if tabir1:
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                   {'tabir1': tabir1, 'place_holder_1': place_holder_1})  # tabir var
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                 else:
                     # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
                     kelimlere_ayir = n.split (" ")
@@ -113,21 +104,17 @@ def ruyatabirleri(response):
                                 tabir_listesi += [i]
                     tabir1 = tabir_listesi
                     mesaj = "Desafortunadamente, no se ha encontrado la interpretación de los sueños que está buscando. Otras interpretaciones de sueños relacionados se enumeran a continuación."
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                   {'mesaj': mesaj, 'tabir1': tabir1, 'place_holder_1': place_holder_1})
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'tabir1': tabir1})
             else:
                 pass
             form = AramaForm ()
             mesaj = "Por favor, escriba cualquier palabra clave."
-            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                           {'mesaj': mesaj, 'form': form, 'place_holder_1': place_holder_1})
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
         else:
             form = AramaForm ()
-            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                           {'form': form, 'place_holder_1': place_holder_1})
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form': form})
     # ----------rusça------
     elif get_language () == 'ru':
-        place_holder_1 = _ ('Aramak İstediğin Kelimeyi Yaz')
         if response.method == "POST":
             form = AramaForm (response.POST)
             if form.is_valid ():
@@ -140,8 +127,7 @@ def ruyatabirleri(response):
                 for harf in n:
                     if not harf in harfler:
                         mesaj = ' : Пожалуйста, используйте только английские буквы.'
-                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                       {'n1': n1, 'mesaj': mesaj, 'place_holder_1': place_holder_1})
+                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'n1': n1, 'mesaj': mesaj})
                     else:
                         pass
                 # --------------------Karakter Kontrolü bitti----------------
@@ -150,8 +136,7 @@ def ruyatabirleri(response):
                 tabir1 = Ruyatabirlerix3.objects.filter (kelime_ru__contains=n)
                 print (tabir1)
                 if tabir1:
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                   {'tabir1': tabir1, 'place_holder_1': place_holder_1})  # tabir var
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                 else:
                     # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
                     kelimlere_ayir = n.split (" ")
@@ -175,20 +160,16 @@ def ruyatabirleri(response):
                                 tabir_listesi += [i]
                     tabir1 = tabir_listesi
                     mesaj = "К сожалению, истолкование мечты, которое вы ищете, не найдено. Другие связанные сновидения толкования были перечислены ниже."
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                   {'mesaj': mesaj, 'tabir1': tabir1, 'place_holder_1': place_holder_1})
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'tabir1': tabir1})
             else:
                 pass
             form = AramaForm ()
             mesaj = "Пожалуйста, напишите любые ключевые слова."
-            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                           {'mesaj': mesaj, 'form': form, 'place_holder_1': place_holder_1})
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
         else:
             form = AramaForm ()
-            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                           {'form': form, 'place_holder_1': place_holder_1})
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form': form})
     else:  # get_language() == 'tr'
-        place_holder_1 = _ ('Aramak İstediğin Kelimeyi Yaz')
         if response.method == "POST":
             form = AramaForm (response.POST)
             if form.is_valid ():
@@ -199,8 +180,7 @@ def ruyatabirleri(response):
                 for harf in n:
                     if not harf in harfler:
                         mesaj = ' : Sadece Türkçe Harflerden Oluşmalıdır.'
-                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                       {'n1': n1, 'mesaj': mesaj, 'place_holder_1': place_holder_1})
+                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'n1': n1, 'mesaj': mesaj})
                     else:
                         pass
                 # --------------------Karakter Kontrolü bitti----------------
@@ -208,8 +188,7 @@ def ruyatabirleri(response):
                 # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
                 tabir1 = Ruyatabirleri.objects.filter (kelime__contains=n)
                 if tabir1:
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                   {'tabir1': tabir1, 'place_holder_1': place_holder_1})  # tabir var
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                 else:
                     # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
                     kelimlere_ayir = n.split (" ")
@@ -233,18 +212,15 @@ def ruyatabirleri(response):
                                 tabir_listesi += [i]
                     tabir1 = tabir_listesi
                     mesaj = "Aradığınız rüya yorumu bulunamamıştır. En yakın yorumlar aşağıda listelenmiştir."
-                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                                   {'mesaj': mesaj, 'tabir1': tabir1, 'place_holder_1': place_holder_1})
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'tabir1': tabir1})
             else:
                 pass
             form = AramaForm ()
             mesaj = 'Lütfen Bir Kelime Yazınız.'
-            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                           {'mesaj': mesaj, 'form': form, 'place_holder_1': place_holder_1})
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
         else:
             form = AramaForm ()
-            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                           {'form': form, 'place_holder_1': place_holder_1})
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form': form})
 
 
 def gizlilik(request):
@@ -252,7 +228,6 @@ def gizlilik(request):
 
 
 def ruyatabirleri_ayrinti(response, slug=None):
-    place_holder_1 = _ ('Aramak İstediğin Kelimeyi Yaz')
     if get_language () == 'en':
         tabir1 = get_object_or_404 (Ruyatabirlerix3, kelime_en=slug)
         karakter_satiri = int (len (tabir1.tabiri_en) / 100)
@@ -267,8 +242,7 @@ def ruyatabirleri_ayrinti(response, slug=None):
         object_pk = tabir1.id
         form = AramaForm ()
         return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
-                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk,
-                        'place_holder_1': place_holder_1})
+                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
 
     elif get_language () == 'es':
         tabir1 = get_object_or_404 (Ruyatabirlerix3, slug_es=slug)
@@ -284,8 +258,7 @@ def ruyatabirleri_ayrinti(response, slug=None):
         object_pk = tabir1.id
         form = AramaForm ()
         return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
-                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk,
-                        'place_holder_1': place_holder_1})
+                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
     elif get_language () == 'ru':
         tabir1 = get_object_or_404 (Ruyatabirlerix3, slug_ru=slug)
         karakter_satiri = int (len (tabir1.tabiri_ru) / 100)
@@ -300,8 +273,7 @@ def ruyatabirleri_ayrinti(response, slug=None):
         object_pk = tabir1.id
         form = AramaForm ()
         return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
-                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk,
-                        'place_holder_1': place_holder_1})
+                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
 
     else:  # get_language() == 'tr'
         tabir1 = get_object_or_404 (Ruyatabirleri, slug=slug)
@@ -317,16 +289,13 @@ def ruyatabirleri_ayrinti(response, slug=None):
         object_pk = tabir1.id
         form = AramaForm ()
         return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
-                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk,
-                        'place_holder_1': place_holder_1})
+                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
 
 
 def harf_sayfalari(response, harf):
-    place_holder_1 = _ ('Aramak İstediğin Kelimeyi Yaz')
     tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
     form = AramaForm ()
-    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',
-                   {'tabir1': tabir1, 'form': form, 'place_holder_1': place_holder_1})
+    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1, 'form': form})
 
 
 def anasayfa(request):
@@ -342,8 +311,6 @@ def ruyatabirleri_nedir(request):
 
 
 def yildizname(response):
-    place_holder_isminiz = _ ('İsminiz')
-    place_holder_annenizin_ismi = _ ('Annenizin İsmi')
     if response.method == "POST":
         form = YildiznameForm (response.POST)
         if form.is_valid ():
@@ -358,9 +325,7 @@ def yildizname(response):
             if cinsiyet == "Cinsiyetiniz":
                 mesaj = _ ('Lütfen Cinsiyet Seçimini Yapınız')
                 form = YildiznameForm ()
-                return render (response, 'ruyatabirleri/yildizname.html',
-                               {'mesaj': mesaj, 'form': form, 'place_holder_isminiz': place_holder_isminiz,
-                                'place_holder_annenizin_ismi': place_holder_annenizin_ismi})
+                return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form})
             else:
                 pass
             sesli_harfler = 'aeıiuüoö'
@@ -369,27 +334,21 @@ def yildizname(response):
             if len (isim) < 3 or len (anne_ismi) < 3:
                 mesaj = _ ('İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz.')
                 form = YildiznameForm ()
-                return render (response, 'ruyatabirleri/yildizname.html',
-                               {'mesaj': mesaj, 'form': form, 'place_holder_isminiz': place_holder_isminiz,
-                                'place_holder_annenizin_ismi': place_holder_annenizin_ismi})
+                return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form})
             else:
                 pass
             for harf in isim:
                 if not harf in harfler:
                     mesaj = _ ('İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız.')
                     form = YildiznameForm ()
-                    return render (response, 'ruyatabirleri/yildizname.html',
-                                   {'mesaj': mesaj, 'form': form, 'place_holder_isminiz': place_holder_isminiz,
-                                    'place_holder_annenizin_ismi': place_holder_annenizin_ismi})
+                    return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form})
                 else:
                     pass
             for harf in anne_ismi:
                 if not harf in harfler:
                     mesaj = _ ('Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız.')
                     form = YildiznameForm ()
-                    return render (response, 'ruyatabirleri/yildizname.html',
-                                   {'mesaj': mesaj, 'form': form, 'place_holder_isminiz': place_holder_isminiz,
-                                    'place_holder_annenizin_ismi': place_holder_annenizin_ismi})
+                    return render (response, 'ruyatabirleri/yildizname.html', {'mesaj': mesaj, 'form': form})
                 else:
                     pass
             # --------------------Karakter Kontrolü bitti----------------
@@ -438,21 +397,13 @@ def yildizname(response):
             # -----------EBCED Hesabı Bitti. Mod Bulundu.---------------
             return render (response, 'ruyatabirleri/yildizname_sonuc.html', {'cinsiyet': cinsiyet, 'mod': mod})
         mesaj = _ ('Lütfen Formu Doldurunuz.')
-        return render (response, 'ruyatabirleri/yildizname.html',
-                       {'form': form, 'mesaj': mesaj, 'place_holder_isminiz': place_holder_isminiz,
-                        'place_holder_annenizin_ismi': place_holder_annenizin_ismi})
+        return render (response, 'ruyatabirleri/yildizname.html', {'form': form, 'mesaj': mesaj})
     else:
         form = YildiznameForm ()
-        return render (response, 'ruyatabirleri/yildizname.html',
-                       {'form': form, 'place_holder_isminiz': place_holder_isminiz,
-                        'place_holder_annenizin_ismi': place_holder_annenizin_ismi})
+        return render (response, 'ruyatabirleri/yildizname.html', {'form': form})
 
 
 def iletisim(response):
-    place_holder_isminiz = _ ('İsminiz')
-    place_holder_soyisminiz = _ ('Soyisminiz')
-    place_holder_ornek = _ ('örnek@posta.com')
-    place_holder_mesaj = _ ('Mesajınızı Yazınız')
     if response.method == "POST":
         form = iletisimForm (response.POST)
         if form.is_valid ():
@@ -464,10 +415,7 @@ def iletisim(response):
             if len (isim) < 1 or len (soy_isim) < 1 or len (eposta) < 1 or len (ileti) < 1:
                 mesaj = _ ('Kutucukları Doldurunuz.')
                 form = iletisimForm ()
-                return render (response, 'ruyatabirleri/anasayfa_iletisim.html',
-                               {'mesaj': mesaj, 'form': form, 'place_holder_isminiz': place_holder_isminiz,
-                                'place_holder_soyisminiz': place_holder_soyisminiz,
-                                'place_holder_ornek': place_holder_ornek, 'place_holder_mesaj': place_holder_mesaj})
+                return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'mesaj': mesaj, 'form': form})
             else:
                 pass
             # --------------------kutu Kontrolü bitti----------------
@@ -475,20 +423,12 @@ def iletisim(response):
             mesaj = _ ("Gönderiniz başarıyla kaydedildi.")
             form = iletisimForm ()
             return render (response, 'ruyatabirleri/anasayfa_iletisim.html',
-                           {'form': form, 'mesaj': mesaj, 'place_holder_isminiz': place_holder_isminiz,
-                            'place_holder_soyisminiz': place_holder_soyisminiz,
-                            'place_holder_ornek': place_holder_ornek, 'place_holder_mesaj': place_holder_mesaj})
+                           {'form': form, 'mesaj': mesaj})
         mesaj = _ ('Lütfen Formu Doldurunuz.')
-        return render (response, 'ruyatabirleri/anasayfa_iletisim.html',
-                       {'form': form, 'mesaj': mesaj, 'place_holder_isminiz': place_holder_isminiz,
-                        'place_holder_soyisminiz': place_holder_soyisminiz, 'place_holder_ornek': place_holder_ornek,
-                        'place_holder_mesaj': place_holder_mesaj})
+        return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form, 'mesaj': mesaj})
     else:
         form = iletisimForm ()
-        return render (response, 'ruyatabirleri/anasayfa_iletisim.html',
-                       {'form': form, 'place_holder_isminiz': place_holder_isminiz,
-                        'place_holder_soyisminiz': place_holder_soyisminiz, 'place_holder_ornek': place_holder_ornek,
-                        'place_holder_mesaj': place_holder_mesaj})
+        return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form})
 
 
 def tefeul(request):
@@ -532,11 +472,6 @@ def ruyatabirleri_ayrinti_sbt_syf(response, slug=None):
 
 
 def rtx_yorum(response):
-    place_holder_isim = _ ('İsminiz')
-    place_holder_soyisim = _ ('Soyisminiz')
-    place_holder_ornek = _ ('örnek@posta.com')
-    place_holder_ornek1 = _ ('Lütfen eposta adresinizi doğrulamak için tekrar yazınız.')
-    place_holder_ruya = _ ('Rüyanızı yazmaya başlamadan önce yukarıdaki bilgileri eksiksiz olarak doldurduğunuzdan ve eposta adreslerinin aynı olduğundan emin olunuz. Rüyanızı basit cümlelerle ayrıntılı olarak anlatınız. Cümlelerin sonuna nokta işareti koymayı unutmayınız.')
     if response.method == "POST":
         form = RTXYorumForm (response.POST)
         if form.is_valid ():
@@ -553,36 +488,16 @@ def rtx_yorum(response):
                 form.save ()
                 mesaj = _ ("Gönderiniz başarıyla kaydedildi.")
                 form = RTXYorumForm ()
-                return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form, 'mesaj': mesaj,
-                                                                                    'place_holder_isim': place_holder_isim,
-                                                                                    'place_holder_soyisim': place_holder_soyisim,
-                                                                                    'place_holder_ornek': place_holder_ornek,
-                                                                                    'place_holder_ornek1': place_holder_ornek1,
-                                                                                    'place_holder_ruya': place_holder_ruya})
+                return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form, 'mesaj': mesaj})
             else:
                 mesaj = _ ('Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması gerekmektedir. Lütfen düzeltiniz.')
                 form = RTXYorumForm ()
-                return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'mesaj': mesaj, 'form': form,
-                                                                                    'place_holder_isim': place_holder_isim,
-                                                                                    'place_holder_soyisim': place_holder_soyisim,
-                                                                                    'place_holder_ornek': place_holder_ornek,
-                                                                                    'place_holder_ornek1': place_holder_ornek1,
-                                                                                    'place_holder_ruya': place_holder_ruya})
+                return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'mesaj': mesaj, 'form': form})
         mesaj = _ ('Lütfen Formu Doldurunuz.')
-        return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form, 'mesaj': mesaj,
-                                                                            'place_holder_isim': place_holder_isim,
-                                                                            'place_holder_soyisim': place_holder_soyisim,
-                                                                            'place_holder_ornek': place_holder_ornek,
-                                                                            'place_holder_ornek1': place_holder_ornek1,
-                                                                            'place_holder_ruya': place_holder_ruya})
+        return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form, 'mesaj': mesaj})
     else:
         form = RTXYorumForm ()
-        return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form,
-                                                                            'place_holder_isim': place_holder_isim,
-                                                                            'place_holder_soyisim': place_holder_soyisim,
-                                                                            'place_holder_ornek': place_holder_ornek,
-                                                                            'place_holder_ornek1': place_holder_ornek1,
-                                                                            'place_holder_ruya': place_holder_ruya})
+        return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form})
 
 
 def rtx_ara_yorum(response):

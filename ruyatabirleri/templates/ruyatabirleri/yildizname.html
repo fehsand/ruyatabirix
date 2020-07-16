@@ -49,12 +49,14 @@
                         <select class="custom-select" name="cinsiyet">
                             <option selected>{% trans "Cinsiyetiniz" %}</option>
                             <option value="erkek">{% trans "Erkek" %}</option>
-                            <option value="kadın">{% trans "Kadın" %}</option>
+                            <option value="kadin">{% trans "Kadın" %}</option>
                         </select>
                     </div>
+                    {% trans 'İsminiz' as place_holder_isminiz %}
                     <div class="form-group mt-3">
                         <input class="form-control m-0" type="text" name="isim" placeholder="{{place_holder_isminiz}}">
                     </div>
+                    {% trans 'Annenizin İsmi' as place_holder_annenizin_ismi %}
                     <div class="form-group mt-3">
                         <input class="form-control m-0" type="text" name="anne_ismi" placeholder="{{place_holder_annenizin_ismi}}">
                     </div>

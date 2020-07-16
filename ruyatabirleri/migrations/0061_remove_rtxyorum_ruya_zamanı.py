@@ -15,3 +15,4 @@ class Migration(migrations.Migration):
             name='ruya_zamanı',
         ),
     ]
+

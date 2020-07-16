@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-08 01:12+0300\n"
+"POT-Creation-Date: 2020-07-16 17:36+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,19 +44,19 @@ msgstr "Chino"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:12
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:8
 msgid "RÜYA TABİRLERİ"
 msgstr "INTERPRETACIÓN DE SUEÑOS"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:13
 msgid ""
 "Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler "
-"kullanarak bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz "
-"zaman, sadece ARABA kelimesini kullanarak arama yapmalısınız."
+"kullanarak arayabilirsiniz yada gördüğünüz rüyayı, rüya tabir formunu "
+"doldurarak bize gönderebilirsiniz."
 msgstr ""
 "En esta sección, puede encontrar el significado de los eventos que ve en su "
-"sueño usando palabras clave. Por ejemplo, cuando ve que está conduciendo en "
-"su sueño, debe buscar usando solo la palabra CAR."
+"sueño utilizando palabras clave o enviándonos el sueño que ve llenando el "
+"formulario de interpretación de sueños."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
@@ -134,7 +134,7 @@ msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Haga clic para Oración..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:164
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:156
 msgid "Gizlilik Politikası"
 msgstr "Intimidad"
 
@@ -240,21 +240,43 @@ msgstr ""
 "consideren apropiados."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:165
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:157
 msgid "İletişim"
 msgstr "Contacto"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:41
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:17
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:20
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:55
+msgid "İsminiz"
+msgstr "Tu nombre"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:24
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:27
+msgid "Soyisminiz"
+msgstr "Tu apellido"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:31
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:34
+msgid "örnek@posta.com"
+msgstr "ejemplo@ejemplo.com"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:38
+msgid "Mesajınızı Yazınız"
+msgstr "Escribe tu mensaje"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:46
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:116
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:78
 msgid "GÖNDER"
 msgstr "ENVIAR"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:49
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:165
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:54
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:157
 msgid "Sosyal Medya"
 msgstr "Redes sociales"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:63
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:55
 msgid "Dua Nedir?"
 msgstr "¿Qué es la oración?"
 
@@ -300,17 +322,76 @@ msgstr ""
 "Siempre hay alabanzas y demandas de Alá en la oración. La oración también es "
 "dhikr y adoración."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:18
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:20
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:16
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:30
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:14
+msgid "Aramak İstediğin Kelimeyi Yaz"
+msgstr "Escribe la palabra clave"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:54
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:73
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:19
 msgid "ARA"
 msgstr "BUSCAR"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:61
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:147
 msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
 msgstr "Diccionario de sueños"
 
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:8
+msgid "Kelimeler ile Rüya Tabiri"
+msgstr "Interpretación de los sueños con palabras clave"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:9
+msgid ""
+"Rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak "
+"bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz zaman, "
+"sadece ARABA kelimesini kullanarak arama yapabilirsiniz."
+msgstr ""
+"En esta sección, puede encontrar el significado de los eventos que ve en su "
+"sueño usando palabras clave. Por ejemplo, cuando ve que está conduciendo en "
+"su sueño, debe buscar usando solo la palabra CAR."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:10
+msgid "Rüya Tabirleri Sözlüğü için Tıklayınız..."
+msgstr "Haga clic para el Diccionario de interpretación de los sueños..."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:19
+msgid "Rüya Tabiri Formu"
+msgstr "Formulario de interpretación de sueños"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:20
+msgid ""
+"Aşağıdaki bağlantıyı tıklayarak Rüya Tabirleri Formuna ulaşabilirisiniz. "
+"Rüyanızı kısa cümleler ile ayrıntılı olarak anlatınız. Rüyanızın yorumu en "
+"kısa sürede eposta adresinize gönderilecektir."
+msgstr ""
+"Puede acceder al Formulario de interpretación de los sueños haciendo clic en "
+"el siguiente enlace. Describe tu sueño en oraciones cortas. La "
+"interpretación de sus sueños será enviada a su dirección de correo "
+"electrónico lo antes posible."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:21
+msgid "Rüya Tabirleri Formu için Tıklayınız..."
+msgstr "Haga clic para el formulario de interpretación de los sueños..."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:109
+msgid "Yorum Yaz"
+msgstr "Escribir comentario"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:142
+msgid "Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir."
+msgstr "Debe iniciar sesión como miembro para publicar un comentario."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:143
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:145
+msgid "Giriş Yap"
+msgstr "iniciar sesión"
+
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:7
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:54
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:46
 msgid "Rüya Nedir?"
 msgstr "¿Qué es el sueño?"
 
@@ -398,47 +479,122 @@ msgstr ""
 "le gusta, es de Satanás, así que déjelo buscar refugio de su maldad y no lo "
 "mencione a nadie. No le hará daño."
 
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:8
+msgid "RÜYA TABİRLERİ FORMU"
+msgstr "FORMULARIO DE INTERPRETACIÓN DE SUEÑOS"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:13
+msgid ""
+"Rüyanızı aşağıdaki formu doldurarak bize gönderebilirsiniz. Rüyanızı kısa "
+"cümleler ile ayrıntılı olarak anlatınız. Rüya yorumunuz, eposta adresinize "
+"en kısa sürede gönderilecektir."
+msgstr ""
+"Puede enviarnos su sueño completando el siguiente formulario. Describe tu "
+"sueño en oraciones cortas. La interpretación de sus sueños será enviada a su "
+"dirección de correo electrónico lo antes posible."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:41
+msgid "Lütfen eposta adresinizi doğrulamak için tekrar yazınız."
+msgstr ""
+"Por favor, escriba su dirección de correo electrónico nuevamente para "
+"verificarlo."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:50
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:50
+msgid "Cinsiyetiniz"
+msgstr "género"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:51
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:51
+msgid "Erkek"
+msgstr "Masculino"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:52
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:52
+msgid "Kadın"
+msgstr "hembra"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:57
+msgid "Rüyayı ne zaman gördüğünüz?"
+msgstr "¿Cuándo viste el sueño?"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:58
+msgid "Gece yarısı"
+msgstr "Medianoche"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:59
+msgid "Güneş doğmadan hemen önce veya doğduktan hemen sonra"
+msgstr "Justo antes del amanecer o justo después del amanecer"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:60
+msgid "Gün içerisinde"
+msgstr "en un día"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:65
+msgid "Gördüğünüz rüya bilinçaltı olabilir mi?"
+msgstr "¿Podría el sueño que estabas viendo ser subconsciente?"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:66
+msgid "Evet"
+msgstr "Si"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:67
+msgid "Hayır"
+msgstr "No"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:70
+msgid ""
+"Rüyanızı yazmaya başlamadan önce yukarıdaki bilgileri eksiksiz olarak "
+"doldurduğunuzdan ve eposta adreslerinin aynı olduğundan emin olunuz. "
+"Rüyanızı basit cümlelerle ayrıntılı olarak anlatınız. Cümlelerin sonuna "
+"nokta işareti koymayı unutmayınız."
+msgstr ""
+"Antes de comenzar a escribir su sueño, asegúrese de completar la información "
+"anterior de forma completa y correcta, y las direcciones de correo "
+"electrónico son las mismas. Describe tu sueño en detalle con oraciones "
+"simples. No olvides agregar un punto al final de las oraciones."
+
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
 msgid "Niyet ediniz ve başlatınız."
 msgstr "Intención y comienzo"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:16
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:30
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:48
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:64
 msgid "BAŞLAT"
 msgstr "COMIENZO"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:22
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:31
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:54
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:63
 msgid "Sure"
 msgstr "Sura"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:22
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:29
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:54
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:61
 msgid "Ayet"
 msgstr "Aleya"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:22
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:25
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:54
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:57
 msgid "Kelime"
 msgstr "Palabra"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:26
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:30
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:58
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:62
 msgid "Anlamı"
 msgstr "Significado"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:32
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
 msgid "BİLGİ"
 msgstr "Información"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:32
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
 msgid ""
 "Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı "
 "olabilir."
-msgstr ""
+msgstr "Puede ser más útil leer el verso anterior o siguiente o toda la sura."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:60
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:52
 msgid "Tefe'ül Nedir?"
 msgstr "¿Qué es tefeul?"
 
@@ -535,38 +691,59 @@ msgstr ""
 "TEFEUL puede repetirse a ciertos intervalos de tiempo sin desesperación "
 "alguna. Cabe señalar que TEFEUL no es una adivinación."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:57
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:16
+msgid ""
+"Rüya Tabirleri bölümünde rüyanızda gördüğünüz olayları kelimeler ile "
+"özetleyerek arama yapabilir ya da rüya tabirleri formu ile bize "
+"gönderebilirsiniz. Yıldızname bölümünde, isminizi ve annenizin ismini "
+"uygulamaya girerek yıldıznamenize bakabilirsiniz. Diğer bölümlerde Tefeül "
+"yapabilir ya da Kurani Kerimden dua ayetlerini okuyabilirsiniz."
+msgstr ""
+"En la sección de Interpretaciones de los sueños; Puede encontrar el "
+"significado de los eventos que ve en su sueño buscando con la palabra clave "
+"o enviándonos el formulario de interpretación de sueños. En la sección "
+"Yıldızname, puede iniciar yildizname ingresando su nombre y el nombre de su "
+"madre en la aplicación. En otras secciones, puede iniciar Tefeul o leer los "
+"versos del Corán."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:18
+msgid ""
+"ruyatabirix, rüya, rüyada, rüyamda, ruya, ruyada, ruyamda, tabir, tabiri, "
+"tabirleri, yorum, yorumu, yorumları, görmek, gördüm, rüya tabiri, ruya "
+"tabiri, rüya tabirleri, ruya tabirleri, rüya yorumu, ruya yorumu, islama "
+"uygun, islam, islamik, burçlar, yildizname, yıldızname, yıldızname nedir, "
+"yildizname nedir, fal, tefe'ul, tefe'ul nedir, tefe'ül, tefe'ül nedir, "
+"tefeul, tefeul nedir, tefeül, tefeül nedir, tefeül yap, ayet, dua"
+msgstr ""
+"ruyatabirix, sueño, en sueño, mi sueño, en mi sueño, interpretación, "
+"interpretación de sueños, ver, horóscopos, significados de sueños, "
+"significados de sueños islámicos, interpretaciones de sueños islámicos, "
+"adivinos de sueños, adivinos, oraciones, Corán"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:21
+msgid "Ruyatabirix.com"
+msgstr "Interpretación de Sueños"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:49
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
 msgid "Yıldızname Nedir?"
 msgstr "¿Qué es Yildizname?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:140
 msgid "Hesabım"
 msgstr "mi cuenta"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:149
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:141
 msgid "Çıkış Yap"
 msgstr "cerrar sesión"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:153
-msgid "Giriş Yap"
-msgstr "iniciar sesión"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:163
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:155
 msgid "Başa Dön"
 msgstr "Volver arriba"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:18
-msgid "Cinsiyetiniz"
-msgstr "género"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:19
-msgid "Erkek"
-msgstr "Masculino"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:20
-msgid "Kadın"
-msgstr "hembra"
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:59
+msgid "Annenizin İsmi"
+msgstr "El nombre de tu madre"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:10
 msgid ""
@@ -662,62 +839,55 @@ msgid "ruyatabiri-ruyatabirleri-nedir/"
 msgstr "interpretacion-de-suenos-que-es-la-interpretacion-de-los-suenos/"
 
 #: .\ruyatabirleri\urls.py:20
+msgid "ruyatabiri-ruya-ara-veya-yorumlat/"
+msgstr "interpretacion-de-suenos-buscar-o-interpretar/"
+
+#: .\ruyatabirleri\urls.py:21
+msgid "ruyatabiri-ruya-yorumlatmak/"
+msgstr "interpretacion-de-suenos-interpretar/"
+
+#: .\ruyatabirleri\urls.py:22
 msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
-msgstr "interpretacion-de-suenos/el-significado-de-<slug:slug>-en-suenos/q1w2e3r4t5y6u7"
+msgstr ""
+"interpretacion-de-suenos/el-significado-de-<slug:slug>-en-suenos/"
+"q1w2e3r4t5y6u7"
 
-#: .\ruyatabirleri\views.py:11 .\ruyatabirleri\views.py:69
-#: .\ruyatabirleri\views.py:127 .\ruyatabirleri\views.py:190
-#: .\ruyatabirleri\views.py:242
-msgid "Aramak İstediğin Kelimeyi Yaz"
-msgstr "Escribe la palabra clave"
-
-#: .\ruyatabirleri\views.py:262 .\ruyatabirleri\views.py:369
-msgid "İsminiz"
-msgstr "Tu nombre"
-
-#: .\ruyatabirleri\views.py:263
-msgid "Annenizin İsmi"
-msgstr "El nombre de tu madre"
-
-#: .\ruyatabirleri\views.py:276
+#: .\ruyatabirleri\views.py:326
 msgid "Lütfen Cinsiyet Seçimini Yapınız"
-msgstr ""
+msgstr "por favor elige tu género"
 
-#: .\ruyatabirleri\views.py:287
+#: .\ruyatabirleri\views.py:335
 msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
-msgstr ""
+msgstr "Tu nombre o el de tu madre son demasiado cortos. Inténtalo de nuevo."
 
-#: .\ruyatabirleri\views.py:296
+#: .\ruyatabirleri\views.py:342
 msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:305
+#: .\ruyatabirleri\views.py:349
 msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:357 .\ruyatabirleri\views.py:398
+#: .\ruyatabirleri\views.py:399 .\ruyatabirleri\views.py:427
+#: .\ruyatabirleri\views.py:496
 msgid "Lütfen Formu Doldurunuz."
 msgstr "Por favor rellene el formulario."
 
-#: .\ruyatabirleri\views.py:370
-msgid "Soyisminiz"
-msgstr "Tu apellido"
-
-#: .\ruyatabirleri\views.py:371
-msgid "örnek@posta.com"
-msgstr "ejemplo@ejemplo.com"
-
-#: .\ruyatabirleri\views.py:372
-msgid "Mesajınızı Yazınız"
-msgstr "Escribe tu mensaje"
-
-#: .\ruyatabirleri\views.py:382
+#: .\ruyatabirleri\views.py:416
 msgid "Kutucukları Doldurunuz."
 msgstr "Rellenar los espacios en blanco"
 
-#: .\ruyatabirleri\views.py:392
+#: .\ruyatabirleri\views.py:423 .\ruyatabirleri\views.py:489
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "Tu publicación se ha guardado correctamente."
+
+#: .\ruyatabirleri\views.py:493
+msgid ""
+"Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması "
+"gerekmektedir. Lütfen düzeltiniz."
+msgstr ""
+"Las direcciones de correo electrónico que escribe son diferentes entre sí. "
+"Debe ser lo mismo. Por favor corríjalo."
 
 #: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"

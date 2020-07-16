@@ -1,3 +1,30 @@
+def yildizname(response):
+    place_holder_isminiz = _ ('İsminiz')
+    place_holder_annenizin_ismi = _ ('Annenizin İsmi')
+
+                    return render (response, 'ruyatabirleri/yildizname.html',
+                               {'mesaj': mesaj, 'form': form, 'place_holder_isminiz': place_holder_isminiz,
+                                'place_holder_annenizin_ismi': place_holder_annenizin_ismi})
+
+def iletisim(response):
+    place_holder_isminiz = _ ('İsminiz')
+    place_holder_soyisminiz = _ ('Soyisminiz')
+    place_holder_ornek = _ ('örnek@posta.com')
+    place_holder_mesaj = _ ('Mesajınızı Yazınız')
+
+                return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form, 'mesaj': mesaj,
+                                                                                    'place_holder_isim': place_holder_isim,
+                                                                                    'place_holder_soyisim': place_holder_soyisim,
+                                                                                    'place_holder_ornek': place_holder_ornek,
+                                                                                    'place_holder_ornek1': place_holder_ornek1,
+                                                                                    'place_holder_ruya': place_holder_ruya})
+    place_holder_isim = _ ('İsminiz')
+    place_holder_soyisim = _ ('Soyisminiz')
+    place_holder_ornek = _ ('örnek@posta.com')
+    place_holder_ornek1 = _ ('Lütfen eposta adresinizi doğrulamak için tekrar yazınız.')
+    place_holder_ruya = _ ('Rüyanızı yazmaya başlamadan önce yukarıdaki bilgileri eksiksiz olarak doldurduğunuzdan ve eposta adreslerinin aynı olduğundan emin olunuz. Rüyanızı basit cümlelerle ayrıntılı olarak anlatınız. Cümlelerin sonuna nokta işareti koymayı unutmayınız.')
+
+
             # ----Tüm kutucukların doldurulması sağlanacak yoksa hata verecek---
             if len (isim) < 1 or len (soy_isim) < 1 or len (eposta) < 1 or len (eposta1) < 1 or len (
                     cinsiyet) < 1 or len (ruya_zamani) < 1 or len (bilinc_alti) < 1 or len (ruya) < 1:
@@ -15,8 +42,6 @@
 
 <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" />
 
-dream meanings, islamic dream meanings,  islamic dream interpretations, dreams fortune teller, fortune teller,
-horoscopes, aries, taurus, gemini, cancer, leo, virgo, libra, scorpio, sagittarius, capricorn, aquarius, pisces,
 
         body { padding-top: 5rem;}
         .carousel {  margin-bottom: 2rem; }

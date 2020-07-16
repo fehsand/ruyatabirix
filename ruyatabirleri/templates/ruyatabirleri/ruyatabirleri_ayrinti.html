@@ -11,6 +11,7 @@
             <div class="col-md-8 my-0 p-0 mx-auto text-center">
                 <form class="m-0 p-0 " action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
                     {% csrf_token %}
+                    {% trans "Aramak İstediğin Kelimeyi Yaz" as place_holder_1 %}
                     <div class="form-group mt-3">
                         <input class="form-control m-0 text-center" type="text" name="kelime" placeholder="{{place_holder_1}}">
                     </div>
@@ -105,13 +106,14 @@
                         <p class="m-0 p-0">{{field}}</p>
                         {% endif %}
                         {% endfor %}
-                        <textarea name="comment" class="w-100" rows="3" placeholder="Yorum ekle.."></textarea>
+                        {% trans "Yorum Yaz" as yorum_yaz %}
+                        <textarea name="comment" class="w-100" rows="3" placeholder="{{yorum_yaz}}"></textarea>
                         <input type="hidden" name="email" value="{{user.email}}" />
                         <input type="hidden" name="url" value=" " />
                         <input type="hidden" name="name" value="{{user}}" />
                         <input type="hidden" name="honeypot" value=" " />
                         <div class="m-0 p-0 text-right">
-                            <button class="btn-dark m-0 px-3 py-1 border-0" type="submit" name="submit" >Gönder</button>
+                            <button class="btn-dark m-0 px-3 py-1 border-0" type="submit" name="submit" >{% trans "GÖNDER" %}</button>
                         </div>
                         {% get_current_language as LANGUAGE_CODE %}
                         {% if LANGUAGE_CODE == 'en' %}
@@ -137,8 +139,8 @@
         </div>
         {% else %}
         <div class="row m-0 p-0 mt-3">
-            <h6 class="p-0 m-0 font-italic">Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir.
-                <a class="m-0 p-0" href="{% url 'register:login' %}?next={{request.path}}">GİRİŞ YAP</a></h6>
+            <h6 class="p-0 m-0 font-italic">{% trans "Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir." %}
+                <a class="m-0 p-0" href="{% url 'register:login' %}">{% trans "Giriş Yap" %}</a></h6>
         </div>
         {% endif %}
     </div>
