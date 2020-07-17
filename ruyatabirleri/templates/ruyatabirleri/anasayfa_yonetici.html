@@ -1,0 +1,123 @@
+{% extends 'ruyatabirleri/temel_anasayfa.html' %}
+
+{% block content %}
+<div class="row my-5 mx-0 p-3">
+    <div class="col-md-12 m-0 p-0">
+        <div class="row mt-5 p-0">
+            <div class="col-md-4 mx-auto">
+                <h1 class="display-4 font-italic border-bottom box-shadow">YÖNETİCİ SAYFASI</h1>
+            </div>
+        </div>
+        <div class="row my-5 mx-0 p-0">
+            <div class="col-sm-12 m-0 p-0">
+                <table class="table border-bottom">
+                    <tbody>
+                    <tr>
+                        <th scope="row">Adınız :</th>
+                        <td>{{user.first_name}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Soyadınız :</th>
+                        <td>{{user.last_name}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kullanıcı Adınız :</th>
+                        <td>{{user.username}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Eposta :</th>
+                        <td>{{user.email}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Üyelik Başlangıçı :</th>
+                        <td>{{user.date_joined.day}}/{{user.date_joined.month}}/{{user.date_joined.year}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 m-0 p-0">
+        <div class="row mt-5 p-0">
+            <div class="col-md-6 mx-auto">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Alternatif URL Eklenen Tabirler</h1>
+            </div>
+        </div>
+        <div class="row my-5 mx-0 p-3">
+            <div class="col-md-8 mx-auto m-0 p-0">
+                {% for tabir_alt_ref in ruya_tabiri_alt_ref %}
+                <table class="table border-bottom">
+                    <tbody>
+                    <tr>
+                        <th scope="row">{{tabir_alt_ref.kelime_tr}} :</th>
+                        <td>{{tabir_alt_ref.slug_tr}}</td>
+                        <td>{{tabir_alt_ref.tabiri_tr}}</td>
+                        <td>{{tabir_alt_ref.altr_tr_url}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{{tabir_alt_ref.kelime_en}} :</th>
+                        <td>{{tabir_alt_ref.slug_en}}</td>
+                        <td>{{tabir_alt_ref.tabiri_en}}</td>
+                        <td>{{tabir_alt_ref.altr_en_url}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 m-0 p-0">
+        <div class="row mt-5 p-0">
+            <div class="col-md-6 mx-auto">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Gönderilen Rüya Tabirleri</h1>
+            </div>
+        </div>
+        <div class="row my-5 mx-0 p-3">
+            <div class="col-md-8 mx-auto m-0 p-0">
+                {% for tabir in gond_ruya_tabiri %}
+                <table class="table border-bottom">
+                    <tbody>
+                    <tr>
+                        <th scope="row">isim:</th>
+                        <td>{{tabir.isim}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">soy_isim:</th>
+                        <td>{{tabir.soy_isim}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">cinsiyet:</th>
+                        <td>{{tabir.cinsiyet}}</td>
+                    </tr>                    <tr>
+                        <th scope="row">eposta:</th>
+                        <td>{{tabir.eposta}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ruya_zamani:</th>
+                        <td>{{tabir.ruya_zamani}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">bilinc_alti:</th>
+                        <td>{{tabir.bilinc_alti}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">kayit_tarihi:</th>
+                        <td>{{tabir.kayit_tarihi}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">geri_donus:</th>
+                        <td>{{tabir.geri_donus}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">ruya:</th>
+                        <td>{{tabir.ruya}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

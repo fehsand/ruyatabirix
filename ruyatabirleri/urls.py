@@ -19,9 +19,11 @@ urlpatterns = [
     path(_('ruyatabiri-ruyatabirleri-nedir/'), views.ruyatabirleri_nedir, name='ruyatabirleri_nedir'),
     path(_('ruyatabiri-ruya-ara-veya-yorumlat/'), views.rtx_ara_yorum, name='rtx_ara_yorum'),
     path(_('ruyatabiri-ruya-yorumlatmak/'), views.rtx_yorum, name='rtx_yorum'),
+    path('ruyatabiri-yonetici/', views.yonetici, name='yonetici'),
     path(_('ruyatabirleri/ruyada-'+'<slug:slug>'+'-gormek/q1w2e3r4t5y6u7'), views.ruyatabirleri_ayrinti, name='ruyatabirleri_ayrinti'),
     path('ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7', views.ruyatabirleri_ayrinti, name='my_comment_was_posted'),
     path('<str:harf>/q1w2e3r4t5y6u7', views.harf_sayfalari, name='harf_sayfalari'),
     path('ruyatabiri-<slug:slug>/', views.ruyatabirleri_ayrinti_sbt_syf, name='ruyatabirleri_ayrinti_sbt_syf'),
+
 
 ]
