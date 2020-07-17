@@ -1,7 +1,6 @@
 import random
 from .forms import AramaForm, YildiznameForm, iletisimForm, RTXYorumForm
-from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix, Ruyatabirlerix_sbt, \
-    Ruyatabirlerix3
+from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix_sbt, Ruyatabirlerix3
 from django.shortcuts import render, get_object_or_404
 from django.utils.translation import get_language, gettext_lazy as _
 
