@@ -22,3 +22,6 @@ python manage.py compilemessages
 #---------------------MODEL Güncelleme-----------------
 py manage.py makemigrations ruyatabirleri
 py manage.py migrate ruyatabirleri
+
+
+    <link rel="icon" type="image/png" href="/static/favicon.png" />

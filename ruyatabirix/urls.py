@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib.sitemaps.views import sitemap as sitemaps_sitemap
 from ruyatabirleri.sitemap import (
@@ -8,6 +8,8 @@ from ruyatabirleri.sitemap import (
     FooItemAlternateHreflangSitemap2,
     FooItemAlternateHreflangSitemap,
 )
+from django.views.generic.base import RedirectView
+favicon_view = RedirectView.as_view(url='/static/favicon.ico', permanent=True)
 
 sitemaps = {
     'foo-items-alternate-hreflang': FooItemAlternateHreflangSitemap,
@@ -20,6 +22,7 @@ urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
     path ('w2e3r4t5_admin/', admin.site.urls),
     path('sitemap.xml/', sitemaps_sitemap, {'sitemaps': sitemaps, 'template_name': 'ruyatabirleri/rel_alternate_hreflang_sitemap.xml'}, name='django.contrib.sitemaps.views.sitemap'),
+    re_path(r'^favicon\.ico$', favicon_view),
 ]
 
 urlpatterns += i18n_patterns(
