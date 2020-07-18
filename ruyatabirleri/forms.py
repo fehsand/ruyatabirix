@@ -1,7 +1,6 @@
 from django import forms
-from .models import ArananKelimeler, yildizname, RTXyorum
+from .models import ArananKelimeler, yildizname, RTXyorum, Rtx_iletisim
 
-#iletisim,
 
 class AramaForm (forms.ModelForm):
 
@@ -15,7 +14,11 @@ class YildiznameForm(forms.ModelForm):
         model = yildizname
         fields = ('cinsiyet', 'isim', 'anne_ismi',)
 
+class RtxiletisimForm(forms.ModelForm):
 
+    class Meta:
+        model = Rtx_iletisim
+        fields = ('isim', 'soy_isim', 'eposta', 'mesaj',)
 
 class RTXYorumForm(forms.ModelForm):
 

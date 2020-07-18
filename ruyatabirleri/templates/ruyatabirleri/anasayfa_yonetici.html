@@ -46,22 +46,36 @@
         <div class="row my-5 mx-0 p-3">
             <div class="col-md-8 mx-auto m-0 p-0">
                 {% for tabir_alt_ref in ruya_tabiri_alt_ref %}
-                <table class="table border-bottom">
-                    <tbody>
-                    <tr>
-                        <th scope="row">{{tabir_alt_ref.kelime_tr}} :</th>
-                        <td>{{tabir_alt_ref.slug_tr}}</td>
-                        <td>{{tabir_alt_ref.tabiri_tr}}</td>
-                        <td>{{tabir_alt_ref.altr_tr_url}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">{{tabir_alt_ref.kelime_en}} :</th>
-                        <td>{{tabir_alt_ref.slug_en}}</td>
-                        <td>{{tabir_alt_ref.tabiri_en}}</td>
-                        <td>{{tabir_alt_ref.altr_en_url}}</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="border border-primary">
+                    <table class="table border-bottom">
+                        <tbody>
+                        <tr>
+                            <th scope="row">{{tabir_alt_ref.kelime_tr}} :</th>
+                            <td>{{tabir_alt_ref.slug_tr}}</td>
+                            <td>{{tabir_alt_ref.tabiri_tr}}</td>
+                            <td>{{tabir_alt_ref.altr_tr_url}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{{tabir_alt_ref.kelime_en}} :</th>
+                            <td>{{tabir_alt_ref.slug_en}}</td>
+                            <td>{{tabir_alt_ref.tabiri_en}}</td>
+                            <td>{{tabir_alt_ref.altr_en_url}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{{tabir_alt_ref.kelime_es}} :</th>
+                            <td>{{tabir_alt_ref.slug_es}}</td>
+                            <td>{{tabir_alt_ref.tabiri_es}}</td>
+                            <td>{{tabir_alt_ref.altr_es_url}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">{{tabir_alt_ref.kelime_ru}} :</th>
+                            <td>{{tabir_alt_ref.slug_ru}}</td>
+                            <td>{{tabir_alt_ref.tabiri_ru}}</td>
+                            <td>{{tabir_alt_ref.altr_ru_url}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 {% endfor %}
             </div>
         </div>
@@ -69,51 +83,114 @@
     <div class="col-md-12 m-0 p-0">
         <div class="row mt-5 p-0">
             <div class="col-md-6 mx-auto">
-                <h1 class="display-4 font-italic border-bottom box-shadow">Gönderilen Rüya Tabirleri</h1>
+                <h1 class="display-4 font-italic border-bottom box-shadow">Sabit Sayfa URL</h1>
             </div>
         </div>
         <div class="row my-5 mx-0 p-3">
             <div class="col-md-8 mx-auto m-0 p-0">
+                {% for syf in sbt_syf %}
+                <div class="mt-3 border border-secondary">
+                    <table class="table border-bottom">
+                        <tbody>
+                        <tr><th scope="row">{{syf.kelime}}</th></tr>
+                        <tr><th scope="row">{{syf.slug}}</th></tr>
+                        <tr><th scope="row">{{syf.altr_en_url}}</th></tr>
+                        <tr><th scope="row">{{syf.altr_ar_url}}</th></tr>
+                        <tr><th scope="row">{{syf.altr_ru_url}}</th></tr>
+                        <tr><th scope="row">{{syf.altr_es_url}}</th></tr>
+                        <tr><th scope="row">{{syf.altr_ch_url}}</th></tr>
+                        </tbody>
+                    </table>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 m-0 p-0">
+        <div class="row mt-5 p-0">
+            <div class="col-md-6 mx-auto">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Cevaplanacak Rüya Tabirleri</h1>
+            </div>
+        </div>
+        <div class="row my-5 mx-0 p-3 ">
+            <div class="col-md-8 mx-auto m-0 p-0">
                 {% for tabir in gond_ruya_tabiri %}
-                <table class="table border-bottom">
-                    <tbody>
-                    <tr>
-                        <th scope="row">isim:</th>
-                        <td>{{tabir.isim}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">soy_isim:</th>
-                        <td>{{tabir.soy_isim}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">cinsiyet:</th>
-                        <td>{{tabir.cinsiyet}}</td>
-                    </tr>                    <tr>
-                        <th scope="row">eposta:</th>
-                        <td>{{tabir.eposta}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">ruya_zamani:</th>
-                        <td>{{tabir.ruya_zamani}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">bilinc_alti:</th>
-                        <td>{{tabir.bilinc_alti}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">kayit_tarihi:</th>
-                        <td>{{tabir.kayit_tarihi}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">geri_donus:</th>
-                        <td>{{tabir.geri_donus}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">ruya:</th>
-                        <td>{{tabir.ruya}}</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="mt-2 border border-success">
+                    <table class="table border-bottom">
+                        <tbody>
+                        <tr>
+                            <th scope="row">isim:</th>
+                            <td>{{tabir.isim}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">soy_isim:</th>
+                            <td>{{tabir.soy_isim}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">cinsiyet:</th>
+                            <td>{{tabir.cinsiyet}}</td>
+                        </tr>                    <tr>
+                            <th scope="row">eposta:</th>
+                            <td>{{tabir.eposta}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ruya_zamani:</th>
+                            <td>{{tabir.ruya_zamani}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">bilinc_alti:</th>
+                            <td>{{tabir.bilinc_alti}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">kayit_tarihi:</th>
+                            <td>{{tabir.kayit_tarihi}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">geri_donus:</th>
+                            <td>{{tabir.geri_donus}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ruya:</th>
+                            <td>{{tabir.ruya}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 m-0 p-0 ">
+        <div class="row mt-5 p-0">
+            <div class="col-md-6 mx-auto">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Gelen Mesajlar_İletişim</h1>
+            </div>
+        </div>
+        <div class="row my-5 mx-0 p-3">
+            <div class="col-md-8 mx-auto m-0 p-0">
+                {% for item in iletisim_list %}
+                <div class="border border-primary">
+                    <table class="table border-bottom">
+                        <tbody>
+                        <tr>
+                            <th scope="row">isim:</th>
+                            <td>{{item.isim}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">soy_isim:</th>
+                            <td>{{item.soy_isim}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">eposta:</th>
+                            <td>{{item.eposta}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">mesaj:</th>
+                            <td>{{item.mesaj}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 {% endfor %}
             </div>
         </div>

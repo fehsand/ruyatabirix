@@ -37,7 +37,14 @@ class yildizname (models.Model):
     def __str__(self):
         return self.isim
 
+class Rtx_iletisim (models.Model):
+    isim = models.CharField(max_length=200)
+    soy_isim = models.CharField(max_length=200)
+    eposta = models.EmailField(max_length=200)
+    mesaj = models.TextField()
 
+    def __str__(self):
+        return self.mesaj
 
 class KuranBilgi (models.Model):
     sure_no = models.IntegerField()

@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import (
     Ruyatabirleri, ArananKelimeler, yildizname, KuranBilgi, KuranKelime,
-    Ruyatabirlerix_sbt, Ruyatabirlerix3, RTXyorum)
+    Ruyatabirlerix_sbt, Ruyatabirlerix3, RTXyorum, Rtx_iletisim)
 
 
 admin.site.register(Ruyatabirleri)
@@ -13,3 +13,4 @@ admin.site.register(KuranKelime)
 admin.site.register(Ruyatabirlerix_sbt)
 admin.site.register(Ruyatabirlerix3)
 admin.site.register(RTXyorum)
+admin.site.register(Rtx_iletisim)

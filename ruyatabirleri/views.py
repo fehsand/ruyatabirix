@@ -1,10 +1,9 @@
 import random
-from .forms import AramaForm, YildiznameForm,  RTXYorumForm
-from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix_sbt, Ruyatabirlerix3, RTXyorum
+from .forms import AramaForm, YildiznameForm, RtxiletisimForm, RTXYorumForm
+from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix_sbt, Ruyatabirlerix3, Rtx_iletisim, RTXyorum
 from django.shortcuts import render, get_object_or_404
 from django.utils.translation import get_language, gettext_lazy as _
 
-#iletisimForm,iletisim,
 
 def ruyatabirleri(response):
     # ---------------ingilizce----------------------
@@ -190,6 +189,9 @@ def ruyatabirleri(response):
                 if tabir1:
                     return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                 else:
+                    tabir1=Ruyatabirlerix3.objects.filter(kelime__contains=n)
+                    if tabir1:
+                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                     # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
                     kelimlere_ayir = n.split (" ")
                     tabir_listesi = []
@@ -404,7 +406,31 @@ def yildizname(response):
 
 
 def iletisim(response):
-    return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {})
+    if response.method == "POST":
+        form = RtxiletisimForm (response.POST)
+        if form.is_valid ():
+            isim = form.cleaned_data.get ('isim')
+            soy_isim = form.cleaned_data.get ('soy_isim')
+            eposta = form.cleaned_data.get ('eposta')
+            ileti = form.cleaned_data.get ('mesaj')
+            # ----Tüm kutucukların doldurulması sağlandı yoksa hata verecek---
+            if len (isim) < 1 or len (soy_isim) < 1 or len (eposta) < 1 or len (ileti) < 1:
+                mesaj = _ ('Kutucukları Doldurunuz.')
+                form = RtxiletisimForm ()
+                return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'mesaj': mesaj, 'form': form})
+            else:
+                pass
+            # --------------------kutu Kontrolü bitti----------------
+            form.save ()
+            mesaj = _ ("Gönderiniz başarıyla kaydedildi.")
+            form = RtxiletisimForm ()
+            return render (response, 'ruyatabirleri/anasayfa_iletisim.html',
+                           {'form': form, 'mesaj': mesaj})
+        mesaj = _ ('Lütfen Formu Doldurunuz.')
+        return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form, 'mesaj': mesaj})
+    else:
+        form = RtxiletisimForm ()
+        return render (response, 'ruyatabirleri/anasayfa_iletisim.html', {'form': form})
 
 
 def tefeul(request):
@@ -482,7 +508,7 @@ def rtx_ara_yorum(response):
 def yonetici(response):
     ruya_tabiri_alt_ref = Ruyatabirlerix3.objects.all()
     sbt_syf = Ruyatabirlerix_sbt.objects.all ()
-    iletisim_list = iletisim.objects.all ()
+    iletisim_list = Rtx_iletisim.objects.all ()
     gond_ruya_tabiri = RTXyorum.objects.all ()
     return render(response, 'ruyatabirleri/anasayfa_yonetici.html', {'ruya_tabiri_alt_ref':ruya_tabiri_alt_ref,
                                                                      'iletisim_list':iletisim_list,
