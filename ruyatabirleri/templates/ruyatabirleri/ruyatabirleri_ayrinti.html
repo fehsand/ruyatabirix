@@ -129,9 +129,15 @@
                             <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug_ru %}" />
                         </div>
                         {% else %}
-                        <div class="m-0 p-0">
-                            <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug %}" />
-                        </div>
+                            {% if tablo == 1 %}
+                            <div class="m-0 p-0">
+                                <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug %}" />
+                            </div>
+                            {% else %}
+                            <div class="m-0 p-0">
+                                <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug_tr %}" />
+                            </div>
+                            {% endif %}
                         {% endif %}
                     </form>
                 </div>

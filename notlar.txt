@@ -3,8 +3,7 @@ git status
 git add --all .
 git status
 git commit -m "Gelistirme."
-git push
-
+git pu
 Run makemessages:
 django-admin makemessages -l en
 django-admin makemessages -l ar
