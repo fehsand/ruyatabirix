@@ -296,7 +296,7 @@ def ruyatabirleri_ayrinti(response, slug=None):
             return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
                            {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk, 'tablo':tablo})
         else:
-            tablo:2
+            tablo=2
             tabir1 = get_object_or_404 (Ruyatabirlerix3, slug_tr=slug)
             karakter_satiri = int (len (tabir1.tabiri_tr) / 100)
             sayac = 0
