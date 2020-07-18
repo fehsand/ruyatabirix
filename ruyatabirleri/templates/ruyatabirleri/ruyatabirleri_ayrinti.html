@@ -60,12 +60,21 @@
         </div>
 
         {% else %}
-        <div class="row m-0 p-0">
-            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
-                <h1 class="display-4 font-italic border-bottom box-shadow">Rüyada {{tabir1.kelime}} görmek</h1>
-                <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri}}</textarea>
+            {% if tablo == 1 %}
+            <div class="row m-0 p-0">
+                <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
+                    <h1 class="display-4 font-italic border-bottom box-shadow">Rüyada {{tabir1.kelime}} görmek</h1>
+                    <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri}}</textarea>
+                </div>
             </div>
-        </div>
+            {% else %}
+            <div class="row m-0 p-0">
+                <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
+                    <h1 class="display-4 font-italic border-bottom box-shadow">Rüyada {{tabir1.kelime_tr}} görmek</h1>
+                    <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri_tr}}</textarea>
+                </div>
+            </div>
+            {% endif %}
         {% endif %}
         <div class="row m-0 p-0 mt-3">
             <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
