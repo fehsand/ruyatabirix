@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-17 00:31+0300\n"
+"POT-Creation-Date: 2020-07-19 22:57+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,12 +49,13 @@ msgid "RÜYA TABİRLERİ"
 msgstr "梦解"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:13
-
 msgid ""
 "Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler "
 "kullanarak arayabilirsiniz yada gördüğünüz rüyayı, rüya tabir formunu "
 "doldurarak bize gönderebilirsiniz."
-msgstr "在本节中，您可以使用关键字找到在梦中看到的事件的含义，或者通过填写梦解表将您看到的梦发送给我们。"
+msgstr ""
+"在本节中，您可以使用关键字找到在梦中看到的事件的含义，或者通过填写梦解表将您"
+"看到的梦发送给我们。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
@@ -125,7 +126,7 @@ msgid "Dua Bölümü için Tıklayınız..."
 msgstr "点击祈祷..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:156
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:159
 msgid "Gizlilik Politikası"
 msgstr "隐私"
 
@@ -218,7 +219,7 @@ msgstr ""
 "权不发表不适当的评论和梦想。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:157
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
 msgid "İletişim"
 msgstr "联系"
 
@@ -243,13 +244,13 @@ msgid "Mesajınızı Yazınız"
 msgstr "写你的信息"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:46
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:116
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:125
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:78
 msgid "GÖNDER"
 msgstr "发送"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:157
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
 msgid "Sosyal Medya"
 msgstr "社交媒体"
 
@@ -325,7 +326,9 @@ msgid ""
 "Rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak "
 "bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz zaman, "
 "sadece ARABA kelimesini kullanarak arama yapabilirsiniz."
-msgstr "在本节中，您可以使用关键字找到梦中看到的事件的含义。 例如，当您看到自己在梦想中开车时，应仅使用单词car进行搜索。"
+msgstr ""
+"在本节中，您可以使用关键字找到梦中看到的事件的含义。 例如，当您看到自己在梦想"
+"中开车时，应仅使用单词car进行搜索。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:10
 msgid "Rüya Tabirleri Sözlüğü için Tıklayınız..."
@@ -340,22 +343,24 @@ msgid ""
 "Aşağıdaki bağlantıyı tıklayarak Rüya Tabirleri Formuna ulaşabilirisiniz. "
 "Rüyanızı kısa cümleler ile ayrıntılı olarak anlatınız. Rüyanızın yorumu en "
 "kısa sürede eposta adresinize gönderilecektir."
-msgstr "您可以通过单击下面的链接来获得梦想解释表。 用简短的句子描述你的梦想。 您对梦的解释将尽快发送到您的电子邮件地址。"
+msgstr ""
+"您可以通过单击下面的链接来获得梦想解释表。 用简短的句子描述你的梦想。 您对梦"
+"的解释将尽快发送到您的电子邮件地址。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:21
 msgid "Rüya Tabirleri Formu için Tıklayınız..."
 msgstr "点击获取梦解表..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:109
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:118
 msgid "Yorum Yaz"
 msgstr "写评论"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:142
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:157
 msgid "Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir."
 msgstr "您必须以会员身份登录才能发表评论。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:143
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:145
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:158
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
 msgid "Giriş Yap"
 msgstr "登录"
 
@@ -452,7 +457,9 @@ msgid ""
 "Rüyanızı aşağıdaki formu doldurarak bize gönderebilirsiniz. Rüyanızı kısa "
 "cümleler ile ayrıntılı olarak anlatınız. Rüya yorumunuz, eposta adresinize "
 "en kısa sürede gönderilecektir."
-msgstr "您可以通过填写以下表格将您的梦想发送给我们。 用简短的句子描述你的梦想。 您对梦的解释将尽快发送到您的电子邮件地址。"
+msgstr ""
+"您可以通过填写以下表格将您的梦想发送给我们。 用简短的句子描述你的梦想。 您对"
+"梦的解释将尽快发送到您的电子邮件地址。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:41
 msgid "Lütfen eposta adresinizi doğrulamak için tekrar yazınız."
@@ -507,7 +514,9 @@ msgid ""
 "doldurduğunuzdan ve eposta adreslerinin aynı olduğundan emin olunuz. "
 "Rüyanızı basit cümlelerle ayrıntılı olarak anlatınız. Cümlelerin sonuna "
 "nokta işareti koymayı unutmayınız."
-msgstr "在开始撰写梦想之前，请确保您完全正确地填写以上信息，并且电子邮件地址相同。 用简单的句子详细描述您的梦想。 不要忘记在句子的末尾添加句号。"
+msgstr ""
+"在开始撰写梦想之前，请确保您完全正确地填写以上信息，并且电子邮件地址相同。 用"
+"简单的句子详细描述您的梦想。 不要忘记在句子的末尾添加句号。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
 msgid "Niyet ediniz ve başlatınız."
@@ -646,7 +655,10 @@ msgid ""
 "gönderebilirsiniz. Yıldızname bölümünde, isminizi ve annenizin ismini "
 "uygulamaya girerek yıldıznamenize bakabilirsiniz. Diğer bölümlerde Tefeül "
 "yapabilir ya da Kurani Kerimden dua ayetlerini okuyabilirsiniz."
-msgstr "在梦想解释部分； 您可以通过搜索关键字找到梦中看到的事件的含义，或者将梦解释表发送给我们。 在YILDIZNAME部分中，您可以通过在应用程序中输入您的名字和母亲的名字来启动YILDIZNAME。 在其他部分，您可以启动TEFEUL或阅读古兰经的经文。"
+msgstr ""
+"在梦想解释部分； 您可以通过搜索关键字找到梦中看到的事件的含义，或者将梦解释表"
+"发送给我们。 在YILDIZNAME部分中，您可以通过在应用程序中输入您的名字和母亲的名"
+"字来启动YILDIZNAME。 在其他部分，您可以启动TEFEUL或阅读古兰经的经文。"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:18
 msgid ""
@@ -656,7 +668,9 @@ msgid ""
 "uygun, islam, islamik, burçlar, yildizname, yıldızname, yıldızname nedir, "
 "yildizname nedir, fal, tefe'ul, tefe'ul nedir, tefe'ül, tefe'ül nedir, "
 "tefeul, tefeul nedir, tefeül, tefeül nedir, tefeül yap, ayet, dua"
-msgstr "ruyatabirix，梦，在梦中，我的梦，在我的梦中，解释，梦解，参见，星座，梦的意思，伊斯兰梦的意思，伊斯兰梦的解释，梦，算命先生，算命先生，祷告，古兰经"
+msgstr ""
+"ruyatabirix，梦，在梦中，我的梦，在我的梦中，解释，梦解，参见，星座，梦的意"
+"思，伊斯兰梦的意思，伊斯兰梦的解释，梦，算命先生，算命先生，祷告，古兰经"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:21
 msgid "Ruyatabirix.com"
@@ -671,11 +685,11 @@ msgstr "什么是YILDIZNAME？"
 msgid "Hesabım"
 msgstr "我的帐户"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:141
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:144
 msgid "Çıkış Yap"
 msgstr "登出"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:155
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:158
 msgid "Başa Dön"
 msgstr "回到顶部"
 
@@ -769,47 +783,51 @@ msgid "ruyatabiri-ruyatabirleri-nedir/"
 msgstr "梦解-什么是梦/"
 
 #: .\ruyatabirleri\urls.py:20
-msgid "ruyatabiri-ruya-ara-veya-yorumlat/"
-msgstr "梦解-梦想-搜索-要么-解释/"
-
-#: .\ruyatabirleri\urls.py:21
 msgid "ruyatabiri-ruya-yorumlatmak/"
 msgstr "梦解-梦想-解释/"
 
+#: .\ruyatabirleri\urls.py:21
+msgid "ruyatabiri-yonetici/"
+msgstr "梦解-admin/"
+
 #: .\ruyatabirleri\urls.py:22
+msgid "ruyatabirleri/"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:23
 msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
 msgstr ""
 
-#: .\ruyatabirleri\views.py:326
+#: .\ruyatabirleri\views.py:347
 msgid "Lütfen Cinsiyet Seçimini Yapınız"
 msgstr "请选择你的性别"
 
-#: .\ruyatabirleri\views.py:335
+#: .\ruyatabirleri\views.py:356
 msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
 msgstr "您的名字或母亲的名字太短。 再试一次。"
 
-#: .\ruyatabirleri\views.py:342
+#: .\ruyatabirleri\views.py:363
 msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:349
+#: .\ruyatabirleri\views.py:370
 msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:399 .\ruyatabirleri\views.py:427
-#: .\ruyatabirleri\views.py:496
+#: .\ruyatabirleri\views.py:420 .\ruyatabirleri\views.py:448
+#: .\ruyatabirleri\views.py:517
 msgid "Lütfen Formu Doldurunuz."
 msgstr "请填写表格"
 
-#: .\ruyatabirleri\views.py:416
+#: .\ruyatabirleri\views.py:437
 msgid "Kutucukları Doldurunuz."
 msgstr "填空"
 
-#: .\ruyatabirleri\views.py:423 .\ruyatabirleri\views.py:489
+#: .\ruyatabirleri\views.py:444 .\ruyatabirleri\views.py:510
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "您的帖子已成功保存"
 
-#: .\ruyatabirleri\views.py:493
+#: .\ruyatabirleri\views.py:514
 msgid ""
 "Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması "
 "gerekmektedir. Lütfen düzeltiniz."
@@ -1989,6 +2007,9 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "ruyatabiri-ruya-ara-veya-yorumlat/"
+#~ msgstr "梦解-梦想-搜索-要么-解释/"
 
 #~ msgid "Türkçe"
 #~ msgstr "土耳其"

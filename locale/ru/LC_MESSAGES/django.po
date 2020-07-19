@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-16 23:42+0300\n"
+"POT-Creation-Date: 2020-07-19 22:51+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,8 +55,10 @@ msgid ""
 "Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler "
 "kullanarak arayabilirsiniz yada gördüğünüz rüyayı, rüya tabir formunu "
 "doldurarak bize gönderebilirsiniz."
-msgstr "В этом разделе вы можете найти значение событий, которые вы видите во сне, используя ключевые слова, или отправить нам мечту, которую вы видите, заполнив форму толкования снов."
-
+msgstr ""
+"В этом разделе вы можете найти значение событий, которые вы видите во сне, "
+"используя ключевые слова, или отправить нам мечту, которую вы видите, "
+"заполнив форму толкования снов."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
@@ -134,7 +136,7 @@ msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Нажмите для молитвы..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:156
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:159
 msgid "Gizlilik Politikası"
 msgstr "Конфиденциальность"
 
@@ -240,7 +242,7 @@ msgstr ""
 "подходящими."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:157
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
 msgid "İletişim"
 msgstr "контакт"
 
@@ -265,13 +267,13 @@ msgid "Mesajınızı Yazınız"
 msgstr "Напишите ваше сообщение"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:46
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:116
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:125
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:78
 msgid "GÖNDER"
 msgstr "ОТПРАВИТЬ"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:157
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
 msgid "Sosyal Medya"
 msgstr "социальные медиа"
 
@@ -348,7 +350,10 @@ msgid ""
 "Rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak "
 "bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz zaman, "
 "sadece ARABA kelimesini kullanarak arama yapabilirsiniz."
-msgstr "В этом разделе вы можете найти значения событий, которые вы видите во сне, используя ключевые слова. Например, когда вы видите, что едете во сне, вы должны искать, используя только слово автомобиль."
+msgstr ""
+"В этом разделе вы можете найти значения событий, которые вы видите во сне, "
+"используя ключевые слова. Например, когда вы видите, что едете во сне, вы "
+"должны искать, используя только слово автомобиль."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:10
 msgid "Rüya Tabirleri Sözlüğü için Tıklayınız..."
@@ -363,22 +368,25 @@ msgid ""
 "Aşağıdaki bağlantıyı tıklayarak Rüya Tabirleri Formuna ulaşabilirisiniz. "
 "Rüyanızı kısa cümleler ile ayrıntılı olarak anlatınız. Rüyanızın yorumu en "
 "kısa sürede eposta adresinize gönderilecektir."
-msgstr "Вы можете связаться с формой интерпретации мечты, нажав на ссылку ниже. Опишите свою мечту в коротких предложениях. Интерпретация вашей мечты будет отправлена на ваш адрес электронной почты как можно скорее."
+msgstr ""
+"Вы можете связаться с формой интерпретации мечты, нажав на ссылку ниже. "
+"Опишите свою мечту в коротких предложениях. Интерпретация вашей мечты будет "
+"отправлена на ваш адрес электронной почты как можно скорее."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:21
 msgid "Rüya Tabirleri Formu için Tıklayınız..."
 msgstr "Нажмите для формы интерпретации мечты"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:109
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:118
 msgid "Yorum Yaz"
 msgstr "написать комментарий"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:142
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:157
 msgid "Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir."
 msgstr "Вы должны войти в систему как член, чтобы оставить комментарий."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:143
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:145
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:158
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
 msgid "Giriş Yap"
 msgstr "авторизоваться"
 
@@ -480,11 +488,16 @@ msgid ""
 "Rüyanızı aşağıdaki formu doldurarak bize gönderebilirsiniz. Rüyanızı kısa "
 "cümleler ile ayrıntılı olarak anlatınız. Rüya yorumunuz, eposta adresinize "
 "en kısa sürede gönderilecektir."
-msgstr "Вы можете отправить нам свою мечту, заполнив форму ниже. Опишите свою мечту в коротких предложениях. Интерпретация вашей мечты будет отправлена на ваш адрес электронной почты как можно скорее."
+msgstr ""
+"Вы можете отправить нам свою мечту, заполнив форму ниже. Опишите свою мечту "
+"в коротких предложениях. Интерпретация вашей мечты будет отправлена на ваш "
+"адрес электронной почты как можно скорее."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:41
 msgid "Lütfen eposta adresinizi doğrulamak için tekrar yazınız."
-msgstr "Пожалуйста, напишите свой адрес электронной почты еще раз, чтобы проверить его."
+msgstr ""
+"Пожалуйста, напишите свой адрес электронной почты еще раз, чтобы проверить "
+"его."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:50
 #: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:50
@@ -535,7 +548,11 @@ msgid ""
 "doldurduğunuzdan ve eposta adreslerinin aynı olduğundan emin olunuz. "
 "Rüyanızı basit cümlelerle ayrıntılı olarak anlatınız. Cümlelerin sonuna "
 "nokta işareti koymayı unutmayınız."
-msgstr "Прежде чем приступить к написанию своей мечты, убедитесь, что вы заполнили вышеуказанную информацию полностью и правильно и адреса электронной почты совпадают. Опишите свою мечту подробно с помощью простых предложений. Не забудьте добавить точку в конце предложения."
+msgstr ""
+"Прежде чем приступить к написанию своей мечты, убедитесь, что вы заполнили "
+"вышеуказанную информацию полностью и правильно и адреса электронной почты "
+"совпадают. Опишите свою мечту подробно с помощью простых предложений. Не "
+"забудьте добавить точку в конце предложения."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
 msgid "Niyet ediniz ve başlatınız."
@@ -574,7 +591,9 @@ msgstr "Информация"
 msgid ""
 "Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı "
 "olabilir."
-msgstr "Может быть более полезным прочитать предыдущий или следующий стих или всю суру."
+msgstr ""
+"Может быть более полезным прочитать предыдущий или следующий стих или всю "
+"суру."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:8
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:52
@@ -679,7 +698,12 @@ msgid ""
 "gönderebilirsiniz. Yıldızname bölümünde, isminizi ve annenizin ismini "
 "uygulamaya girerek yıldıznamenize bakabilirsiniz. Diğer bölümlerde Tefeül "
 "yapabilir ya da Kurani Kerimden dua ayetlerini okuyabilirsiniz."
-msgstr "В разделе Толкования снов; Вы можете найти значения событий, которые вы видите во сне, выполнив поиск по ключевому слову или отправив нам форму интерпретации сновидения. В разделе Yıldızname вы можете запустить yildizname, введя ваше имя и имя вашей матери в приложение. В других разделах вы можете запустить Tefeul или прочитать стихи Корана."
+msgstr ""
+"В разделе Толкования снов; Вы можете найти значения событий, которые вы "
+"видите во сне, выполнив поиск по ключевому слову или отправив нам форму "
+"интерпретации сновидения. В разделе Yıldızname вы можете запустить "
+"yildizname, введя ваше имя и имя вашей матери в приложение. В других "
+"разделах вы можете запустить Tefeul или прочитать стихи Корана."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:18
 msgid ""
@@ -689,7 +713,10 @@ msgid ""
 "uygun, islam, islamik, burçlar, yildizname, yıldızname, yıldızname nedir, "
 "yildizname nedir, fal, tefe'ul, tefe'ul nedir, tefe'ül, tefe'ül nedir, "
 "tefeul, tefeul nedir, tefeül, tefeül nedir, tefeül yap, ayet, dua"
-msgstr "ruyatabirix, мечта, во сне, моя мечта, во сне, толкование, сновидение, видение, гороскопы, значения снов, исламские значения снов, интерпретации исламских снов, гадалка, гадалка, молитва, Коран"
+msgstr ""
+"ruyatabirix, мечта, во сне, моя мечта, во сне, толкование, сновидение, "
+"видение, гороскопы, значения снов, исламские значения снов, интерпретации "
+"исламских снов, гадалка, гадалка, молитва, Коран"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:21
 msgid "Ruyatabirix.com"
@@ -704,11 +731,11 @@ msgstr "Что такое YILDIZNAME?"
 msgid "Hesabım"
 msgstr "мой счет"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:141
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:144
 msgid "Çıkış Yap"
 msgstr "выйти"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:155
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:158
 msgid "Başa Dön"
 msgstr "Вернуться к началу"
 
@@ -808,52 +835,58 @@ msgid "ruyatabiri-ruyatabirleri-nedir/"
 msgstr "intyerpryetatsiya-sna-chto-takoye-tolkovaniye-snov/"
 
 #: .\ruyatabirleri\urls.py:20
-msgid "ruyatabiri-ruya-ara-veya-yorumlat/"
-msgstr "помечтать-интерпретация-сон-поиск-или-в-интерпретации/"
-
-#: .\ruyatabirleri\urls.py:21
 msgid "ruyatabiri-ruya-yorumlatmak/"
 msgstr "помечтать-интерпретация-снится-для-интерпретации/"
 
+#: .\ruyatabirleri\urls.py:21
+msgid "ruyatabiri-yonetici/"
+msgstr "intyerpryetatsiya-sna-admin/"
+
 #: .\ruyatabirleri\urls.py:22
+msgid "ruyatabirleri/"
+msgstr "intyerpryetatsiya-sna/"
+
+#: .\ruyatabirleri\urls.py:23
 msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
 msgstr ""
 "intyerpryetatsiya-sna/znachyeniye-<slug:slug>-v-myechtah/q1w2e3r4t5y6u7/"
 
-#: .\ruyatabirleri\views.py:326
+#: .\ruyatabirleri\views.py:347
 msgid "Lütfen Cinsiyet Seçimini Yapınız"
 msgstr "пожалуйста, выберите свой пол"
 
-#: .\ruyatabirleri\views.py:335
+#: .\ruyatabirleri\views.py:356
 msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
 msgstr "Ваше имя или фамилия слишком короткие. Попробуй еще раз."
 
-#: .\ruyatabirleri\views.py:342
+#: .\ruyatabirleri\views.py:363
 msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:349
+#: .\ruyatabirleri\views.py:370
 msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:399 .\ruyatabirleri\views.py:427
-#: .\ruyatabirleri\views.py:496
+#: .\ruyatabirleri\views.py:420 .\ruyatabirleri\views.py:448
+#: .\ruyatabirleri\views.py:517
 msgid "Lütfen Formu Doldurunuz."
 msgstr "пожалуйста, заполните форму"
 
-#: .\ruyatabirleri\views.py:416
+#: .\ruyatabirleri\views.py:437
 msgid "Kutucukları Doldurunuz."
 msgstr "Заполнить бланки"
 
-#: .\ruyatabirleri\views.py:423 .\ruyatabirleri\views.py:489
+#: .\ruyatabirleri\views.py:444 .\ruyatabirleri\views.py:510
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "Ваше сообщение было успешно сохранено."
 
-#: .\ruyatabirleri\views.py:493
+#: .\ruyatabirleri\views.py:514
 msgid ""
 "Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması "
 "gerekmektedir. Lütfen düzeltiniz."
-msgstr "Адреса электронной почты, которые вы пишете, отличаются друг от друга. Должно быть так же. Пожалуйста, исправьте это."
+msgstr ""
+"Адреса электронной почты, которые вы пишете, отличаются друг от друга. "
+"Должно быть так же. Пожалуйста, исправьте это."
 
 #: .\sanor\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -2029,6 +2062,9 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "ruyatabiri-ruya-ara-veya-yorumlat/"
+#~ msgstr "помечтать-интерпретация-сон-поиск-или-в-интерпретации/"
 
 #~ msgid "Türkçe"
 #~ msgstr "турецкий"

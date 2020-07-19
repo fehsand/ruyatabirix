@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-16 17:36+0300\n"
+"POT-Creation-Date: 2020-07-19 22:41+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,7 +134,7 @@ msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Haga clic para Oración..."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:156
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:159
 msgid "Gizlilik Politikası"
 msgstr "Intimidad"
 
@@ -240,7 +240,7 @@ msgstr ""
 "consideren apropiados."
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:157
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
 msgid "İletişim"
 msgstr "Contacto"
 
@@ -265,13 +265,13 @@ msgid "Mesajınızı Yazınız"
 msgstr "Escribe tu mensaje"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:46
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:116
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:125
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:78
 msgid "GÖNDER"
 msgstr "ENVIAR"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:157
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
 msgid "Sosyal Medya"
 msgstr "Redes sociales"
 
@@ -377,16 +377,16 @@ msgstr ""
 msgid "Rüya Tabirleri Formu için Tıklayınız..."
 msgstr "Haga clic para el formulario de interpretación de los sueños..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:109
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:118
 msgid "Yorum Yaz"
 msgstr "Escribir comentario"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:142
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:157
 msgid "Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir."
 msgstr "Debe iniciar sesión como miembro para publicar un comentario."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:143
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:145
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:158
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
 msgid "Giriş Yap"
 msgstr "iniciar sesión"
 
@@ -733,11 +733,11 @@ msgstr "¿Qué es Yildizname?"
 msgid "Hesabım"
 msgstr "mi cuenta"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:141
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:144
 msgid "Çıkış Yap"
 msgstr "cerrar sesión"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:155
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:158
 msgid "Başa Dön"
 msgstr "Volver arriba"
 
@@ -839,49 +839,53 @@ msgid "ruyatabiri-ruyatabirleri-nedir/"
 msgstr "interpretacion-de-suenos-que-es-la-interpretacion-de-los-suenos/"
 
 #: .\ruyatabirleri\urls.py:20
-msgid "ruyatabiri-ruya-ara-veya-yorumlat/"
-msgstr "interpretacion-de-suenos-buscar-o-interpretar/"
-
-#: .\ruyatabirleri\urls.py:21
 msgid "ruyatabiri-ruya-yorumlatmak/"
 msgstr "interpretacion-de-suenos-interpretar/"
 
+#: .\ruyatabirleri\urls.py:21
+msgid "ruyatabiri-yonetici/"
+msgstr "interpretacion-de-suenos-admin/"
+
 #: .\ruyatabirleri\urls.py:22
+msgid "ruyatabirleri/"
+msgstr "interpretacion-de-suenos/"
+
+#: .\ruyatabirleri\urls.py:23
 msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
 msgstr ""
 "interpretacion-de-suenos/el-significado-de-<slug:slug>-en-suenos/"
 "q1w2e3r4t5y6u7"
 
-#: .\ruyatabirleri\views.py:326
+#: .\ruyatabirleri\views.py:347
 msgid "Lütfen Cinsiyet Seçimini Yapınız"
 msgstr "por favor elige tu género"
 
-#: .\ruyatabirleri\views.py:335
+#: .\ruyatabirleri\views.py:356
 msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
 msgstr "Tu nombre o el de tu madre son demasiado cortos. Inténtalo de nuevo."
 
-#: .\ruyatabirleri\views.py:342
+#: .\ruyatabirleri\views.py:363
 msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:349
+#: .\ruyatabirleri\views.py:370
 msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:399 .\ruyatabirleri\views.py:427
-#: .\ruyatabirleri\views.py:496
+#: .\ruyatabirleri\views.py:420 .\ruyatabirleri\views.py:448
+#: .\ruyatabirleri\views.py:517
 msgid "Lütfen Formu Doldurunuz."
 msgstr "Por favor rellene el formulario."
 
-#: .\ruyatabirleri\views.py:416
+#: .\ruyatabirleri\views.py:437
 msgid "Kutucukları Doldurunuz."
 msgstr "Rellenar los espacios en blanco"
 
-#: .\ruyatabirleri\views.py:423 .\ruyatabirleri\views.py:489
+#: .\ruyatabirleri\views.py:444 .\ruyatabirleri\views.py:510
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "Tu publicación se ha guardado correctamente."
 
-#: .\ruyatabirleri\views.py:493
+#: .\ruyatabirleri\views.py:514
 msgid ""
 "Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması "
 "gerekmektedir. Lütfen düzeltiniz."
@@ -2063,6 +2067,9 @@ msgstr ""
 #: .\sanor\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "ruyatabiri-ruya-ara-veya-yorumlat/"
+#~ msgstr "interpretacion-de-suenos-buscar-o-interpretar/"
 
 #~ msgid "Türkçe"
 #~ msgstr "Turco"

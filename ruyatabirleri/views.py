@@ -528,7 +528,7 @@ def yonetici(response):
     ruya_tabiri_alt_ref = Ruyatabirlerix3.objects.all()
     sbt_syf = Ruyatabirlerix_sbt.objects.all ()
     iletisim_list = Rtx_iletisim.objects.all ()
-    gond_ruya_tabiri = RTXyorum.objects.all ()
+    gond_ruya_tabiri = RTXyorum.objects.filter (geri_donus=False)
     return render(response, 'ruyatabirleri/anasayfa_yonetici.html', {'ruya_tabiri_alt_ref':ruya_tabiri_alt_ref,
                                                                      'iletisim_list':iletisim_list,
                                                                      'sbt_syf':sbt_syf,

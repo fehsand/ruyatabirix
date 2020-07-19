@@ -134,6 +134,7 @@ class RTXyorum (models.Model):
     ruya = models.TextField(help_text="Lütfen rüyanızı basit cümlelerle ayrıntılı olarak anlatınız. Cümlelerin sonuna nokta işareti koymayı unutmayınızı.")
     kayit_tarihi = models.DateTimeField(null=True, auto_now_add=True)
     geri_donus = models.BooleanField (default=False, help_text="Cevap yazılan rüya tabirleri true yapılacak")
+    cevap = models.TextField(null=True, help_text="Buraya gönderilen rüya yorumları yazılacak")
 
     def __str__(self):
         return self.eposta
