@@ -35,6 +35,13 @@
                         <p class="lead m-0 p-0 text-danger">{{form.eposta.errors.as_text}}</p>
                         {% endif %}
                     </div>
+                    {% trans "Lütfen eposta adresinizi doğrulamak için tekrar yazınız." as place_holder_ornek1 %}
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0" type="email" name="eposta1" placeholder="{{place_holder_ornek1}}" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.eposta.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
                     {% trans "Mesajınızı Yazınız" as place_holder_mesaj %}
                     <div class="form-group mt-3">
                         <textarea class="form-control m-0" name="mesaj" placeholder="{{place_holder_mesaj}}" rows="3" required></textarea>

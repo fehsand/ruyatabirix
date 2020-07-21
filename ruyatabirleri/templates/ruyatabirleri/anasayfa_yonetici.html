@@ -8,34 +8,6 @@
                 <h1 class="display-4 font-italic border-bottom box-shadow">YÖNETİCİ SAYFASI</h1>
             </div>
         </div>
-        <div class="row my-5 mx-0 p-0">
-            <div class="col-md-8 mx-auto bg-primary">
-                <table class="table border-bottom">
-                    <tbody>
-                    <tr>
-                        <th scope="row">Adınız :</th>
-                        <td>{{user.first_name}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Soyadınız :</th>
-                        <td>{{user.last_name}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Kullanıcı Adınız :</th>
-                        <td>{{user.username}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Eposta :</th>
-                        <td>{{user.email}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Üyelik Başlangıçı :</th>
-                        <td>{{user.date_joined.day}}/{{user.date_joined.month}}/{{user.date_joined.year}}</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
     </div>
     <div class="col-md-12 m-0 p-0">
         <div class="row mt-5 p-0">
@@ -47,6 +19,7 @@
             <div class="col-md-8 mx-auto m-0 p-0">
                 {% for tabir in gond_ruya_tabiri %}
                 <div class="mt-2 border border-success bg-light">
+                    <h1><a href="{% url 'ruyatabirleri:yonetici_cevap_ruya' id=tabir.id %}">Ruya Kayıt Numarası: {{tabir.id}}</a></h1>
                     <table class="table border-bottom">
                         <tbody>
                         <tr>
@@ -101,10 +74,14 @@
                 <h1 class="display-4 font-italic border-bottom box-shadow">Gelen Mesajlar_İletişim</h1>
             </div>
         </div>
+
+
+
         <div class="row my-5 mx-0 p-3 bg-primary">
             <div class="col-md-8 mx-auto m-0 p-0">
                 {% for item in iletisim_list %}
                 <div class="border border-primary bg-light">
+                    <h1><a href="{% url 'ruyatabirleri:yonetici_cevap_mesaj' id=item.id %}">Mesaj Kayıt Numarası: {{item.id}}</a></h1>
                     <table class="table border-bottom">
                         <tbody>
                         <tr>
@@ -122,6 +99,18 @@
                         <tr>
                             <th scope="row">mesaj:</th>
                             <td>{{item.mesaj}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">geri_donus:</th>
+                            <td>{{tabir.geri_donus}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">cevap:</th>
+                            <td>{{tabir.cevap}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">kayit_tarihi:</th>
+                            <td>{{tabir.kayit_tarihi}}</td>
                         </tr>
                         </tbody>
                     </table>

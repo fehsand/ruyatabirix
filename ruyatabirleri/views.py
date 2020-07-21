@@ -3,6 +3,8 @@ from .forms import AramaForm, YildiznameForm, RtxiletisimForm, RTXYorumForm
 from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix_sbt, Ruyatabirlerix3, Rtx_iletisim, RTXyorum
 from django.shortcuts import render, get_object_or_404
 from django.utils.translation import get_language, gettext_lazy as _
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 def ruyatabirleri(response):
@@ -514,8 +516,9 @@ def rtx_yorum(response):
                 mesaj = _ ('Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması gerekmektedir. Lütfen düzeltiniz.')
                 form = RTXYorumForm ()
                 return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'mesaj': mesaj, 'form': form})
-        mesaj = _ ('Lütfen Formu Doldurunuz.')
-        return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form, 'mesaj': mesaj})
+        else:
+            mesaj = _ ('Lütfen Formu Doldurunuz.')
+            return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form, 'mesaj': mesaj})
     else:
         form = RTXYorumForm ()
         return render (response, 'ruyatabirleri/ruyatabirleri_yorum.html', {'form': form})
@@ -527,9 +530,54 @@ def rtx_ara_yorum(response):
 def yonetici(response):
     ruya_tabiri_alt_ref = Ruyatabirlerix3.objects.all()
     sbt_syf = Ruyatabirlerix_sbt.objects.all ()
-    iletisim_list = Rtx_iletisim.objects.all ()
+    iletisim_list = Rtx_iletisim.objects.filter (geri_donus=False)
     gond_ruya_tabiri = RTXyorum.objects.filter (geri_donus=False)
     return render(response, 'ruyatabirleri/anasayfa_yonetici.html', {'ruya_tabiri_alt_ref':ruya_tabiri_alt_ref,
                                                                      'iletisim_list':iletisim_list,
                                                                      'sbt_syf':sbt_syf,
                                                                      'gond_ruya_tabiri':gond_ruya_tabiri})
+
+
+def yonetici_cevap_ruya(response, id):
+    gond_ruya_tabiri_2 = RTXyorum.objects.get (id=id)
+    if response.method == "POST":
+        if response.POST.get ("cevap1"):
+            if response.POST.get ("c" + str (gond_ruya_tabiri_2.id)) == "clicked":
+                gond_ruya_tabiri_2.geri_donus = True
+            else:
+                gond_ruya_tabiri_2.geri_donus = False
+            if gond_ruya_tabiri_2.cevap == None:
+                x = response.POST.get ("ruya1")
+                y = gond_ruya_tabiri_2.eposta
+                subject = 'Ruyatabirix.com'
+                message = x
+                email_from = settings.EMAIL_HOST_USER
+                recipient_list = [y, ]
+                send_mail (subject, message, email_from, recipient_list)
+                gond_ruya_tabiri_2.cevap = x
+                gond_ruya_tabiri_2.save (update_fields=['cevap', 'geri_donus'])
+            else:
+                gond_ruya_tabiri_2.save ()
+    return render (response, 'ruyatabirleri/anasayfa_yonetici_cevap.html', {'gond_ruya_tabiri_2':gond_ruya_tabiri_2 })
+
+def yonetici_cevap_mesaj(response, id):
+    gelen_mesaj = Rtx_iletisim.objects.get (id=id)
+    if response.method == "POST":
+        if response.POST.get ("cevap2"):
+            if response.POST.get ("c" + str (gelen_mesaj.id)) == "clicked":
+                gelen_mesaj.geri_donus = True
+            else:
+                gelen_mesaj.geri_donus = False
+            if gelen_mesaj.cevap == None:
+                x = response.POST.get ("mesaj1")
+                y = gelen_mesaj.eposta
+                subject = 'Ruyatabirix.com'
+                message = x
+                email_from = settings.EMAIL_HOST_USER
+                recipient_list = [y, ]
+                send_mail (subject, message, email_from, recipient_list)
+                gelen_mesaj.cevap = x
+                gelen_mesaj.save (update_fields=['cevap', 'geri_donus'])
+            else:
+                gelen_mesaj.save ()
+    return render (response, 'ruyatabirleri/anasayfa_yonetici_cevap.html', {'gelen_mesaj':gelen_mesaj })

@@ -1,0 +1,179 @@
+{% extends 'ruyatabirleri/temel_anasayfa.html' %}
+
+{% block content %}
+
+{% if gond_ruya_tabiri_2 %}
+<div class="row my-5 mx-0 p-3">
+    <div class="col-md-12 m-0 p-0">
+        <div class="row mt-5 p-0">
+            <div class="col-md-6 mx-auto">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Cevaplanacak Rüya Tabirleri</h1>
+            </div>
+        </div>
+        <div class="row my-5 mx-0 p-3 bg-primary">
+            <div class="col-md-8 mx-auto m-0 p-0">
+                <div class="mt-2 border border-success bg-light">
+                    <table class="table border-bottom">
+                        <tbody>
+                        <tr>
+                            <th scope="row">isim:</th>
+                            <td>{{gond_ruya_tabiri_2.isim}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">soy_isim:</th>
+                            <td>{{gond_ruya_tabiri_2.soy_isim}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">cinsiyet:</th>
+                            <td>{{gond_ruya_tabiri_2.cinsiyet}}</td>
+                        </tr>                    <tr>
+                            <th scope="row">eposta:</th>
+                            <td>{{gond_ruya_tabiri_2.eposta}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ruya_zamani:</th>
+                            <td>{{gond_ruya_tabiri_2.ruya_zamani}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">bilinc_alti:</th>
+                            <td>{{gond_ruya_tabiri_2.bilinc_alti}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ruya:</th>
+                            <td>{{gond_ruya_tabiri_2.ruya}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">cevap:</th>
+                            <td>{{gond_ruya_tabiri_2.cevap}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">kayit_tarihi:</th>
+                            <td>{{gond_ruya_tabiri_2.kayit_tarihi}}</td>
+                        </tr>
+                        <form method="post" action="#">
+                            {% csrf_token %}
+                            <tr>
+                                <th scope="row">Cevap Gönderildimi:</th>
+                                <td>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                {% if gond_ruya_tabiri_2.geri_donus == True %}
+                                                <input type="checkbox" value="clicked" name="c{{gond_ruya_tabiri_2.id}}" checked>
+                                                {% else %}
+                                                <input type="checkbox" value="clicked" name="c{{gond_ruya_tabiri_2.id}}">
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Cevabınızı Yazınız:</th>
+                                <td>
+                                    <div class="form-group mt-3">
+                                        {% if gond_ruya_tabiri_2.cevap == null %}
+                                        <textarea class="form-control m-0" name="ruya1" placeholder="Cevap Yaz" rows="5" ></textarea>
+                                        {% else %}
+                                        <textarea class="form-control m-0" name="ruya1" placeholder="{{gond_ruya_tabiri_2.cevap}}" rows="5" readonly></textarea>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Göndermek için Tıkla:</th>
+                                <td>
+                                    <button type="submit" name="cevap1" value="cevap1" class="btn btn-success">Gönder</button>
+                                </td>
+                            </tr>
+                        </form>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="row my-5 mx-0 p-3">
+    <div class="col-md-12 m-0 p-0">
+        <div class="row mt-5 p-0">
+            <div class="col-md-6 mx-auto">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Cevaplanacak Mesajlar</h1>
+            </div>
+        </div>
+        <div class="row my-5 mx-0 p-3 bg-primary">
+            <div class="col-md-8 mx-auto m-0 p-0">
+                <div class="mt-2 border border-success bg-light">
+                    <table class="table border-bottom">
+                        <tbody>
+                        <tr>
+                            <th scope="row">isim:</th>
+                            <td>{{gelen_mesaj.isim}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">soy_isim:</th>
+                            <td>{{gelen_mesaj.soy_isim}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">eposta:</th>
+                            <td>{{gelen_mesaj.eposta}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ruya:</th>
+                            <td>{{gelen_mesaj.mesaj}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">cevap:</th>
+                            <td>{{gelen_mesaj.cevap}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">kayit_tarihi:</th>
+                            <td>{{gelen_mesaj.kayit_tarihi}}</td>
+                        </tr>
+                        <form method="post" action="#">
+                            {% csrf_token %}
+                            <tr>
+                                <th scope="row">Cevap Gönderildimi:</th>
+                                <td>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                {% if gelen_mesaj.geri_donus == True %}
+                                                <input type="checkbox" value="clicked" name="c{{gelen_mesaj.id}}" checked>
+                                                {% else %}
+                                                <input type="checkbox" value="clicked" name="c{{gelen_mesaj.id}}">
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Cevap Yaz:</th>
+                                <td>
+                                    <div class="form-group mt-3">
+                                        {% if gelen_mesaj.cevap == null %}
+                                        <textarea class="form-control m-0" name="mesaj1" placeholder="Cevap Yaz" rows="5" ></textarea>
+                                        {% else %}
+                                        <textarea class="form-control m-0" name="mesaj1" placeholder="{{gelen_mesaj.cevap}}" rows="5" readonly></textarea>
+                                        {% endif %}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Mesajı Gönder:</th>
+                                <td>
+                                    <button type="submit" name="cevap2" value="cevap2" class="btn btn-success">Gönder</button>
+                                </td>
+                            </tr>
+                        </form>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

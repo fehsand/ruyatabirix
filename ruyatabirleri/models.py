@@ -38,13 +38,17 @@ class yildizname (models.Model):
         return self.isim
 
 class Rtx_iletisim (models.Model):
-    isim = models.CharField(max_length=200)
-    soy_isim = models.CharField(max_length=200)
-    eposta = models.EmailField(max_length=200)
-    mesaj = models.TextField()
+    isim = models.CharField(max_length=200, help_text="Lütfen İsminizi Yazınız")
+    soy_isim = models.CharField(max_length=200, help_text="Lütfen Soyisminizi Yazınız")
+    eposta = models.EmailField(max_length=200, help_text="Lütfen Eposta Adresinizi Yazınız.")
+    eposta1 = models.EmailField(null=True, max_length=200, help_text="Lütfen Eposta Adresinizi Doğrulayınız.")
+    mesaj = models.TextField(help_text='Mesajınızı yazınız')
+    kayit_tarihi = models.DateTimeField(null=True, auto_now_add=True)
+    geri_donus = models.BooleanField (default=False, help_text="Cevap verilen mesajlar true yapılacak")
+    cevap = models.TextField(null=True, help_text="Cevap metni buraya yazılacak")
 
     def __str__(self):
-        return self.mesaj
+        return self.eposta
 
 class KuranBilgi (models.Model):
     sure_no = models.IntegerField()
