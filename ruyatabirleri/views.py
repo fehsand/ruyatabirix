@@ -3,8 +3,7 @@ from .forms import AramaForm, YildiznameForm, RtxiletisimForm, RTXYorumForm
 from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix_sbt, Ruyatabirlerix3, Rtx_iletisim, RTXyorum
 from django.shortcuts import render, get_object_or_404
 from django.utils.translation import get_language, gettext_lazy as _
-from django.core.mail import send_mail
-from django.conf import settings
+
 
 
 def ruyatabirleri(response):
@@ -548,12 +547,6 @@ def yonetici_cevap_ruya(response, id):
                 gond_ruya_tabiri_2.geri_donus = False
             if gond_ruya_tabiri_2.cevap == None:
                 x = response.POST.get ("ruya1")
-                y = gond_ruya_tabiri_2.eposta
-                subject = 'Ruyatabirix.com'
-                message = x
-                email_from = settings.EMAIL_HOST_USER
-                recipient_list = [y, ]
-                send_mail (subject, message, email_from, recipient_list)
                 gond_ruya_tabiri_2.cevap = x
                 gond_ruya_tabiri_2.save (update_fields=['cevap', 'geri_donus'])
             else:
@@ -570,12 +563,6 @@ def yonetici_cevap_mesaj(response, id):
                 gelen_mesaj.geri_donus = False
             if gelen_mesaj.cevap == None:
                 x = response.POST.get ("mesaj1")
-                y = gelen_mesaj.eposta
-                subject = 'Ruyatabirix.com'
-                message = x
-                email_from = settings.EMAIL_HOST_USER
-                recipient_list = [y, ]
-                send_mail (subject, message, email_from, recipient_list)
                 gelen_mesaj.cevap = x
                 gelen_mesaj.save (update_fields=['cevap', 'geri_donus'])
             else:

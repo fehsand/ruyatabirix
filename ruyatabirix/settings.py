@@ -4,8 +4,9 @@ from django.utils.translation import ugettext_lazy as _
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-with open('/home/ruyatabirix/sc_ky.txt') as f:
-    SECRET_KEY = f.read().strip()
+SECRET_KEY = 'kg1!kr3a4h_*_79*p=p&_lht6&-u111u6uo=79g*8dqv3@ej!*'
+#with open('/home/ruyatabirix/sc_ky.txt') as f:
+#    SECRET_KEY = f.read().strip()
 
 DEBUG = True
 
@@ -115,11 +116,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ruyatabirix.com@gmail.com'
-with open('/home/ruyatabirix/sc_ky_posta.txt') as f:
-    EMAIL_HOST_PASSWORD = f.read().strip()
