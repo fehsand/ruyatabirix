@@ -21,7 +21,7 @@ class FooItemSitemap(Sitemap):
         return item.updated
 
     def items(self):
-        return Ruyatabirleri._default_manager.all()
+        return Ruyatabirleri._default_manager.all().order_by('id')
 
 
 # ---------------------- Static PAge Normal sitemap part ---------------------------
@@ -39,7 +39,7 @@ class FooItemAlternateHreflangSitemap2(RelAlternateHreflangSitemap):
                 ]
 
     def items(self):
-        return Ruyatabirlerix_sbt._default_manager.exclude(altr_en_url=None).exclude(altr_ar_url =None).exclude(altr_es_url =None).exclude(altr_ru_url =None).exclude(altr_ch_url =None)
+        return Ruyatabirlerix_sbt._default_manager.exclude(altr_en_url=None).exclude(altr_ar_url =None).exclude(altr_es_url =None).exclude(altr_ru_url =None).exclude(altr_ch_url =None).order_by('id')
 
 # ---------------------- Alternate hreflang sitemap part ---------------
 # Alternate hreflang sitemap.
@@ -54,4 +54,4 @@ class FooItemAlternateHreflangSitemap(RelAlternateHreflangSitemap):
                 ]
 
     def items(self):
-        return Ruyatabirlerix3._default_manager.exclude(altr_en_url=None).exclude(altr_es_url =None).exclude(altr_ru_url =None)
+        return Ruyatabirlerix3._default_manager.exclude(altr_en_url=None).exclude(altr_es_url =None).exclude(altr_ru_url =None).order_by('id')
