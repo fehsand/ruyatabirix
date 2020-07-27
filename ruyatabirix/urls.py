@@ -8,7 +8,7 @@ from ruyatabirleri.sitemap import (
     FooItemAlternateHreflangSitemap2,
     FooItemAlternateHreflangSitemap,
 )
-from django.views.generic.base import RedirectView
+from django.views.generic.base import RedirectView, TemplateView
 favicon_view = RedirectView.as_view(url='/static/favicon.ico', permanent=True)
 
 sitemaps = {
@@ -23,6 +23,7 @@ urlpatterns = [
     path ('w2e3r4t5_admin/', admin.site.urls),
     path('sitemap.xml/', sitemaps_sitemap, {'sitemaps': sitemaps, 'template_name': 'ruyatabirleri/rel_alternate_hreflang_sitemap.xml'}, name='django.contrib.sitemaps.views.sitemap'),
     re_path(r'^favicon\.ico$', favicon_view),
+    path('robots.txt', TemplateView.as_view (template_name="ruyatabirleri/robots.txt", content_type="text/plain"),),
 ]
 
 urlpatterns += i18n_patterns(

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /ruyatabiri-gizlilik/
+Disallow: /register/*
+
+Sitemap: https://www.ruyatabirix.com/sitemap.xml
