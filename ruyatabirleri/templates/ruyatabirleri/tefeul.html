@@ -3,71 +3,73 @@
 
 {% block content %}
 <div class="row mt-3 mb-5 mx-0 p-0">
-    <div class="col-md-12 m-0 p-0">
+    <div class="col-md-8 my-0 p-1 mx-auto">
         <div class="row mt-5 m-0 p-0">
-            <div class="col-md-6 my-0 mx-auto p-0">
+            <div class="col-md-12">
                 <h1 class="display-4 font-italic border-bottom box-shadow">{% trans "TEFE'ÜL" %}</h1>
                 <p class="lead my-3">{% trans "Niyet ediniz ve başlatınız." %}</p>
                 <p class="lead my-3 text-center" style="font-size:25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
             </div>
         </div>
-        {% get_current_language as LANGUAGE_CODE %}
-        {% if LANGUAGE_CODE == 'en' %}
-        <div class="col-md-10 p-0 mx-auto">
-            <h1>This section is still under constraction.</h1>
-            <h1>Please check back soon.</h1>
-            <h1>Thanks for your interest..</h1>
-        </div>
-        {% elif LANGUAGE_CODE == 'es' %}
-        <div class="col-md-10 p-0 mx-auto">
-            <h1>Esta sección aún está en construcción.</h1>
-            <h1>Por favor, revise luego.</h1>
-            <h1>Gracias por tu interés.</h1>
-        </div>
-        {% elif LANGUAGE_CODE == 'ar' %}
-        <div class="col-md-10 p-0 mx-auto">
-            <h1>هذا القسم لا يزال قيد الإنشاء.</h1>
-            <h1>الرجاء التحقق مرة اخرى قريبا.</h1>
-            <h1>شكرا على اهتمامك.</h1>
-        </div>
-        {% elif LANGUAGE_CODE == 'ru' %}
-        <div class="col-md-10 p-0 mx-auto">
-            <h1>Этот раздел находится в стадии разработки.</h1>
-            <h1>Пожалуйста, зайдите в ближайшее время.</h1>
-            <h1>Спасибо за ваш интерес.</h1>
-        </div>
-        {% elif LANGUAGE_CODE == 'zh-hans' %}
-        <div class="col-md-10 p-0 mx-auto">
-            <h1>此部分仍在建设中。</h1>
-            <h1>请稍后再回来查看。</h1>
-            <h1>感谢您的关注。</h1>
-        </div>
-        {% else %}
         <div class="row my-5 mx-0 p-0">
-            <div class="col-md-6 my-0 mx-auto p-0">
-                <a href="{% url 'ruyatabirleri:tefeul_yap' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">{% trans "BAŞLAT" %}</a>
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'en' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>This section is still under constraction.</h3>
+                <h3>Please check back soon.</h3>
+                <h3>Thanks for your interest..</h3>
             </div>
-        </div>
-        <div class="row my-5 mx-0 p-0">
-            <div class="col-md-12 text-center">
-                {% for item in bilgi_satiri_2 %}
-                <p class="lead my-3">{{item.sure_no}}. {% trans "Sure" %} {{item.ayet_no}}. {% trans "Ayet" %} {{hangi_kelime}}. {% trans "Kelime" %}.</p>
-                {% endfor %}
-                {% for item in bilgi_satiri_3 %}
-                <p class="lead my-3 py-3 border w-50 mx-auto h1">{% trans "Kelime" %} : {{item.kelime_arapca}}</p>
-                <p class="lead my-3">{% trans "Anlamı" %} : {{item.kelime_turkce}}</p>
-                {% endfor %}
-                {% for item in bilgi_satiri_2 %}
-                <p class="lead my-3">{% trans "Ayet" %} : {{item.ayet}} &#1757</p>
-                <p class="lead my-3">{% trans "Anlamı" %} : {{item.ayet_meal}}</p>
-                <p class="lead my-3">{% trans "Sure" %} : {{item.sure_isim}}</p>
-                <p class="lead my-3 border-top">{% trans "BİLGİ" %} : {% trans "Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı olabilir." %}</p>
-                <p><a href="http://tanzil.net/#1:7">Tanzil.net</a></p>
-                <p><a href="http://kuranharitasi.com/kuran.aspx?sureno=1&ayetno=1">Kuranharitasi.com</a></p>
-                {% endfor %}
+            {% elif LANGUAGE_CODE == 'es' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>Esta sección aún está en construcción.</h3>
+                <h3>Por favor, revise luego.</h3>
+                <h3>Gracias por tu interés.</h3>
             </div>
+            {% elif LANGUAGE_CODE == 'ar' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>هذا القسم لا يزال قيد الإنشاء.</h3>
+                <h3>الرجاء التحقق مرة اخرى قريبا.</h3>
+                <h3>شكرا على اهتمامك.</h3>
+            </div>
+            {% elif LANGUAGE_CODE == 'ru' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>Этот раздел находится в стадии разработки.</h3>
+                <h3>Пожалуйста, зайдите в ближайшее время.</h3>
+                <h3>Спасибо за ваш интерес.</h3>
+            </div>
+            {% elif LANGUAGE_CODE == 'zh-hans' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>此部分仍在建设中。</h3>
+                <h3>请稍后再回来查看。</h3>
+                <h3>感谢您的关注。</h3>
+            </div>
+            {% else %}
+            <div class="row my-5 mx-0 p-0">
+                <div class="col-md-6 my-0 mx-auto p-0">
+                    <a href="{% url 'ruyatabirleri:tefeul_yap' %}" class="btn btn-dark btn-lg btn-block" role="button" aria-disabled="true">{% trans "BAŞLAT" %}</a>
+                </div>
+            </div>
+            <div class="row my-5 mx-0 p-0">
+                <div class="col-md-12 text-center">
+                    {% for item in bilgi_satiri_2 %}
+                    <p class="lead my-3">{{item.sure_no}}. {% trans "Sure" %} {{item.ayet_no}}. {% trans "Ayet" %} {{hangi_kelime}}. {% trans "Kelime" %}.</p>
+                    {% endfor %}
+                    {% for item in bilgi_satiri_3 %}
+                    <p class="lead my-3 py-3 border w-50 mx-auto h1">{% trans "Kelime" %} : {{item.kelime_arapca}}</p>
+                    <p class="lead my-3">{% trans "Anlamı" %} : {{item.kelime_turkce}}</p>
+                    {% endfor %}
+                    {% for item in bilgi_satiri_2 %}
+                    <p class="lead my-3">{% trans "Ayet" %} : {{item.ayet}} &#1757</p>
+                    <p class="lead my-3">{% trans "Anlamı" %} : {{item.ayet_meal}}</p>
+                    <p class="lead my-3">{% trans "Sure" %} : {{item.sure_isim}}</p>
+                    <p class="lead my-3 border-top">{% trans "BİLGİ" %} : {% trans "Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı olabilir." %}</p>
+                    <p><a href="http://tanzil.net/#1:7">Tanzil.net</a></p>
+                    <p><a href="http://kuranharitasi.com/kuran.aspx?sureno=1&ayetno=1">Kuranharitasi.com</a></p>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
     </div>
 </div>
 {% endblock %}

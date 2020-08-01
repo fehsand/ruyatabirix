@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="row my-5 mx-0 p-0">
-    <div class="col-md-8 my-0 mx-auto p-0">
+    <div class="col-md-8 my-0 mx-auto p-1">
         <div class="row mt-5 m-0 p-0">
             <div class="col-md-12">
                 <h1 class="display-4 font-italic border-bottom box-shadow">{% trans "YILDIZNAME" %}</h1>
@@ -12,34 +12,34 @@
         <div class="row my-5 mx-0 p-0">
             {% get_current_language as LANGUAGE_CODE %}
             {% if LANGUAGE_CODE == 'en' %}
-            <div class="col-md-10 p-0 mx-auto">
-                <h1>This section is still under constraction.</h1>
-                <h1>Please check back soon.</h1>
-                <h1>Thanks for your interest..</h1>
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>This section is still under constraction.</h3>
+                <h3>Please check back soon.</h3>
+                <h3>Thanks for your interest.</h3>
             </div>
             {% elif LANGUAGE_CODE == 'es' %}
-            <div class="col-md-10 p-0 mx-auto">
-                <h1>Esta sección aún está en construcción.</h1>
-                <h1>Por favor, revise luego.</h1>
-                <h1>Gracias por tu interés.</h1>
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>Esta sección aún está en construcción.</h3>
+                <h3>Por favor, revise luego.</h3>
+                <h3>Gracias por tu interés.</h3>
             </div>
             {% elif LANGUAGE_CODE == 'ar' %}
-            <div class="col-md-10 p-0 mx-auto">
-                <h1>هذا القسم لا يزال قيد الإنشاء.</h1>
-                <h1>الرجاء التحقق مرة اخرى قريبا.</h1>
-                <h1>شكرا على اهتمامك.</h1>
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>هذا القسم لا يزال قيد الإنشاء.</h3>
+                <h3>الرجاء التحقق مرة اخرى قريبا.</h3>
+                <h3>شكرا على اهتمامك.</h3>
             </div>
             {% elif LANGUAGE_CODE == 'ru' %}
-            <div class="col-md-10 p-0 mx-auto">
-                <h1>Этот раздел находится в стадии разработки.</h1>
-                <h1>Пожалуйста, зайдите в ближайшее время.</h1>
-                <h1>Спасибо за ваш интерес.</h1>
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>Этот раздел находится в стадии разработки.</h3>
+                <h3>Пожалуйста, зайдите в ближайшее время.</h3>
+                <h3>Спасибо за ваш интерес.</h3>
             </div>
             {% elif LANGUAGE_CODE == 'zh-hans' %}
-            <div class="col-md-10 p-0 mx-auto">
-                <h1>此部分仍在建设中。</h1>
-                <h1>请稍后再回来查看。</h1>
-                <h1>感谢您的关注。</h1>
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>此部分仍在建设中。</h3>
+                <h3>请稍后再回来查看。</h3>
+                <h3>感谢您的关注。</h3>
             </div>
             {% else %}
             <div class="col-md-6 my-0 mx-auto p-0 text-center">

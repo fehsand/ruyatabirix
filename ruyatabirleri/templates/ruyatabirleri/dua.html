@@ -2,281 +2,281 @@
 {% load i18n %}
 
 {% block content %}
-
-<div class="container">
-    <div class="row my-3 mx-0 p-0">
-        <div class="col-md-10 mx-auto my-0 p-0">
-            <div class="col-md-8 mx-auto my-5 p-0">
+<div class="row my-5 mx-0 p-0">
+    <div class="col-md-8 my-0 mx-auto p-1">
+        <div class="row mt-5 m-0 p-0">
+            <div class="col-md-12">
                 <h1 class="display-4 font-italic border-bottom box-shadow">{% trans "DUA" %}</h1>
-                <p class="my-5 text-center h1">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+                <p class="mt-5 text-center h3">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
             </div>
         </div>
-    </div>
-    {% get_current_language as LANGUAGE_CODE %}
-    {% if LANGUAGE_CODE == 'en' %}
-    <div class="col-md-10 p-0 mx-auto">
-        <h1>This section is still under constraction.</h1>
-        <h1>Please check back soon.</h1>
-        <h1>Thanks for your interest..</h1>
-    </div>
-    {% elif LANGUAGE_CODE == 'es' %}
-    <div class="col-md-10 p-0 mx-auto">
-        <h1>Esta sección aún está en construcción.</h1>
-        <h1>Por favor, revise luego.</h1>
-        <h1>Gracias por tu interés.</h1>
-    </div>
-    {% elif LANGUAGE_CODE == 'ar' %}
-    <div class="col-md-10 p-0 mx-auto">
-        <h1>هذا القسم لا يزال قيد الإنشاء.</h1>
-        <h1>الرجاء التحقق مرة اخرى قريبا.</h1>
-        <h1>شكرا على اهتمامك.</h1>
-    </div>
-    {% elif LANGUAGE_CODE == 'ru' %}
-    <div class="col-md-10 p-0 mx-auto">
-        <h1>Этот раздел находится в стадии разработки.</h1>
-        <h1>Пожалуйста, зайдите в ближайшее время.</h1>
-        <h1>Спасибо за ваш интерес.</h1>
-    </div>
-    {% elif LANGUAGE_CODE == 'zh-hans' %}
-    <div class="col-md-10 p-0 mx-auto">
-        <h1>此部分仍在建设中。</h1>
-        <h1>请稍后再回来查看。</h1>
-        <h1>感谢您的关注。</h1>
-    </div>
-    {% else %}
-    <div class="border m-0 p-3" >
-        <div class="row my-3 mx-0 p-0">
-            <h1 class="display-4 font-italic border-bottom box-shadow">YASİN-İ ŞERİF</h1>
-            <p class="lead my-3 text-justify">
-                Kur'an-ı Kerim'in kalbi olarak nitelendirilen Yasin Suresi,
-                Mekke dönemde nazil olan ve toplamda 83 ayetten oluşan mukaddes bir suredir.<br><br>
-                Yasin Suresi'nde; Peygamberimiz Hz.Muhammed (S.A.V)'in peygamberliğini yalanlayan ve varlığını inkar eden
-                Kureyş kafirlerinin Cenab-ı Hakk tarafından karşılaşacakları her türlü azap ve felaketlerden
-                söz edilmektedir.<br>                <br>
-                Yasin Suresi'ni ihlas ve samimiyetle, anlamını idrak ederek okuyan müminlerin dünyevi ve uhrevi
-                her türlü hacetleri hasıl olacağı, kabir hayatında olduğu gibi gerek dünyada gerekse ahirette
-                mutluluğu ve saadeti yaşayacakları, tüm sıkıntıların, kötülüklerin ve korkuların def edileceği
-                vurgulanmıştır.<br><br>        </p>
+        <div class="row my-5 mx-0 p-0">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'en' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>This section is still under constraction.</h3>
+                <h3>Please check back soon.</h3>
+                <h3>Thanks for your interest..</h3>
+            </div>
+            {% elif LANGUAGE_CODE == 'es' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>Esta sección aún está en construcción.</h3>
+                <h3>Por favor, revise luego.</h3>
+                <h3>Gracias por tu interés.</h3>
+            </div>
+            {% elif LANGUAGE_CODE == 'ar' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>هذا القسم لا يزال قيد الإنشاء.</h3>
+                <h3>الرجاء التحقق مرة اخرى قريبا.</h3>
+                <h3>شكرا على اهتمامك.</h3>
+            </div>
+            {% elif LANGUAGE_CODE == 'ru' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>Этот раздел находится в стадии разработки.</h3>
+                <h3>Пожалуйста, зайдите в ближайшее время.</h3>
+                <h3>Спасибо за ваш интерес.</h3>
+            </div>
+            {% elif LANGUAGE_CODE == 'zh-hans' %}
+            <div class="col-md-10 p-1 mx-auto">
+                <h3>此部分仍在建设中。</h3>
+                <h3>请稍后再回来查看。</h3>
+                <h3>感谢您的关注。</h3>
+            </div>
+            {% else %}
+            <div class="border m-0 p-3" >
+                <div class="row my-3 mx-0 p-0">
+                    <h1 class="display-4 font-italic border-bottom box-shadow">YASİN-İ ŞERİF</h1>
+                    <p class="lead my-3 text-justify">
+                        Kur'an-ı Kerim'in kalbi olarak nitelendirilen Yasin Suresi,
+                        Mekke dönemde nazil olan ve toplamda 83 ayetten oluşan mukaddes bir suredir.<br><br>
+                        Yasin Suresi'nde; Peygamberimiz Hz.Muhammed (S.A.V)'in peygamberliğini yalanlayan ve varlığını inkar eden
+                        Kureyş kafirlerinin Cenab-ı Hakk tarafından karşılaşacakları her türlü azap ve felaketlerden
+                        söz edilmektedir.<br>                <br>
+                        Yasin Suresi'ni ihlas ve samimiyetle, anlamını idrak ederek okuyan müminlerin dünyevi ve uhrevi
+                        her türlü hacetleri hasıl olacağı, kabir hayatında olduğu gibi gerek dünyada gerekse ahirette
+                        mutluluğu ve saadeti yaşayacakları, tüm sıkıntıların, kötülüklerin ve korkuların def edileceği
+                        vurgulanmıştır.<br><br>        </p>
 
-            <h1 class="display-4 font-italic border-bottom box-shadow">Yasin Süresi ile İlgili Hadisi Şerifler</h1>
+                    <h1 class="display-4 font-italic border-bottom box-shadow">Yasin Süresi ile İlgili Hadisi Şerifler</h1>
 
-            <p class="lead my-3 text-justify">
-                1) “Kur’an’ın kalbi Yasin-i Şerif’tir. Kim onu Allah rızasını talep ederek ve
-                onu ahiret sevabı için okursa, Allah onun günahlarını mağriyet eder.
-                Onu ölülerinizin üzerine okuyunuz.” (Nesei, Beyhaki)<br>
-                2) “Her gece Yasin-i Şerif’i okumaya devam eden kimse, vefat ederken şehit olarak vefat eder.” (Taberani)<br>
-                3) “Her şeyin bir kalbi vardır. Kuran’ın kalbi de Yasin dir.
-                Her kim Yasin-i Şerif’i okur ve onun içindekilere göre yaşarsa,
-                Allah ona Kuran-ı Kerim’i on kere okumuş kadar sevap yazar.”  (Tirmizi)<br>
-                4) “Ölüleriniz için Yasin-i Şerif’i okuyun.” (Ebu Davud)<br>
-                5) “Kim bir gecede, Allah rızası için Yasin’i okursa günahları affolunur.” (Beyhai, Tirmizi)<br><br></p>
+                    <p class="lead my-3 text-justify">
+                        1) “Kur’an’ın kalbi Yasin-i Şerif’tir. Kim onu Allah rızasını talep ederek ve
+                        onu ahiret sevabı için okursa, Allah onun günahlarını mağriyet eder.
+                        Onu ölülerinizin üzerine okuyunuz.” (Nesei, Beyhaki)<br>
+                        2) “Her gece Yasin-i Şerif’i okumaya devam eden kimse, vefat ederken şehit olarak vefat eder.” (Taberani)<br>
+                        3) “Her şeyin bir kalbi vardır. Kuran’ın kalbi de Yasin dir.
+                        Her kim Yasin-i Şerif’i okur ve onun içindekilere göre yaşarsa,
+                        Allah ona Kuran-ı Kerim’i on kere okumuş kadar sevap yazar.”  (Tirmizi)<br>
+                        4) “Ölüleriniz için Yasin-i Şerif’i okuyun.” (Ebu Davud)<br>
+                        5) “Kim bir gecede, Allah rızası için Yasin’i okursa günahları affolunur.” (Beyhai, Tirmizi)<br><br></p>
 
-            <h1 class="display-4 font-italic border-bottom box-shadow">Yasin Süresinin Faziletleri</h1>
-            <p class="lead my-3 text-justify"> Yasin Suresi okunduğunda melekler gökyüzünden inerek onu dinlerler. Yasin Suresini geceleri okuyana Kur’an’ın tamamını yedi kere hatim etmiş kadar sevap yazılır. Yasin okunduğunda hayır kapıları açılır ve hayırlar bu kişiyi bulur. Yasin Suresi okumaya devam eden ve vefat eden kişi şehit olarak vefat eder. Rızkı dar olanlar ve bereket isteyenler Yasin Suresi’ni bol bol okumalıdır. Yasin Suresini yazarak üstünde taşımak büyük bir izzet ve ikram görmeyi sağlar. Yasin Suresi’ni dinlemek sadaka vermiş kadar sevaptır. Cuma gecesi Yasin Suresi okuyan müminin ertesi sabaha günahları affedilir. Yasin Suresi’nin yazılıp suya atılması ile oluşan sudan içen kişinin ne hastalığı varsa şifa bulur. </p>
+                    <h1 class="display-4 font-italic border-bottom box-shadow">Yasin Süresinin Faziletleri</h1>
+                    <p class="lead my-3 text-justify"> Yasin Suresi okunduğunda melekler gökyüzünden inerek onu dinlerler. Yasin Suresini geceleri okuyana Kur’an’ın tamamını yedi kere hatim etmiş kadar sevap yazılır. Yasin okunduğunda hayır kapıları açılır ve hayırlar bu kişiyi bulur. Yasin Suresi okumaya devam eden ve vefat eden kişi şehit olarak vefat eder. Rızkı dar olanlar ve bereket isteyenler Yasin Suresi’ni bol bol okumalıdır. Yasin Suresini yazarak üstünde taşımak büyük bir izzet ve ikram görmeyi sağlar. Yasin Suresi’ni dinlemek sadaka vermiş kadar sevaptır. Cuma gecesi Yasin Suresi okuyan müminin ertesi sabaha günahları affedilir. Yasin Suresi’nin yazılıp suya atılması ile oluşan sudan içen kişinin ne hastalığı varsa şifa bulur. </p>
 
-            <h1 class="display-4 font-italic border-bottom box-shadow">Yöntem</h1>
-            <p class="lead my-3 text-justify">
-                Yasin süresinde yedi yerde "mübin" kelimesi vardır. Bunlar: 12, 17, 24, 47, 60, 69 ve 77. ayetlerdir.
-                Mubin duası adıyla bilinen bu dua bir çeşit hacet duasıdır.
-                Dünyevi ve uhrevi her türlü dilek ve hacetlerin yerine gelmesi,
-                sıkıntı, keder ve her türlü elemlerin gitmesi için abdestli bir şekilde niyet yapıldıktan sonra
-                Yasin suresi okunmaya başlanır.
-                "Mübin" kelimesiyle biten ilk ayete kadar okunur.
-                Hemen arkasından mübin duası okunur.
-                Sonra tekrar surenin başından başlanır.
-                İkinci mübin’e kadar okunur, ve tekrar mübin duası okunur.
-                Bu şekilde en son Mübinden sonra da mübin duası okunur.
-                Yasin süresi tamamlanır ve dilekler Allah’a arz edilir.<br></p>
+                    <h1 class="display-4 font-italic border-bottom box-shadow">Yöntem</h1>
+                    <p class="lead my-3 text-justify">
+                        Yasin süresinde yedi yerde "mübin" kelimesi vardır. Bunlar: 12, 17, 24, 47, 60, 69 ve 77. ayetlerdir.
+                        Mubin duası adıyla bilinen bu dua bir çeşit hacet duasıdır.
+                        Dünyevi ve uhrevi her türlü dilek ve hacetlerin yerine gelmesi,
+                        sıkıntı, keder ve her türlü elemlerin gitmesi için abdestli bir şekilde niyet yapıldıktan sonra
+                        Yasin suresi okunmaya başlanır.
+                        "Mübin" kelimesiyle biten ilk ayete kadar okunur.
+                        Hemen arkasından mübin duası okunur.
+                        Sonra tekrar surenin başından başlanır.
+                        İkinci mübin’e kadar okunur, ve tekrar mübin duası okunur.
+                        Bu şekilde en son Mübinden sonra da mübin duası okunur.
+                        Yasin süresi tamamlanır ve dilekler Allah’a arz edilir.<br></p>
+                </div>
+            </div>
+            <div class="border m-0 my-5 p-3" >
+                <div class="row my-3 mx-0 p-0">
+                    <h1 class="display-4 font-italic border-bottom box-shadow">AYETEL KÜRSİ</h1>
+                    <p class="lead my-3 text-justify">
+                        Bakara sûresinin tevhid akîdesini anlatan 255. âyetinin adıdır.
+                        Adını, âyetin içinde geçen ve “taht, hükümranlık, ilim, kudret” gibi mânalara gelen kürsî kelimesinden almıştır.<br>
+                        <br>
+                        Tamamı on cümleden ibaret olan Âyetü’l-kürsî’de Allah Teâlâ’nın birliği,
+                        O’nun hay (daima diri) ve kayyûm (zâtı ile kāim) olduğu,
+                        uyuklama ve dalgınlık gibi beşerî sıfatlardan münezzeh olup kâinatı kendi tasarrufunda bulundurduğu,
+                        O’nun izni olmadan kimsenin şefaat edemeyeceği, bilgisinin ezel ve ebedi kuşattığı,
+                        kudretinin arz ve semaları kapladığı ve zâtının çok yüce olduğu bildirilerek tevhid inancının
+                        esasları açık bir şekilde ifade edilmiştir.<br>
+                        <br>
+                        Âyetü’l-kürsî’nin fazileti hakkındaki bazı hadislerde Hz. Peygamber Kur’an’da en büyük âyetin
+                        Âyetü’l-kürsî olduğunu (Müslim, “Müsâfirîn”, 258; Ebû Dâvûd, “Ṣalât”, 352, “Ḥurûf”, 1),
+                        yatağına girerken onu okuyan kimseyi Allah’ın koruyacağını ve şeytanın ona yaklaşamayacağını
+                        (Buhârî, “Vekâlet”, 10), bu âyetin içinde Allah’ın en yüce isminin bulunduğunu (Müsned, VI, 461) ve
+                        Kur’an âyetlerinin efendisi olduğunu (Tirmizî, “Feżâʾilü’l-Ḳurʾân”, 2) haber vermiştir.
+                        Rivayet tefsirlerinde yer alan bazı hadislerde de Âyetü’l-kürsî’yi okuyana Allah’ın hemen bir melek göndereceği,
+                        ertesi güne kadar bu meleğin onun iyiliklerini yazacağı ve kötülüklerini sileceği,
+                        farz namazların arkasından onu okuyanın da öldüğü zaman cennete gireceği ifade edilmiştir.
+                        Bu hadislerde işaret edilen fazileti sebebiyledir ki Âyetü’l-kürsî namazların sonunda genellikle
+                        okunan bir âyettir. Aynı inançla namaz dışında da sık sık okunan âyetler arasında yer alır.<br>
+                        <br>
+                        Ayetel Kürsi okunan eve şeytan giremez. Büyücü sokulamaz.
+                        Ayetel Kürsi okumaya devam kişi; hem dünyada hemde ahirette yüce makamlara ulaşır.
+                        Günahlardan sakınmaya başlar. Huzura erer. Mevki ve makamı artar. Halk arasında sevgi, saygısı ve itibarı çoğalır.
+                        istediği makama ulaşır. Hiç kimse ona zarar veremez.<br>
+                        <br>
+                        Ayetel Kürsi; yemek, buğday, pirinç, arpa gibi şeylere 313 defa okunarak, her okunuşta o şeye üflenirse bereketi artar,
+                        o şeyde bereketlilik olur.<br>
+                        <br>
+                        Ayetel Kürsiyi 170 defa okuyana Allah her işinde yardımcı olur. Zorluk çekmez. üzüntü ve kederden uzak olur.
+                        Rızkı genişler. Arzularına ve isteklerine kavuşur.<br>
+                        <br>
+                        Ayetel Kürsi,  resuller ve ashabı kiram sayısınca 313 defa okuyan kişinin her arzusu yerine gelir. Cesareti artar.
+                    </p>
+                </div>
+            </div>
+            <div class="border m-0 my-5 p-3" >
+                <div class="row my-3 mx-0 p-0">
+                    <h1 class="display-4 font-italic border-bottom box-shadow">Kuran-ı Kerim'deki Dua Ayetleri</h1>
+                    <div class="row my-5 mx-0 px-5 pt-3 pb-5 rounded">
+                        <div class="col-md-12 px-0">
+                            <div class="form-group row m-0 p-0">
+                                <div class="col-sm-12 m-0 p-0"><h1 class="display-4 font-italic">El-Kasas, 24/88</h1></div>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <div class="col-md-12 m-0">
+                                    <p class="lead my-3 text-right" style="font-size:25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+                                    <p class="lead my-3 text-right" style="font-size:25px;"><bdo dir="rtl">رَبِّ اِنّٖى لِمَا اَنْزَلْتَ اِلَیَّ مِنْ خَيْرٍ فَقٖيرٌ</bdo> &#1757</p>
+                                </div>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead"><u>Okunuşu :</u> Rabbi inni lima enzelte ileyye min khayrin fakir</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead"><u>Anlamı :</u> Rabbim! Bana göndereceğin her hayra muhtacım</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead"><u>Yöntem :</u> Dileğimizin kabul olması için, her gün 136 kere okuyoruz ve dileğimizi diliyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded">
+                        <div class="col-md-12 px-0">
+                            <div class="form-group row m-0 p-0">
+                                <div class="col-md-12 m-0 p-0"><h1 class="display-4 font-italic">Enbiya, 21/83</h1></div>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <div class="col-md-12 m-0">
+                                    <p class="lead my-3 text-right" style="font-size:25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+                                    <p class="lead my-3 text-right" style="font-size:25px;"><bdo dir="rtl">رَبِّ اَنِّي مَسَّنِىَ الضُّرُّ وَاَنْتَ اَرْحَمُ الرَّاحِمِينَ</bdo> &#1757</p>
+                                </div>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead"><u>Okunuşu :</u> Rabbi, ennî messeniyed-durru ve ente erham’ur-rahimîn.</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead"><u>Anlamı :</u> Ya Rabbi, Başıma bir bela geldi, (sana sığındım), sen merhametlilerin en merhametlisisin.</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead"><u>Yöntem :</u> Şifa bulmak için, hastalığımız süresince okumalıyız. (Hz. Eyüp (A.S.) duası)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border m-0 my-5 p-3" >
+                <div class="row my-3 mx-0 p-0">
+                    <h1 class="display-4 font-italic border-bottom box-shadow">ESMAÜL HÜSNA</h1>
+                    <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded ">
+                        <div class="col-md-12 px-0">
+                            <div class="form-group row m-0 p-0">
+                                <div class="col-sm-12 m-0 py-3 px-0">
+                                    <h1 class="display-4"><em>YA ALLAH</em> (<bdo dir="rtl">يا الله</bdo>)</h1>
+                                </div>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Okunuşu :</u> Ya Allah</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Anlamı :</u> Allah, gördüğümüz görmediğimiz, bildiğimiz bilmediğimiz bütün âlemlerin sâhibi ve mâliki, kâinatın yegâne yaratıcısı, her türlü övgüye ve ibâdete lâyık olan yüceler yücesi Rabbimizin doksan dokuz isminin bütün hususiyetlerini kendinde toplayan en kapsamlı özel adıdır.</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Yöntem :</u> Dileğimizin kabul olması için, her gün 66 kere veya katı kadar okuyoruz ve dileğimizi diliyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded ">
+                        <div class="col-md-12 px-0">
+                            <div class="form-group row m-0 p-0">
+                                <div class="col-sm-12 m-0 py-3 px-0">
+                                    <h1 class="display-4"><em>EL LATİF</em> (<bdo dir="rtl">اللَّطِيفُ</bdo>)</h1>
+                                </div>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Okunuşu :</u> Ya Latif</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Anlamı :</u> Lütfü ve keremi bol olan O’dur. Her işin inceliğini bilip, hiç umulmadık yoldan kullarına iyilik ulaştıran Latif’tir.</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Yöntem :</u> Dileğimizin kabul olması için, her gün ismin ebced değeri kadar (129 kere) okuyoruz ve dileğimizi diliyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded ">
+                        <div class="col-md-12 px-0">
+                            <div class="form-group row m-0 p-0">
+                                <div class="col-sm-12 m-0 py-3 px-0">
+                                    <h1 class="display-4"><em>EL MUTEALİ</em> (<bdo dir="rtl">الْمُتَعَالِ</bdo>)</h1>
+                                </div>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Okunuşu :</u> Ya Müteali</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Anlamı :</u> İzzet, şeref ve hükümranlık bakımından en yüce, pek yüksek olandır. Noksanlıklardan yüce ve münezzeh,yaratılmışların, O’nun hakkında akıl ve idraklerinin mümkün gördüğü her şeyden, her hal ve tavırdan pek üstün demektir. Yüceliği yayan, sonsuz sınırsız yücelik sahibi.</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Yöntem :</u> Dileğimizin kabul olması için, her gün 551 kere yada 1000 kere okuyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded ">
+                        <div class="col-md-12 px-0">
+                            <div class="form-group row m-0 p-0">
+                                <div class="col-sm-12 m-0 py-3 px-0">
+                                    <h1 class="display-4"><em>EŞ ŞAFİ</em> (<bdo dir="rtl">اَلشَّافِي</bdo>)</h1>
+                                </div>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Okunuşu :</u> Ya Şafi</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Anlamı :</u> Hastalara şifa veren. Şafii ismi ile Allah (cc) insanın maddi ve manevi hastalıklarına şifa verir.</p>
+                            </div>
+                            <div class="form-group row m-0 p-0">
+                                <p class="lead text-justify"><u>Yöntem :</u> Hastalığımızdan kurtulmak için 391 veya katları kadar okuyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border m-0 my-5 p-3" >
+                <div class="row my-3 mx-0 p-0">
+                    <h1 class="display-4 font-italic border-bottom box-shadow">Salatı Tefriciye</h1>
+                    <p class="lead my-3 text-justify">
+                        Peygamberimiz'e (sas) salatü selam getirmek, bizim ömür boyu mükellef olduğumuz hasbi görevimizdir.
+                        Bu konuda Ahzap Sûresi'nde geçen ayette ve birçok hadislerde salatü selam okuma emri vardır.
+                        Salatı Tefriciye gibi salatü selamlar Peygamberimiz için yaptığımız birer makbul duadırlar.<br>
+                        <br>
+                        Salâtı Tefriciye okumaya ihlas ile devam edildiğinde hastalık, zorluk ve sıkıntı gibi durumlardan kurtulmada
+                        çok etkili olduğu kabul edilmektedir.<br>
+                        <br>
+                        İmam Kurtubi her gün 41 veya 100 defa okumaya devam eden kimsenin, zaman içerisinde sıkıntısı gider,
+                        işi kolaylaşır, içi nurlanır, itibarı artar, hali güzelleşir, rızkı bollaşır, ona hayır kapıları açılır, demiştir.<br>
+                        <br>
+                        Ayrıca, duaların bu salât sebebiyle çabuk gerçekleşmesi dolayısı ile Salâtı Nâriye denmiştir.<br>
+                        <br>
+                        Yine Kurtubî önemli hayırlı bir işin hasıl olması için veya belanın defi için 4444 kez okunmasını tavsiye etmiştir.<br>
+                    </p>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
-    <div class="border m-0 my-5 p-3" >
-        <div class="row my-3 mx-0 p-0">
-            <h1 class="display-4 font-italic border-bottom box-shadow">AYETEL KÜRSİ</h1>
-            <p class="lead my-3 text-justify">
-                Bakara sûresinin tevhid akîdesini anlatan 255. âyetinin adıdır.
-                Adını, âyetin içinde geçen ve “taht, hükümranlık, ilim, kudret” gibi mânalara gelen kürsî kelimesinden almıştır.<br>
-                <br>
-                Tamamı on cümleden ibaret olan Âyetü’l-kürsî’de Allah Teâlâ’nın birliği,
-                O’nun hay (daima diri) ve kayyûm (zâtı ile kāim) olduğu,
-                uyuklama ve dalgınlık gibi beşerî sıfatlardan münezzeh olup kâinatı kendi tasarrufunda bulundurduğu,
-                O’nun izni olmadan kimsenin şefaat edemeyeceği, bilgisinin ezel ve ebedi kuşattığı,
-                kudretinin arz ve semaları kapladığı ve zâtının çok yüce olduğu bildirilerek tevhid inancının
-                esasları açık bir şekilde ifade edilmiştir.<br>
-                <br>
-                Âyetü’l-kürsî’nin fazileti hakkındaki bazı hadislerde Hz. Peygamber Kur’an’da en büyük âyetin
-                Âyetü’l-kürsî olduğunu (Müslim, “Müsâfirîn”, 258; Ebû Dâvûd, “Ṣalât”, 352, “Ḥurûf”, 1),
-                yatağına girerken onu okuyan kimseyi Allah’ın koruyacağını ve şeytanın ona yaklaşamayacağını
-                (Buhârî, “Vekâlet”, 10), bu âyetin içinde Allah’ın en yüce isminin bulunduğunu (Müsned, VI, 461) ve
-                Kur’an âyetlerinin efendisi olduğunu (Tirmizî, “Feżâʾilü’l-Ḳurʾân”, 2) haber vermiştir.
-                Rivayet tefsirlerinde yer alan bazı hadislerde de Âyetü’l-kürsî’yi okuyana Allah’ın hemen bir melek göndereceği,
-                ertesi güne kadar bu meleğin onun iyiliklerini yazacağı ve kötülüklerini sileceği,
-                farz namazların arkasından onu okuyanın da öldüğü zaman cennete gireceği ifade edilmiştir.
-                Bu hadislerde işaret edilen fazileti sebebiyledir ki Âyetü’l-kürsî namazların sonunda genellikle
-                okunan bir âyettir. Aynı inançla namaz dışında da sık sık okunan âyetler arasında yer alır.<br>
-                <br>
-                Ayetel Kürsi okunan eve şeytan giremez. Büyücü sokulamaz.
-                Ayetel Kürsi okumaya devam kişi; hem dünyada hemde ahirette yüce makamlara ulaşır.
-                Günahlardan sakınmaya başlar. Huzura erer. Mevki ve makamı artar. Halk arasında sevgi, saygısı ve itibarı çoğalır.
-                istediği makama ulaşır. Hiç kimse ona zarar veremez.<br>
-                <br>
-                Ayetel Kürsi; yemek, buğday, pirinç, arpa gibi şeylere 313 defa okunarak, her okunuşta o şeye üflenirse bereketi artar,
-                o şeyde bereketlilik olur.<br>
-                <br>
-                Ayetel Kürsiyi 170 defa okuyana Allah her işinde yardımcı olur. Zorluk çekmez. üzüntü ve kederden uzak olur.
-                Rızkı genişler. Arzularına ve isteklerine kavuşur.<br>
-                <br>
-                Ayetel Kürsi,  resuller ve ashabı kiram sayısınca 313 defa okuyan kişinin her arzusu yerine gelir. Cesareti artar.
-            </p>
-        </div>
-    </div>
-    <div class="border m-0 my-5 p-3" >
-        <div class="row my-3 mx-0 p-0">
-            <h1 class="display-4 font-italic border-bottom box-shadow">Kuran-ı Kerim'deki Dua Ayetleri</h1>
-            <div class="row my-5 mx-0 px-5 pt-3 pb-5 rounded">
-                <div class="col-md-12 px-0">
-                    <div class="form-group row m-0 p-0">
-                        <div class="col-sm-12 m-0 p-0"><h1 class="display-4 font-italic">El-Kasas, 24/88</h1></div>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <div class="col-md-12 m-0">
-                            <p class="lead my-3 text-right" style="font-size:25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
-                            <p class="lead my-3 text-right" style="font-size:25px;"><bdo dir="rtl">رَبِّ اِنّٖى لِمَا اَنْزَلْتَ اِلَیَّ مِنْ خَيْرٍ فَقٖيرٌ</bdo> &#1757</p>
-                        </div>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead"><u>Okunuşu :</u> Rabbi inni lima enzelte ileyye min khayrin fakir</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead"><u>Anlamı :</u> Rabbim! Bana göndereceğin her hayra muhtacım</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead"><u>Yöntem :</u> Dileğimizin kabul olması için, her gün 136 kere okuyoruz ve dileğimizi diliyoruz.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded">
-                <div class="col-md-12 px-0">
-                    <div class="form-group row m-0 p-0">
-                        <div class="col-md-12 m-0 p-0"><h1 class="display-4 font-italic">Enbiya, 21/83</h1></div>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <div class="col-md-12 m-0">
-                            <p class="lead my-3 text-right" style="font-size:25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
-                            <p class="lead my-3 text-right" style="font-size:25px;"><bdo dir="rtl">رَبِّ اَنِّي مَسَّنِىَ الضُّرُّ وَاَنْتَ اَرْحَمُ الرَّاحِمِينَ</bdo> &#1757</p>
-                        </div>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead"><u>Okunuşu :</u> Rabbi, ennî messeniyed-durru ve ente erham’ur-rahimîn.</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead"><u>Anlamı :</u> Ya Rabbi, Başıma bir bela geldi, (sana sığındım), sen merhametlilerin en merhametlisisin.</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead"><u>Yöntem :</u> Şifa bulmak için, hastalığımız süresince okumalıyız. (Hz. Eyüp (A.S.) duası)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="border m-0 my-5 p-3" >
-        <div class="row my-3 mx-0 p-0">
-            <h1 class="display-4 font-italic border-bottom box-shadow">ESMAÜL HÜSNA</h1>
-            <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded ">
-                <div class="col-md-12 px-0">
-                    <div class="form-group row m-0 p-0">
-                        <div class="col-sm-12 m-0 py-3 px-0">
-                            <h1 class="display-4"><em>YA ALLAH</em> (<bdo dir="rtl">يا الله</bdo>)</h1>
-                        </div>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Okunuşu :</u> Ya Allah</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Anlamı :</u> Allah, gördüğümüz görmediğimiz, bildiğimiz bilmediğimiz bütün âlemlerin sâhibi ve mâliki, kâinatın yegâne yaratıcısı, her türlü övgüye ve ibâdete lâyık olan yüceler yücesi Rabbimizin doksan dokuz isminin bütün hususiyetlerini kendinde toplayan en kapsamlı özel adıdır.</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Yöntem :</u> Dileğimizin kabul olması için, her gün 66 kere veya katı kadar okuyoruz ve dileğimizi diliyoruz.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded ">
-                <div class="col-md-12 px-0">
-                    <div class="form-group row m-0 p-0">
-                        <div class="col-sm-12 m-0 py-3 px-0">
-                            <h1 class="display-4"><em>EL LATİF</em> (<bdo dir="rtl">اللَّطِيفُ</bdo>)</h1>
-                        </div>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Okunuşu :</u> Ya Latif</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Anlamı :</u> Lütfü ve keremi bol olan O’dur. Her işin inceliğini bilip, hiç umulmadık yoldan kullarına iyilik ulaştıran Latif’tir.</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Yöntem :</u> Dileğimizin kabul olması için, her gün ismin ebced değeri kadar (129 kere) okuyoruz ve dileğimizi diliyoruz.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded ">
-                <div class="col-md-12 px-0">
-                    <div class="form-group row m-0 p-0">
-                        <div class="col-sm-12 m-0 py-3 px-0">
-                            <h1 class="display-4"><em>EL MUTEALİ</em> (<bdo dir="rtl">الْمُتَعَالِ</bdo>)</h1>
-                        </div>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Okunuşu :</u> Ya Müteali</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Anlamı :</u> İzzet, şeref ve hükümranlık bakımından en yüce, pek yüksek olandır. Noksanlıklardan yüce ve münezzeh,yaratılmışların, O’nun hakkında akıl ve idraklerinin mümkün gördüğü her şeyden, her hal ve tavırdan pek üstün demektir. Yüceliği yayan, sonsuz sınırsız yücelik sahibi.</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Yöntem :</u> Dileğimizin kabul olması için, her gün 551 kere yada 1000 kere okuyoruz.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-5 mx-0 px-5 pt-3 pb-5  rounded ">
-                <div class="col-md-12 px-0">
-                    <div class="form-group row m-0 p-0">
-                        <div class="col-sm-12 m-0 py-3 px-0">
-                            <h1 class="display-4"><em>EŞ ŞAFİ</em> (<bdo dir="rtl">اَلشَّافِي</bdo>)</h1>
-                        </div>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Okunuşu :</u> Ya Şafi</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Anlamı :</u> Hastalara şifa veren. Şafii ismi ile Allah (cc) insanın maddi ve manevi hastalıklarına şifa verir.</p>
-                    </div>
-                    <div class="form-group row m-0 p-0">
-                        <p class="lead text-justify"><u>Yöntem :</u> Hastalığımızdan kurtulmak için 391 veya katları kadar okuyoruz.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="border m-0 my-5 p-3" >
-        <div class="row my-3 mx-0 p-0">
-            <h1 class="display-4 font-italic border-bottom box-shadow">Salatı Tefriciye</h1>
-            <p class="lead my-3 text-justify">
-                Peygamberimiz'e (sas) salatü selam getirmek, bizim ömür boyu mükellef olduğumuz hasbi görevimizdir.
-                Bu konuda Ahzap Sûresi'nde geçen ayette ve birçok hadislerde salatü selam okuma emri vardır.
-                Salatı Tefriciye gibi salatü selamlar Peygamberimiz için yaptığımız birer makbul duadırlar.<br>
-                <br>
-                Salâtı Tefriciye okumaya ihlas ile devam edildiğinde hastalık, zorluk ve sıkıntı gibi durumlardan kurtulmada
-                çok etkili olduğu kabul edilmektedir.<br>
-                <br>
-                İmam Kurtubi her gün 41 veya 100 defa okumaya devam eden kimsenin, zaman içerisinde sıkıntısı gider,
-                işi kolaylaşır, içi nurlanır, itibarı artar, hali güzelleşir, rızkı bollaşır, ona hayır kapıları açılır, demiştir.<br>
-                <br>
-                Ayrıca, duaların bu salât sebebiyle çabuk gerçekleşmesi dolayısı ile Salâtı Nâriye denmiştir.<br>
-                <br>
-                Yine Kurtubî önemli hayırlı bir işin hasıl olması için veya belanın defi için 4444 kez okunmasını tavsiye etmiştir.<br>
-            </p>
-        </div>
-    </div>
-    {% endif %}
 </div>
-
 {% endblock %}
 
