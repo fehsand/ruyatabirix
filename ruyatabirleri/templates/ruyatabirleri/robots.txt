@@ -1,5 +1,24 @@
 User-agent: *
-Disallow: /ruyatabiri-gizlilik/
+
 Disallow: /register/*
+
+Disallow: /yildizname
+Disallow: /yildizname/
+Disallow: /yildizname_nedir/
+
+Disallow: /ruyatabirleri-nedir/
+
+Disallow: /dua
+Disallow: /dua-nedir/
+Disallow: /dua/esmaul_husna
+
+Disallow: /tefeul-nedir/
+Disallow: /tefeul
+
+Disallow: /iletisim/
+
+Disallow: /ruyatabiri-gizlilik/
+Disallow: /ruyatabirleri_gizlilik/
+Disallow: /gizlilik/
 
 Sitemap: https://www.ruyatabirix.com/sitemap.xml
