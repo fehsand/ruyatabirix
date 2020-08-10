@@ -2,6 +2,90 @@
 {% load i18n %}
 
 {% block content %}
+{% get_current_language as LANGUAGE_CODE %}
+{% if LANGUAGE_CODE == 'ar' %}
+<div class="row my-3 mx-0 p-0">
+    <div class="col-md-10 mx-auto my-0 p-2 p-md-0">
+        <div class="row my-5 mx-0 p-0 text-right" dir="rtl">
+            <h1 class="display-4 font-italic border-bottom box-shadow mx-auto">{% trans "RÜYA TABİRLERİ FORMU" %}</h1>
+        </div>
+        <div class="row my-3 mx-0 p-0 text-right" dir="rtl">
+            <div class="col-md-7 mb-3 mx-auto"><h1>{{mesaj}}</h1></div>
+            <div class="col-md-6 mx-auto my-0 p-0">
+                <p class="mx-auto">{% trans "Rüyanızı aşağıdaki formu doldurarak bize gönderebilirsiniz. Rüyanızı kısa cümleler ile ayrıntılı olarak anlatınız. Rüya yorumunuz, eposta adresinize en kısa sürede gönderilecektir." %}</p>
+            </div>
+        </div>
+        <div class="row mb-5 mx-0 p-0">
+            <div class="col-md-6 my-0 p-0 mx-auto">
+                <form class="m-0 p-0 " action="{% url 'ruyatabirleri:rtx_yorum' %}" method="post">
+                    {% csrf_token %}
+                    {% trans "İsminiz" as place_holder_isim %}
+                    <div class="form-group mt-3 text-right" dir="rtl">
+                        <input class="form-control m-0" type="text" name="isim" placeholder="{{place_holder_isim}}" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.isim.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    {% trans "Soyisminiz" as place_holder_soyisim %}
+                    <div class="form-group mt-3 text-right" dir="rtl">
+                        <input class="form-control m-0" type="text" name="soy_isim" placeholder="{{place_holder_soyisim}}" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.soy_isim.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    {% trans "örnek@posta.com" as place_holder_ornek %}
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0 text-right" type="email" name="eposta" placeholder="{{place_holder_ornek}}" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.eposta.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    {% trans "Lütfen eposta adresinizi doğrulamak için tekrar yazınız." as place_holder_ornek1 %}
+                    <div class="form-group mt-3 text-right" dir="rtl">
+                        <input class="form-control m-0" type="email" name="eposta1" placeholder="{{place_holder_ornek1}}" required>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.eposta.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="input-group text-right" dir="rtl">
+                        <select class="custom-select" name="cinsiyet">
+                            <option value="cinsiyet" selected disabled>{% trans "Cinsiyetiniz" %}</option>
+                            <option value="erkek">{% trans "Erkek" %}</option>
+                            <option value="kadin">{% trans "Kadın" %}</option>
+                        </select>
+                    </div>
+                    <div class="input-group mt-3 text-right" dir="rtl">
+                        <select class="custom-select" name="ruya_zamani">
+                            <option value="x" selected disabled>{% trans "Rüyayı ne zaman gördüğünüz?" %}</option>
+                            <option value="gece_yarisi">{% trans "Gece yarısı" %}</option>
+                            <option value="gunes_dogarken">{% trans "Güneş doğmadan hemen önce veya doğduktan hemen sonra" %}</option>
+                            <option value="gun_icerisinde">{% trans "Gün içerisinde" %}</option>
+                        </select>
+                    </div>
+                    <div class="input-group mt-3 text-right" dir="rtl">
+                        <select class="custom-select" name="bilinc_alti">
+                            <option value="bilincalti" selected disabled>{% trans "Gördüğünüz rüya bilinçaltı olabilir mi?" %}</option>
+                            <option value="evet">{% trans "Evet" %}</option>
+                            <option value="hayır">{% trans "Hayır" %}</option>
+                        </select>
+                    </div>
+                    {% trans "Rüyanızı yazmaya başlamadan önce yukarıdaki bilgileri eksiksiz olarak doldurduğunuzdan ve eposta adreslerinin aynı olduğundan emin olunuz. Rüyanızı basit cümlelerle ayrıntılı olarak anlatınız. Cümlelerin sonuna nokta işareti koymayı unutmayınız." as place_holder_ruya %}
+                    <div class="form-group mt-3 text-right" dir="rtl">
+                        <textarea class="form-control m-0" name="ruya" placeholder="{{place_holder_ruya}}" rows="5" required></textarea>
+                        {% if form.errors %}
+                        <p class="lead m-0 p-0 text-danger">{{form.mesaj.errors.as_text}}</p>
+                        {% endif %}
+                    </div>
+                    <div class="form-group mt-3 text-center">
+                        <button class="btn-lg btn-dark border-0" type="submit" name="save">{% trans "GÖNDER" %}</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
 <div class="row my-3 mx-0 p-0">
     <div class="col-md-10 mx-auto my-0 p-2 p-md-0">
         <div class="row my-5 mx-0 p-0">
@@ -83,4 +167,5 @@
         </div>
     </div>
 </div>
+{% endif %}
 {% endblock %}

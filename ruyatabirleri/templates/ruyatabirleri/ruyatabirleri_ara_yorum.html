@@ -4,22 +4,40 @@
 <div class="row mt-md-5">
     <div class="col-md-10 mx-auto">
         <div class="jumbotron mt-3 mb-1 p-3 p-md-4 text-white rounded bg-primary">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'ar' %}
+            <div class="col-md-12 text-right" dir="rtl">
+                <h1 class="display-4 font-italic">{% trans "Kelimeler ile Rüya Tabiri" %}</h1>
+                <p class="lead my-3">{% trans "Rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz zaman, sadece ARABA kelimesini kullanarak arama yapabilirsiniz." %}</p>
+                <p class="m-0 p-0"><a class="btn btn-lg btn-outline-light w-100" href="{% url 'ruyatabirleri:ruyatabirleri'%}" role="button">{% trans "Rüya Tabirleri Sözlüğü için Tıklayınız..." %}</a></p>
+            </div>
+            {% else %}
             <div class="col-md-12">
                 <h1 class="display-4 font-italic">{% trans "Kelimeler ile Rüya Tabiri" %}</h1>
                 <p class="lead my-3">{% trans "Rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz zaman, sadece ARABA kelimesini kullanarak arama yapabilirsiniz." %}</p>
                 <p class="m-0 p-0"><a class="btn btn-lg btn-outline-light w-100" href="{% url 'ruyatabirleri:ruyatabirleri'%}" role="button">{% trans "Rüya Tabirleri Sözlüğü için Tıklayınız..." %}</a></p>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-md-10 mx-auto">
         <div class="jumbotron mt-3 p-3 p-md-4 text-white rounded bg-primary">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'ar' %}
+            <div class="col-md-12 text-right" dir="rtl">
+                <h1 class="display-4 font-italic">{% trans "Rüya Tabiri Formu" %}</h1>
+                <p class="lead my-3">{% trans "Aşağıdaki bağlantıyı tıklayarak Rüya Tabirleri Formuna ulaşabilirisiniz. Rüyanızı kısa cümleler ile ayrıntılı olarak anlatınız. Rüyanızın yorumu en kısa sürede eposta adresinize gönderilecektir." %}</p>
+                <p class="m-0 p-0"><a class="btn btn-lg btn-outline-light w-100" href="{% url 'ruyatabirleri:rtx_yorum'%}" role="button">{% trans "Rüya Tabirleri Formu için Tıklayınız..." %}</a></p>
+            </div>
+            {% else %}
             <div class="col-md-12">
                 <h1 class="display-4 font-italic">{% trans "Rüya Tabiri Formu" %}</h1>
                 <p class="lead my-3">{% trans "Aşağıdaki bağlantıyı tıklayarak Rüya Tabirleri Formuna ulaşabilirisiniz. Rüyanızı kısa cümleler ile ayrıntılı olarak anlatınız. Rüyanızın yorumu en kısa sürede eposta adresinize gönderilecektir." %}</p>
                 <p class="m-0 p-0"><a class="btn btn-lg btn-outline-light w-100" href="{% url 'ruyatabirleri:rtx_yorum'%}" role="button">{% trans "Rüya Tabirleri Formu için Tıklayınız..." %}</a></p>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>

@@ -2,6 +2,48 @@
 {% load i18n %}
 
 {% block content %}
+{% get_current_language as LANGUAGE_CODE %}
+{% if LANGUAGE_CODE == 'ar' %}
+<div class="container">
+    <div class="jumbotron mt-5 p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-12 px-0 text-right" dir="rtl">
+            <h1 class="display-4 font-italic">{% trans "Gizlilik Politikası" %}</h1>
+            <p class="lead my-3">
+                {% blocktrans %}Sitemizi kullanmaya başladığınız andan itibaren burada yazılı olan kuralları kabul etmiş sayılmaktasınız.
+                Sitede yer alan bilgiler, yazılar genel bilgi paylaşımı amaçlıdır.
+                Hiçbir şeyde kesin bilgi, kesin doğruluk iddiası yoktur.
+                Bilgilerin çoğu konusunda uzman kişlerin makalelerinden derlenmiştir.<br><br>
+                Ruyatabirix.com sitemiz, kullanıcılarının güvenliğini esas alan ve bu güvenliği korumak için üstüne düşen görevleri yerine getiren bir yayın politikası izlemektedir.
+                Ruyatabirix.com sitemizde reklam hizmeti sunmak için 3. taraf reklam hizmeti veren şirketleri kullanmaktayız.
+                Bu reklam şirketleri, ziyaretiniz sırasında elde ettikleri bazı bilgileri, ilginizi çekecek ürünlerin ve hizmetlerin reklamını size göstermek için kullanabilir.
+                Bu durum hakkında daha detaylı bilgi edinmek ve bu bilgilerin başka reklam şirketleri tarafından kullanılmasını engellemek istiyorsanız http://www.networkadvertising.org/sites/default/files/imce/principles.pdf belgesinin A ekini inceleyebilirsiniz.<br><br>
+                Ruyatabirix.com sitemiz değişik internet sitelerine link vermektedir. Ruyatabirlerix.com sitemiz bağlantı verdiği bu sitelerin gizlilik prensiplerinden ve yayın içeriğinden sorumlu değildir.<br><br>
+                3. taraf reklam gösterici bir firma olan Google, Ruyatabirix.com sitesinde reklam yayınlamak için bilgisayarınızdaki çerezlerden yararlanır.
+                Çerez, belirli web sitelerinin, bu tür siteleri ziyaret ettiğinizde bilgisayarınızın sabit diskine yazdıkları veri dosyalarıdır.
+                Çerez dosyaları, kullanıcının ziyaret ettiği sayfaların kaydını tutan kullanıcı tanımlama kodları gibi bilgiler içerebilir.
+                Bu bilgilerle herhangi bir kullanıcının kişisel verileri ilişkilendirilmez.
+                Ayrıca bir sonraki girişinizde sitenin sizi hatırlamasını istediğiniz takdir de bunun için ayrı bir çerez oluştururuz burada da kullanıcı adınız veya kullanıcı numaranız yazılır.
+                Birçok web sitesi tarayıcısı çerezleri otomatik olarak kabul etmektedir.
+                Ancak kullanıcılar genellikle tarayıcı ayarlarını değiştirerek bir çerezi kabul etmeden önce uyarılmayı ya da tüm çerezleri reddetmeyi seçmektedirler.
+                Ancak web sitemizden gelecek çerezlerin alımını kapattığınızda, web sitemizin belirli özelliklerini kullanamayabilirsiniz.<br><br>
+                Bu konuda daha geniş bilgi almak ve bu reklamların bilgisayarınızda gösterilmesini engellemek için
+                http://www.google.com/privacy_ads.html web sayfasını ziyaret edebilirsiniz.<br><br>
+                Sitemiz, uygun görülmeyen yorumları ve rüyaları yayınlamama hakkına sahiptir.<br><br>
+                Google Analytics<br><br>
+                Bu web sitesi, Google tarafından sağlanan web analiz hizmetini kullanır.
+                Web sitemizi kullandığınızda, bu kullanım hakkındaki bilgiler, bilgisayarınızda üretilen, çerez adı verilen bir metin dosyasında saklanır.
+                Bu “çerez” yani metin dosyasında bulunan, web sitemizi ziyaret etmenizle ilgili tüm veriler Genelllikle ABD’de bulunan bir Google sunucusuna gönderilir ve orada saklanır.
+                Google bu verileri web analiz hizmetleri için kullanır ve oluşturduğu raporları web sitemizle paylaşır.
+                Eğer isterseniz tarayıcınızda bulunan “çerez” ayarları ile çerezlerin oluşmasını engelleyebilirsiniz.
+                Ayrıca, http://tools.google.com/dlpage/gaoptout?hl=tr bağlantısında bulunan eklentiyi bilgisayarınıza kurarak bu saklanan çerezlerde bulunan kişisel verilerinizin Google tarafından kullanılmasını engelleyebilirsiniz.
+                Verilerinizin güvenliğini koruma ve Google Analytics hakkında daha fazla bilgiyi aşağıdaki bağlantılardan bulabilirsiniz.<br><br>
+                http://www.google.com/analytics/terms/tr.html veya https://support.google.com/analytics/answer/6004245?hl=tr
+                {% endblocktrans %}
+            </p>
+        </div>
+    </div>
+</div>
+{% else %}
 <div class="container">
     <div class="jumbotron mt-5 p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-12 px-0">
@@ -41,4 +83,5 @@
         </div>
     </div>
 </div>
+{% endif %}
 {% endblock %}

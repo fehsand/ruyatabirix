@@ -5,11 +5,20 @@
 <div class="row mt-3 mb-5 mx-0 p-0">
     <div class="col-md-8 my-0 p-1 mx-auto">
         <div class="row mt-5 m-0 p-0">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% if LANGUAGE_CODE == 'ar' %}
+            <div class="col-md-12 text-right" dir="rtl">
+                <h1 class="display-4 font-italic border-bottom box-shadow">{% trans "TEFE'ÜL" %}</h1>
+                <p class="lead my-3">{% trans "Niyet ediniz ve başlatınız." %}</p>
+                <p class="lead my-3 text-center" style="font-size:25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+            </div>
+            {% else %}
             <div class="col-md-12">
                 <h1 class="display-4 font-italic border-bottom box-shadow">{% trans "TEFE'ÜL" %}</h1>
                 <p class="lead my-3">{% trans "Niyet ediniz ve başlatınız." %}</p>
                 <p class="lead my-3 text-center" style="font-size:25px;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
             </div>
+            {% endif %}
         </div>
         <div class="row my-5 mx-0 p-0">
             {% get_current_language as LANGUAGE_CODE %}
@@ -26,7 +35,7 @@
                 <h3>Gracias por tu interés.</h3>
             </div>
             {% elif LANGUAGE_CODE == 'ar' %}
-            <div class="col-md-10 p-1 mx-auto">
+            <div class="col-md-10 p-1 text-right" dir="rtl" ">
                 <h3>هذا القسم لا يزال قيد الإنشاء.</h3>
                 <h3>الرجاء التحقق مرة اخرى قريبا.</h3>
                 <h3>شكرا على اهتمامك.</h3>

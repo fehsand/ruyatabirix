@@ -317,10 +317,10 @@ def ruyatabirleri_ayrinti(response, slug=None):
 def harf_sayfalari(response, harf):
     if get_language () == 'en':
         tabir1 = Ruyatabirlerix3.objects.filter (kelime_en__startswith=harf)
-    elif get_language() == 'tr':
+    elif get_language() == 'es':
+        tabir1 = Ruyatabirlerix3.objects.filter (kelime_es__startswith=harf)
+    else: #get_language() == 'tr'
         tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
-    else:
-        pass
     form = AramaForm ()
     return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1, 'form': form})
 
