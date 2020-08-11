@@ -23,7 +23,7 @@ python manage.py compilemessages
 py manage.py makemigrations ruyatabirleri
 py manage.py migrate ruyatabirleri
 
-class Ruyatabirlerix3 (models.Model):
+class Ruyatabirlerix5 (models.Model):
     kelime_tr = models.CharField(max_length=255)
     slug_tr = models.SlugField(unique=True, blank=True, max_length=255)
     tabiri_tr = models.TextField()
@@ -38,46 +38,14 @@ class Ruyatabirlerix3 (models.Model):
     slug_ru = models.SlugField(unique=True, blank=True, max_length=255, allow_unicode=True)
     tabiri_ru = models.TextField(null=True)
     altr_ru_url = models.URLField(blank=True)
-    kelime_ar = models.CharField(max_length=200, null=True)
-    slug_ar = models.SlugField(unique=True, blank=True, max_length=255, allow_unicode=True)
-    tabiri_ar = models.TextField(null=True)
-    altr_ar_url = models.URLField(blank=True)
-    kelime_ch = models.CharField(max_length=200, null=True)
-    slug_ch = models.SlugField(unique=True, blank=True, max_length=255, allow_unicode=True)
-    tabiri_ch = models.TextField(null=True)
-    altr_ch_url = models.URLField(blank=True)
-    ekleme_tarihi = models.DateTimeField(auto_now_add=True)
-    guncelleme_tarihi = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.kelime_tr
-
-    def save(self, *args, **kwargs):
-        self.slug_tr = slugify(self.kelime_tr.replace('ı','i'))
-        self.slug_es = slugify(self.kelime_es)
-        self.slug_ru = slugify(self.kelime_ru.replace('а', 'a').replace('о','o').replace('м','m').replace('т','t').replace('к','k').replace('е','ye').replace('с','s').replace('и','i').replace('д','d').replace('п','p').replace('б','b').replace('л','l').replace('г','g').replace('ш','sh').replace('ж','zh').replace('щ','sch').replace('э','e').replace('я','ya').replace('ф','f').replace('ч','ch').replace('з','z').replace('ю','yu').replace('ц','ts').replace('й','y').replace('ё','yo').replace('в','v').replace('н','n').replace('р','r').replace('у','u').replace('х','h').replace('ъ','').replace('ь','').replace('ы','y'), allow_unicode=True)
-        super().save(*args, **kwargs)
-
-    def get_absolute_url(self):
-        return reverse('ruyatabirleri:ruyatabirleri_ayrinti',
-                        args=[str(self.slug_tr)])
-
-
-class Ruyatabirlerix3 (models.Model):
-    kelime_tr = models.CharField(max_length=255)
-    slug_tr = models.SlugField(unique=True, blank=True, max_length=255)
-    tabiri_tr = models.TextField()
-    kelime_en = models.CharField(max_length=200)
-    tabiri_en = models.TextField()
-    altr_en_url = models.URLField(blank=True)
-    kelime_es = models.CharField(max_length=200)
-    slug_es = models.SlugField(unique=True, blank=True, max_length=255, allow_unicode=True)
-    tabiri_es = models.TextField()
-    altr_es_url = models.URLField(blank=True)
-    kelime_ru = models.CharField(max_length=200, null=True)
-    slug_ru = models.SlugField(unique=True, blank=True, max_length=255, allow_unicode=True)
-    tabiri_ru = models.TextField(null=True)
-    altr_ru_url = models.URLField(blank=True)
+    kelime_ar2 = models.CharField(max_length=200, null=True)
+    slug_ar2 = models.SlugField(unique=True, blank=True, max_length=255, allow_unicode=True)
+    tabiri_ar2 = models.TextField(null=True)
+    altr_ar_url2 = models.URLField(blank=True)
+    kelime_ch2 = models.CharField(max_length=200, null=True)
+    slug_ch2 = models.SlugField(unique=True, blank=True, max_length=255, allow_unicode=True)
+    tabiri_ch2 = models.TextField(null=True)
+    altr_ch_url2 = models.URLField(blank=True)
     ekleme_tarihi = models.DateTimeField(auto_now_add=True)
     guncelleme_tarihi = models.DateTimeField(auto_now=True)
 
