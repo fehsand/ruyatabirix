@@ -23,6 +23,23 @@ python manage.py compilemessages
 py manage.py makemigrations ruyatabirleri
 py manage.py migrate ruyatabirleri
 
+The migration you are trying to run is under the impression that a certain column exists in the database that isn't actually there, since you removed it at some point. So you'll need to roll back the migrations through faking to "convince" the database that the migration is there, and then reapply the migrations.
+
+Say you have these migrations in your app myapp:
+
+0001_initial.py
+0002_something.py
+0003_removedcolumn.py
+0004_anotherthing.py
+You're going to need to roll back the migrations back to a point when the column still existed. Note that if you are in a prod database, you should be aware of potential data loss that could come from doing this.
+
+If you removed the column in 0003_removedcolumn.py, you'll need to run: python manage.py migrate --fake myapp 0002_something.
+
+Then, you can rerun the sequential migrations: python manage.py migrate myapp. Your problem should be solved now!
+
+From here, you can run python manage.py makemigrations and it should run smoothly.
+
+
 class Ruyatabirlerix5 (models.Model):
     kelime_tr = models.CharField(max_length=255)
     slug_tr = models.SlugField(unique=True, blank=True, max_length=255)
