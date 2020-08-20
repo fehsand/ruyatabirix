@@ -532,7 +532,7 @@ def rtx_ara_yorum(response):
     return render(response, 'ruyatabirleri/ruyatabirleri_ara_yorum.html', {})
 
 def yonetici(response):
-    ruya_tabiri_alt_ref = Ruyatabirlerix3.objects.all()
+    ruya_tabiri_alt_ref = Ruyatabirlerix5.objects.all()
     sbt_syf = Ruyatabirlerix_sbt.objects.all ()
     iletisim_list = Rtx_iletisim.objects.filter (geri_donus=False)
     gond_ruya_tabiri = RTXyorum.objects.filter (geri_donus=False)
