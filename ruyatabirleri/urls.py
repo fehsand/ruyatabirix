@@ -21,6 +21,7 @@ urlpatterns = [
     path(_('ruyatabiri-yonetici/'), views.yonetici, name='yonetici'),
     path(_('ruyatabiri-yonetici-mesaj/<int:id>/'), views.yonetici_cevap_mesaj, name='yonetici_cevap_mesaj'),
     path(_('ruyatabiri-yonetici-ruya/<int:id>/'), views.yonetici_cevap_ruya, name='yonetici_cevap_ruya'),
+    path(_('ruyatabiri-yonetici-ruya-tabir/<int:id>/'), views.yonetici_cevap_ruya_tabir, name='yonetici_cevap_ruya_tabir'),
     path(_('ruyatabirleri/'), views.rtx_ara_yorum, name='rtx_ara_yorum'),
     path(_('ruyatabirleri/ruyada-'+'<slug:slug>'+'-gormek/q1w2e3r4t5y6u7'), views.ruyatabirleri_ayrinti, name='ruyatabirleri_ayrinti'),
     path('ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7', views.ruyatabirleri_ayrinti, name='my_comment_was_posted'),

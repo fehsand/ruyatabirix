@@ -1,6 +1,6 @@
 import random
 from .forms import AramaForm, YildiznameForm, RtxiletisimForm, RTXYorumForm
-from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix_sbt, Ruyatabirlerix3, Rtx_iletisim, RTXyorum
+from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix_sbt, Ruyatabirlerix3, Rtx_iletisim, RTXyorum, Ruyatabirlerix5
 from django.shortcuts import render, get_object_or_404
 from django.utils.translation import get_language, gettext_lazy as _
 
@@ -540,6 +540,9 @@ def yonetici(response):
                                                                      'iletisim_list':iletisim_list,
                                                                      'sbt_syf':sbt_syf,
                                                                      'gond_ruya_tabiri':gond_ruya_tabiri})
+def yonetici_cevap_ruya_tabir(response, id):
+    tabir_alt_ref = Ruyatabirlerix5.objects.get (id=id)
+    return render(response, 'ruyatabirleri/anasayfa_yonetici_cevap.html', {'tabir_alt_ref':tabir_alt_ref})
 
 
 def yonetici_cevap_ruya(response, id):

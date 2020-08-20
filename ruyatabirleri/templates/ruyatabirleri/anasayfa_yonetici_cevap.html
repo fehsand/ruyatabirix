@@ -94,7 +94,7 @@
         </div>
     </div>
 </div>
-{% else %}
+{% elif gelen_mesaj %}
 <div class="row my-5 mx-0 p-3">
     <div class="col-md-12 m-0 p-0">
         <div class="row mt-5 p-0">
@@ -171,6 +171,50 @@
                         </tbody>
                     </table>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="row my-5 mx-0 p-3">
+    <div class="col-md-12 m-0 p-0">
+        <div class="row mt-5 p-0">
+            <div class="col-md-6 mx-auto">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Tüm Dillerde Eklenen Tabirler</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row my-5 mx-0 p-3">
+        <div class="col-md-12 mx-auto m-0 p-0">
+            <div class="border border-primary mb-3">
+                <table class="table border-bottom">
+                    <tbody>
+                    <tr>
+                        <th scope="row">{{tabir_alt_ref.kelime_tr}} :</th>
+                        <td>{{tabir_alt_ref.slug_tr}}</td>
+                        <td>{{tabir_alt_ref.tabiri_tr}}</td>
+                        <td>{{tabir_alt_ref.altr_tr_url}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{{tabir_alt_ref.kelime_en}} :</th>
+                        <td>{{tabir_alt_ref.slug_en}}</td>
+                        <td>{{tabir_alt_ref.tabiri_en}}</td>
+                        <td>{{tabir_alt_ref.altr_en_url}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{{tabir_alt_ref.kelime_es}} :</th>
+                        <td>{{tabir_alt_ref.slug_es}}</td>
+                        <td>{{tabir_alt_ref.tabiri_es}}</td>
+                        <td>{{tabir_alt_ref.altr_es_url}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">{{tabir_alt_ref.kelime_ru}} :</th>
+                        <td>{{tabir_alt_ref.slug_ru}}</td>
+                        <td>{{tabir_alt_ref.tabiri_ru}}</td>
+                        <td>{{tabir_alt_ref.altr_ru_url}}</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
