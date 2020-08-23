@@ -100,7 +100,7 @@
             <div class="col-md-6 p-0 mx-auto">
                 {% for item in tabir1 %}
                 <div class="m-0 mt-1 p-3 w-100 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
-                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.kelime_en %}">The meaning of {{item.kelime_en}} in Dreams</a></h6>
+                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti' slug=item.slug_en %}">The meaning of {{item.kelime_en}} in Dreams</a></h6>
                 </div>
                 {% endfor %}
             </div>
@@ -110,7 +110,7 @@
             <div class="col-md-6 p-0 mx-auto">
                 {% for item in tabir1 %}
                 <div class="m-0 mt-1 p-3 w-100 mx-auto" style="background-color: gray; background-image: linear-gradient(to bottom, gray, white, gray);">
-                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti_2' slug=item.kelime_ch %}">{{item.kelime_ch}}在梦中的意义</a></h6>
+                    <h6 class="p-0 m-0 text-center"><a class="text-dark" href="{% url 'ruyatabirleri:ruyatabirleri_ayrinti_2' slug=item.slug_ch %}">{{item.kelime_ch}}在梦中的意义</a></h6>
                 </div>
                 {% endfor %}
             </div>
