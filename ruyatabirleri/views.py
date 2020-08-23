@@ -1,6 +1,6 @@
 import random
 from .forms import AramaForm, YildiznameForm, RtxiletisimForm, RTXYorumForm
-from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix_sbt, Ruyatabirlerix3, Rtx_iletisim, RTXyorum, Ruyatabirlerix5
+from .models import Ruyatabirleri, KuranBilgi, KuranKelime, ArananKelimeler, Ruyatabirlerix_sbt, Rtx_iletisim, RTXyorum, Ruyatabirlerix5
 from django.shortcuts import render, get_object_or_404
 from django.utils.translation import get_language, gettext_lazy as _
 
@@ -25,7 +25,7 @@ def ruyatabirleri(response):
                 # --------------------Karakter Kontrolü bitti----------------
                 ArananKelimeler.objects.create (kelime=n)  # aranan kelime kontrollerden sonra db kaydedildi.
                 # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
-                tabir1 = Ruyatabirlerix3.objects.filter (kelime_en__contains=n)
+                tabir1 = Ruyatabirlerix5.objects.filter (kelime_en__contains=n)
                 if tabir1:
                     return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1}) # tabir var
                 else:
@@ -35,7 +35,7 @@ def ruyatabirleri(response):
                     kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'dream' if i != 'dreamt' if i != 'seeing' if
                                        i != 'i' if i != 'my' if i != 'have']
                     for klm in kelimlere_ayir2:
-                        tabir1 = Ruyatabirlerix3.objects.filter (kelime_en__contains=klm)
+                        tabir1 = Ruyatabirlerix5.objects.filter (kelime_en__contains=klm)
                         if not tabir1:
                             s = 0
                             while not tabir1:
@@ -43,7 +43,7 @@ def ruyatabirleri(response):
                                 s += 1
                                 k1 = k - s
                                 klm1 = klm[:k1]
-                                tabir1 = Ruyatabirlerix3.objects.filter (kelime_en__contains=klm1)
+                                tabir1 = Ruyatabirlerix5.objects.filter (kelime_en__contains=klm1)
                             for i in tabir1:
                                 tabir_listesi += [i]
                         else:
@@ -78,7 +78,7 @@ def ruyatabirleri(response):
                 # --------------------Karakter Kontrolü bitti----------------
                 ArananKelimeler.objects.create (kelime=n)  # aranan kelime kontrollerden sonra db kaydedildi.
                 # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
-                tabir1 = Ruyatabirlerix3.objects.filter (kelime_es__contains=n)
+                tabir1 = Ruyatabirlerix5.objects.filter (kelime_es__contains=n)
                 if tabir1:
                     return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                 else:
@@ -88,7 +88,7 @@ def ruyatabirleri(response):
                     kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'sueño' if i != 'soñado'
                                        if i != 'viendo' if i != 'yo' if i != 'mi' if i != 'soñada']
                     for klm in kelimlere_ayir2:
-                        tabir1 = Ruyatabirlerix3.objects.filter (kelime_es__contains=klm)
+                        tabir1 = Ruyatabirlerix5.objects.filter (kelime_es__contains=klm)
                         if not tabir1:
                             s = 0
                             while not tabir1:
@@ -96,7 +96,7 @@ def ruyatabirleri(response):
                                 s += 1
                                 k1 = k - s
                                 klm1 = klm[:k1]
-                                tabir1 = Ruyatabirlerix3.objects.filter (kelime_es__contains=klm1)
+                                tabir1 = Ruyatabirlerix5.objects.filter (kelime_es__contains=klm1)
                             for i in tabir1:
                                 tabir_listesi += [i]
                         else:
@@ -133,7 +133,7 @@ def ruyatabirleri(response):
                 # --------------------Karakter Kontrolü bitti----------------
                 ArananKelimeler.objects.create (kelime=n)  # aranan kelime kontrollerden sonra db kaydedildi.
                 # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
-                tabir1 = Ruyatabirlerix3.objects.filter (kelime_ru__contains=n)
+                tabir1 = Ruyatabirlerix5.objects.filter (kelime_ru__contains=n)
                 print (tabir1)
                 if tabir1:
                     return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
@@ -144,7 +144,7 @@ def ruyatabirleri(response):
                     kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'мечта' if i != 'снилось'
                                        if i != 'видящий' if i != 'я' if i != 'мой' if i != 'иметь']
                     for klm in kelimlere_ayir2:
-                        tabir1 = Ruyatabirlerix3.objects.filter (kelime_ru__contains=klm)
+                        tabir1 = Ruyatabirlerix5.objects.filter (kelime_ru__contains=klm)
                         if not tabir1:
                             s = 0
                             while not tabir1:
@@ -152,7 +152,7 @@ def ruyatabirleri(response):
                                 s += 1
                                 k1 = k - s
                                 klm1 = klm[:k1]
-                                tabir1 = Ruyatabirlerix3.objects.filter (kelime_ru__contains=klm1)
+                                tabir1 = Ruyatabirlerix5.objects.filter (kelime_ru__contains=klm1)
                             for i in tabir1:
                                 tabir_listesi += [i]
                         else:
@@ -169,6 +169,103 @@ def ruyatabirleri(response):
         else:
             form = AramaForm ()
             return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form': form})
+
+    # ----------arapça------
+    elif get_language () == 'ar':
+        if response.method == "POST":
+            form = AramaForm (response.POST)
+            if form.is_valid ():
+                n1 = form.cleaned_data["kelime"]
+                # ------------Karakter Kontrolü yapıldı. Uygun olmayan varsa hata verildi.-------------
+                harfler = 'ذ د ج ح خ ه ع  غ ف ق ث ص ض ط ك م ن ت ا ل ب ي س ش ظ ز و ة ى لا ر ؤ ء ئ  إ أ آ لإ لأ لآلا'
+                for harf in n1:
+                    if not harf in harfler:
+                        mesaj = '  من فضلك ، استخدم الحروف العربية فقط.'
+                        return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'n1': n1, 'mesaj': mesaj})
+                    else:
+                        pass
+                # --------------------Karakter Kontrolü bitti----------------
+                ArananKelimeler.objects.create (kelime=n1)  # aranan kelime kontrollerden sonra db kaydedildi.
+                # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
+                tabir1 = Ruyatabirlerix5.objects.filter (kelime_ar__contains=n1)
+                if tabir1:
+                    return render(response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
+                else:
+                    # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
+                    kelimlere_ayir = n1.split (" ")
+                    tabir_listesi = []
+                    kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'حلم' ]
+                    for klm in kelimlere_ayir2:
+                        tabir1 = Ruyatabirlerix5.objects.filter (kelime_ar__contains=klm)
+                        if not tabir1:
+                            s = 0
+                            while not tabir1:
+                                k = len (klm)
+                                s += 1
+                                k1 = k - s
+                                klm1 = klm[:k1]
+                                tabir1 = Ruyatabirlerix5.objects.filter (kelime_ar__contains=klm1)
+                            for i in tabir1:
+                                tabir_listesi += [i]
+                        else:
+                            for i in tabir1:
+                                tabir_listesi += [i]
+                    tabir1 = tabir_listesi
+                    mesaj = "لسوء الحظ ، لم يتم العثور على تفسير الأحلام الذي تبحث عنه. تم سرد تفسيرات الحلم الأخرى ذات الصلة أدناه."
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'tabir1': tabir1})
+            else:
+                pass
+            form = AramaForm ()
+            mesaj = "من فضلك ، اكتب أي كلمات رئيسية."
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
+        else:
+            form = AramaForm ()
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form': form})
+
+    # ----------Çince------
+    elif get_language () == 'zh-hans':
+        if response.method == "POST":
+            form = AramaForm (response.POST)
+            if form.is_valid ():
+                n = form.cleaned_data["kelime"]
+                # --------------------Karakter Kontrolü yapılmadı----------------
+                ArananKelimeler.objects.create (kelime=n)  # aranan kelime kontrollerden sonra db kaydedildi.
+                # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
+                tabir1 = Ruyatabirlerix5.objects.filter (kelime_ch__contains=n)
+                if tabir1:
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1}) # tabir var
+                else:
+                    # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
+                    kelimlere_ayir = n.split (" ")
+                    tabir_listesi = []
+                    kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'sueño' if i != 'soñado']
+                    for klm in kelimlere_ayir2:
+                        tabir1 = Ruyatabirlerix5.objects.filter (kelime_ch__contains=klm)
+                        if not tabir1:
+                            s = 0
+                            while not tabir1:
+                                k = len (klm)
+                                s += 1
+                                k1 = k - s
+                                klm1 = klm[:k1]
+                                tabir1 = Ruyatabirlerix5.objects.filter (kelime_ch__contains=klm1)
+                            for i in tabir1:
+                                tabir_listesi += [i]
+                        else:
+                            for i in tabir1:
+                                tabir_listesi += [i]
+                    tabir1 = tabir_listesi
+                    mesaj = "不幸的是，找不到您想要的梦中解释。 下面列出了其他有关梦的解释。"
+                    return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html',{'mesaj': mesaj, 'tabir1': tabir1})
+            else:
+                pass
+            form = AramaForm ()
+            mesaj = "请写任何关键字。"
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'mesaj': mesaj, 'form': form})
+        else:
+            form = AramaForm ()
+            return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'form': form})
+
     else:  # get_language() == 'tr'
         if response.method == "POST":
             form = AramaForm (response.POST)
@@ -190,7 +287,7 @@ def ruyatabirleri(response):
                 if tabir1:
                     return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                 else:
-                    tabir1=Ruyatabirlerix3.objects.filter(kelime_tr__contains=n)
+                    tabir1=Ruyatabirlerix5.objects.filter(kelime_tr__contains=n)
                     if tabir1:
                         return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                     # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
@@ -232,7 +329,7 @@ def gizlilik(request):
 
 def ruyatabirleri_ayrinti(response, slug=None):
     if get_language () == 'en':
-        tabir1 = get_object_or_404 (Ruyatabirlerix3, kelime_en=slug)
+        tabir1 = get_object_or_404 (Ruyatabirlerix5, slug_en=slug)
         karakter_satiri = int (len (tabir1.tabiri_en) / 100)
         sayac = 0
         for i in tabir1.tabiri_en:
@@ -246,9 +343,45 @@ def ruyatabirleri_ayrinti(response, slug=None):
         form = AramaForm ()
         return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
                        {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
+    else:  # get_language() == 'tr'
+        tabir1 = Ruyatabirleri.objects.filter (slug=slug)
+        if tabir1:
+            tablo=1
+            tabir1 = get_object_or_404 (Ruyatabirleri, slug=slug)
+            karakter_satiri = int (len (tabir1.tabiri) / 100)
+            sayac = 0
+            for i in tabir1.tabiri:
+                if i == "\n":
+                    sayac += 1
+            if len (tabir1.tabiri) > 100:
+                satir = (sayac + karakter_satiri)
+            else:
+                satir = (sayac + 2)
+            object_pk = tabir1.id
+            form = AramaForm ()
+            return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
+                           {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk, 'tablo':tablo})
+        else:
+            tablo=2
+            tabir1 = get_object_or_404 (Ruyatabirlerix5, slug_tr=slug)
+            karakter_satiri = int (len (tabir1.tabiri_tr) / 100)
+            sayac = 0
+            for i in tabir1.tabiri_tr:
+                if i == "\n":
+                    sayac += 1
+            if len (tabir1.tabiri_tr) > 100:
+                satir = (sayac + karakter_satiri)
+            else:
+                satir = (sayac + 2)
+            object_pk = tabir1.id
+            form = AramaForm ()
+            return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
+                           {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk, 'tablo':tablo})
 
-    elif get_language () == 'es':
-        tabir1 = get_object_or_404 (Ruyatabirlerix3, slug_es=slug)
+
+def ruyatabirleri_ayrinti_2(response, slug=None):
+    if get_language () == 'es':
+        tabir1 = get_object_or_404 (Ruyatabirlerix5, slug_es=slug)
         karakter_satiri = int (len (tabir1.tabiri_es) / 100)
         sayac = 0
         for i in tabir1.tabiri_es:
@@ -263,13 +396,44 @@ def ruyatabirleri_ayrinti(response, slug=None):
         return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
                        {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
     elif get_language () == 'ru':
-        tabir1 = get_object_or_404 (Ruyatabirlerix3, slug_ru=slug)
+        tabir1 = get_object_or_404 (Ruyatabirlerix5, slug_ru=slug)
         karakter_satiri = int (len (tabir1.tabiri_ru) / 100)
         sayac = 0
         for i in tabir1.tabiri_ru:
             if i == "\n":
                 sayac += 1
         if len (tabir1.tabiri_ru) > 100:
+            satir = (sayac + karakter_satiri)
+        else:
+            satir = (sayac + 2)
+        object_pk = tabir1.id
+        form = AramaForm ()
+        return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
+                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
+    if get_language () == 'ar':
+        tabir1 = get_object_or_404 (Ruyatabirlerix5, slug_ar=slug)
+        karakter_satiri = int (len (tabir1.tabiri_ar) / 100)
+        sayac = 0
+        for i in tabir1.tabiri_ar:
+            if i == "\n":
+                sayac += 1
+        if len (tabir1.tabiri_ar) > 100:
+            satir = (sayac + karakter_satiri)
+        else:
+            satir = (sayac + 2)
+        object_pk = tabir1.id
+        form = AramaForm ()
+        return render (response, 'ruyatabirleri/ruyatabirleri_ayrinti.html',
+                       {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk})
+
+    elif get_language () == 'zh-hans':
+        tabir1 = get_object_or_404 (Ruyatabirlerix5, slug_ch=slug)
+        karakter_satiri = int (len (tabir1.tabiri_ch) / 100)
+        sayac = 0
+        for i in tabir1.tabiri_ch:
+            if i == "\n":
+                sayac += 1
+        if len (tabir1.tabiri_ch) > 100:
             satir = (sayac + karakter_satiri)
         else:
             satir = (sayac + 2)
@@ -298,7 +462,7 @@ def ruyatabirleri_ayrinti(response, slug=None):
                            {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk, 'tablo':tablo})
         else:
             tablo=2
-            tabir1 = get_object_or_404 (Ruyatabirlerix3, slug_tr=slug)
+            tabir1 = get_object_or_404 (Ruyatabirlerix5, slug_tr=slug)
             karakter_satiri = int (len (tabir1.tabiri_tr) / 100)
             sayac = 0
             for i in tabir1.tabiri_tr:
@@ -314,11 +478,12 @@ def ruyatabirleri_ayrinti(response, slug=None):
                            {'satir': satir, 'tabir1': tabir1, 'form': form, 'object_pk': object_pk, 'tablo':tablo})
 
 
+
 def harf_sayfalari(response, harf):
     if get_language () == 'en':
-        tabir1 = Ruyatabirlerix3.objects.filter (kelime_en__startswith=harf)
+        tabir1 = Ruyatabirlerix5.objects.filter (kelime_en__startswith=harf)
     elif get_language() == 'es':
-        tabir1 = Ruyatabirlerix3.objects.filter (kelime_es__startswith=harf)
+        tabir1 = Ruyatabirlerix5.objects.filter (kelime_es__startswith=harf)
     else: #get_language() == 'tr'
         tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
     form = AramaForm ()

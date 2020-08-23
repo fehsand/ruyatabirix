@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-19 22:51+0300\n"
+"POT-Creation-Date: 2020-08-23 22:37+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,37 +20,60 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\ruyatabirix\settings.py:151
+#: .\notlar.txt:75
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:23
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:37
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:51
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:65
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:84
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:14
+msgid "Aramak İstediğin Kelimeyi Yaz"
+msgstr "Напишите ключевое слово"
+
+#: .\notlar.txt:80
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:28
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:42
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:56
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:70
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:90
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:19
+msgid "ARA"
+msgstr "ПОИСК"
+
+#: .\ruyatabirix\settings.py:96
 msgid "Turkish"
 msgstr "турецкий"
 
-#: .\ruyatabirix\settings.py:152
+#: .\ruyatabirix\settings.py:97
 msgid "English"
 msgstr "английский"
 
-#: .\ruyatabirix\settings.py:153
+#: .\ruyatabirix\settings.py:98
 msgid "Arabic"
 msgstr "арабский"
 
-#: .\ruyatabirix\settings.py:154
+#: .\ruyatabirix\settings.py:99
 msgid "Russian"
 msgstr "русский"
 
-#: .\ruyatabirix\settings.py:155
+#: .\ruyatabirix\settings.py:100
 msgid "Spanish"
 msgstr "испанский"
 
-#: .\ruyatabirix\settings.py:156
+#: .\ruyatabirix\settings.py:101
 msgid "Chinese"
 msgstr "китайский"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:12
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:20
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:14
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:8
 msgid "RÜYA TABİRLERİ"
 msgstr "МЕЧТА ИНТЕРПРЕТАЦИЯ"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:13
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:15
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:21
 msgid ""
 "Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler "
 "kullanarak arayabilirsiniz yada gördüğünüz rüyayı, rüya tabir formunu "
@@ -60,17 +83,22 @@ msgstr ""
 "используя ключевые слова, или отправить нам мечту, которую вы видите, "
 "заполнив форму толкования снов."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:16
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:22
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:110
 msgid "Rüya Tabirleri için Tıklayınız..."
 msgstr "Нажмите для интерпретации мечты..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:24
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:41
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:15
 msgid "YILDIZNAME"
 msgstr "YILDIZNAME"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:25
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:36
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:42
 msgid ""
 "Bu bölümde kendinizin ve annenizin ismini yazarak burcunuz hakkındaki "
 "bilgileri okuyabilirsiniz."
@@ -78,17 +106,22 @@ msgstr ""
 "В этом разделе вы можете прочитать информацию о своем гороскопе, написав имя "
 "себя и своей матери."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:26
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:31
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:37
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:43
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:64
 msgid "Yıldızname için Tıklayınız..."
 msgstr "Нажмите для Гороскопа..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:35
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:61
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:17
 msgid "TEFE'ÜL"
 msgstr "TEFEUL"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:36
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:56
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:62
 msgid ""
 "\"Devemin yularını kaybetsem Kuran'da bulurum\"<br>İbn Abbas (r."
 "a.)<br><br>Sizde Kur'an-ı Kerim'den kendi hissenizi almak için, temiz bir "
@@ -104,17 +137,22 @@ msgstr ""
 "иногда в суре.<br>Не забывайте, что это Необходимо оценить их все вместе и "
 "узнать больше из книг Тафсира."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:37
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:59
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:57
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:63
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:61
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:120
 msgid "Tefe'ül için Tıklayınız..."
 msgstr "Нажмите для TEFEUL"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:46
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:75
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:81
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:16
 msgid "DUA"
 msgstr "МОЛИТВА"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:47
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:76
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:82
 msgid ""
 "Dua, istemek veya yardım talep etmek demektir.<br>İnsanın bütün benliğiyle "
 "Allah’a yönelerek maddî ve manevî isteklerini O’na arz etmesidir."
@@ -130,17 +168,21 @@ msgstr ""
 "из которых это зикр и уважение, а другое желание. В этом разделе "
 "описывается, как мы должны молиться, чтобы наши желания сбылись."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:48
-#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:77
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:83
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:68
 msgid "Dua Bölümü için Tıklayınız..."
 msgstr "Нажмите для молитвы..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:159
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:50
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:165
 msgid "Gizlilik Politikası"
 msgstr "Конфиденциальность"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:52
 msgid ""
 "Sitemizi kullanmaya başladığınız andan itibaren burada yazılı olan kuralları "
 "kabul etmiş sayılmaktasınız.\n"
@@ -241,48 +283,70 @@ msgstr ""
 "сайт имеет право не публиковать комментарии и мечты, которые не считаются "
 "подходящими."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:83
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:166
 msgid "İletişim"
 msgstr "контакт"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:17
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:20
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:19
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:91
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:22
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:104
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:62
 msgid "İsminiz"
 msgstr "Ваше имя"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:24
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:27
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:98
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:29
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:111
 msgid "Soyisminiz"
 msgstr "Ваша фамилия"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:31
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:34
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:105
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:36
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:118
 msgid "örnek@posta.com"
 msgstr "пример@пример.com"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:38
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:40
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:112
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:43
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:125
+msgid "Lütfen eposta adresinizi doğrulamak için tekrar yazınız."
+msgstr ""
+"Пожалуйста, напишите свой адрес электронной почты еще раз, чтобы проверить "
+"его."
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:47
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:119
 msgid "Mesajınızı Yazınız"
 msgstr "Напишите ваше сообщение"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:46
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:125
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:78
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:127
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:124
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:80
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:162
 msgid "GÖNDER"
 msgstr "ОТПРАВИТЬ"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:63
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:135
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:166
 msgid "Sosyal Medya"
 msgstr "социальные медиа"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:43
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:61
 msgid "Dua Nedir?"
 msgstr "Что такое молитва?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:45
 msgid ""
 " Sözlük anlamı ile dua “çağırmak, seslenmek, istemek, yardım talep etmek” "
 "demektir.<br>\n"
@@ -323,29 +387,19 @@ msgstr ""
 "духовные желания Аллаху. Молитва - это связь между Богом и слугой. В молитве "
 "всегда хвалят и требуют Аллаха. Молитва - это также зикр и поклонение."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:16
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:30
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:14
-msgid "Aramak İstediğin Kelimeyi Yaz"
-msgstr "Напишите ключевое слово"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:21
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:35
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:73
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:19
-msgid "ARA"
-msgstr "ПОИСК"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:147
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:164
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:281
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:398
 msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
 msgstr "Словарь мечты"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:16
 msgid "Kelimeler ile Rüya Tabiri"
 msgstr "Сонник с ключевыми словами"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:17
 msgid ""
 "Rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak "
 "bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz zaman, "
@@ -355,15 +409,18 @@ msgstr ""
 "используя ключевые слова. Например, когда вы видите, что едете во сне, вы "
 "должны искать, используя только слово автомобиль."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:18
 msgid "Rüya Tabirleri Sözlüğü için Tıklayınız..."
 msgstr "нажмите для словаря толкования мечты..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:19
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:30
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:36
 msgid "Rüya Tabiri Formu"
 msgstr "Форма интерпретации снов"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:20
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:31
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:37
 msgid ""
 "Aşağıdaki bağlantıyı tıklayarak Rüya Tabirleri Formuna ulaşabilirisiniz. "
 "Rüyanızı kısa cümleler ile ayrıntılı olarak anlatınız. Rüyanızın yorumu en "
@@ -373,29 +430,36 @@ msgstr ""
 "Опишите свою мечту в коротких предложениях. Интерпретация вашей мечты будет "
 "отправлена на ваш адрес электронной почты как можно скорее."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:32
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:38
 msgid "Rüya Tabirleri Formu için Tıklayınız..."
 msgstr "Нажмите для формы интерпретации мечты"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:118
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:82
+msgid "adet yorum bulunmaktadır."
+msgstr "Комментарии"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:117
 msgid "Yorum Yaz"
 msgstr "написать комментарий"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:157
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:164
 msgid "Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir."
 msgstr "Вы должны войти в систему как член, чтобы оставить комментарий."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:158
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:165
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:154
 msgid "Giriş Yap"
 msgstr "авторизоваться"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:7
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:46
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:52
 msgid "Rüya Nedir?"
 msgstr "Что такое сон?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:66
 msgid ""
 " Rüya, uyku halindeki görüş veya görülen şey demektir. Rüyalar üç kısımdır :"
 "<br>\n"
@@ -412,11 +476,13 @@ msgstr ""
 "сны, сны, которые видят добросердечные люди, за пределами первого и второго "
 "рода снов."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:19
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:76
 msgid "Rüyanın Etkileri"
 msgstr "Эффекты мечты"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:23
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:78
 msgid ""
 " İnsan uyanıklık hali ile sorumludur. Yani uyanıklık haricinde uyku ve "
 "baygınlık gibi yaptığı işlerden\n"
@@ -436,11 +502,13 @@ msgstr ""
 "вообще. Хорошая и точная интерпретация сна имеет важное значение в "
 "интерпретации сна."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:31
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:88
 msgid "Rüya ile İlgili Hadisler"
 msgstr "Хадис на мечте"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:90
 msgid ""
 " 1. “Rüya tabir edildiği şekilde gerçekleşir. Bunun örneği ise ayağını "
 "kaldıran ve onu yere\n"
@@ -479,11 +547,13 @@ msgstr ""
 "что ему не нравится, это от сатаны, поэтому пусть он ищет убежища от его зла "
 "и никому не упоминает об этом. Это не навредит ему."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:92
 msgid "RÜYA TABİRLERİ FORMU"
 msgstr "Форма интерпретации снов"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:13
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:15
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:97
 msgid ""
 "Rüyanızı aşağıdaki formu doldurarak bize gönderebilirsiniz. Rüyanızı kısa "
 "cümleler ile ayrıntılı olarak anlatınız. Rüya yorumunuz, eposta adresinize "
@@ -493,56 +563,61 @@ msgstr ""
 "в коротких предложениях. Интерпретация вашей мечты будет отправлена на ваш "
 "адрес электронной почты как можно скорее."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:41
-msgid "Lütfen eposta adresinizi doğrulamak için tekrar yazınız."
-msgstr ""
-"Пожалуйста, напишите свой адрес электронной почты еще раз, чтобы проверить "
-"его."
-
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:50
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:50
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:52
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:134
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:57
 msgid "Cinsiyetiniz"
 msgstr "пол"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:51
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:51
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:53
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:135
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:58
 msgid "Erkek"
 msgstr "мужчина"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:52
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:52
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:54
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:136
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:59
 msgid "Kadın"
 msgstr "женский"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:57
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:59
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:141
 msgid "Rüyayı ne zaman gördüğünüz?"
 msgstr "Когда ты увидел сон?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:58
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:60
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:142
 msgid "Gece yarısı"
 msgstr "полночь"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:59
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:61
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:143
 msgid "Güneş doğmadan hemen önce veya doğduktan hemen sonra"
 msgstr "Прямо перед восходом солнца или сразу после восхода солнца"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:60
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:62
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:144
 msgid "Gün içerisinde"
 msgstr "в день"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:65
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:67
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:149
 msgid "Gördüğünüz rüya bilinçaltı olabilir mi?"
 msgstr "Может ли сон, который вы видели, быть подсознательным?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:66
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:68
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:150
 msgid "Evet"
 msgstr "да"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:67
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:69
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:151
 msgid "Hayır"
 msgstr "нет"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:70
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:72
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:154
 msgid ""
 "Rüyanızı yazmaya başlamadan önce yukarıdaki bilgileri eksiksiz olarak "
 "doldurduğunuzdan ve eposta adreslerinin aynı olduğundan emin olunuz. "
@@ -554,40 +629,41 @@ msgstr ""
 "совпадают. Опишите свою мечту подробно с помощью простых предложений. Не "
 "забудьте добавить точку в конце предложения."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:18
 msgid "Niyet ediniz ve başlatınız."
 msgstr "Намерение и начать"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:48
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:58
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:71
 msgid "BAŞLAT"
 msgstr "НАЧАЛО"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:63
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:73
 msgid "Sure"
 msgstr "сура"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:61
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:71
 msgid "Ayet"
 msgstr "стих"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:57
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:67
 msgid "Kelime"
 msgstr "слово"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:58
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:62
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:68
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:72
 msgid "Anlamı"
 msgstr "Смысл"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:74
 msgid "BİLGİ"
 msgstr "Информация"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:74
 msgid ""
 "Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı "
 "olabilir."
@@ -595,12 +671,14 @@ msgstr ""
 "Может быть более полезным прочитать предыдущий или следующий стих или всю "
 "суру."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:52
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:69
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:58
 msgid "Tefe'ül Nedir?"
 msgstr "Что такое TEFEUL?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:71
 msgid ""
 " Bir kitabı gelişigüzel açarak ilk tevafuk eden yeri okuyup ondan bir mesaj "
 "çıkarmaya tefe'ül denmektedir.<br>\n"
@@ -650,11 +728,13 @@ msgstr ""
 "учиться по книгам. TEFEUL можно повторять через определенные промежутки "
 "времени, не отчаиваясь. Следует отметить, что TEFEUL не гадание."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:40
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:42
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:101
 msgid "Tefe'ül Nasıl Yapılır?"
 msgstr "Как делается TEFEUL?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:42
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:44
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:103
 msgid ""
 "Tefeül de esas olan bunun bir fal olmadığını, istişare olduğunu akılda "
 "tutmak temiz bir niyet ile yapmaktır.\n"
@@ -722,28 +802,30 @@ msgstr ""
 msgid "Ruyatabirix.com"
 msgstr "интерпретация мечтать"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:49
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:41
 msgid "Yıldızname Nedir?"
 msgstr "Что такое YILDIZNAME?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:140
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:146
 msgid "Hesabım"
 msgstr "мой счет"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:144
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:150
 msgid "Çıkış Yap"
 msgstr "выйти"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:158
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:164
 msgid "Başa Dön"
 msgstr "Вернуться к началу"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:59
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:66
 msgid "Annenizin İsmi"
 msgstr "Имя твоей матери"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:43
 msgid ""
 " Yıldız falı yıldızların konum ve hareketlerinin bir işaret sistemi "
 "oluşturduğuna,\n"
@@ -772,11 +854,13 @@ msgstr ""
 "людей в результате некоторых операций, противоречит нашей религиозной вере. "
 "Такие действия должны быть сделаны как развлечение."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:24
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:57
 msgid "Nasıl Hesaplanır?"
 msgstr "Как рассчитывается?"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:28
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:59
 msgid ""
 " Ebced hesabıyla yıldızname bakılırken, kişinin anne ismi ile kendi isminin "
 "her harfinin\n"
@@ -843,44 +927,59 @@ msgid "ruyatabiri-yonetici/"
 msgstr "intyerpryetatsiya-sna-admin/"
 
 #: .\ruyatabirleri\urls.py:22
+msgid "ruyatabiri-yonetici-mesaj/<int:id>/"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:23
+msgid "ruyatabiri-yonetici-ruya/<int:id>/"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:24
+msgid "ruyatabiri-yonetici-ruya-tabir/<int:id>/"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:25
 msgid "ruyatabirleri/"
 msgstr "intyerpryetatsiya-sna/"
 
-#: .\ruyatabirleri\urls.py:23
+#: .\ruyatabirleri\urls.py:26
 msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
-msgstr ""
-"intyerpryetatsiya-sna/znachyeniye-<slug:slug>-v-myechtah/q1w2e3r4t5y6u7/"
+msgstr "толкования-снов/значение-<slug:slug>-во-сне/"
 
-#: .\ruyatabirleri\views.py:347
+#: .\ruyatabirleri\urls.py:28 .\ruyatabirleri\urls.py:29
+msgid "^ruyatabirleri/ruyada-(?P<slug>[-\\w]+)-gormek/q1w2e3r4t5y6u7$"
+msgstr "^толкования-снов/значение-(?P<slug>[-\\w]+)-во-сне/$"
+
+#: .\ruyatabirleri\views.py:518
 msgid "Lütfen Cinsiyet Seçimini Yapınız"
 msgstr "пожалуйста, выберите свой пол"
 
-#: .\ruyatabirleri\views.py:356
+#: .\ruyatabirleri\views.py:527
 msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
 msgstr "Ваше имя или фамилия слишком короткие. Попробуй еще раз."
 
-#: .\ruyatabirleri\views.py:363
+#: .\ruyatabirleri\views.py:534
 msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:370
+#: .\ruyatabirleri\views.py:541
 msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:420 .\ruyatabirleri\views.py:448
-#: .\ruyatabirleri\views.py:517
+#: .\ruyatabirleri\views.py:591 .\ruyatabirleri\views.py:619
+#: .\ruyatabirleri\views.py:689
 msgid "Lütfen Formu Doldurunuz."
 msgstr "пожалуйста, заполните форму"
 
-#: .\ruyatabirleri\views.py:437
+#: .\ruyatabirleri\views.py:608
 msgid "Kutucukları Doldurunuz."
 msgstr "Заполнить бланки"
 
-#: .\ruyatabirleri\views.py:444 .\ruyatabirleri\views.py:510
+#: .\ruyatabirleri\views.py:615 .\ruyatabirleri\views.py:681
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "Ваше сообщение было успешно сохранено."
 
-#: .\ruyatabirleri\views.py:514
+#: .\ruyatabirleri\views.py:685
 msgid ""
 "Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması "
 "gerekmektedir. Lütfen düzeltiniz."

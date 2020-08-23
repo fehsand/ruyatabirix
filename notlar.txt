@@ -31,10 +31,54 @@ Say you have these migrations in your app myapp:
 0002_something.py
 0003_removedcolumn.py
 0004_anotherthing.py
-You're going to need to roll back the migrations back to a point when the column still existed. Note that if you are in a prod database, you should be aware of potential data loss that could come from doing this.
+You're going to need to roll back the migrations back to a point when the column still existed.
+Note that if you are in a prod database, you should be aware of potential data loss that could come from doing this.
 
-If you removed the column in 0003_removedcolumn.py, you'll need to run: python manage.py migrate --fake myapp 0002_something.
+If you removed the column in 0003_removedcolumn.py,
+you'll need to run: python manage.py migrate --fake myapp 0002_something.
 
 Then, you can rerun the sequential migrations: python manage.py migrate myapp. Your problem should be solved now!
 
 From here, you can run python manage.py makemigrations and it should run smoothly.
+
+
+            <div class="col-md-8 p-0 text-right" dir="rtl">
+                <h1>هذا القسم لا يزال قيد الإنشاء.</h1>
+                <h1>الرجاء التحقق مرة اخرى قريبا.</h1>
+                <h1>شكرا على اهتمامك.</h1>
+            </div>
+
+
+
+     #re_path(r'^ruyatabirleri/(?P<slug>[-\w]+)/$', views.ruyatabirleri_ayrinti, name='ruyatabirleri_ayrinti'),
+
+
+     self.slug_ru = slugify(self.kelime_ru.replace('а', 'a').replace('о','o').replace('м','m').replace('т','t').replace('к','k').replace('е','ye').replace('с','s').replace('и','i').replace('д','d').replace('п','p').replace('б','b').replace('л','l').replace('г','g').replace('ш','sh').replace('ж','zh').replace('щ','sch').replace('э','e').replace('я','ya').replace('ф','f').replace('ч','ch').replace('з','z').replace('ю','yu').replace('ц','ts').replace('й','y').replace('ё','yo').replace('в','v').replace('н','n').replace('р','r').replace('у','u').replace('х','h').replace('ъ','').replace('ь','').replace('ы','y'), allow_unicode=True)
+
+
+
+
+"^في-الحلم/تفسير-الأحلام-(?P<slug>[-\\w]+)-معنى/$"
+
+
+rüyatabirleri anasayfa
+
+            {% elif LANGUAGE_CODE == 'zh-hans' %}
+            <div class="col-md-6 p-0 mx-auto">
+                <h1>此部分仍在建设中。</h1>
+                <h1>请稍后再回来查看。</h1>
+                <h1>感谢您的关注。</h1>
+            </div>
+            <div class="col-md-6 p-0 mx-auto">
+                <form action="{% url 'ruyatabirleri:ruyatabirleri' %}" method="post">
+                    {% csrf_token %}
+                    {% trans "Aramak İstediğin Kelimeyi Yaz" as place_holder_2 %}
+                    <div class="form-group mt-3">
+                        <input class="form-control m-0 text-center" type="text" name="kelime" placeholder="{{place_holder_2}}">
+                    </div>
+                    <div class="form-group mt-3 text-center">
+                        <button class="btn-lg btn-dark border-0" type="submit" name="save">{% trans "ARA" %}</button>
+                    </div>
+                </form>
+                <div class="row m-0 p-0 text-danger">{{n1}}{{mesaj}}</div>
+            </div>

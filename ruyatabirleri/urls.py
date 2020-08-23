@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from .import views
 from django.utils.translation import gettext_lazy as _
 
@@ -25,8 +25,8 @@ urlpatterns = [
     path(_('ruyatabirleri/'), views.rtx_ara_yorum, name='rtx_ara_yorum'),
     path(_('ruyatabirleri/ruyada-'+'<slug:slug>'+'-gormek/q1w2e3r4t5y6u7'), views.ruyatabirleri_ayrinti, name='ruyatabirleri_ayrinti'),
     path('ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7', views.ruyatabirleri_ayrinti, name='my_comment_was_posted'),
-    path('<str:harf>/q1w2e3r4t5y6u7', views.harf_sayfalari, name='harf_sayfalari'),
-    path('ruyatabiri-<slug:slug>/', views.ruyatabirleri_ayrinti_sbt_syf, name='ruyatabirleri_ayrinti_sbt_syf'),
-
-
+    re_path(_(r'^ruyatabirleri/ruyada-'+'(?P<slug>[-\w]+)'+'-gormek/q1w2e3r4t5y6u7$'), views.ruyatabirleri_ayrinti_2, name='ruyatabirleri_ayrinti_2'),
+    re_path(_(r'^ruyatabirleri/ruyada-'+'(?P<slug>[-\w]+)'+'-gormek/q1w2e3r4t5y6u7$'), views.ruyatabirleri_ayrinti_2, name='my_comment_was_posted_2'),
+    path('ruyatabirleri/<str:harf>-harfi-listesi', views.harf_sayfalari, name='harf_sayfalari'),
+    path('rüya-tabirleri-<slug:slug>/', views.ruyatabirleri_ayrinti_sbt_syf, name='ruyatabirleri_ayrinti_sbt_syf'),
 ]

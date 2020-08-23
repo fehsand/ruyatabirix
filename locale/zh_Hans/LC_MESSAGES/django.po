@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-19 22:57+0300\n"
+"POT-Creation-Date: 2020-08-23 22:37+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,37 +18,60 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\ruyatabirix\settings.py:151
+#: .\notlar.txt:75
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:23
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:37
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:51
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:65
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:84
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:14
+msgid "Aramak İstediğin Kelimeyi Yaz"
+msgstr "写关键词"
+
+#: .\notlar.txt:80
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:28
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:42
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:56
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:70
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:90
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:19
+msgid "ARA"
+msgstr "搜索"
+
+#: .\ruyatabirix\settings.py:96
 msgid "Turkish"
 msgstr "土耳其"
 
-#: .\ruyatabirix\settings.py:152
+#: .\ruyatabirix\settings.py:97
 msgid "English"
 msgstr "英语"
 
-#: .\ruyatabirix\settings.py:153
+#: .\ruyatabirix\settings.py:98
 msgid "Arabic"
 msgstr "阿拉伯"
 
-#: .\ruyatabirix\settings.py:154
+#: .\ruyatabirix\settings.py:99
 msgid "Russian"
 msgstr "俄语"
 
-#: .\ruyatabirix\settings.py:155
+#: .\ruyatabirix\settings.py:100
 msgid "Spanish"
 msgstr "西班牙文"
 
-#: .\ruyatabirix\settings.py:156
+#: .\ruyatabirix\settings.py:101
 msgid "Chinese"
 msgstr "中文"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:12
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:20
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:14
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:8
 msgid "RÜYA TABİRLERİ"
 msgstr "梦解"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:13
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:15
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:21
 msgid ""
 "Bu bölümde, rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler "
 "kullanarak arayabilirsiniz yada gördüğünüz rüyayı, rüya tabir formunu "
@@ -57,33 +80,43 @@ msgstr ""
 "在本节中，您可以使用关键字找到在梦中看到的事件的含义，或者通过填写梦解表将您"
 "看到的梦发送给我们。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:14
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:53
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:16
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:22
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:110
 msgid "Rüya Tabirleri için Tıklayınız..."
 msgstr "点击查看梦解..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:24
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:41
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:15
 msgid "YILDIZNAME"
 msgstr "YILDIZNAME"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:25
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:36
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:42
 msgid ""
 "Bu bölümde kendinizin ve annenizin ismini yazarak burcunuz hakkındaki "
 "bilgileri okuyabilirsiniz."
 msgstr "在本部分中，您可以通过写下您自己和母亲的名字来阅读有关星座的信息。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:26
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:31
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:37
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:43
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:64
 msgid "Yıldızname için Tıklayınız..."
 msgstr "点击查看星座..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:35
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:61
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:17
 msgid "TEFE'ÜL"
 msgstr "TEFEUL"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:36
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:56
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:62
 msgid ""
 "\"Devemin yularını kaybetsem Kuran'da bulurum\"<br>İbn Abbas (r."
 "a.)<br><br>Sizde Kur'an-ı Kerim'den kendi hissenizi almak için, temiz bir "
@@ -96,17 +129,22 @@ msgstr ""
 "找的内容有时会隐藏在单词中，有时可能会隐藏在诗句中，有时会出现在叙词中。<br>"
 "不要忘记，有必要一起评估所有这些内容，并从书中学习更多知识。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:37
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:59
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:57
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:63
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:61
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:120
 msgid "Tefe'ül için Tıklayınız..."
 msgstr "点击查看 Tefeul..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:46
-#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:75
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:81
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\dua.html:16
 msgid "DUA"
 msgstr "祷告"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:47
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:76
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:82
 msgid ""
 "Dua, istemek veya yardım talep etmek demektir.<br>İnsanın bütün benliğiyle "
 "Allah’a yönelerek maddî ve manevî isteklerini O’na arz etmesidir."
@@ -120,17 +158,21 @@ msgstr ""
 "和精神上的渴望。<br>祈祷中有两个要素，其中之一是尊敬和尊重，另一个是希望。本"
 "节描述了我们应该如何为自己的愿望实现祈祷。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:48
-#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:77
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa.html:83
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:68
 msgid "Dua Bölümü için Tıklayınız..."
 msgstr "点击祈祷..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:159
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:50
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:165
 msgid "Gizlilik Politikası"
 msgstr "隐私"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_gizlilik.html:52
 msgid ""
 "Sitemizi kullanmaya başladığınız andan itibaren burada yazılı olan kuralları "
 "kabul etmiş sayılmaktasınız.\n"
@@ -218,48 +260,68 @@ msgstr ""
 "们的网站接收cookie时，您可能无法使用我们网站的某些功能。<br> <br>我们的网站有"
 "权不发表不适当的评论和梦想。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:9
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:83
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:166
 msgid "İletişim"
 msgstr "联系"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:17
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:20
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:19
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:91
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:22
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:104
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:62
 msgid "İsminiz"
 msgstr "你的名字"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:24
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:27
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:98
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:29
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:111
 msgid "Soyisminiz"
 msgstr "您的姓氏"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:31
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:34
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:105
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:36
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:118
 msgid "örnek@posta.com"
 msgstr "例@例.com"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:38
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:40
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:112
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:43
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:125
+msgid "Lütfen eposta adresinizi doğrulamak için tekrar yazınız."
+msgstr "请再次输入您的电子邮件地址以进行检查。"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:47
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:119
 msgid "Mesajınızı Yazınız"
 msgstr "写你的信息"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:46
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:125
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:78
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:127
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:124
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:80
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:162
 msgid "GÖNDER"
 msgstr "发送"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:160
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:63
+#: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:135
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:166
 msgid "Sosyal Medya"
 msgstr "社交媒体"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:43
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:61
 msgid "Dua Nedir?"
 msgstr "什么是祷告？"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\dua_nedir.html:45
 msgid ""
 " Sözlük anlamı ile dua “çağırmak, seslenmek, istemek, yardım talep etmek” "
 "demektir.<br>\n"
@@ -299,29 +361,19 @@ msgstr ""
 "质和精神渴望。 祷告是神与仆人之间的联络人。 祈祷中总有赞美和要求真主。 祷告也"
 "是敬拜和崇拜。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:16
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:30
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:14
-msgid "Aramak İstediğin Kelimeyi Yaz"
-msgstr "写关键词"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:21
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:35
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:73
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:19
-msgid "ARA"
-msgstr "搜索"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:147
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:164
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:281
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:398
 msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
 msgstr "梦想字典"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:16
 msgid "Kelimeler ile Rüya Tabiri"
 msgstr "用关键字进行梦境解释"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:17
 msgid ""
 "Rüyanızda gördüğünüz olayların anlamlarını anahtar kelimeler kullanarak "
 "bulabilirsiniz. Örneğin rüyanızda araba kullandığınızı gördünüz zaman, "
@@ -330,15 +382,18 @@ msgstr ""
 "在本节中，您可以使用关键字找到梦中看到的事件的含义。 例如，当您看到自己在梦想"
 "中开车时，应仅使用单词car进行搜索。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:18
 msgid "Rüya Tabirleri Sözlüğü için Tıklayınız..."
 msgstr "点击获取梦解字典..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:19
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:30
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:36
 msgid "Rüya Tabiri Formu"
 msgstr "梦解表"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:20
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:31
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:37
 msgid ""
 "Aşağıdaki bağlantıyı tıklayarak Rüya Tabirleri Formuna ulaşabilirisiniz. "
 "Rüyanızı kısa cümleler ile ayrıntılı olarak anlatınız. Rüyanızın yorumu en "
@@ -347,29 +402,36 @@ msgstr ""
 "您可以通过单击下面的链接来获得梦想解释表。 用简短的句子描述你的梦想。 您对梦"
 "的解释将尽快发送到您的电子邮件地址。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:32
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ara_yorum.html:38
 msgid "Rüya Tabirleri Formu için Tıklayınız..."
 msgstr "点击获取梦解表..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:118
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:82
+msgid "adet yorum bulunmaktadır."
+msgstr "注释"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:117
 msgid "Yorum Yaz"
 msgstr "写评论"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:157
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:164
 msgid "Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir."
 msgstr "您必须以会员身份登录才能发表评论。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:158
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:148
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:165
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:154
 msgid "Giriş Yap"
 msgstr "登录"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:7
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:46
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:52
 msgid "Rüya Nedir?"
 msgstr "什么是梦？"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:9
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:11
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:66
 msgid ""
 " Rüya, uyku halindeki görüş veya görülen şey demektir. Rüyalar üç kısımdır :"
 "<br>\n"
@@ -385,11 +447,13 @@ msgstr ""
 "们正在忙于做什么的梦想。 除了第一种和第二种梦，其他的梦，也就是善良的人们看到"
 "的梦。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:19
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:76
 msgid "Rüyanın Etkileri"
 msgstr "梦的影响"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:23
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:78
 msgid ""
 " İnsan uyanıklık hali ile sorumludur. Yani uyanıklık haricinde uyku ve "
 "baygınlık gibi yaptığı işlerden\n"
@@ -406,11 +470,13 @@ msgstr ""
 "有些人说他们有例外，但总的来说，他们不能凭梦想进行手术。 对梦的良好而准确的解"
 "释对于梦的解释至关重要。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:31
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:88
 msgid "Rüya ile İlgili Hadisler"
 msgstr "关于梦的圣训"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:33
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:35
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_nedir.html:90
 msgid ""
 " 1. “Rüya tabir edildiği şekilde gerçekleşir. Bunun örneği ise ayağını "
 "kaldıran ve onu yere\n"
@@ -448,11 +514,13 @@ msgstr ""
 "并谈论它。 当你们中的一个人看到他不喜欢的其他东西时，那是来自撒但的，所以让他"
 "从邪恶中寻求庇护，而不要向任何人提及。 这不会伤害他。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:92
 msgid "RÜYA TABİRLERİ FORMU"
 msgstr "梦解表"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:13
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:15
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:97
 msgid ""
 "Rüyanızı aşağıdaki formu doldurarak bize gönderebilirsiniz. Rüyanızı kısa "
 "cümleler ile ayrıntılı olarak anlatınız. Rüya yorumunuz, eposta adresinize "
@@ -461,54 +529,61 @@ msgstr ""
 "您可以通过填写以下表格将您的梦想发送给我们。 用简短的句子描述你的梦想。 您对"
 "梦的解释将尽快发送到您的电子邮件地址。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:41
-msgid "Lütfen eposta adresinizi doğrulamak için tekrar yazınız."
-msgstr "请再次输入您的电子邮件地址以进行检查。"
-
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:50
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:50
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:52
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:134
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:57
 msgid "Cinsiyetiniz"
 msgstr "性别"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:51
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:51
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:53
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:135
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:58
 msgid "Erkek"
 msgstr "男"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:52
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:52
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:54
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:136
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:59
 msgid "Kadın"
 msgstr "女"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:57
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:59
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:141
 msgid "Rüyayı ne zaman gördüğünüz?"
 msgstr "你什么时候看到梦的？"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:58
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:60
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:142
 msgid "Gece yarısı"
 msgstr "午夜"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:59
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:61
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:143
 msgid "Güneş doğmadan hemen önce veya doğduktan hemen sonra"
 msgstr "日出前或日出后"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:60
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:62
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:144
 msgid "Gün içerisinde"
 msgstr "一天内"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:65
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:67
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:149
 msgid "Gördüğünüz rüya bilinçaltı olabilir mi?"
 msgstr "你看到的梦会是潜意识的吗？"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:66
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:68
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:150
 msgid "Evet"
 msgstr "是"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:67
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:69
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:151
 msgid "Hayır"
 msgstr "没有"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:70
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:72
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:154
 msgid ""
 "Rüyanızı yazmaya başlamadan önce yukarıdaki bilgileri eksiksiz olarak "
 "doldurduğunuzdan ve eposta adreslerinin aynı olduğundan emin olunuz. "
@@ -518,51 +593,54 @@ msgstr ""
 "在开始撰写梦想之前，请确保您完全正确地填写以上信息，并且电子邮件地址相同。 用"
 "简单的句子详细描述您的梦想。 不要忘记在句子的末尾添加句号。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:18
 msgid "Niyet ediniz ve başlatınız."
 msgstr "打算并开始"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:48
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:58
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:71
 msgid "BAŞLAT"
 msgstr "开始"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:63
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:73
 msgid "Sure"
 msgstr "苏拉"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:61
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:71
 msgid "Ayet"
 msgstr "诗句"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:54
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:57
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:67
 msgid "Kelime"
 msgstr "字"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:58
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:62
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:68
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:72
 msgid "Anlamı"
 msgstr "含义"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:74
 msgid "BİLGİ"
 msgstr "信息"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:64
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul.html:74
 msgid ""
 "Bir önceki veya bir sonraki ayetin ya da tüm surenin okunması daha faydalı "
 "olabilir."
 msgstr "阅读上一节或下一节经文或整个经节可能会更有用。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:8
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:52
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:69
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:58
 msgid "Tefe'ül Nedir?"
 msgstr "什么是TEFEUL？"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:71
 msgid ""
 " Bir kitabı gelişigüzel açarak ilk tevafuk eden yeri okuyup ondan bir mesaj "
 "çıkarmaya tefe'ül denmektedir.<br>\n"
@@ -610,11 +688,13 @@ msgstr ""
 "TEFEUL可以每隔一定的时间重复一次，而不会感到绝望。 应当指出，TEFEUL不是算命"
 "的。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:40
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:42
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:101
 msgid "Tefe'ül Nasıl Yapılır?"
 msgstr "怎么做？"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:42
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:44
+#: .\ruyatabirleri\templates\ruyatabirleri\tefeul_nedir.html:103
 msgid ""
 "Tefeül de esas olan bunun bir fal olmadığını, istişare olduğunu akılda "
 "tutmak temiz bir niyet ile yapmaktır.\n"
@@ -676,28 +756,30 @@ msgstr ""
 msgid "Ruyatabirix.com"
 msgstr "梦解"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:49
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:8
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:55
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:41
 msgid "Yıldızname Nedir?"
 msgstr "什么是YILDIZNAME？"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:140
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:146
 msgid "Hesabım"
 msgstr "我的帐户"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:144
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:150
 msgid "Çıkış Yap"
 msgstr "登出"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:158
+#: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:164
 msgid "Başa Dön"
 msgstr "回到顶部"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:59
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname.html:66
 msgid "Annenizin İsmi"
 msgstr "你妈妈的名字"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:10
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:12
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:43
 msgid ""
 " Yıldız falı yıldızların konum ve hareketlerinin bir işaret sistemi "
 "oluşturduğuna,\n"
@@ -722,11 +804,13 @@ msgstr ""
 "YILDIZNAME中黄道十二宫特征的信息是从过去的经验中获得的。 不应忘记，相信恒星会"
 "因某些操作而影响人，这与我们的宗教信仰背道而驰。 这些活动应作为娱乐活动进行。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:24
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:57
 msgid "Nasıl Hesaplanır?"
 msgstr "如何计算？"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:28
+#: .\ruyatabirleri\templates\ruyatabirleri\yildizname_nedir.html:59
 msgid ""
 " Ebced hesabıyla yıldızname bakılırken, kişinin anne ismi ile kendi isminin "
 "her harfinin\n"
@@ -791,43 +875,59 @@ msgid "ruyatabiri-yonetici/"
 msgstr "梦解-admin/"
 
 #: .\ruyatabirleri\urls.py:22
-msgid "ruyatabirleri/"
+msgid "ruyatabiri-yonetici-mesaj/<int:id>/"
 msgstr ""
 
 #: .\ruyatabirleri\urls.py:23
-msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
+msgid "ruyatabiri-yonetici-ruya/<int:id>/"
 msgstr ""
 
-#: .\ruyatabirleri\views.py:347
+#: .\ruyatabirleri\urls.py:24
+msgid "ruyatabiri-yonetici-ruya-tabir/<int:id>/"
+msgstr ""
+
+#: .\ruyatabirleri\urls.py:25
+msgid "ruyatabirleri/"
+msgstr "梦解/"
+
+#: .\ruyatabirleri\urls.py:26
+msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
+msgstr "梦解/的含义-<slug:slug>-在梦里/"
+
+#: .\ruyatabirleri\urls.py:28 .\ruyatabirleri\urls.py:29
+msgid "^ruyatabirleri/ruyada-(?P<slug>[-\\w]+)-gormek/q1w2e3r4t5y6u7$"
+msgstr "^梦解/的含义-(?P<slug>[-\\w]+)-在梦里/$"
+
+#: .\ruyatabirleri\views.py:518
 msgid "Lütfen Cinsiyet Seçimini Yapınız"
 msgstr "请选择你的性别"
 
-#: .\ruyatabirleri\views.py:356
+#: .\ruyatabirleri\views.py:527
 msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
 msgstr "您的名字或母亲的名字太短。 再试一次。"
 
-#: .\ruyatabirleri\views.py:363
+#: .\ruyatabirleri\views.py:534
 msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:370
+#: .\ruyatabirleri\views.py:541
 msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:420 .\ruyatabirleri\views.py:448
-#: .\ruyatabirleri\views.py:517
+#: .\ruyatabirleri\views.py:591 .\ruyatabirleri\views.py:619
+#: .\ruyatabirleri\views.py:689
 msgid "Lütfen Formu Doldurunuz."
 msgstr "请填写表格"
 
-#: .\ruyatabirleri\views.py:437
+#: .\ruyatabirleri\views.py:608
 msgid "Kutucukları Doldurunuz."
 msgstr "填空"
 
-#: .\ruyatabirleri\views.py:444 .\ruyatabirleri\views.py:510
+#: .\ruyatabirleri\views.py:615 .\ruyatabirleri\views.py:681
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "您的帖子已成功保存"
 
-#: .\ruyatabirleri\views.py:514
+#: .\ruyatabirleri\views.py:685
 msgid ""
 "Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması "
 "gerekmektedir. Lütfen düzeltiniz."

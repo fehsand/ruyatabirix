@@ -1,6 +1,6 @@
 from django.contrib.sitemaps import Sitemap
 from qartez.sitemaps import StaticSitemap, RelAlternateHreflangSitemap
-from ruyatabirleri.models import Ruyatabirleri, Ruyatabirlerix3, Ruyatabirlerix_sbt
+from ruyatabirleri.models import Ruyatabirleri, Ruyatabirlerix5, Ruyatabirlerix_sbt
 
 # ---------------------- Static sitemap part ---------------------------
 # Sitemap for service pages like welcome and feedback.
@@ -51,7 +51,9 @@ class FooItemAlternateHreflangSitemap(RelAlternateHreflangSitemap):
         return [('en', item.altr_en_url),
                 ('es', item.altr_es_url),
                 ('ru', item.altr_ru_url),
+                ('ru', item.altr_ar_url),
+                ('ru', item.altr_ch_url),
                 ]
 
     def items(self):
-        return Ruyatabirlerix3._default_manager.exclude(altr_en_url=None).exclude(altr_es_url =None).exclude(altr_ru_url =None).order_by('id')
+        return Ruyatabirlerix5._default_manager.exclude(altr_en_url=None).exclude(altr_es_url =None).exclude(altr_ru_url =None).exclude(altr_ar_url =None).exclude(altr_ch_url =None).order_by('id')

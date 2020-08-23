@@ -146,9 +146,10 @@ class RTXyorum (models.Model):
 
 class Ruyatabirlerix5 (models.Model):
     kelime_tr = models.CharField(max_length=255)
-    slug_tr = models.SlugField(unique=True, blank=True, max_length=255)
+    slug_tr = models.SlugField(unique=True, blank=True, max_length=255, allow_unicode=True)
     tabiri_tr = models.TextField()
     kelime_en = models.CharField(max_length=200)
+    slug_en = models.SlugField (unique=True, blank=True, max_length=255)
     tabiri_en = models.TextField()
     altr_en_url = models.URLField(blank=True)
     kelime_es = models.CharField(max_length=200)
@@ -175,8 +176,11 @@ class Ruyatabirlerix5 (models.Model):
 
     def save(self, *args, **kwargs):
         self.slug_tr = slugify(self.kelime_tr.replace('ı','i'))
-        self.slug_es = slugify(self.kelime_es)
-        self.slug_ru = slugify(self.kelime_ru.replace('а', 'a').replace('о','o').replace('м','m').replace('т','t').replace('к','k').replace('е','ye').replace('с','s').replace('и','i').replace('д','d').replace('п','p').replace('б','b').replace('л','l').replace('г','g').replace('ш','sh').replace('ж','zh').replace('щ','sch').replace('э','e').replace('я','ya').replace('ф','f').replace('ч','ch').replace('з','z').replace('ю','yu').replace('ц','ts').replace('й','y').replace('ё','yo').replace('в','v').replace('н','n').replace('р','r').replace('у','u').replace('х','h').replace('ъ','').replace('ь','').replace('ы','y'), allow_unicode=True)
+        self.slug_en = slugify (self.kelime_en)
+        self.slug_es = slugify(self.kelime_es, allow_unicode=True)
+        self.slug_ru = slugify(self.kelime_ru, allow_unicode=True)
+        self.slug_ar = slugify (self.kelime_ar, allow_unicode=True)
+        self.slug_ch = slugify (self.kelime_ch, allow_unicode=True)
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
