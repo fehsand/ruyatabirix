@@ -4,7 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
+SECRET_KEY = 'kg1!kr3a4h_*_79*p=p&_lht6&-u111u6uo=79g*8dqv3@ej!*'
 #with open('/home/ruyatabirix/sc_ky.txt') as f:
 #    SECRET_KEY = f.read().strip()
 
