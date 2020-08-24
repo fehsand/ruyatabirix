@@ -35,7 +35,7 @@ class FooItemAlternateHreflangSitemap2(RelAlternateHreflangSitemap):
                 ('ar', item.altr_ar_url),
                 ('es', item.altr_es_url),
                 ('ru', item.altr_ru_url),
-                ('ch', item.altr_ch_url),
+                ('zh-hans', item.altr_ch_url),
                 ]
 
     def items(self):
@@ -51,8 +51,8 @@ class FooItemAlternateHreflangSitemap(RelAlternateHreflangSitemap):
         return [('en', item.altr_en_url),
                 ('es', item.altr_es_url),
                 ('ru', item.altr_ru_url),
-                ('ru', item.altr_ar_url),
-                ('ru', item.altr_ch_url),
+                ('ar', item.altr_ar_url),
+                ('zh-hans', item.altr_ch_url),
                 ]
 
     def items(self):

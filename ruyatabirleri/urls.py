@@ -28,5 +28,5 @@ urlpatterns = [
     re_path(_(r'^ruyatabirleri/ruyada-'+'(?P<slug>[-\w]+)'+'-gormek/q1w2e3r4t5y6u7$'), views.ruyatabirleri_ayrinti_2, name='ruyatabirleri_ayrinti_2'),
     re_path(_(r'^ruyatabirleri/ruyada-'+'(?P<slug>[-\w]+)'+'-gormek/q1w2e3r4t5y6u7$'), views.ruyatabirleri_ayrinti_2, name='my_comment_was_posted_2'),
     path('ruyatabirleri/<str:harf>-harfi-listesi', views.harf_sayfalari, name='harf_sayfalari'),
-    path('rüya-tabirleri-<slug:slug>/', views.ruyatabirleri_ayrinti_sbt_syf, name='ruyatabirleri_ayrinti_sbt_syf'),
+    path('ruyatabiri-<slug:slug>/', views.ruyatabirleri_ayrinti_sbt_syf, name='ruyatabirleri_ayrinti_sbt_syf'),
 ]
