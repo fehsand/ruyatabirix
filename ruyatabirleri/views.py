@@ -565,6 +565,10 @@ def harf_sayfalari(response, harf):
         tabir1 = Ruyatabirlerix5.objects.filter (kelime_en__startswith=harf)
     elif get_language() == 'es':
         tabir1 = Ruyatabirlerix5.objects.filter (kelime_es__startswith=harf)
+    elif get_language () == 'ru':
+        tabir1 = Ruyatabirlerix5.objects.filter (kelime_ru__startswith=harf)
+    elif get_language () == 'ar':
+        tabir1 = Ruyatabirlerix5.objects.filter (kelime_ar__startswith=harf)
     else: #get_language() == 'tr'
         tabir1 = Ruyatabirleri.objects.filter (kelime__startswith=harf)
     form = AramaForm ()
