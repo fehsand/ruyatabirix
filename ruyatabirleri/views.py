@@ -25,12 +25,12 @@ def ruyatabirleri(response):
                 # --------------------Karakter Kontrolü bitti----------------
                 ArananKelimeler.objects.create (kelime=n1)  # aranan kelime kontrollerden sonra db kaydedildi.
                 # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
-                tabir1 = Ruyatabirlerix5.objects.filter (kelime_en__contains=n1)
+                tabir1 = Ruyatabirlerix5.objects.filter (kelime_en__contains=n)
                 if tabir1:
                     return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1}) # tabir var
                 else:
                     # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
-                    kelimlere_ayir = n1.split (" ")
+                    kelimlere_ayir = n.split (" ")
                     tabir_listesi = []
                     kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'dream' if i != 'dreamt' if i != 'seeing' if
                                        i != 'i' if i != 'my' if i != 'have']
@@ -78,12 +78,12 @@ def ruyatabirleri(response):
                 # --------------------Karakter Kontrolü bitti----------------
                 ArananKelimeler.objects.create (kelime=n1)  # aranan kelime kontrollerden sonra db kaydedildi.
                 # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
-                tabir1 = Ruyatabirlerix5.objects.filter (kelime_es__contains=n1)
+                tabir1 = Ruyatabirlerix5.objects.filter (kelime_es__contains=n)
                 if tabir1:
                     return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                 else:
                     # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
-                    kelimlere_ayir = n1.split (" ")
+                    kelimlere_ayir = n.split (" ")
                     tabir_listesi = []
                     kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'sueño' if i != 'soñado'
                                        if i != 'viendo' if i != 'yo' if i != 'mi' if i != 'soñada']
@@ -131,13 +131,13 @@ def ruyatabirleri(response):
                 # --------------------Karakter Kontrolü bitti----------------
                 ArananKelimeler.objects.create (kelime=n1)  # aranan kelime kontrollerden sonra db kaydedildi.
                 # -----------Aranan kelimenin tabiri db den alında yoksa hata verip en yakın tabir verildi---------
-                tabir1 = Ruyatabirlerix5.objects.filter (kelime_ru__contains=n1)
+                tabir1 = Ruyatabirlerix5.objects.filter (kelime_ru__contains=n)
                 print (tabir1)
                 if tabir1:
                     return render (response, 'ruyatabirleri/ruyatabirleri_anasayfa.html', {'tabir1': tabir1})  # tabir var
                 else:
                     # --birden fazla kelime girilmiş ise tabiri de yoksa kelimeleri parçalayarak en yakın anlamaı bulma----
-                    kelimlere_ayir = n1.split (" ")
+                    kelimlere_ayir = n.split (" ")
                     tabir_listesi = []
                     kelimlere_ayir2 = [i for i in kelimlere_ayir if i != 'мечта' if i != 'снилось' if i != 'увидеть' if i != 'я' if i != 'мой']
                     for klm in kelimlere_ayir2:
