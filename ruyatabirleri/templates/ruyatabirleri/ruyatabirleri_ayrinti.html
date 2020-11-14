@@ -59,21 +59,12 @@
             </div>
         </div>
         {% else %}
-            {% if tablo == 1 %}
-            <div class="row m-0 p-0">
-                <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
-                    <h1 class="display-4 font-italic border-bottom box-shadow">Rüyada {{tabir1.kelime}} görmek</h1>
-                    <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri}}</textarea>
-                </div>
+        <div class="row m-0 p-0">
+            <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
+                <h1 class="display-4 font-italic border-bottom box-shadow">Rüyada {{tabir1.kelime_tr}} görmek</h1>
+                <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri_tr}}</textarea>
             </div>
-            {% else %}
-            <div class="row m-0 p-0">
-                <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
-                    <h1 class="display-4 font-italic border-bottom box-shadow">Rüyada {{tabir1.kelime_tr}} görmek</h1>
-                    <textarea readonly class="form-control-plaintext p-2 text-justify" rows={{satir}}>{{tabir1.tabiri_tr}}</textarea>
-                </div>
-            </div>
-            {% endif %}
+        </div>
         {% endif %}
         <div class="row m-0 p-0 mt-3">
             <div class="col-md-10 m-0 p-4 border-bottom mx-auto">
@@ -145,15 +136,9 @@
                             <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted_2' slug=tabir1.slug_ch %}" />
                         </div>
                         {% else %}
-                            {% if tablo == 1 %}
-                            <div class="m-0 p-0">
-                                <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug %}" />
-                            </div>
-                            {% else %}
-                            <div class="m-0 p-0">
-                                <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug_tr %}" />
-                            </div>
-                            {% endif %}
+                        <div class="m-0 p-0">
+                            <input class="m-0 p-0" type="hidden" name="next" value="{% url 'ruyatabirleri:my_comment_was_posted' slug=tabir1.slug_tr %}" />
+                        </div>
                         {% endif %}
                     </form>
                 </div>
