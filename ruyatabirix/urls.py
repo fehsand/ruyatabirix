@@ -4,7 +4,6 @@ from django.conf.urls.i18n import i18n_patterns
 from django.contrib.sitemaps.views import sitemap as sitemaps_sitemap
 from ruyatabirleri.sitemap import (
     foo_static_sitemap,
-    FooItemSitemap,
     FooItemAlternateHreflangSitemap2,
     FooItemAlternateHreflangSitemap,
 )
@@ -13,7 +12,6 @@ favicon_view = RedirectView.as_view(url='/static/favicon.ico', permanent=True)
 
 sitemaps = {
     'foo-items-alternate-hreflang': FooItemAlternateHreflangSitemap,
-    'foo-items': FooItemSitemap,
     'foo-items-alternate-hreflang2': FooItemAlternateHreflangSitemap2,
     'foo-static': foo_static_sitemap,
 }

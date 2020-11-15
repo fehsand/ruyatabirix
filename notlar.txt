@@ -61,3 +61,17 @@ From here, you can run python manage.py makemigrations and it should run smoothl
 "^في-الحلم/تفسير-الأحلام-(?P<slug>[-\\w]+)-معنى/$"
 
 
+# ---------------------- Normal sitemap part ---------------------------
+# Normal Foo items sitemap.
+class FooItemSitemap(Sitemap):
+    changefreq = "weekly"
+    priority = 1.0
+
+    def location(self, item):
+        return item.get_absolute_url()
+
+    def lastmod(self, item):
+        return item.updated
+
+    def items(self):
+        return Ruyatabirleri._default_manager.all().order_by('id')

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-23 22:37+0300\n"
+"POT-Creation-Date: 2020-11-15 16:00+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,26 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: .\notlar.txt:75
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:23
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:37
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:51
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:65
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:84
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:14
-msgid "Aramak İstediğin Kelimeyi Yaz"
-msgstr "写关键词"
-
-#: .\notlar.txt:80
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:28
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:42
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:56
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:70
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:90
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:19
-msgid "ARA"
-msgstr "搜索"
 
 #: .\ruyatabirix\settings.py:96
 msgid "Turkish"
@@ -302,7 +282,7 @@ msgstr "写你的信息"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:55
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:127
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:124
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:115
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:80
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:162
 msgid "GÖNDER"
@@ -361,9 +341,17 @@ msgstr ""
 "质和精神渴望。 祷告是神与仆人之间的联络人。 祈祷中总有赞美和要求真主。 祷告也"
 "是敬拜和崇拜。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:164
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:281
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:398
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:14
+msgid "Aramak İstediğin Kelimeyi Yaz"
+msgstr "写关键词"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:19
+msgid "ARA"
+msgstr "搜索"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:114
 msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
 msgstr "梦想字典"
 
@@ -407,19 +395,19 @@ msgstr ""
 msgid "Rüya Tabirleri Formu için Tıklayınız..."
 msgstr "点击获取梦解表..."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:82
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:73
 msgid "adet yorum bulunmaktadır."
 msgstr "注释"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:117
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:108
 msgid "Yorum Yaz"
 msgstr "写评论"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:164
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:149
 msgid "Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir."
 msgstr "您必须以会员身份登录才能发表评论。"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:165
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:150
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:154
 msgid "Giriş Yap"
 msgstr "登录"
@@ -891,43 +879,43 @@ msgid "ruyatabirleri/"
 msgstr "梦解/"
 
 #: .\ruyatabirleri\urls.py:26
-msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
+msgid "ruyatabirleri/ruyada-<slug:slug>-gormek"
 msgstr "梦解/的含义-<slug:slug>-在梦里/"
 
 #: .\ruyatabirleri\urls.py:28 .\ruyatabirleri\urls.py:29
-msgid "^ruyatabirleri/ruyada-(?P<slug>[-\\w]+)-gormek/q1w2e3r4t5y6u7$"
+msgid "^ruyatabirleri/ruyada-(?P<slug>[-\\w]+)-gormek$"
 msgstr "^梦解/的含义-(?P<slug>[-\\w]+)-在梦里/$"
 
-#: .\ruyatabirleri\views.py:518
+#: .\ruyatabirleri\views.py:559
 msgid "Lütfen Cinsiyet Seçimini Yapınız"
 msgstr "请选择你的性别"
 
-#: .\ruyatabirleri\views.py:527
+#: .\ruyatabirleri\views.py:568
 msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
 msgstr "您的名字或母亲的名字太短。 再试一次。"
 
-#: .\ruyatabirleri\views.py:534
+#: .\ruyatabirleri\views.py:575
 msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:541
+#: .\ruyatabirleri\views.py:582
 msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:591 .\ruyatabirleri\views.py:619
-#: .\ruyatabirleri\views.py:689
+#: .\ruyatabirleri\views.py:632 .\ruyatabirleri\views.py:660
+#: .\ruyatabirleri\views.py:730
 msgid "Lütfen Formu Doldurunuz."
 msgstr "请填写表格"
 
-#: .\ruyatabirleri\views.py:608
+#: .\ruyatabirleri\views.py:649
 msgid "Kutucukları Doldurunuz."
 msgstr "填空"
 
-#: .\ruyatabirleri\views.py:615 .\ruyatabirleri\views.py:681
+#: .\ruyatabirleri\views.py:656 .\ruyatabirleri\views.py:722
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "您的帖子已成功保存"
 
-#: .\ruyatabirleri\views.py:685
+#: .\ruyatabirleri\views.py:726
 msgid ""
 "Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması "
 "gerekmektedir. Lütfen düzeltiniz."

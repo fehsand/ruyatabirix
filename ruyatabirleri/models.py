@@ -150,5 +150,5 @@ class Ruyatabirlerix5 (models.Model):
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return reverse('ruyatabirleri:ruyatabirleri_ayrinti',
+        return reverse('ruyatabirleri:ruyatabirleri_ayrinti_2',
                         args=[str(self.slug_tr)])

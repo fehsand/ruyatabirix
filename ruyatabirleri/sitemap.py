@@ -1,28 +1,11 @@
 from django.contrib.sitemaps import Sitemap
 from qartez.sitemaps import StaticSitemap, RelAlternateHreflangSitemap
-from ruyatabirleri.models import Ruyatabirleri, Ruyatabirlerix5, Ruyatabirlerix_sbt
+from ruyatabirleri.models import Ruyatabirlerix5, Ruyatabirlerix_sbt
 
 # ---------------------- Static sitemap part ---------------------------
 # Sitemap for service pages like welcome and feedback.
 foo_static_sitemap = StaticSitemap(priority=0.7, changefreq='monthly')
 foo_static_sitemap.add_named_pattern('ruyatabirleri:anasayfa')
-
-
-# ---------------------- Normal sitemap part ---------------------------
-# Normal Foo items sitemap.
-class FooItemSitemap(Sitemap):
-    changefreq = "weekly"
-    priority = 1.0
-
-    def location(self, item):
-        return item.get_absolute_url()
-
-    def lastmod(self, item):
-        return item.updated
-
-    def items(self):
-        return Ruyatabirleri._default_manager.all().order_by('id')
-
 
 # ---------------------- Static PAge Normal sitemap part ---------------------------
 # Static PAge_Normal Foo items sitemap.

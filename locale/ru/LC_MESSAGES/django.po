@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-23 22:37+0300\n"
+"POT-Creation-Date: 2020-11-15 15:59+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,26 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
-
-#: .\notlar.txt:75
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:23
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:37
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:51
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:65
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:84
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:14
-msgid "Aramak İstediğin Kelimeyi Yaz"
-msgstr "Напишите ключевое слово"
-
-#: .\notlar.txt:80
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:28
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:42
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:56
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:70
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:90
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:19
-msgid "ARA"
-msgstr "ПОИСК"
 
 #: .\ruyatabirix\settings.py:96
 msgid "Turkish"
@@ -327,7 +307,7 @@ msgstr "Напишите ваше сообщение"
 
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:55
 #: .\ruyatabirleri\templates\ruyatabirleri\anasayfa_iletisim.html:127
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:124
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:115
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:80
 #: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_yorum.html:162
 msgid "GÖNDER"
@@ -387,9 +367,17 @@ msgstr ""
 "духовные желания Аллаху. Молитва - это связь между Богом и слугой. В молитве "
 "всегда хвалят и требуют Аллаха. Молитва - это также зикр и поклонение."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:164
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:281
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:398
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:21
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:14
+msgid "Aramak İstediğin Kelimeyi Yaz"
+msgstr "Напишите ключевое слово"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:26
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:19
+msgid "ARA"
+msgstr "ПОИСК"
+
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_anasayfa.html:114
 msgid "Rüya tabirlerini alfabetik sıraya göre inceleyebilirsiniz."
 msgstr "Словарь мечты"
 
@@ -435,19 +423,19 @@ msgstr ""
 msgid "Rüya Tabirleri Formu için Tıklayınız..."
 msgstr "Нажмите для формы интерпретации мечты"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:82
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:73
 msgid "adet yorum bulunmaktadır."
 msgstr "Комментарии"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:117
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:108
 msgid "Yorum Yaz"
 msgstr "написать комментарий"
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:164
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:149
 msgid "Yorum yazabilmek için üye olarak giriş yapmanız gerekmektedir."
 msgstr "Вы должны войти в систему как член, чтобы оставить комментарий."
 
-#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:165
+#: .\ruyatabirleri\templates\ruyatabirleri\ruyatabirleri_ayrinti.html:150
 #: .\ruyatabirleri\templates\ruyatabirleri\temel_anasayfa.html:154
 msgid "Giriş Yap"
 msgstr "авторизоваться"
@@ -943,43 +931,43 @@ msgid "ruyatabirleri/"
 msgstr "intyerpryetatsiya-sna/"
 
 #: .\ruyatabirleri\urls.py:26
-msgid "ruyatabirleri/ruyada-<slug:slug>-gormek/q1w2e3r4t5y6u7"
+msgid "ruyatabirleri/ruyada-<slug:slug>-gormek"
 msgstr "толкования-снов/значение-<slug:slug>-во-сне/"
 
 #: .\ruyatabirleri\urls.py:28 .\ruyatabirleri\urls.py:29
-msgid "^ruyatabirleri/ruyada-(?P<slug>[-\\w]+)-gormek/q1w2e3r4t5y6u7$"
+msgid "^ruyatabirleri/ruyada-(?P<slug>[-\\w]+)-gormek$"
 msgstr "^толкования-снов/значение-(?P<slug>[-\\w]+)-во-сне/$"
 
-#: .\ruyatabirleri\views.py:518
+#: .\ruyatabirleri\views.py:559
 msgid "Lütfen Cinsiyet Seçimini Yapınız"
 msgstr "пожалуйста, выберите свой пол"
 
-#: .\ruyatabirleri\views.py:527
+#: .\ruyatabirleri\views.py:568
 msgid "İsminiz veya anne isminiz çok kısa. Tekrar Deneyiniz."
 msgstr "Ваше имя или фамилия слишком короткие. Попробуй еще раз."
 
-#: .\ruyatabirleri\views.py:534
+#: .\ruyatabirleri\views.py:575
 msgid "İsminizde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:541
+#: .\ruyatabirleri\views.py:582
 msgid "Anne İsminde Türkçe Harfler Dışında Karakter Kullanmayınız."
 msgstr ""
 
-#: .\ruyatabirleri\views.py:591 .\ruyatabirleri\views.py:619
-#: .\ruyatabirleri\views.py:689
+#: .\ruyatabirleri\views.py:632 .\ruyatabirleri\views.py:660
+#: .\ruyatabirleri\views.py:730
 msgid "Lütfen Formu Doldurunuz."
 msgstr "пожалуйста, заполните форму"
 
-#: .\ruyatabirleri\views.py:608
+#: .\ruyatabirleri\views.py:649
 msgid "Kutucukları Doldurunuz."
 msgstr "Заполнить бланки"
 
-#: .\ruyatabirleri\views.py:615 .\ruyatabirleri\views.py:681
+#: .\ruyatabirleri\views.py:656 .\ruyatabirleri\views.py:722
 msgid "Gönderiniz başarıyla kaydedildi."
 msgstr "Ваше сообщение было успешно сохранено."
 
-#: .\ruyatabirleri\views.py:685
+#: .\ruyatabirleri\views.py:726
 msgid ""
 "Yazdığınız eposta adresleri birbirinden farklıdır. Aynı olması "
 "gerekmektedir. Lütfen düzeltiniz."
